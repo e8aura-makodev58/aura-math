@@ -79,3 +79,10 @@ Also not written: manifest.toml for the app package (format to be taken from the
 Not run. There is no `/dev/kvm`, no hardware virtualisation, and no display in this container, so the
 Vega Virtual Device cannot start here. Headless or software-rendered execution was not attempted
 because the VDK itself is unavailable.
+
+## Attempt log (SDK installer)
+
+- 2026-10-23, after `developer.amazon.com` was allowed: the docs became readable (`/docs/vega/0.24/install-vega-sdk.html`).
+- `https://sdk-installer.vega.labcollab.net/get_vvm.sh` then downloaded (58,010 bytes, 1,927 lines). Read before running. No login or credential prompt found. It installs to `~/vega` and edits shell profiles; it uses no sudo.
+- The installer downloads its CLI and SDK metadata from `https://k-artifactory-external.labcollab.net/artifactory/api/kpm/`. This host returns **403 (policy denial)**, so the installer cannot complete. The VS Code marketplace (optional extension) also returns 403.
+- Not run: the installer itself. Blocker: allow `k-artifactory-external.labcollab.net` (and the marketplace host if the VS Code extension is wanted).
