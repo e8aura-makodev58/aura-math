@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "lib": [
+      "ES2022",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "jsx": "react-jsx",
+    "strict": true,
+    "noEmit": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "downlevelIteration": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "baseUrl": ".",
+    "paths": {
+      "react-native": [
+        "node_modules/@amazon-devices/react-native-kepler/types/index.d.ts"
+      ],
+      "three": [
+        "node_modules/@types/three/index.d.ts"
+      ]
+    },
+    "types": [
+      "jest"
+    ]
+  },
+  "include": [
+    "src",
+    "__tests__",
+    "index.js",
+    "react-native.config.js"
+  ]
+}
