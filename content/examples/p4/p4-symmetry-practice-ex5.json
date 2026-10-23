@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 3,
+  "locale": "en-SG",
+  "adapterVersion": 1,
+  "library": {
+    "level": "P4",
+    "skillId": "p4-symmetry-practice",
+    "tags": [
+      "P4",
+      "symmetry",
+      "general revision",
+      "example"
+    ]
+  },
+  "curriculum": {
+    "objectiveId": "candidate.p4.symmetry.practice",
+    "sources": [
+      "https://practicle.sg/primary-4-math/",
+      "https://sg.ixl.com/standards/maths/primary-4"
+    ],
+    "evidenceStatus": "candidate"
+  },
+  "authors": [
+    "Codex"
+  ],
+  "provenance": {
+    "kind": "generated",
+    "generatorVersion": "p4-examples-v1",
+    "seed": 3303102893
+  },
+  "lesson": {
+    "id": "p4-symmetry-practice-ex5",
+    "version": 1,
+    "topic": "symmetry",
+    "title": "A fresh symmetry question",
+    "subtitle": "P4 symmetry revision",
+    "level": "P4 candidate",
+    "minutes": 3,
+    "objective": "Count the lines of symmetry of a shape.",
+    "story": "How many lines of symmetry does this house shape have? If there are none, enter 0.",
+    "reviewStatus": "draft",
+    "specification": {
+      "task": "practice",
+      "shape": "house",
+      "cols": 8,
+      "rows": 4,
+      "mirror": "vertical",
+      "cells": [
+        "0,2",
+        "1,1",
+        "1,2",
+        "2,0",
+        "2,3",
+        "3,1"
+      ],
+      "probe": "1,2"
+    },
+    "steps": [
+      {
+        "id": "count",
+        "goal": "count",
+        "title": "Count the lines of symmetry",
+        "prompt": "How many lines of symmetry does this house shape have? If there are none, enter 0.",
+        "kind": "exact",
+        "answer": "1",
+        "hints": [
+          "Think about folding the shape so that the two halves match exactly.",
+          "Try folding along the middle, along the corners, and in other directions.",
+          "Test each fold carefully. There is 1.",
+          "The house shape has 1 line of symmetry. Enter 1."
+        ]
+      },
+      {
+        "id": "reflection",
+        "goal": "reflection",
+        "title": "Explain your thinking",
+        "prompt": "Can a shape have no lines of symmetry?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "k25",
+            "label": "No. Every shape has at least one line of symmetry somewhere on it."
+          },
+          {
+            "id": "k32",
+            "label": "Yes, but only shapes with four sides can have no line of symmetry."
+          },
+          {
+            "id": "k18",
+            "label": "Yes. If no fold makes the halves match, it has no line of symmetry."
+          }
+        ],
+        "answer": "k18",
+        "hints": [
+          "Think about shapes that look tilted or uneven.",
+          "A fold must make the halves match exactly.",
+          "Some shapes cannot be folded to match.",
+          "Choose the explanation that says a shape can have none."
+        ]
+      }
+    ]
+  },
+  "fixtures": [
+    {
+      "stepId": "count",
+      "accepted": [
+        "1"
+      ],
+      "rejected": [
+        "2",
+        "11"
+      ]
+    },
+    {
+      "stepId": "reflection",
+      "accepted": [
+        "k18"
+      ],
+      "rejected": [
+        "k25",
+        "k32"
+      ]
+    }
+  ]
+}

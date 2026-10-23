@@ -1,0 +1,445 @@
+{
+ "pictureVsModel": {
+  "nets": 64,
+  "checks": 384,
+  "pairAgree": 384,
+  "lidAgree": 384,
+  "cornerOk": 9216,
+  "cornerTotal": 9216,
+  "maxCornerErr": 1.5700924586837752e-16,
+  "fails": []
+ },
+ "collisionPool": {
+  "tally": {
+   "collide2": 2,
+   "collide1": 14,
+   "block": 8,
+   "cube": 11
+  },
+  "compared": 1044,
+  "agree": 1044,
+  "foldsToCubeOk": 11
+ },
+ "distinguishable": {
+  "netRootCombos": 150,
+  "renders": 21600,
+  "applicableRenders": 5342,
+  "pass": 5342,
+  "passRateOfApplicable": 1,
+  "reasons": {},
+  "failByPitch": {},
+  "minVisible": 0.76,
+  "minGlyph": 10.606606444762047,
+  "worst": "visible 0.76 at yaw=45 pitch=75",
+  "netRootCombosWithNoGoodView": 0,
+  "minGoodViewsPerCombo": 1,
+  "combosWithFewerThan5GoodViews": 40
+ },
+ "letterMirror": {
+  "n": 4914,
+  "bad": 0,
+  "nUp": 4364,
+  "notUpright": 744,
+  "over60": 0,
+  "over90": 0,
+  "maxDeg": 54.735605942907654
+ },
+ "svgRoundTrip": {
+  "n": 715,
+  "configsWithAnyDifferentSample": 0
+ },
+ "solidClosure": {
+  "cuboid": {
+   "glueMaxGap": 5.519544141286457e-16,
+   "distinctVertices": 8,
+   "rendererVsAxisAngle": 8.003132253975984e-16,
+   "hinges": 5,
+   "faces": 6
+  },
+  "triangular-prism": {
+   "glueMaxGap": 6.277862297221655e-16,
+   "distinctVertices": 6,
+   "rendererVsAxisAngle": 1.78582983959669e-15,
+   "hinges": 4,
+   "faces": 5
+  },
+  "square-pyramid": {
+   "glueMaxGap": 3.1401849173675503e-16,
+   "distinctVertices": 5,
+   "rendererVsAxisAngle": 8.881784197001252e-16,
+   "hinges": 4,
+   "faces": 5
+  }
+ },
+ "solidSweeps": {
+  "cuboid-end": {
+   "centroid": {
+    "configs": 27648,
+    "covered": 9195646,
+    "mism": 0,
+    "coverageMism": 0,
+    "ties": 0,
+    "configsAny": 0,
+    "configsOver": 0,
+    "worst": {
+     "frac": 0,
+     "desc": ""
+    }
+   },
+   "nearest": {
+    "configs": 27648,
+    "covered": 9195646,
+    "mism": 0,
+    "coverageMism": 0,
+    "ties": 0,
+    "configsAny": 0,
+    "configsOver": 0,
+    "worst": {
+     "frac": 0,
+     "desc": ""
+    }
+   },
+   "split": {
+    "configs": 27648,
+    "covered": 9195646,
+    "mism": 0,
+    "coverageMism": 0,
+    "ties": 0,
+    "configsAny": 0,
+    "configsOver": 0,
+    "worst": {
+     "frac": 0,
+     "desc": ""
+    }
+   }
+  },
+  "cuboid-tween": {
+   "centroid": {
+    "configs": 483840,
+    "covered": 164252749,
+    "mism": 0,
+    "coverageMism": 0,
+    "ties": 0,
+    "configsAny": 0,
+    "configsOver": 0,
+    "worst": {
+     "frac": 0,
+     "desc": ""
+    }
+   },
+   "nearest": {
+    "configs": 483840,
+    "covered": 164252749,
+    "mism": 0,
+    "coverageMism": 0,
+    "ties": 0,
+    "configsAny": 0,
+    "configsOver": 0,
+    "worst": {
+     "frac": 0,
+     "desc": ""
+    }
+   },
+   "split": {
+    "configs": 483840,
+    "covered": 164252749,
+    "mism": 0,
+    "coverageMism": 0,
+    "ties": 0,
+    "configsAny": 0,
+    "configsOver": 0,
+    "worst": {
+     "frac": 0,
+     "desc": ""
+    }
+   }
+  },
+  "cuboid-foldall": {
+   "centroid": {
+    "configs": 6048,
+    "covered": 2197992,
+    "mism": 0,
+    "coverageMism": 0,
+    "ties": 0,
+    "configsAny": 0,
+    "configsOver": 0,
+    "worst": {
+     "frac": 0,
+     "desc": ""
+    }
+   },
+   "nearest": {
+    "configs": 6048,
+    "covered": 2197992,
+    "mism": 0,
+    "coverageMism": 0,
+    "ties": 0,
+    "configsAny": 0,
+    "configsOver": 0,
+    "worst": {
+     "frac": 0,
+     "desc": ""
+    }
+   },
+   "split": {
+    "configs": 6048,
+    "covered": 2197992,
+    "mism": 0,
+    "coverageMism": 0,
+    "ties": 0,
+    "configsAny": 0,
+    "configsOver": 0,
+    "worst": {
+     "frac": 0,
+     "desc": ""
+    }
+   }
+  },
+  "triangular-prism-end": {
+   "centroid": {
+    "configs": 11520,
+    "covered": 4553794,
+    "mism": 130,
+    "coverageMism": 0,
+    "ties": 0,
+    "configsAny": 58,
+    "configsOver": 48,
+    "worst": {
+     "frac": 0.027210884353741496,
+     "desc": "triangular-prism root=0 mask=15 yaw=45 pitch=15"
+    }
+   },
+   "nearest": {
+    "configs": 11520,
+    "covered": 4553794,
+    "mism": 108,
+    "coverageMism": 0,
+    "ties": 0,
+    "configsAny": 46,
+    "configsOver": 38,
+    "worst": {
+     "frac": 0.027210884353741496,
+     "desc": "triangular-prism root=0 mask=15 yaw=45 pitch=15"
+    }
+   },
+   "split": {
+    "configs": 11520,
+    "covered": 4553794,
+    "mism": 0,
+    "coverageMism": 0,
+    "ties": 0,
+    "configsAny": 0,
+    "configsOver": 0,
+    "worst": {
+     "frac": 0,
+     "desc": ""
+    }
+   }
+  },
+  "triangular-prism-tween": {
+   "centroid": {
+    "configs": 161280,
+    "covered": 64867327,
+    "mism": 1629,
+    "coverageMism": 0,
+    "ties": 0,
+    "configsAny": 733,
+    "configsOver": 614,
+    "worst": {
+     "frac": 0.045454545454545456,
+     "desc": "triangular-prism root=0 hinge=0 t=1/8 others=4 yaw=-105 pitch=75"
+    }
+   },
+   "nearest": {
+    "configs": 161280,
+    "covered": 64867327,
+    "mism": 1206,
+    "coverageMism": 0,
+    "ties": 0,
+    "configsAny": 521,
+    "configsOver": 459,
+    "worst": {
+     "frac": 0.045454545454545456,
+     "desc": "triangular-prism root=0 hinge=0 t=1/8 others=4 yaw=-105 pitch=75"
+    }
+   },
+   "split": {
+    "configs": 161280,
+    "covered": 64867327,
+    "mism": 0,
+    "coverageMism": 0,
+    "ties": 0,
+    "configsAny": 0,
+    "configsOver": 0,
+    "worst": {
+     "frac": 0,
+     "desc": ""
+    }
+   }
+  },
+  "triangular-prism-foldall": {
+   "centroid": {
+    "configs": 5040,
+    "covered": 2131041,
+    "mism": 18,
+    "coverageMism": 0,
+    "ties": 0,
+    "configsAny": 11,
+    "configsOver": 6,
+    "worst": {
+     "frac": 0.01107011070110701,
+     "desc": "triangular-prism root=3 all t=7/8 yaw=-90 pitch=75"
+    }
+   },
+   "nearest": {
+    "configs": 5040,
+    "covered": 2131041,
+    "mism": 9,
+    "coverageMism": 0,
+    "ties": 0,
+    "configsAny": 5,
+    "configsOver": 3,
+    "worst": {
+     "frac": 0.01107011070110701,
+     "desc": "triangular-prism root=3 all t=7/8 yaw=-90 pitch=75"
+    }
+   },
+   "split": {
+    "configs": 5040,
+    "covered": 2131041,
+    "mism": 0,
+    "coverageMism": 0,
+    "ties": 0,
+    "configsAny": 0,
+    "configsOver": 0,
+    "worst": {
+     "frac": 0,
+     "desc": ""
+    }
+   }
+  },
+  "square-pyramid-end": {
+   "centroid": {
+    "configs": 11520,
+    "covered": 3170520,
+    "mism": 0,
+    "coverageMism": 0,
+    "ties": 0,
+    "configsAny": 0,
+    "configsOver": 0,
+    "worst": {
+     "frac": 0,
+     "desc": ""
+    }
+   },
+   "nearest": {
+    "configs": 11520,
+    "covered": 3170520,
+    "mism": 0,
+    "coverageMism": 0,
+    "ties": 0,
+    "configsAny": 0,
+    "configsOver": 0,
+    "worst": {
+     "frac": 0,
+     "desc": ""
+    }
+   },
+   "split": {
+    "configs": 11520,
+    "covered": 3170520,
+    "mism": 0,
+    "coverageMism": 0,
+    "ties": 0,
+    "configsAny": 0,
+    "configsOver": 0,
+    "worst": {
+     "frac": 0,
+     "desc": ""
+    }
+   }
+  },
+  "square-pyramid-tween": {
+   "centroid": {
+    "configs": 161280,
+    "covered": 44788516,
+    "mism": 0,
+    "coverageMism": 0,
+    "ties": 0,
+    "configsAny": 0,
+    "configsOver": 0,
+    "worst": {
+     "frac": 0,
+     "desc": ""
+    }
+   },
+   "nearest": {
+    "configs": 161280,
+    "covered": 44788516,
+    "mism": 272,
+    "coverageMism": 0,
+    "ties": 0,
+    "configsAny": 144,
+    "configsOver": 144,
+    "worst": {
+     "frac": 0.03937007874015748,
+     "desc": "square-pyramid root=1 hinge=0 t=3/8 others=3 yaw=-75 pitch=75"
+    }
+   },
+   "split": {
+    "configs": 161280,
+    "covered": 44788516,
+    "mism": 0,
+    "coverageMism": 0,
+    "ties": 0,
+    "configsAny": 0,
+    "configsOver": 0,
+    "worst": {
+     "frac": 0,
+     "desc": ""
+    }
+   }
+  },
+  "square-pyramid-foldall": {
+   "centroid": {
+    "configs": 5040,
+    "covered": 1433684,
+    "mism": 0,
+    "coverageMism": 0,
+    "ties": 0,
+    "configsAny": 0,
+    "configsOver": 0,
+    "worst": {
+     "frac": 0,
+     "desc": ""
+    }
+   },
+   "nearest": {
+    "configs": 5040,
+    "covered": 1433684,
+    "mism": 0,
+    "coverageMism": 0,
+    "ties": 0,
+    "configsAny": 0,
+    "configsOver": 0,
+    "worst": {
+     "frac": 0,
+     "desc": ""
+    }
+   },
+   "split": {
+    "configs": 5040,
+    "covered": 1433684,
+    "mism": 0,
+    "coverageMism": 0,
+    "ties": 0,
+    "configsAny": 0,
+    "configsOver": 0,
+    "worst": {
+     "frac": 0,
+     "desc": ""
+    }
+   }
+  }
+ }
+}

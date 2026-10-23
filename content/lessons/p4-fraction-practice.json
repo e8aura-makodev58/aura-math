@@ -1,0 +1,185 @@
+{
+  "schemaVersion": 3,
+  "locale": "en-SG",
+  "adapterVersion": 1,
+  "library": {
+    "level": "P4",
+    "skillId": "p4-fraction-practice",
+    "tags": [
+      "P4",
+      "fractions",
+      "general revision"
+    ]
+  },
+  "curriculum": {
+    "objectiveId": "candidate.p4.fractions.practice",
+    "sources": [
+      "https://practicle.sg/primary-4-math/",
+      "https://sg.ixl.com/standards/maths/primary-4"
+    ],
+    "evidenceStatus": "candidate"
+  },
+  "authors": [
+    "codex-p4-fractions"
+  ],
+  "provenance": {
+    "kind": "authored"
+  },
+  "lesson": {
+    "id": "p4-fraction-practice",
+    "version": 1,
+    "topic": "fraction-calculations",
+    "title": "A fresh fraction question",
+    "subtitle": "P4 fraction revision",
+    "level": "P4 candidate",
+    "minutes": 4,
+    "objective": "Find a fraction of a set and what remains.",
+    "story": "A box has 32 stickers. 3/4 are used. How many stickers remain?",
+    "reviewStatus": "draft",
+    "specification": {
+      "task": "practice",
+      "whole": 2,
+      "numerator": 3,
+      "denominator": 4,
+      "otherNumerator": 1,
+      "otherDenominator": 3,
+      "operation": "subtract",
+      "quantity": 32,
+      "unit": "stickers"
+    },
+    "steps": [
+      {
+        "id": "remaining",
+        "goal": "remaining",
+        "title": "Find what remains",
+        "prompt": "A box has 32 stickers. 3/4 are used. How many stickers remain?",
+        "kind": "exact",
+        "answer": "8",
+        "hints": [
+          "Find the used part first.",
+          "Divide 32 into 4 equal parts.",
+          "3 parts have 24 stickers.",
+          "32 − 24 = 8 stickers remain."
+        ]
+      },
+      {
+        "id": "reflection",
+        "goal": "reflection",
+        "title": "Explain the equal parts",
+        "prompt": "What makes the fraction calculation fair?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "r8",
+            "label": "Parts can be counted together even if the wholes differ."
+          },
+          {
+            "id": "r3",
+            "label": "The wholes match and each part has the same size."
+          },
+          {
+            "id": "r6",
+            "label": "The denominator tells us how many objects are left."
+          }
+        ],
+        "answer": "r3",
+        "hints": [
+          "Look at the whole first.",
+          "Equal fractions need equal-size wholes.",
+          "Count parts that have the same size.",
+          "Choose: The wholes match and each part has the same size."
+        ]
+      }
+    ]
+  },
+  "fixtures": [
+    {
+      "stepId": "remaining",
+      "accepted": [
+        "8"
+      ],
+      "rejected": [
+        "9999",
+        "9998"
+      ]
+    },
+    {
+      "stepId": "reflection",
+      "accepted": [
+        "r3"
+      ],
+      "rejected": [
+        "r8",
+        "r6"
+      ]
+    }
+  ],
+  "interpretation": {
+    "entities": [
+      "whole",
+      "fraction",
+      "taken",
+      "remaining"
+    ],
+    "quantities": [
+      {
+        "entity": "whole",
+        "value": 32,
+        "unit": "stickers",
+        "state": "given"
+      },
+      {
+        "entity": "fraction",
+        "value": "3/4",
+        "unit": "fraction",
+        "state": "given"
+      },
+      {
+        "entity": "taken",
+        "value": 24,
+        "unit": "stickers",
+        "state": "derived"
+      },
+      {
+        "entity": "remaining",
+        "value": 8,
+        "unit": "stickers",
+        "state": "derived"
+      }
+    ],
+    "relationships": [
+      {
+        "kind": "operation",
+        "id": "taken",
+        "operation": "fraction-of",
+        "inputs": [
+          "whole",
+          "fraction"
+        ],
+        "output": "taken"
+      },
+      {
+        "kind": "operation",
+        "id": "remaining",
+        "operation": "subtract",
+        "inputs": [
+          "whole",
+          "taken"
+        ],
+        "output": "remaining"
+      }
+    ],
+    "unknown": "remaining",
+    "sourceSpans": [
+      {
+        "start": 0,
+        "end": 62,
+        "text": "A box has 32 stickers. 3/4 are used. How many stickers remain?"
+      }
+    ],
+    "assumptions": [
+      "The whole set has equal-size parts."
+    ],
+    "ambiguities": []
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 2,
+  "locale": "en-SG",
+  "adapterVersion": 1,
+  "library": {
+    "level": "P2",
+    "skillId": "hundreds-tens-ones",
+    "tags": ["base-ten", "place value"]
+  },
+  "curriculum": {
+    "objectiveId": "P2.place-value",
+    "sources": [
+      "https://practicle.sg/primary-2-math/",
+      "https://sg.ixl.com/standards/maths/primary-2"
+    ],
+    "evidenceStatus": "candidate"
+  },
+  "authors": ["codex-topics-numbers"],
+  "provenance": {
+    "kind": "authored"
+  },
+  "lesson": {
+    "id": "hundreds-tens-ones",
+    "version": 1,
+    "topic": "place-value",
+    "title": "Build a number from blocks",
+    "subtitle": "Hundreds, tens and ones",
+    "level": "P2 candidate",
+    "minutes": 5,
+    "story": "Each column groups blocks by value. A hundreds block represents 100, a tens rod represents 10 and a ones counter represents 1. An empty column represents zero in that place.",
+    "objective": "Read base-ten models and reason about the hundreds place.",
+    "reviewStatus": "draft",
+    "specification": {
+      "value": 243,
+      "task": "read-model",
+      "targetPlace": "hundreds"
+    },
+    "steps": [
+      {
+        "id": "recognise",
+        "goal": "recognise",
+        "title": "Find the place",
+        "prompt": "Which column represents groups of 100?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "p00",
+            "label": "Tens",
+            "meaning": "tens"
+          },
+          {
+            "id": "p01",
+            "label": "Ones",
+            "meaning": "ones"
+          },
+          {
+            "id": "p02",
+            "label": "Hundreds",
+            "meaning": "hundreds"
+          }
+        ],
+        "answer": "p02",
+        "hints": [
+          "Look at the column headings.",
+          "Each block in the hundreds column represents 100.",
+          "Find the column named hundreds.",
+          "Choose hundreds."
+        ]
+      },
+      {
+        "id": "calculate",
+        "goal": "calculate",
+        "title": "Read the model",
+        "prompt": "What number do all the blocks represent?",
+        "kind": "number",
+        "answer": 243,
+        "hints": [
+          "Look at the hundreds place, then the other columns.",
+          "The hundreds place uses groups of 100.",
+          "There are 2 blocks in the hundreds column; each represents 100.",
+          "The full model represents 243."
+        ]
+      },
+      {
+        "id": "reflection",
+        "goal": "reflection",
+        "title": "Explain the place",
+        "prompt": "Why does a digit need a named place?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "r0a",
+            "label": "The place tells us how much each digit represents."
+          },
+          {
+            "id": "r0b",
+            "label": "Every digit stands for single ones, wherever it sits."
+          },
+          {
+            "id": "r0c",
+            "label": "Zero means the other columns must also be empty."
+          }
+        ],
+        "answer": "r0a",
+        "hints": [
+          "Look at the different column units.",
+          "A hundreds block and a ones counter have different values.",
+          "The place tells us whether to count hundreds, tens or ones.",
+          "Choose: The place tells us how much each digit represents."
+        ]
+      }
+    ]
+  },
+  "fixtures": [
+    {
+      "stepId": "recognise",
+      "accepted": ["p02"],
+      "rejected": ["p00", "p01"]
+    },
+    {
+      "stepId": "calculate",
+      "accepted": [243],
+      "rejected": [244, 253]
+    },
+    {
+      "stepId": "reflection",
+      "accepted": ["r0a"],
+      "rejected": ["r0b", "r0c"]
+    }
+  ]
+}

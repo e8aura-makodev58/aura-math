@@ -1,0 +1,196 @@
+{
+  "schemaVersion": 3,
+  "locale": "en-SG",
+  "adapterVersion": 1,
+  "library": {
+    "level": "P4",
+    "skillId": "p4-rounding",
+    "tags": [
+      "P4",
+      "whole-numbers",
+      "general revision"
+    ]
+  },
+  "curriculum": {
+    "objectiveId": "candidate.p4.whole-numbers.rounding",
+    "sources": [
+      "https://practicle.sg/primary-4-math/",
+      "https://sg.ixl.com/standards/maths/primary-4"
+    ],
+    "evidenceStatus": "candidate"
+  },
+  "authors": [
+    "claude-p4-whole-numbers"
+  ],
+  "provenance": {
+    "kind": "authored"
+  },
+  "lesson": {
+    "id": "p4-rounding",
+    "version": 1,
+    "topic": "whole-numbers",
+    "title": "Round on the number line",
+    "subtitle": "P4 whole-number revision",
+    "level": "P4 candidate",
+    "minutes": 7,
+    "objective": "Round a whole number to the nearest 10, 100 or 1 000.",
+    "story": "Find where 4 637 sits on the number line.",
+    "reviewStatus": "draft",
+    "specification": {
+      "task": "rounding",
+      "n": 4637,
+      "m": 0,
+      "place": "ten-thousands",
+      "roundTo": 100,
+      "unit": "stickers"
+    },
+    "steps": [
+      {
+        "id": "between",
+        "goal": "between",
+        "title": "Find the neighbours",
+        "prompt": "Between which two multiples of 100 does 4 637 lie?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "k72",
+            "label": "4 700 and 4 800",
+            "meaning": "above"
+          },
+          {
+            "id": "k58",
+            "label": "4 600 and 4 700",
+            "meaning": "between"
+          },
+          {
+            "id": "k65",
+            "label": "4 500 and 4 600",
+            "meaning": "below"
+          }
+        ],
+        "answer": "k58",
+        "hints": [
+          "Look at the marks on the number line.",
+          "Find the multiple of 100 just below 4 637 and the one just above.",
+          "4 600 is below 4 637 and 4 700 is above it.",
+          "Choose 4 600 and 4 700."
+        ]
+      },
+      {
+        "id": "nearer",
+        "goal": "nearer",
+        "title": "Closer to which?",
+        "prompt": "Is 4 637 closer to 4 600, closer to 4 700, or exactly halfway?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "k63",
+            "label": "Closer to 4 600",
+            "meaning": "lower"
+          },
+          {
+            "id": "k70",
+            "label": "Closer to 4 700",
+            "meaning": "upper"
+          },
+          {
+            "id": "k77",
+            "label": "Exactly halfway",
+            "meaning": "halfway"
+          }
+        ],
+        "answer": "k63",
+        "hints": [
+          "Find the halfway notch between the two marks.",
+          "Is the dot before the halfway notch, after it, or on it?",
+          "Halfway is 4 650. Compare 4 637 with that.",
+          "4 637 is closer to 4 600."
+        ]
+      },
+      {
+        "id": "rounded",
+        "goal": "rounded",
+        "title": "Round the number",
+        "prompt": "Round 4 637 to the nearest 100.",
+        "kind": "exact",
+        "answer": "4600",
+        "hints": [
+          "Use what you found about the neighbours and the halfway point.",
+          "Round to the closer multiple. When exactly halfway, round up.",
+          "The closer multiple is 4 600.",
+          "4 637 rounded to the nearest 100 is 4 600. Enter 4600."
+        ]
+      },
+      {
+        "id": "reflection",
+        "goal": "reflection",
+        "title": "Explain your thinking",
+        "prompt": "How do you decide which way to round?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "k75",
+            "label": "Always round up to the next multiple, even when it is further away."
+          },
+          {
+            "id": "k82",
+            "label": "Always drop the last digits, so you keep the lower of the two multiples."
+          },
+          {
+            "id": "k68",
+            "label": "Find the halfway point between the two multiples; from halfway, round up."
+          }
+        ],
+        "answer": "k68",
+        "hints": [
+          "Think about the number line.",
+          "A number can be nearer to either neighbour.",
+          "The halfway point is where the choice changes.",
+          "Choose the explanation that compares with the halfway point."
+        ]
+      }
+    ]
+  },
+  "fixtures": [
+    {
+      "stepId": "between",
+      "accepted": [
+        "k58"
+      ],
+      "rejected": [
+        "k72",
+        "k65"
+      ]
+    },
+    {
+      "stepId": "nearer",
+      "accepted": [
+        "k63"
+      ],
+      "rejected": [
+        "k70",
+        "k77"
+      ]
+    },
+    {
+      "stepId": "rounded",
+      "accepted": [
+        "4600"
+      ],
+      "rejected": [
+        "4601",
+        "4610"
+      ]
+    },
+    {
+      "stepId": "reflection",
+      "accepted": [
+        "k68"
+      ],
+      "rejected": [
+        "k75",
+        "k82"
+      ]
+    }
+  ]
+}

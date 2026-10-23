@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "locale": "en-SG",
+  "adapterVersion": 1,
+  "curriculum": {
+    "objectiveId": "P3.right-angles",
+    "sources": ["https://practicle.sg/primary-3-math/"],
+    "evidenceStatus": "candidate"
+  },
+  "authors": ["Codex"],
+  "provenance": {
+    "kind": "authored"
+  },
+  "lesson": {
+    "id": "corner-detective",
+    "version": 1,
+    "topic": "angles",
+    "title": "Be a corner detective",
+    "subtitle": "Recognise a right angle",
+    "level": "P3 candidate",
+    "minutes": 4,
+    "story": "A right angle has the same opening as a square corner. Compare each card with the reference corner.",
+    "objective": "Identify a right angle in different orientations.",
+    "reviewStatus": "draft",
+    "specification": {
+      "task": "identify",
+      "angles": [
+        {
+          "id": "A",
+          "degrees": 55,
+          "rotation": 0,
+          "label": "A"
+        },
+        {
+          "id": "B",
+          "degrees": 90,
+          "rotation": 35,
+          "label": "B"
+        },
+        {
+          "id": "C",
+          "degrees": 125,
+          "rotation": 15,
+          "label": "C"
+        }
+      ]
+    },
+    "steps": [
+      {
+        "id": "recognise",
+        "title": "Find the right angle",
+        "prompt": "Which card shows a right angle?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "A",
+            "label": "Card A"
+          },
+          {
+            "id": "B",
+            "label": "Card B"
+          },
+          {
+            "id": "C",
+            "label": "Card C"
+          }
+        ],
+        "answer": "B",
+        "hints": [
+          "Look at the opening between the arms.",
+          "Compare each opening with the square corner.",
+          "One card fits a square corner even though it is turned.",
+          "Card B is a right angle. Choose B."
+        ],
+        "goal": "recognise"
+      },
+      {
+        "id": "reflection",
+        "title": "Explain your thinking",
+        "prompt": "What matters when you compare angles?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "reason",
+            "label": "The opening between the arms matters, even when the angle is turned."
+          },
+          {
+            "id": "distractor",
+            "label": "Turning the whole card around makes the angle on it larger or smaller."
+          }
+        ],
+        "answer": "reason",
+        "hints": [
+          "Think about what stayed the same.",
+          "Use the relationship you just checked.",
+          "Read this explanation carefully: The opening between the arms matters, even when the angle is turned.",
+          "Choose: The opening between the arms matters, even when the angle is turned."
+        ],
+        "goal": "reflection"
+      }
+    ]
+  }
+}

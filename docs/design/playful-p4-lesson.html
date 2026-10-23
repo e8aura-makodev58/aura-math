@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Aura Math — decimal activity design</title>
+  <style>
+    @font-face {
+      font-family: Outfit;
+      src: url("/assets/fonts/outfit-latin-wght-normal.woff2");
+    }
+    body {
+      margin: 0;
+      background: #faf8f2;
+      color: #253f34;
+      font-family: Atkinson, Arial, sans-serif;
+    }
+    main {
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+    header,
+    nav,
+    .progress {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: center;
+    }
+    header {
+      padding: 0 0 20px;
+      border-bottom: 1px solid #dfe5d8;
+    }
+    h1,
+    h2 {
+      font-family: Outfit, Arial, sans-serif;
+      margin: 10px 0;
+    }
+    h1 {
+      font-size: 30px;
+    }
+    button {
+      border: 1px solid #bad0bb;
+      border-radius: 14px;
+      padding: 12px 18px;
+      background: #fffdf9;
+      color: inherit;
+      font-size: 16px;
+      min-height: 44px;
+    }
+    .progress {
+      justify-content: flex-start;
+      font-size: 14px;
+      margin: 18px 0;
+    }
+    .progress span {
+      background: #e3f1e4;
+      border-radius: 30px;
+      padding: 8px 14px;
+    }
+    .activity {
+      display: grid;
+      grid-template-columns: 1.1fr 1fr;
+      border: 1px solid #a9d1ae;
+      background: #fffdf9;
+      border-radius: 28px;
+      overflow: hidden;
+      box-shadow: 0 5px 0 #dbe8df;
+    }
+    .workbench {
+      padding: 28px;
+      background: linear-gradient(140deg, #e3f1e4, #fffdf9);
+    }
+    .task {
+      font-size: 44px;
+      font-weight: bold;
+      margin: 16px 0 30px;
+      font-variant-numeric: tabular-nums;
+    }
+    .columns {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      text-align: center;
+    }
+    .column {
+      border: 1px solid #a9d1ae;
+      border-radius: 16px;
+      background: #fffdf9;
+      padding: 14px 4px;
+    }
+    .column strong {
+      display: block;
+      font-size: 34px;
+      padding: 12px 0;
+    }
+    .action {
+      padding: 28px;
+    }
+    .eyebrow {
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+    .choice {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      border: 1px solid #dfe5d8;
+      border-radius: 16px;
+      padding: 14px;
+      margin: 12px 0;
+      line-height: 1.45;
+    }
+    .primary {
+      width: 100%;
+      background: #315c46;
+      color: #fffdf9;
+      box-shadow: 0 3px 0 #1f3d2e;
+      margin: 12px 0;
+    }
+    footer {
+      margin-top: 20px;
+      font-size: 14px;
+    }
+    @media (max-width: 650px) {
+      main {
+        padding: 16px;
+      }
+      h1 {
+        font-size: 24px;
+      }
+      .activity {
+        grid-template-columns: 1fr;
+      }
+      .workbench {
+        padding: 18px;
+      }
+      .action {
+        padding: 18px;
+      }
+      .task {
+        font-size: 34px;
+        margin: 12px 0;
+      }
+      .columns {
+        display: none;
+      }
+      .progress span {
+        padding: 6px 10px;
+      }
+      nav button {
+        font-size: 14px;
+      }
+    }
+  </style>
+  <main>
+    <header><strong>Aura Math ✳</strong><span>Design preview</span></header>
+    <nav>
+      <p>← Decimals</p>
+      <button>On my own · Learn together</button>
+    </nav>
+    <h1>Line up decimal units</h1>
+    <div class="progress">
+      <span>① Line up</span><span>② Calculate</span><span>③ Explain</span>
+    </div>
+    <div class="activity">
+      <section class="workbench">
+        <div class="eyebrow">✳ Decimal workbench</div>
+        <div class="task">7.25 − 2.6 = ?</div>
+        <div class="columns">
+          <div class="column">Ones<strong>7</strong><strong>2</strong></div>
+          <div class="column">Tenths<strong>2</strong><strong>6</strong></div>
+          <div class="column">
+            Hundredths<strong>5</strong><strong>0</strong>
+          </div>
+        </div>
+        <p>Same places. Same-sized units.</p>
+      </section>
+      <section class="action">
+        <div class="eyebrow">Step 1 of 3 · Line up</div>
+        <h2>How should the decimal places line up?</h2>
+        <div class="choice">
+          ○
+          <span
+            >Line up decimal points so each place matches the same place.</span
+          >
+        </div>
+        <div class="choice">
+          ○
+          <span
+            >Line up the last written digits even when their places
+            differ.</span
+          >
+        </div>
+        <div class="choice">
+          ○ <span>Subtract digits without checking their place values.</span>
+        </div>
+        <button class="primary">Check my answer →</button
+        ><button>I’d like a little hint</button>
+      </section>
+    </div>
+    <footer>Take your time. Thinking is part of learning.</footer>
+  </main>
+</html>

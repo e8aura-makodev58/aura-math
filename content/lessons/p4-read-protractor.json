@@ -1,0 +1,196 @@
+{
+  "schemaVersion": 3,
+  "locale": "en-SG",
+  "adapterVersion": 1,
+  "library": {
+    "level": "P4",
+    "skillId": "p4-read-protractor",
+    "tags": [
+      "P4",
+      "angle-measure",
+      "general revision"
+    ]
+  },
+  "curriculum": {
+    "objectiveId": "candidate.p4.angle-measure.read",
+    "sources": [
+      "https://practicle.sg/primary-4-math/",
+      "https://sg.ixl.com/standards/maths/primary-4"
+    ],
+    "evidenceStatus": "candidate"
+  },
+  "authors": [
+    "claude-p4-angle-measure"
+  ],
+  "provenance": {
+    "kind": "authored"
+  },
+  "lesson": {
+    "id": "p4-read-protractor",
+    "version": 1,
+    "topic": "angle-measure",
+    "title": "Read the protractor",
+    "subtitle": "P4 angle revision",
+    "level": "P4 candidate",
+    "minutes": 7,
+    "objective": "Choose the right scale and read an angle in degrees.",
+    "story": "An angle is drawn on a protractor.",
+    "reviewStatus": "draft",
+    "specification": {
+      "task": "read",
+      "degrees": 70,
+      "flip": false,
+      "from": "N",
+      "direction": "clockwise",
+      "quarters": 3
+    },
+    "steps": [
+      {
+        "id": "scale",
+        "goal": "scale",
+        "title": "Choose the scale",
+        "prompt": "The base arm of this angle lies along the right end of the baseline. Which scale should you read?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "k32",
+            "label": "Either scale",
+            "meaning": "either"
+          },
+          {
+            "id": "k18",
+            "label": "The outer scale",
+            "meaning": "outer"
+          },
+          {
+            "id": "k25",
+            "label": "The inner scale",
+            "meaning": "inner"
+          }
+        ],
+        "answer": "k18",
+        "hints": [
+          "Find the 0 on each scale. One 0 is at the right end and the other is at the left end.",
+          "Read the scale whose 0 is on the same end as the base arm.",
+          "The base arm is on the right, so use the scale that starts with 0 on the right.",
+          "Choose the outer scale."
+        ]
+      },
+      {
+        "id": "read",
+        "goal": "read",
+        "title": "Read the angle",
+        "prompt": "What is the size of the angle in degrees? Enter the number.",
+        "kind": "exact",
+        "answer": "70",
+        "hints": [
+          "Read where the second arm crosses the scale that starts at 0 on the base arm.",
+          "Long marks are every 10 degrees and short marks are every 5 degrees. Count along from 0.",
+          "The arm crosses just after 70, exactly on that long mark.",
+          "The angle is 70 degrees. Enter 70."
+        ]
+      },
+      {
+        "id": "classify",
+        "goal": "classify",
+        "title": "Name the angle",
+        "prompt": "Is the angle acute, a right angle or obtuse?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "k23",
+            "label": "Acute: smaller than 90°",
+            "meaning": "acute"
+          },
+          {
+            "id": "k30",
+            "label": "Right angle: exactly 90°",
+            "meaning": "right"
+          },
+          {
+            "id": "k37",
+            "label": "Obtuse: between 90° and 180°",
+            "meaning": "obtuse"
+          }
+        ],
+        "answer": "k23",
+        "hints": [
+          "Compare with a right angle, which is exactly 90 degrees.",
+          "Is your reading smaller than 90, equal to 90, or larger than 90?",
+          "The angle is 70°, which is less than 90°.",
+          "Choose acute."
+        ]
+      },
+      {
+        "id": "reflection",
+        "goal": "reflection",
+        "title": "Explain your thinking",
+        "prompt": "Why must you start reading from the 0 on the base arm?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "k35",
+            "label": "Both scales count the same turn, so either one gives the right size."
+          },
+          {
+            "id": "k42",
+            "label": "The angle is always the bigger of the two numbers printed on the scales."
+          },
+          {
+            "id": "k28",
+            "label": "The angle opens from its base arm, so the count must start at 0 there."
+          }
+        ],
+        "answer": "k28",
+        "hints": [
+          "Think about where the angle starts.",
+          "An angle is measured from one arm to the other.",
+          "The two scales give different numbers for the same arm.",
+          "Choose the explanation about starting from 0 on the base arm."
+        ]
+      }
+    ]
+  },
+  "fixtures": [
+    {
+      "stepId": "scale",
+      "accepted": [
+        "k18"
+      ],
+      "rejected": [
+        "k32",
+        "k25"
+      ]
+    },
+    {
+      "stepId": "read",
+      "accepted": [
+        "70"
+      ],
+      "rejected": [
+        "71",
+        "80"
+      ]
+    },
+    {
+      "stepId": "classify",
+      "accepted": [
+        "k23"
+      ],
+      "rejected": [
+        "k30",
+        "k37"
+      ]
+    },
+    {
+      "stepId": "reflection",
+      "accepted": [
+        "k28"
+      ],
+      "rejected": [
+        "k35",
+        "k42"
+      ]
+    }
+  ]
+}

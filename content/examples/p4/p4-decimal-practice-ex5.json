@@ -1,0 +1,198 @@
+{
+  "schemaVersion": 3,
+  "locale": "en-SG",
+  "adapterVersion": 1,
+  "library": {
+    "level": "P4",
+    "skillId": "p4-decimal-practice",
+    "tags": [
+      "P4",
+      "decimals",
+      "general revision",
+      "example"
+    ]
+  },
+  "curriculum": {
+    "objectiveId": "candidate.p4.decimals.practice",
+    "sources": [
+      "https://practicle.sg/primary-4-math/",
+      "https://sg.ixl.com/standards/maths/primary-4"
+    ],
+    "evidenceStatus": "candidate"
+  },
+  "authors": [
+    "Codex"
+  ],
+  "provenance": {
+    "kind": "generated",
+    "generatorVersion": "p4-examples-v1",
+    "seed": 399049046
+  },
+  "lesson": {
+    "id": "p4-decimal-practice-ex5",
+    "version": 1,
+    "topic": "decimals",
+    "title": "A fresh decimal question",
+    "subtitle": "P4 decimal revision",
+    "level": "P4 candidate",
+    "minutes": 4,
+    "objective": "Combine multiplication and subtraction in a decimal context.",
+    "story": "There are 7.2 m of cord. 4 equal pieces each 1.75 m long are cut off. How many m remain?",
+    "reviewStatus": "draft",
+    "specification": {
+      "task": "practice",
+      "a": {
+        "coefficient": 72,
+        "scale": 1
+      },
+      "b": {
+        "coefficient": 175,
+        "scale": 2
+      },
+      "operation": "subtract",
+      "factor": 4,
+      "targetPlace": "thousandths",
+      "unit": "m"
+    },
+    "steps": [
+      {
+        "id": "calculate",
+        "goal": "calculate",
+        "title": "Find the length left",
+        "prompt": "There are 7.2 m of cord. 4 equal pieces each 1.75 m long are cut off. How many m remain?",
+        "kind": "exact",
+        "answer": "0.2",
+        "hints": [
+          "Find the length used before finding the length left.",
+          "The pieces are equal, so multiply the length of one piece by their count.",
+          "1.75 × 4 = 7 m used.",
+          "Subtract the used length from 7.2: 0.2 m remain."
+        ]
+      },
+      {
+        "id": "reflection",
+        "goal": "reflection",
+        "title": "Explain the equal units",
+        "prompt": "What helps us calculate with decimals?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "r8",
+            "label": "The number of written digits tells us the value."
+          },
+          {
+            "id": "r3",
+            "label": "Use equal place units and check the relationship."
+          },
+          {
+            "id": "r6",
+            "label": "A decimal point means we can ignore zero places."
+          }
+        ],
+        "answer": "r3",
+        "hints": [
+          "Look at the place chart.",
+          "Tenths and hundredths are different-sized units.",
+          "A relationship only works when we use the matching units.",
+          "Choose: Use equal place units and check the relationship."
+        ]
+      }
+    ]
+  },
+  "fixtures": [
+    {
+      "stepId": "calculate",
+      "accepted": [
+        "0.2"
+      ],
+      "rejected": [
+        "1.2"
+      ]
+    },
+    {
+      "stepId": "reflection",
+      "accepted": [
+        "r3"
+      ],
+      "rejected": [
+        "r8",
+        "r6"
+      ]
+    }
+  ],
+  "interpretation": {
+    "entities": [
+      "available",
+      "piece",
+      "count",
+      "used",
+      "remaining"
+    ],
+    "quantities": [
+      {
+        "entity": "available",
+        "value": "7.2",
+        "unit": "m",
+        "state": "given"
+      },
+      {
+        "entity": "piece",
+        "value": "1.75",
+        "unit": "m",
+        "state": "given"
+      },
+      {
+        "entity": "count",
+        "value": 4,
+        "unit": "pieces",
+        "state": "given"
+      },
+      {
+        "entity": "used",
+        "value": "7",
+        "unit": "m",
+        "state": "derived"
+      },
+      {
+        "entity": "remaining",
+        "value": "0.2",
+        "unit": "m",
+        "state": "derived"
+      }
+    ],
+    "relationships": [
+      {
+        "kind": "operation",
+        "id": "used",
+        "operation": "multiply",
+        "inputs": [
+          "piece",
+          "count"
+        ],
+        "output": "used"
+      },
+      {
+        "kind": "operation",
+        "id": "remaining",
+        "operation": "subtract",
+        "inputs": [
+          "available",
+          "used"
+        ],
+        "output": "remaining"
+      }
+    ],
+    "unknown": "remaining",
+    "sourceSpans": [
+      {
+        "start": 0,
+        "end": 88,
+        "text": "There are 7.2 m of cord. 4 equal pieces each 1.75 m long are cut off. How many m remain?"
+      }
+    ],
+    "assumptions": [
+      "All pieces have the same length."
+    ],
+    "ambiguities": []
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 3,
+  "locale": "en-SG",
+  "adapterVersion": 1,
+  "library": {
+    "level": "P4",
+    "skillId": "p4-fraction-of-quantity",
+    "tags": [
+      "P4",
+      "fractions",
+      "general revision",
+      "example"
+    ]
+  },
+  "curriculum": {
+    "objectiveId": "candidate.p4.fractions.of-quantity",
+    "sources": [
+      "https://practicle.sg/primary-4-math/",
+      "https://sg.ixl.com/standards/maths/primary-4"
+    ],
+    "evidenceStatus": "candidate"
+  },
+  "authors": [
+    "Codex"
+  ],
+  "provenance": {
+    "kind": "generated",
+    "generatorVersion": "p4-examples-v1",
+    "seed": 4000958385
+  },
+  "lesson": {
+    "id": "p4-fraction-of-quantity-ex3",
+    "version": 1,
+    "topic": "fraction-calculations",
+    "title": "Find a fraction of a set",
+    "subtitle": "P4 fraction revision",
+    "level": "P4 candidate",
+    "minutes": 7,
+    "objective": "Find a fraction of an integer set.",
+    "story": "Share 30 counters into 10 equal parts.",
+    "reviewStatus": "draft",
+    "specification": {
+      "task": "of-quantity",
+      "whole": 2,
+      "numerator": 7,
+      "denominator": 10,
+      "otherNumerator": 1,
+      "otherDenominator": 3,
+      "operation": "subtract",
+      "quantity": 30,
+      "unit": "counters"
+    },
+    "steps": [
+      {
+        "id": "one-part",
+        "goal": "one-part",
+        "title": "Find one equal part",
+        "prompt": "What is 1/10 of 30 counters?",
+        "kind": "exact",
+        "answer": "3",
+        "hints": [
+          "Split the full set into equal groups.",
+          "There are 10 equal parts.",
+          "Divide 30 by 10.",
+          "One part has 3 counters."
+        ]
+      },
+      {
+        "id": "taken",
+        "goal": "taken",
+        "title": "Find the named fraction",
+        "prompt": "What is 7/10 of 30 counters?",
+        "kind": "exact",
+        "answer": "21",
+        "hints": [
+          "Use the one-part amount.",
+          "Take the number of parts in the numerator.",
+          "3 × 7.",
+          "7/10 of 30 is 21 counters."
+        ]
+      },
+      {
+        "id": "reflection",
+        "goal": "reflection",
+        "title": "Explain the equal parts",
+        "prompt": "What makes the fraction calculation fair?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "r6",
+            "label": "The denominator tells us how many objects are left."
+          },
+          {
+            "id": "r8",
+            "label": "Parts can be counted together even if the wholes differ."
+          },
+          {
+            "id": "r3",
+            "label": "The wholes match and each part has the same size."
+          }
+        ],
+        "answer": "r3",
+        "hints": [
+          "Look at the whole first.",
+          "Equal fractions need equal-size wholes.",
+          "Count parts that have the same size.",
+          "Choose: The wholes match and each part has the same size."
+        ]
+      }
+    ]
+  },
+  "fixtures": [
+    {
+      "stepId": "one-part",
+      "accepted": [
+        "3"
+      ],
+      "rejected": [
+        "4/1"
+      ]
+    },
+    {
+      "stepId": "taken",
+      "accepted": [
+        "21"
+      ],
+      "rejected": [
+        "22/1"
+      ]
+    },
+    {
+      "stepId": "reflection",
+      "accepted": [
+        "r3"
+      ],
+      "rejected": [
+        "r6",
+        "r8"
+      ]
+    }
+  ]
+}

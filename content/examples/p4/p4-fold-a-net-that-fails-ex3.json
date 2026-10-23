@@ -1,0 +1,180 @@
+{
+  "schemaVersion": 3,
+  "locale": "en-SG",
+  "adapterVersion": 1,
+  "library": {
+    "level": "P4",
+    "skillId": "p4-fold-a-net-that-fails",
+    "tags": [
+      "P4",
+      "nets",
+      "general revision",
+      "level-unconfirmed",
+      "workbench",
+      "example"
+    ]
+  },
+  "curriculum": {
+    "objectiveId": "candidate.p4.nets.collide",
+    "sources": [
+      "https://practicle.sg/primary-4-math/",
+      "https://www.thelearninglab.com.sg/blog/tll-shares/new-changes-to-moe-primary-maths-syllabus"
+    ],
+    "evidenceStatus": "candidate"
+  },
+  "authors": [
+    "Codex"
+  ],
+  "provenance": {
+    "kind": "generated",
+    "generatorVersion": "p4-examples-v1",
+    "seed": 4038090100
+  },
+  "lesson": {
+    "id": "p4-fold-a-net-that-fails-ex3",
+    "version": 1,
+    "topic": "nets",
+    "title": "Folds that collide",
+    "subtitle": "P4 nets revision",
+    "level": "P4 candidate",
+    "minutes": 8,
+    "objective": "Fold a six-square net that does not make a cube and find the squares that land in the same place.",
+    "story": "This net of six labelled squares can be folded on screen, but it will not make a cube.",
+    "reviewStatus": "draft",
+    "specification": {
+      "task": "collide",
+      "nets": [
+        "BCD/.E./FA.",
+        "ABCD/.E../.F.."
+      ],
+      "asked": 0,
+      "face": "F",
+      "solid": "",
+      "demoFace": "B"
+    },
+    "steps": [
+      {
+        "id": "collide",
+        "goal": "collide",
+        "title": "Find the squares that meet",
+        "prompt": "This net does not fold into a cube. Fold every crease. Which two squares land on the same place?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "k38",
+            "label": "B and F",
+            "meaning": "pair:BF"
+          },
+          {
+            "id": "k45",
+            "label": "A and B",
+            "meaning": "pair:AB"
+          },
+          {
+            "id": "k52",
+            "label": "A and C",
+            "meaning": "pair:AC"
+          }
+        ],
+        "answer": "k38",
+        "hints": [
+          "Fold the creases one at a time and watch where each square goes.",
+          "When every crease is folded, two squares lie on top of each other. Their edges are drawn dashed.",
+          "Squares that share a crease never land on the same place. Look at squares further apart in the net.",
+          "B and F land on the same place. Choose B and F."
+        ]
+      },
+      {
+        "id": "missing",
+        "goal": "missing",
+        "title": "Find the open face",
+        "prompt": "Because two squares meet, one face of the cube has no square on it. Which face is it?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "k33",
+            "label": "The face opposite E",
+            "meaning": "opp:E"
+          },
+          {
+            "id": "k40",
+            "label": "The face opposite A",
+            "meaning": "opp:A"
+          },
+          {
+            "id": "k47",
+            "label": "The face opposite C",
+            "meaning": "opp:C"
+          }
+        ],
+        "answer": "k33",
+        "hints": [
+          "Fold every crease again and turn the view to look all round the shape.",
+          "Five faces of the cube have a square. One face is open, like a box with no lid.",
+          "Find the open face, then look at the face across the cube from it. Which letter is there?",
+          "The face opposite E has no square. Choose The face opposite E."
+        ]
+      },
+      {
+        "id": "reflection",
+        "goal": "reflection",
+        "title": "Explain your thinking",
+        "prompt": "Why does this net not fold into a cube?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "k13",
+            "label": "Two squares land on the same face, so another face is left open."
+          },
+          {
+            "id": "k20",
+            "label": "It has the wrong number of squares, so it cannot cover every face."
+          },
+          {
+            "id": "k27",
+            "label": "Its squares are not all joined to each other edge to edge in the net."
+          }
+        ],
+        "answer": "k13",
+        "hints": [
+          "Count the squares first.",
+          "Six squares joined edge to edge is the right start for a cube.",
+          "Think about what happened when you folded every crease.",
+          "Choose the explanation about two squares landing on the same face."
+        ]
+      }
+    ]
+  },
+  "fixtures": [
+    {
+      "stepId": "collide",
+      "accepted": [
+        "k38"
+      ],
+      "rejected": [
+        "k45",
+        "k52"
+      ]
+    },
+    {
+      "stepId": "missing",
+      "accepted": [
+        "k33"
+      ],
+      "rejected": [
+        "k40",
+        "k47"
+      ]
+    },
+    {
+      "stepId": "reflection",
+      "accepted": [
+        "k13"
+      ],
+      "rejected": [
+        "k20",
+        "k27"
+      ]
+    }
+  ]
+}

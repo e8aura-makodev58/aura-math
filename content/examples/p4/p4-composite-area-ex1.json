@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 3,
+  "locale": "en-SG",
+  "adapterVersion": 1,
+  "library": {
+    "level": "P4",
+    "skillId": "p4-composite-area",
+    "tags": [
+      "P4",
+      "area",
+      "perimeter",
+      "general revision",
+      "example"
+    ]
+  },
+  "curriculum": {
+    "objectiveId": "candidate.p4.measurement.composite-area",
+    "sources": [
+      "https://practicle.sg/primary-4-math/",
+      "https://sg.ixl.com/standards/maths/primary-4"
+    ],
+    "evidenceStatus": "candidate"
+  },
+  "authors": [
+    "Codex"
+  ],
+  "provenance": {
+    "kind": "generated",
+    "generatorVersion": "p4-examples-v1",
+    "seed": 2658668262
+  },
+  "lesson": {
+    "id": "p4-composite-area-ex1",
+    "version": 1,
+    "topic": "area-perimeter",
+    "title": "Find an L-shape's area",
+    "subtitle": "P4 measurement revision",
+    "level": "P4 candidate",
+    "minutes": 7,
+    "objective": "Find an L-shape's area by two valid methods.",
+    "story": "An outer 16 cm by 12 cm rectangle has a 8 cm by 6 cm corner removed.",
+    "reviewStatus": "draft",
+    "specification": {
+      "task": "composite-area",
+      "width": 16,
+      "height": 12,
+      "cutWidth": 8,
+      "cutHeight": 6,
+      "corner": "bottom-right",
+      "unknownSide": "width",
+      "knownMeasure": "area",
+      "requestedMeasure": "area",
+      "unit": "cm"
+    },
+    "steps": [
+      {
+        "id": "method",
+        "goal": "method",
+        "title": "Choose a valid area method",
+        "prompt": "Choose one valid method to find the L-shape's area.",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "a1",
+            "label": "Find the outer rectangle, then take away the removed corner.",
+            "meaning": "subtract-cutout"
+          },
+          {
+            "id": "a2",
+            "label": "Split into two rectangles that do not overlap, then add them.",
+            "meaning": "split-add"
+          },
+          {
+            "id": "a3",
+            "label": "Find the outer rectangle, then add on the removed corner too.",
+            "meaning": "add-cutout"
+          }
+        ],
+        "answer": "a1",
+        "hints": [
+          "The missing corner does not cover the L-shape.",
+          "You may subtract it from the outer rectangle.",
+          "You may also split the L-shape into two rectangles.",
+          "Both subtracting the corner and adding two non-overlapping parts work."
+        ]
+      },
+      {
+        "id": "component",
+        "goal": "component",
+        "title": "Find the removed corner",
+        "prompt": "What is the area of the 8 cm by 6 cm corner? Answer in cm².",
+        "kind": "exact",
+        "answer": "48",
+        "hints": [
+          "The corner is a rectangle.",
+          "Area of a rectangle is width × height.",
+          "8 × 6.",
+          "The removed corner covers 48 cm²."
+        ]
+      },
+      {
+        "id": "area",
+        "goal": "area",
+        "title": "Find the L-shape's area",
+        "prompt": "An outer 16 cm by 12 cm rectangle has a 8 cm by 6 cm corner removed. Find its area in cm².",
+        "kind": "exact",
+        "answer": "144",
+        "hints": [
+          "Choose either valid area method.",
+          "Outer area is 192 cm²; removed area is 48 cm².",
+          "A split gives 96 cm² + 48 cm².",
+          "Both methods give 144 cm²."
+        ]
+      },
+      {
+        "id": "reflection",
+        "goal": "reflection",
+        "title": "Explain the measure",
+        "prompt": "Which explanation matches the shape?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "r7",
+            "label": "An inside split line also counts as part of the perimeter."
+          },
+          {
+            "id": "r3",
+            "label": "Area counts square units; perimeter is only the outside edge."
+          },
+          {
+            "id": "r8",
+            "label": "Area and perimeter are both measured in the same units."
+          }
+        ],
+        "answer": "r3",
+        "hints": [
+          "Look at what is being measured.",
+          "Area covers a surface; perimeter goes around its boundary.",
+          "An inside teaching split is not an outside edge.",
+          "Choose the explanation that separates square units from boundary length."
+        ]
+      }
+    ]
+  },
+  "fixtures": [
+    {
+      "stepId": "method",
+      "accepted": [
+        "a1",
+        "a2"
+      ],
+      "rejected": [
+        "a3"
+      ]
+    },
+    {
+      "stepId": "component",
+      "accepted": [
+        "48"
+      ],
+      "rejected": [
+        "49",
+        "58"
+      ]
+    },
+    {
+      "stepId": "area",
+      "accepted": [
+        "144"
+      ],
+      "rejected": [
+        "145",
+        "154"
+      ]
+    },
+    {
+      "stepId": "reflection",
+      "accepted": [
+        "r3"
+      ],
+      "rejected": [
+        "r7",
+        "r8"
+      ]
+    }
+  ]
+}

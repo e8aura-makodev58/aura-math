@@ -1,0 +1,1430 @@
+{
+  "schemaVersion": 1,
+  "topics": [
+    {
+      "id": "comparison",
+      "label": "Comparing quantities",
+      "strand": "Numbers and operations",
+      "description": "Find a missing amount by seeing how two collections fit together.",
+      "skills": [
+        {
+          "id": "comparison-larger",
+          "label": "Find the larger amount"
+        },
+        {
+          "id": "comparison-smaller",
+          "label": "Find the smaller amount"
+        },
+        {
+          "id": "comparison-difference",
+          "label": "Find the difference"
+        }
+      ]
+    },
+    {
+      "id": "angles",
+      "label": "Right angles",
+      "strand": "Geometry",
+      "description": "Turn your attention to corners and compare their openings.",
+      "skills": [
+        {
+          "id": "angle-identify",
+          "label": "Recognise a right angle"
+        },
+        {
+          "id": "angle-classify",
+          "label": "Compare openings"
+        },
+        {
+          "id": "angle-select",
+          "label": "Find every right angle"
+        }
+      ]
+    },
+    {
+      "id": "place-value",
+      "label": "Place value",
+      "strand": "Numbers and operations",
+      "description": "Discover how hundreds, tens and ones give digits their value.",
+      "skills": [
+        {
+          "id": "hundreds-tens-ones",
+          "label": "Read a base-ten model"
+        },
+        {
+          "id": "zero-in-a-place",
+          "label": "Understand zero places"
+        },
+        {
+          "id": "digit-value",
+          "label": "Find the value of a digit"
+        }
+      ]
+    },
+    {
+      "id": "equal-groups",
+      "label": "Equal groups",
+      "strand": "Numbers and operations",
+      "description": "Explore equal groups to multiply, share and pack fairly.",
+      "skills": [
+        {
+          "id": "equal-groups-total",
+          "label": "Find a total"
+        },
+        {
+          "id": "sharing-equally",
+          "label": "Share equally"
+        },
+        {
+          "id": "how-many-groups",
+          "label": "Find the number of groups"
+        }
+      ]
+    },
+    {
+      "id": "fractions",
+      "label": "Fractions",
+      "strand": "Numbers and operations",
+      "description": "Make sense of fractions with equal parts of a whole.",
+      "skills": [
+        {
+          "id": "equal-parts",
+          "label": "Recognise equal parts"
+        },
+        {
+          "id": "name-the-fraction",
+          "label": "Name a fraction"
+        },
+        {
+          "id": "compare-same-whole",
+          "label": "Compare fractions"
+        }
+      ]
+    },
+    {
+      "id": "picture-graphs",
+      "label": "Picture graphs",
+      "strand": "Data",
+      "description": "Use picture clues and a graph key to read and compare data.",
+      "skills": [
+        {
+          "id": "read-the-key",
+          "label": "Use a graph key"
+        },
+        {
+          "id": "compare-categories",
+          "label": "Compare categories"
+        },
+        {
+          "id": "graph-total",
+          "label": "Find a graph total"
+        }
+      ]
+    },
+    {
+      "id": "decimals",
+      "label": "Decimals",
+      "strand": "Numbers and operations",
+      "description": "Build confidence with decimal places, calculations and everyday quantities.",
+      "skills": [
+        {
+          "id": "p4-decimal-places",
+          "label": "Look closely at decimal places"
+        },
+        {
+          "id": "p4-decimal-add-subtract",
+          "label": "Line up decimal units"
+        },
+        {
+          "id": "p4-decimal-multiply-divide",
+          "label": "Share a decimal equally"
+        },
+        {
+          "id": "p4-decimal-practice",
+          "label": "A fresh decimal question"
+        }
+      ]
+    },
+    {
+      "id": "fraction-calculations",
+      "label": "Fraction calculations",
+      "strand": "Numbers and operations",
+      "description": "Connect mixed numbers, equal parts and fractions of a quantity.",
+      "skills": [
+        {
+          "id": "p4-mixed-and-improper",
+          "label": "Turn a mixed number into a fraction"
+        },
+        {
+          "id": "p4-fraction-add-subtract",
+          "label": "Combine equal fraction parts"
+        },
+        {
+          "id": "p4-fraction-of-quantity",
+          "label": "Find a fraction of a set"
+        },
+        {
+          "id": "p4-fraction-practice",
+          "label": "A fresh fraction question"
+        }
+      ]
+    },
+    {
+      "id": "area-perimeter",
+      "label": "Area and perimeter",
+      "strand": "Measurement",
+      "description": "Explore missing lengths, covered space and outside boundaries.",
+      "skills": [
+        {
+          "id": "p4-rectangle-missing-side",
+          "label": "Find a missing rectangle side"
+        },
+        {
+          "id": "p4-composite-area",
+          "label": "Find an L-shape's area"
+        },
+        {
+          "id": "p4-composite-perimeter",
+          "label": "Follow the outside edge"
+        },
+        {
+          "id": "p4-measurement-practice",
+          "label": "A fresh shape question"
+        }
+      ]
+    },
+    {
+      "id": "whole-numbers",
+      "label": "Whole numbers",
+      "strand": "Numbers and operations",
+      "description": "Read big numbers, round them neatly and hunt for factors.",
+      "skills": [
+        {
+          "id": "p4-place-value-100k",
+          "label": "Place value to 100 000"
+        },
+        {
+          "id": "p4-rounding",
+          "label": "Rounding"
+        },
+        {
+          "id": "p4-factors",
+          "label": "Factors"
+        },
+        {
+          "id": "p4-estimate-by-rounding",
+          "label": "Estimating by rounding"
+        }
+      ]
+    },
+    {
+      "id": "bar-charts",
+      "label": "Bar charts",
+      "strand": "Data",
+      "description": "Work out the scale, read bars and compare two groups side by side.",
+      "skills": [
+        {
+          "id": "p4-read-bar-chart",
+          "label": "Read the bars"
+        },
+        {
+          "id": "p4-double-bar-chart",
+          "label": "Two bars side by side"
+        },
+        {
+          "id": "p4-bar-chart-practice",
+          "label": "Bar chart practice"
+        }
+      ]
+    },
+    {
+      "id": "line-graphs",
+      "label": "Line graphs",
+      "strand": "Data",
+      "description": "Follow the line, read the scale and spot the ups and downs.",
+      "skills": [
+        {
+          "id": "p4-read-line-graph",
+          "label": "Reading a line graph"
+        },
+        {
+          "id": "p4-line-graph-change",
+          "label": "Changes and differences"
+        },
+        {
+          "id": "p4-line-graph-target",
+          "label": "Points above a target"
+        },
+        {
+          "id": "p4-line-graph-practice",
+          "label": "Line graph practice"
+        }
+      ]
+    },
+    {
+      "id": "pie-charts",
+      "label": "Pie charts",
+      "strand": "Data",
+      "description": "Slice up the whole and see each group as a fraction of the pie.",
+      "skills": [
+        {
+          "id": "p4-read-pie-chart",
+          "label": "Slices of the whole"
+        },
+        {
+          "id": "p4-read-pie-sectors",
+          "label": "Sectors of the whole"
+        },
+        {
+          "id": "p4-pie-chart-count",
+          "label": "How many in each slice?"
+        },
+        {
+          "id": "p4-pie-chart-total",
+          "label": "Find the whole"
+        },
+        {
+          "id": "p4-pie-chart-practice",
+          "label": "Pie chart practice"
+        }
+      ]
+    },
+    {
+      "id": "nets",
+      "label": "Nets of solids",
+      "strand": "Geometry",
+      "description": "Fold flat patterns in your head and see which solids they make.",
+      "skills": [
+        {
+          "id": "p4-cube-net-check",
+          "label": "Will it fold into a cube?"
+        },
+        {
+          "id": "p4-cube-opposite-faces",
+          "label": "Opposite faces"
+        },
+        {
+          "id": "p4-solid-from-net",
+          "label": "Solid from a net"
+        },
+        {
+          "id": "p4-complete-the-net",
+          "label": "Complete the net"
+        },
+        {
+          "id": "p4-fold-a-cube-net",
+          "label": "Fold a net on screen"
+        },
+        {
+          "id": "p4-fold-a-net-that-fails",
+          "label": "Folds that collide"
+        },
+        {
+          "id": "p4-fold-a-solid",
+          "label": "Fold a solid"
+        }
+      ]
+    },
+    {
+      "id": "symmetry",
+      "label": "Symmetry",
+      "strand": "Geometry",
+      "description": "Fold, flip and mirror shapes to see where they match.",
+      "skills": [
+        {
+          "id": "p4-lines-of-symmetry",
+          "label": "Lines of symmetry"
+        },
+        {
+          "id": "p4-symmetric-figure",
+          "label": "Completing a symmetric figure"
+        },
+        {
+          "id": "p4-symmetry-practice",
+          "label": "Symmetry practice"
+        },
+        {
+          "id": "p4-mirror-line-bench",
+          "label": "Place the mirror"
+        },
+        {
+          "id": "p4-shade-to-complete-bench",
+          "label": "Shade the other half"
+        }
+      ]
+    },
+    {
+      "id": "angle-measure",
+      "label": "Angle measure",
+      "strand": "Geometry",
+      "description": "Line up a protractor, measure corners and follow turns.",
+      "skills": [
+        {
+          "id": "p4-read-protractor",
+          "label": "Reading a protractor"
+        },
+        {
+          "id": "p4-estimate-then-measure",
+          "label": "Estimating angles"
+        },
+        {
+          "id": "p4-turns",
+          "label": "Turns and directions"
+        },
+        {
+          "id": "p4-angle-practice",
+          "label": "Angle practice"
+        },
+        {
+          "id": "p4-protractor-bench-read",
+          "label": "Line it up, then read"
+        },
+        {
+          "id": "p4-protractor-bench-draw",
+          "label": "Build an angle, then reason"
+        }
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "lessonId": "ribbon-collection",
+      "topic": "comparison",
+      "level": "P2",
+      "skillId": "comparison-larger",
+      "sequence": 1,
+      "prerequisites": [],
+      "blurb": "Use two ribbon collections to find the larger amount."
+    },
+    {
+      "lessonId": "garden-pots",
+      "topic": "comparison",
+      "level": "P2",
+      "skillId": "comparison-smaller",
+      "sequence": 2,
+      "prerequisites": [
+        "comparison-larger"
+      ],
+      "blurb": "Start with the larger collection and find the missing number of pots."
+    },
+    {
+      "lessonId": "shell-discovery",
+      "topic": "comparison",
+      "level": "P2",
+      "skillId": "comparison-difference",
+      "sequence": 3,
+      "prerequisites": [
+        "comparison-smaller"
+      ],
+      "blurb": "Compare two shell collections and find how many more."
+    },
+    {
+      "lessonId": "corner-detective",
+      "topic": "angles",
+      "level": "P3",
+      "skillId": "angle-identify",
+      "sequence": 1,
+      "prerequisites": [],
+      "blurb": "Look for an opening that matches a square corner, even when it is turned."
+    },
+    {
+      "lessonId": "angle-opening",
+      "topic": "angles",
+      "level": "P3",
+      "skillId": "angle-classify",
+      "sequence": 2,
+      "prerequisites": [
+        "angle-identify"
+      ],
+      "blurb": "Use a square corner to compare the opening between two arms."
+    },
+    {
+      "lessonId": "right-angle-hunt",
+      "topic": "angles",
+      "level": "P3",
+      "skillId": "angle-select",
+      "sequence": 3,
+      "prerequisites": [
+        "angle-classify"
+      ],
+      "blurb": "Find every square-corner opening among the turned angle cards."
+    },
+    {
+      "lessonId": "hundreds-tens-ones",
+      "topic": "place-value",
+      "level": "P2",
+      "skillId": "hundreds-tens-ones",
+      "sequence": 1,
+      "prerequisites": [],
+      "blurb": "Read a number from hundreds blocks, tens rods and ones counters."
+    },
+    {
+      "lessonId": "zero-in-a-place",
+      "topic": "place-value",
+      "level": "P2",
+      "skillId": "zero-in-a-place",
+      "sequence": 2,
+      "prerequisites": [
+        "hundreds-tens-ones"
+      ],
+      "blurb": "See what an empty column tells you about a number."
+    },
+    {
+      "lessonId": "digit-value",
+      "topic": "place-value",
+      "level": "P2",
+      "skillId": "digit-value",
+      "sequence": 3,
+      "prerequisites": [
+        "zero-in-a-place"
+      ],
+      "blurb": "Connect a digit’s place with the amount it represents."
+    },
+    {
+      "lessonId": "equal-groups-total",
+      "topic": "equal-groups",
+      "level": "P2",
+      "skillId": "equal-groups-total",
+      "sequence": 1,
+      "prerequisites": [],
+      "blurb": "Count equal baskets of counters to find how many there are altogether."
+    },
+    {
+      "lessonId": "sharing-equally",
+      "topic": "equal-groups",
+      "level": "P2",
+      "skillId": "sharing-equally",
+      "sequence": 2,
+      "prerequisites": [
+        "equal-groups-total"
+      ],
+      "blurb": "Explore counters shared fairly and find the number in each tray."
+    },
+    {
+      "lessonId": "how-many-groups",
+      "topic": "equal-groups",
+      "level": "P2",
+      "skillId": "how-many-groups",
+      "sequence": 3,
+      "prerequisites": [
+        "sharing-equally"
+      ],
+      "blurb": "Find how many bags you need when each holds the same number of counters."
+    },
+    {
+      "lessonId": "equal-parts",
+      "topic": "fractions",
+      "level": "P2",
+      "skillId": "equal-parts",
+      "sequence": 1,
+      "prerequisites": [],
+      "blurb": "Compare the parts in three rectangles and look for equal areas."
+    },
+    {
+      "lessonId": "name-the-fraction",
+      "topic": "fractions",
+      "level": "P2",
+      "skillId": "name-the-fraction",
+      "sequence": 2,
+      "prerequisites": [
+        "equal-parts"
+      ],
+      "blurb": "Count shaded parts and all equal parts to name the fraction."
+    },
+    {
+      "lessonId": "compare-same-whole",
+      "topic": "fractions",
+      "level": "P2",
+      "skillId": "compare-same-whole",
+      "sequence": 3,
+      "prerequisites": [
+        "name-the-fraction"
+      ],
+      "blurb": "Compare shaded amounts in pictures of two equal-sized wholes."
+    },
+    {
+      "lessonId": "read-the-key",
+      "topic": "picture-graphs",
+      "level": "P2",
+      "skillId": "read-the-key",
+      "sequence": 1,
+      "prerequisites": [],
+      "blurb": "Find out how much each symbol stands for, then read a row."
+    },
+    {
+      "lessonId": "compare-categories",
+      "topic": "picture-graphs",
+      "level": "P2",
+      "skillId": "compare-categories",
+      "sequence": 2,
+      "prerequisites": [
+        "read-the-key"
+      ],
+      "blurb": "Use the graph key to compare two rows, including a possible tie."
+    },
+    {
+      "lessonId": "graph-total",
+      "topic": "picture-graphs",
+      "level": "P2",
+      "skillId": "graph-total",
+      "sequence": 3,
+      "prerequisites": [
+        "compare-categories"
+      ],
+      "blurb": "Use the key in every row and bring all the quantities together."
+    },
+    {
+      "lessonId": "p4-decimal-places",
+      "topic": "decimals",
+      "level": "P4",
+      "skillId": "p4-decimal-places",
+      "sequence": 1,
+      "prerequisites": [],
+      "blurb": "Read and compare decimal place values.",
+      "examples": [
+        "p4-decimal-places-ex1",
+        "p4-decimal-places-ex2",
+        "p4-decimal-places-ex3",
+        "p4-decimal-places-ex4",
+        "p4-decimal-places-ex5"
+      ]
+    },
+    {
+      "lessonId": "p4-decimal-add-subtract",
+      "topic": "decimals",
+      "level": "P4",
+      "skillId": "p4-decimal-add-subtract",
+      "sequence": 2,
+      "prerequisites": [],
+      "blurb": "Add or subtract decimals using equal place units.",
+      "examples": [
+        "p4-decimal-add-subtract-ex1",
+        "p4-decimal-add-subtract-ex2",
+        "p4-decimal-add-subtract-ex3",
+        "p4-decimal-add-subtract-ex4",
+        "p4-decimal-add-subtract-ex5"
+      ]
+    },
+    {
+      "lessonId": "p4-decimal-multiply-divide",
+      "topic": "decimals",
+      "level": "P4",
+      "skillId": "p4-decimal-multiply-divide",
+      "sequence": 3,
+      "prerequisites": [],
+      "blurb": "Multiply or divide a decimal by a one-digit whole number.",
+      "examples": [
+        "p4-decimal-multiply-divide-ex1",
+        "p4-decimal-multiply-divide-ex2",
+        "p4-decimal-multiply-divide-ex3",
+        "p4-decimal-multiply-divide-ex4",
+        "p4-decimal-multiply-divide-ex5"
+      ]
+    },
+    {
+      "lessonId": "p4-decimal-practice",
+      "topic": "decimals",
+      "level": "P4",
+      "skillId": "p4-decimal-practice",
+      "sequence": 4,
+      "prerequisites": [],
+      "blurb": "Combine multiplication and subtraction in a decimal context.",
+      "examples": [
+        "p4-decimal-practice-ex1",
+        "p4-decimal-practice-ex2",
+        "p4-decimal-practice-ex3",
+        "p4-decimal-practice-ex4",
+        "p4-decimal-practice-ex5"
+      ]
+    },
+    {
+      "lessonId": "p4-mixed-and-improper",
+      "topic": "fraction-calculations",
+      "level": "P4",
+      "skillId": "p4-mixed-and-improper",
+      "sequence": 1,
+      "prerequisites": [],
+      "blurb": "Connect mixed and improper fractions.",
+      "examples": [
+        "p4-mixed-and-improper-ex1",
+        "p4-mixed-and-improper-ex2",
+        "p4-mixed-and-improper-ex3",
+        "p4-mixed-and-improper-ex4",
+        "p4-mixed-and-improper-ex5"
+      ]
+    },
+    {
+      "lessonId": "p4-fraction-add-subtract",
+      "topic": "fraction-calculations",
+      "level": "P4",
+      "skillId": "p4-fraction-add-subtract",
+      "sequence": 2,
+      "prerequisites": [],
+      "blurb": "Add or subtract fractions with related denominators.",
+      "examples": [
+        "p4-fraction-add-subtract-ex1",
+        "p4-fraction-add-subtract-ex2",
+        "p4-fraction-add-subtract-ex3",
+        "p4-fraction-add-subtract-ex4",
+        "p4-fraction-add-subtract-ex5"
+      ]
+    },
+    {
+      "lessonId": "p4-fraction-of-quantity",
+      "topic": "fraction-calculations",
+      "level": "P4",
+      "skillId": "p4-fraction-of-quantity",
+      "sequence": 3,
+      "prerequisites": [],
+      "blurb": "Find a fraction of an integer set.",
+      "examples": [
+        "p4-fraction-of-quantity-ex1",
+        "p4-fraction-of-quantity-ex2",
+        "p4-fraction-of-quantity-ex3",
+        "p4-fraction-of-quantity-ex4",
+        "p4-fraction-of-quantity-ex5"
+      ]
+    },
+    {
+      "lessonId": "p4-fraction-practice",
+      "topic": "fraction-calculations",
+      "level": "P4",
+      "skillId": "p4-fraction-practice",
+      "sequence": 4,
+      "prerequisites": [],
+      "blurb": "Find a fraction of a set and what remains.",
+      "examples": [
+        "p4-fraction-practice-ex1",
+        "p4-fraction-practice-ex2",
+        "p4-fraction-practice-ex3",
+        "p4-fraction-practice-ex4",
+        "p4-fraction-practice-ex5"
+      ]
+    },
+    {
+      "lessonId": "p4-rectangle-missing-side",
+      "topic": "area-perimeter",
+      "level": "P4",
+      "skillId": "p4-rectangle-missing-side",
+      "sequence": 1,
+      "prerequisites": [],
+      "blurb": "Find a missing length from area or perimeter.",
+      "examples": [
+        "p4-rectangle-missing-side-ex1",
+        "p4-rectangle-missing-side-ex2",
+        "p4-rectangle-missing-side-ex3",
+        "p4-rectangle-missing-side-ex4",
+        "p4-rectangle-missing-side-ex5"
+      ]
+    },
+    {
+      "lessonId": "p4-composite-area",
+      "topic": "area-perimeter",
+      "level": "P4",
+      "skillId": "p4-composite-area",
+      "sequence": 2,
+      "prerequisites": [],
+      "blurb": "Find an L-shape's area by two valid methods.",
+      "examples": [
+        "p4-composite-area-ex1",
+        "p4-composite-area-ex2",
+        "p4-composite-area-ex3",
+        "p4-composite-area-ex4",
+        "p4-composite-area-ex5"
+      ]
+    },
+    {
+      "lessonId": "p4-composite-perimeter",
+      "topic": "area-perimeter",
+      "level": "P4",
+      "skillId": "p4-composite-perimeter",
+      "sequence": 3,
+      "prerequisites": [],
+      "blurb": "Find the outside boundary of a corner-cutout shape.",
+      "examples": [
+        "p4-composite-perimeter-ex1",
+        "p4-composite-perimeter-ex2",
+        "p4-composite-perimeter-ex3",
+        "p4-composite-perimeter-ex4",
+        "p4-composite-perimeter-ex5"
+      ]
+    },
+    {
+      "lessonId": "p4-measurement-practice",
+      "topic": "area-perimeter",
+      "level": "P4",
+      "skillId": "p4-measurement-practice",
+      "sequence": 4,
+      "prerequisites": [],
+      "blurb": "Choose and calculate area or perimeter of a measured shape.",
+      "examples": [
+        "p4-measurement-practice-ex1",
+        "p4-measurement-practice-ex2",
+        "p4-measurement-practice-ex3",
+        "p4-measurement-practice-ex4",
+        "p4-measurement-practice-ex5"
+      ]
+    },
+    {
+      "lessonId": "p4-place-value-100k",
+      "topic": "whole-numbers",
+      "level": "P4",
+      "skillId": "p4-place-value-100k",
+      "sequence": 1,
+      "prerequisites": [],
+      "blurb": "Find what each digit is worth in a five-digit number.",
+      "examples": [
+        "p4-place-value-100k-ex1",
+        "p4-place-value-100k-ex2",
+        "p4-place-value-100k-ex3",
+        "p4-place-value-100k-ex4",
+        "p4-place-value-100k-ex5"
+      ]
+    },
+    {
+      "lessonId": "p4-rounding",
+      "topic": "whole-numbers",
+      "level": "P4",
+      "skillId": "p4-rounding",
+      "sequence": 2,
+      "prerequisites": [
+        "p4-place-value-100k"
+      ],
+      "blurb": "Round to the nearest 10, 100 or 1 000 using a number line.",
+      "examples": [
+        "p4-rounding-ex1",
+        "p4-rounding-ex2",
+        "p4-rounding-ex3",
+        "p4-rounding-ex4",
+        "p4-rounding-ex5"
+      ]
+    },
+    {
+      "lessonId": "p4-factors",
+      "topic": "whole-numbers",
+      "level": "P4",
+      "skillId": "p4-factors",
+      "sequence": 3,
+      "prerequisites": [],
+      "blurb": "Find factor pairs and count every factor.",
+      "examples": [
+        "p4-factors-ex1",
+        "p4-factors-ex2",
+        "p4-factors-ex3",
+        "p4-factors-ex4",
+        "p4-factors-ex5"
+      ]
+    },
+    {
+      "lessonId": "p4-estimate-by-rounding",
+      "topic": "whole-numbers",
+      "level": "P4",
+      "skillId": "p4-estimate-by-rounding",
+      "sequence": 4,
+      "prerequisites": [
+        "p4-rounding"
+      ],
+      "blurb": "Round two numbers, then add for a quick estimate.",
+      "examples": [
+        "p4-estimate-by-rounding-ex1",
+        "p4-estimate-by-rounding-ex2",
+        "p4-estimate-by-rounding-ex3",
+        "p4-estimate-by-rounding-ex4",
+        "p4-estimate-by-rounding-ex5"
+      ]
+    },
+    {
+      "lessonId": "p4-read-line-graph",
+      "topic": "line-graphs",
+      "level": "P4",
+      "skillId": "p4-read-line-graph",
+      "sequence": 1,
+      "prerequisites": [],
+      "blurb": "Work out the scale, then read and compare points.",
+      "examples": [
+        "p4-read-line-graph-ex1",
+        "p4-read-line-graph-ex2",
+        "p4-read-line-graph-ex3",
+        "p4-read-line-graph-ex4",
+        "p4-read-line-graph-ex5"
+      ]
+    },
+    {
+      "lessonId": "p4-line-graph-change",
+      "topic": "line-graphs",
+      "level": "P4",
+      "skillId": "p4-line-graph-change",
+      "sequence": 2,
+      "prerequisites": [
+        "p4-read-line-graph"
+      ],
+      "blurb": "Find a difference and the biggest climb between points.",
+      "examples": [
+        "p4-line-graph-change-ex1",
+        "p4-line-graph-change-ex2",
+        "p4-line-graph-change-ex3",
+        "p4-line-graph-change-ex4",
+        "p4-line-graph-change-ex5"
+      ]
+    },
+    {
+      "lessonId": "p4-line-graph-target",
+      "topic": "line-graphs",
+      "level": "P4",
+      "skillId": "p4-line-graph-target",
+      "sequence": 3,
+      "prerequisites": [
+        "p4-read-line-graph"
+      ],
+      "blurb": "Pick out the days above a target line and add them up.",
+      "examples": [
+        "p4-line-graph-target-ex1",
+        "p4-line-graph-target-ex2",
+        "p4-line-graph-target-ex3",
+        "p4-line-graph-target-ex4",
+        "p4-line-graph-target-ex5"
+      ]
+    },
+    {
+      "lessonId": "p4-line-graph-practice",
+      "topic": "line-graphs",
+      "level": "P4",
+      "skillId": "p4-line-graph-practice",
+      "sequence": 4,
+      "prerequisites": [
+        "p4-line-graph-change"
+      ],
+      "blurb": "One fresh question on the highest and lowest points.",
+      "examples": [
+        "p4-line-graph-practice-ex1",
+        "p4-line-graph-practice-ex2",
+        "p4-line-graph-practice-ex3",
+        "p4-line-graph-practice-ex4",
+        "p4-line-graph-practice-ex5"
+      ]
+    },
+    {
+      "lessonId": "p4-cube-net-check",
+      "topic": "nets",
+      "level": "P4",
+      "skillId": "p4-cube-net-check",
+      "sequence": 1,
+      "prerequisites": [],
+      "blurb": "Which flat patterns fold into a cube, and why not the others?",
+      "examples": [
+        "p4-cube-net-check-ex1",
+        "p4-cube-net-check-ex2",
+        "p4-cube-net-check-ex3",
+        "p4-cube-net-check-ex4",
+        "p4-cube-net-check-ex5"
+      ]
+    },
+    {
+      "lessonId": "p4-cube-opposite-faces",
+      "topic": "nets",
+      "level": "P4",
+      "skillId": "p4-cube-opposite-faces",
+      "sequence": 2,
+      "prerequisites": [
+        "p4-cube-net-check"
+      ],
+      "blurb": "Fold in your head: which face ends up opposite?",
+      "examples": [
+        "p4-cube-opposite-faces-ex1",
+        "p4-cube-opposite-faces-ex2",
+        "p4-cube-opposite-faces-ex3",
+        "p4-cube-opposite-faces-ex4",
+        "p4-cube-opposite-faces-ex5"
+      ]
+    },
+    {
+      "lessonId": "p4-solid-from-net",
+      "topic": "nets",
+      "level": "P4",
+      "skillId": "p4-solid-from-net",
+      "sequence": 3,
+      "prerequisites": [
+        "p4-cube-net-check"
+      ],
+      "blurb": "Count faces and edges, then name the solid.",
+      "examples": [
+        "p4-solid-from-net-ex1",
+        "p4-solid-from-net-ex2",
+        "p4-solid-from-net-ex3",
+        "p4-solid-from-net-ex4",
+        "p4-solid-from-net-ex5"
+      ]
+    },
+    {
+      "lessonId": "p4-complete-the-net",
+      "topic": "nets",
+      "level": "P4",
+      "skillId": "p4-complete-the-net",
+      "sequence": 4,
+      "prerequisites": [
+        "p4-cube-opposite-faces"
+      ],
+      "blurb": "Find where the last square can go.",
+      "examples": [
+        "p4-complete-the-net-ex1",
+        "p4-complete-the-net-ex2",
+        "p4-complete-the-net-ex3",
+        "p4-complete-the-net-ex4",
+        "p4-complete-the-net-ex5"
+      ]
+    },
+    {
+      "lessonId": "p4-fold-a-cube-net",
+      "topic": "nets",
+      "level": "P4",
+      "skillId": "p4-fold-a-cube-net",
+      "sequence": 5,
+      "prerequisites": [
+        "p4-cube-opposite-faces"
+      ],
+      "blurb": "Fold a net crease by crease and see which face lands on top.",
+      "examples": [
+        "p4-fold-a-cube-net-ex1",
+        "p4-fold-a-cube-net-ex2",
+        "p4-fold-a-cube-net-ex3",
+        "p4-fold-a-cube-net-ex4",
+        "p4-fold-a-cube-net-ex5"
+      ]
+    },
+    {
+      "lessonId": "p4-fold-a-net-that-fails",
+      "topic": "nets",
+      "level": "P4",
+      "skillId": "p4-fold-a-net-that-fails",
+      "sequence": 6,
+      "prerequisites": [
+        "p4-cube-net-check"
+      ],
+      "blurb": "Fold a net that will not close and find the squares that meet.",
+      "examples": [
+        "p4-fold-a-net-that-fails-ex1",
+        "p4-fold-a-net-that-fails-ex2",
+        "p4-fold-a-net-that-fails-ex3",
+        "p4-fold-a-net-that-fails-ex4",
+        "p4-fold-a-net-that-fails-ex5"
+      ]
+    },
+    {
+      "lessonId": "p4-fold-a-solid",
+      "topic": "nets",
+      "level": "P4",
+      "skillId": "p4-fold-a-solid",
+      "sequence": 7,
+      "prerequisites": [
+        "p4-solid-from-net"
+      ],
+      "blurb": "Fold a pyramid, prism or cuboid net and see the solid close up.",
+      "examples": [
+        "p4-fold-a-solid-ex1",
+        "p4-fold-a-solid-ex2",
+        "p4-fold-a-solid-ex3",
+        "p4-fold-a-solid-ex4",
+        "p4-fold-a-solid-ex5"
+      ]
+    },
+    {
+      "lessonId": "p4-read-bar-chart",
+      "topic": "bar-charts",
+      "level": "P4",
+      "skillId": "p4-read-bar-chart",
+      "sequence": 1,
+      "prerequisites": [],
+      "blurb": "Work out the scale, then read and add bars.",
+      "examples": [
+        "p4-read-bar-chart-ex1",
+        "p4-read-bar-chart-ex2",
+        "p4-read-bar-chart-ex3",
+        "p4-read-bar-chart-ex4",
+        "p4-read-bar-chart-ex5"
+      ]
+    },
+    {
+      "lessonId": "p4-double-bar-chart",
+      "topic": "bar-charts",
+      "level": "P4",
+      "skillId": "p4-double-bar-chart",
+      "sequence": 2,
+      "prerequisites": [
+        "p4-read-bar-chart"
+      ],
+      "blurb": "Compare two groups side by side and find the biggest gap.",
+      "examples": [
+        "p4-double-bar-chart-ex1",
+        "p4-double-bar-chart-ex2",
+        "p4-double-bar-chart-ex3",
+        "p4-double-bar-chart-ex4",
+        "p4-double-bar-chart-ex5"
+      ]
+    },
+    {
+      "lessonId": "p4-bar-chart-practice",
+      "topic": "bar-charts",
+      "level": "P4",
+      "skillId": "p4-bar-chart-practice",
+      "sequence": 3,
+      "prerequisites": [
+        "p4-double-bar-chart"
+      ],
+      "blurb": "One fresh question on the tallest bars.",
+      "examples": [
+        "p4-bar-chart-practice-ex1",
+        "p4-bar-chart-practice-ex2",
+        "p4-bar-chart-practice-ex3",
+        "p4-bar-chart-practice-ex4",
+        "p4-bar-chart-practice-ex5"
+      ]
+    },
+    {
+      "lessonId": "p4-read-pie-chart",
+      "topic": "pie-charts",
+      "level": "P4",
+      "skillId": "p4-read-pie-chart",
+      "sequence": 1,
+      "prerequisites": [],
+      "blurb": "Count the equal slices and say each share as a fraction.",
+      "examples": [
+        "p4-read-pie-chart-ex1",
+        "p4-read-pie-chart-ex2",
+        "p4-read-pie-chart-ex3",
+        "p4-read-pie-chart-ex4",
+        "p4-read-pie-chart-ex5"
+      ]
+    },
+    {
+      "lessonId": "p4-read-pie-sectors",
+      "topic": "pie-charts",
+      "level": "P4",
+      "skillId": "p4-read-pie-sectors",
+      "sequence": 2,
+      "prerequisites": [
+        "p4-read-pie-chart"
+      ],
+      "blurb": "No cuts drawn: spot a half, a quarter and an eighth of the pie.",
+      "examples": [
+        "p4-read-pie-sectors-ex1",
+        "p4-read-pie-sectors-ex2",
+        "p4-read-pie-sectors-ex3",
+        "p4-read-pie-sectors-ex4",
+        "p4-read-pie-sectors-ex5"
+      ]
+    },
+    {
+      "lessonId": "p4-pie-chart-count",
+      "topic": "pie-charts",
+      "level": "P4",
+      "skillId": "p4-pie-chart-count",
+      "sequence": 3,
+      "prerequisites": [
+        "p4-read-pie-sectors"
+      ],
+      "blurb": "Share the total between the slices.",
+      "examples": [
+        "p4-pie-chart-count-ex1",
+        "p4-pie-chart-count-ex2",
+        "p4-pie-chart-count-ex3",
+        "p4-pie-chart-count-ex4",
+        "p4-pie-chart-count-ex5"
+      ]
+    },
+    {
+      "lessonId": "p4-pie-chart-total",
+      "topic": "pie-charts",
+      "level": "P4",
+      "skillId": "p4-pie-chart-total",
+      "sequence": 4,
+      "prerequisites": [
+        "p4-pie-chart-count"
+      ],
+      "blurb": "Start from one known slice and find the whole pie.",
+      "examples": [
+        "p4-pie-chart-total-ex1",
+        "p4-pie-chart-total-ex2",
+        "p4-pie-chart-total-ex3",
+        "p4-pie-chart-total-ex4",
+        "p4-pie-chart-total-ex5"
+      ]
+    },
+    {
+      "lessonId": "p4-pie-chart-practice",
+      "topic": "pie-charts",
+      "level": "P4",
+      "skillId": "p4-pie-chart-practice",
+      "sequence": 5,
+      "prerequisites": [
+        "p4-pie-chart-total"
+      ],
+      "blurb": "One fresh question on what is left over.",
+      "examples": [
+        "p4-pie-chart-practice-ex1",
+        "p4-pie-chart-practice-ex2",
+        "p4-pie-chart-practice-ex3",
+        "p4-pie-chart-practice-ex4",
+        "p4-pie-chart-practice-ex5"
+      ]
+    },
+    {
+      "lessonId": "p4-lines-of-symmetry",
+      "topic": "symmetry",
+      "level": "P4",
+      "skillId": "p4-lines-of-symmetry",
+      "sequence": 1,
+      "prerequisites": [],
+      "blurb": "Test dashed lines on a shape and count its lines of symmetry.",
+      "examples": [
+        "p4-lines-of-symmetry-ex1",
+        "p4-lines-of-symmetry-ex2",
+        "p4-lines-of-symmetry-ex3",
+        "p4-lines-of-symmetry-ex4",
+        "p4-lines-of-symmetry-ex5"
+      ]
+    },
+    {
+      "lessonId": "p4-symmetric-figure",
+      "topic": "symmetry",
+      "level": "P4",
+      "skillId": "p4-symmetric-figure",
+      "sequence": 2,
+      "prerequisites": [
+        "p4-lines-of-symmetry"
+      ],
+      "blurb": "Match squares across a mirror line and finish the picture.",
+      "examples": [
+        "p4-symmetric-figure-ex1",
+        "p4-symmetric-figure-ex2",
+        "p4-symmetric-figure-ex3",
+        "p4-symmetric-figure-ex4",
+        "p4-symmetric-figure-ex5"
+      ]
+    },
+    {
+      "lessonId": "p4-symmetry-practice",
+      "topic": "symmetry",
+      "level": "P4",
+      "skillId": "p4-symmetry-practice",
+      "sequence": 3,
+      "prerequisites": [
+        "p4-lines-of-symmetry"
+      ],
+      "blurb": "One fresh question: how many lines of symmetry?",
+      "examples": [
+        "p4-symmetry-practice-ex1",
+        "p4-symmetry-practice-ex2",
+        "p4-symmetry-practice-ex3",
+        "p4-symmetry-practice-ex4",
+        "p4-symmetry-practice-ex5"
+      ]
+    },
+    {
+      "lessonId": "p4-read-protractor",
+      "topic": "angle-measure",
+      "level": "P4",
+      "skillId": "p4-read-protractor",
+      "sequence": 1,
+      "prerequisites": [],
+      "blurb": "Choose the right scale, read the angle and name it.",
+      "examples": [
+        "p4-read-protractor-ex1",
+        "p4-read-protractor-ex2",
+        "p4-read-protractor-ex3",
+        "p4-read-protractor-ex4",
+        "p4-read-protractor-ex5"
+      ]
+    },
+    {
+      "lessonId": "p4-estimate-then-measure",
+      "topic": "angle-measure",
+      "level": "P4",
+      "skillId": "p4-estimate-then-measure",
+      "sequence": 2,
+      "prerequisites": [
+        "p4-read-protractor"
+      ],
+      "blurb": "Guess against 90 degrees first, then measure.",
+      "examples": [
+        "p4-estimate-then-measure-ex1",
+        "p4-estimate-then-measure-ex2",
+        "p4-estimate-then-measure-ex3",
+        "p4-estimate-then-measure-ex4",
+        "p4-estimate-then-measure-ex5"
+      ]
+    },
+    {
+      "lessonId": "p4-turns",
+      "topic": "angle-measure",
+      "level": "P4",
+      "skillId": "p4-turns",
+      "sequence": 3,
+      "prerequisites": [],
+      "blurb": "Link quarter, half and three-quarter turns to degrees.",
+      "examples": [
+        "p4-turns-ex1",
+        "p4-turns-ex2",
+        "p4-turns-ex3",
+        "p4-turns-ex4",
+        "p4-turns-ex5"
+      ]
+    },
+    {
+      "lessonId": "p4-angle-practice",
+      "topic": "angle-measure",
+      "level": "P4",
+      "skillId": "p4-angle-practice",
+      "sequence": 4,
+      "prerequisites": [
+        "p4-read-protractor"
+      ],
+      "blurb": "One fresh protractor reading.",
+      "examples": [
+        "p4-angle-practice-ex1",
+        "p4-angle-practice-ex2",
+        "p4-angle-practice-ex3",
+        "p4-angle-practice-ex4",
+        "p4-angle-practice-ex5"
+      ]
+    },
+    {
+      "lessonId": "p4-protractor-bench-read",
+      "topic": "angle-measure",
+      "level": "P4",
+      "skillId": "p4-protractor-bench-read",
+      "sequence": 5,
+      "prerequisites": [
+        "p4-read-protractor"
+      ],
+      "blurb": "Move and turn a protractor, then enter your reading.",
+      "examples": [
+        "p4-protractor-bench-read-ex1",
+        "p4-protractor-bench-read-ex2",
+        "p4-protractor-bench-read-ex3",
+        "p4-protractor-bench-read-ex4",
+        "p4-protractor-bench-read-ex5"
+      ]
+    },
+    {
+      "lessonId": "p4-protractor-bench-draw",
+      "topic": "angle-measure",
+      "level": "P4",
+      "skillId": "p4-protractor-bench-draw",
+      "sequence": 6,
+      "prerequisites": [
+        "p4-read-protractor"
+      ],
+      "blurb": "Practise construction and find the adjacent angle on a straight line.",
+      "examples": [
+        "p4-protractor-bench-draw-ex1",
+        "p4-protractor-bench-draw-ex2",
+        "p4-protractor-bench-draw-ex3",
+        "p4-protractor-bench-draw-ex4",
+        "p4-protractor-bench-draw-ex5"
+      ]
+    },
+    {
+      "lessonId": "p4-mirror-line-bench",
+      "topic": "symmetry",
+      "level": "P4",
+      "skillId": "p4-mirror-line-bench",
+      "sequence": 4,
+      "prerequisites": [
+        "p4-lines-of-symmetry"
+      ],
+      "blurb": "Choose a mirror line and explore a reflected outline.",
+      "examples": [
+        "p4-mirror-line-bench-ex1",
+        "p4-mirror-line-bench-ex2",
+        "p4-mirror-line-bench-ex3",
+        "p4-mirror-line-bench-ex4",
+        "p4-mirror-line-bench-ex5"
+      ]
+    },
+    {
+      "lessonId": "p4-shade-to-complete-bench",
+      "topic": "symmetry",
+      "level": "P4",
+      "skillId": "p4-shade-to-complete-bench",
+      "sequence": 5,
+      "prerequisites": [
+        "p4-lines-of-symmetry"
+      ],
+      "blurb": "Shade matching squares, then check a new square without a preview.",
+      "examples": [
+        "p4-shade-to-complete-bench-ex1",
+        "p4-shade-to-complete-bench-ex2",
+        "p4-shade-to-complete-bench-ex3",
+        "p4-shade-to-complete-bench-ex4",
+        "p4-shade-to-complete-bench-ex5"
+      ]
+    }
+  ],
+  "collections": [
+    {
+      "id": "p4-preparation",
+      "label": "P4 revision adventures",
+      "description": "General P4 revision across whole numbers, decimals, fractions, area and perimeter, bar and line graphs, pie charts, symmetry, angles and nets. Pie charts and nets are P4 candidates, bar charts a P3 bridge; levels not confirmed. Your school's topics are not confirmed.",
+      "level": "P4",
+      "lessonIds": [
+        "p4-decimal-places",
+        "p4-decimal-add-subtract",
+        "p4-decimal-multiply-divide",
+        "p4-decimal-practice",
+        "p4-mixed-and-improper",
+        "p4-fraction-add-subtract",
+        "p4-fraction-of-quantity",
+        "p4-fraction-practice",
+        "p4-rectangle-missing-side",
+        "p4-composite-area",
+        "p4-composite-perimeter",
+        "p4-measurement-practice",
+        "p4-place-value-100k",
+        "p4-rounding",
+        "p4-factors",
+        "p4-estimate-by-rounding",
+        "p4-read-bar-chart",
+        "p4-double-bar-chart",
+        "p4-bar-chart-practice",
+        "p4-read-line-graph",
+        "p4-line-graph-change",
+        "p4-line-graph-target",
+        "p4-line-graph-practice",
+        "p4-read-pie-chart",
+        "p4-read-pie-sectors",
+        "p4-pie-chart-count",
+        "p4-pie-chart-total",
+        "p4-pie-chart-practice",
+        "p4-cube-net-check",
+        "p4-cube-opposite-faces",
+        "p4-solid-from-net",
+        "p4-complete-the-net",
+        "p4-fold-a-cube-net",
+        "p4-fold-a-net-that-fails",
+        "p4-fold-a-solid",
+        "p4-lines-of-symmetry",
+        "p4-symmetric-figure",
+        "p4-symmetry-practice",
+        "p4-read-protractor",
+        "p4-estimate-then-measure",
+        "p4-turns",
+        "p4-angle-practice",
+        "p4-protractor-bench-read",
+        "p4-protractor-bench-draw",
+        "p4-mirror-line-bench",
+        "p4-shade-to-complete-bench"
+      ],
+      "practiceIds": [
+        "p4-decimal-practice",
+        "p4-fraction-practice",
+        "p4-measurement-practice",
+        "p4-estimate-by-rounding",
+        "p4-line-graph-practice",
+        "p4-symmetry-practice",
+        "p4-angle-practice",
+        "p4-pie-chart-practice",
+        "p4-bar-chart-practice"
+      ]
+    }
+  ]
+}

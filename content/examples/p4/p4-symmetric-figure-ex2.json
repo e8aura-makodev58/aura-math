@@ -1,0 +1,190 @@
+{
+  "schemaVersion": 3,
+  "locale": "en-SG",
+  "adapterVersion": 1,
+  "library": {
+    "level": "P4",
+    "skillId": "p4-symmetric-figure",
+    "tags": [
+      "P4",
+      "symmetry",
+      "general revision",
+      "example"
+    ]
+  },
+  "curriculum": {
+    "objectiveId": "candidate.p4.symmetry.complete",
+    "sources": [
+      "https://practicle.sg/primary-4-math/",
+      "https://sg.ixl.com/standards/maths/primary-4"
+    ],
+    "evidenceStatus": "candidate"
+  },
+  "authors": [
+    "Codex"
+  ],
+  "provenance": {
+    "kind": "generated",
+    "generatorVersion": "p4-examples-v1",
+    "seed": 3513772006
+  },
+  "lesson": {
+    "id": "p4-symmetric-figure-ex2",
+    "version": 1,
+    "topic": "symmetry",
+    "title": "Finish the mirror picture",
+    "subtitle": "P4 symmetry revision",
+    "level": "P4 candidate",
+    "minutes": 7,
+    "objective": "Complete a figure so it is symmetrical about a mirror line.",
+    "story": "Part of a figure is shaded on one side of a mirror line.",
+    "reviewStatus": "draft",
+    "specification": {
+      "task": "complete",
+      "shape": "rectangle",
+      "cols": 6,
+      "rows": 4,
+      "mirror": "vertical",
+      "cells": [
+        "0,0",
+        "0,1",
+        "1,1",
+        "2,1",
+        "2,2",
+        "3,0"
+      ],
+      "probe": "3,0"
+    },
+    "steps": [
+      {
+        "id": "match",
+        "goal": "match",
+        "title": "Match the marked square",
+        "prompt": "Fold along the dashed mirror line. Which labelled square matches the marked square X?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "k68",
+            "label": "Square A",
+            "meaning": "mirror"
+          },
+          {
+            "id": "k75",
+            "label": "Square B",
+            "meaning": "shifted"
+          },
+          {
+            "id": "k82",
+            "label": "Square C",
+            "meaning": "flipped"
+          }
+        ],
+        "answer": "k68",
+        "hints": [
+          "A mirror image is the same distance from the mirror line on the other side.",
+          "Count how many squares X is from the mirror line, then count the same distance on the other side.",
+          "It is in the same row, the same distance from the line.",
+          "Choose the square that is the same distance from the line, in the matching row or column."
+        ]
+      },
+      {
+        "id": "to-shade",
+        "goal": "to-shade",
+        "title": "Shade the other side",
+        "prompt": "How many more squares must be shaded on the other side to make the figure symmetrical?",
+        "kind": "exact",
+        "answer": "6",
+        "hints": [
+          "Every shaded square needs a matching square on the other side.",
+          "Count the shaded squares on the side that is already shaded.",
+          "There are 6 shaded squares, so the other side needs the same number.",
+          "6 more squares. Enter 6."
+        ]
+      },
+      {
+        "id": "total",
+        "goal": "total",
+        "title": "Count them all",
+        "prompt": "How many squares will be shaded altogether when the figure is complete?",
+        "kind": "exact",
+        "answer": "12",
+        "hints": [
+          "Add the squares on both sides of the mirror line.",
+          "Both sides will have the same number of shaded squares.",
+          "6 on each side.",
+          "6 + 6 = 12. Enter 12."
+        ]
+      },
+      {
+        "id": "reflection",
+        "goal": "reflection",
+        "title": "Explain your thinking",
+        "prompt": "How do you complete a symmetrical figure?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "k50",
+            "label": "Copy the shaded squares to the other side, keeping them in the same positions."
+          },
+          {
+            "id": "k57",
+            "label": "Shade only the squares that touch the mirror line on the other side of it."
+          },
+          {
+            "id": "k43",
+            "label": "Give each shaded square a partner the same distance away on the other side."
+          }
+        ],
+        "answer": "k43",
+        "hints": [
+          "Think about a reflection in a mirror.",
+          "A reflection reverses the figure across the line.",
+          "Copying in the same positions makes a slide, not a reflection.",
+          "Choose the explanation about the same distance from the mirror line."
+        ]
+      }
+    ]
+  },
+  "fixtures": [
+    {
+      "stepId": "match",
+      "accepted": [
+        "k68"
+      ],
+      "rejected": [
+        "k75",
+        "k82"
+      ]
+    },
+    {
+      "stepId": "to-shade",
+      "accepted": [
+        "6"
+      ],
+      "rejected": [
+        "7",
+        "16"
+      ]
+    },
+    {
+      "stepId": "total",
+      "accepted": [
+        "12"
+      ],
+      "rejected": [
+        "13",
+        "22"
+      ]
+    },
+    {
+      "stepId": "reflection",
+      "accepted": [
+        "k43"
+      ],
+      "rejected": [
+        "k50",
+        "k57"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+ "cuboid-end": {
+  "configs": 27648,
+  "mism": 1936702,
+  "covered": 9195646,
+  "cfgOver": 20480,
+  "worst": 1,
+  "desc": "root=0 ang=1.57,1.57,0.00,0.00,0.00 yaw=-180 pitch=0"
+ },
+ "cuboid-tween": {
+  "configs": 483840,
+  "mism": 32621027,
+  "covered": 164252749,
+  "cfgOver": 368459,
+  "worst": 1,
+  "desc": "root=0 ang=0.39,0.00,1.57,1.57,0.00 yaw=0 pitch=75"
+ },
+ "triangular-prism-end": {
+  "configs": 11520,
+  "mism": 1202446,
+  "covered": 4553794,
+  "cfgOver": 8406,
+  "worst": 1,
+  "desc": "root=0 ang=1.57,0.00,2.50,0.00 yaw=-180 pitch=0"
+ },
+ "triangular-prism-tween": {
+  "configs": 161280,
+  "mism": 15154657,
+  "covered": 64867327,
+  "cfgOver": 118644,
+  "worst": 1,
+  "desc": "root=0 ang=0.59,1.57,2.50,1.57 yaw=-90 pitch=30"
+ },
+ "square-pyramid-end": {
+  "configs": 11520,
+  "mism": 845112,
+  "covered": 3170520,
+  "cfgOver": 9800,
+  "worst": 1,
+  "desc": "root=0 ang=1.98,1.98,1.98,1.98 yaw=-180 pitch=0"
+ },
+ "square-pyramid-tween": {
+  "configs": 161280,
+  "mism": 10418156,
+  "covered": 44788516,
+  "cfgOver": 135888,
+  "worst": 1,
+  "desc": "root=0 ang=1.73,1.98,1.98,1.98 yaw=0 pitch=75"
+ }
+}

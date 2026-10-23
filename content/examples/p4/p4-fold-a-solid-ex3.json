@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 3,
+  "locale": "en-SG",
+  "adapterVersion": 1,
+  "library": {
+    "level": "P4",
+    "skillId": "p4-fold-a-solid",
+    "tags": [
+      "P4",
+      "nets",
+      "general revision",
+      "level-unconfirmed",
+      "workbench",
+      "example"
+    ]
+  },
+  "curriculum": {
+    "objectiveId": "candidate.p4.nets.fold-solid",
+    "sources": [
+      "https://practicle.sg/primary-4-math/",
+      "https://www.thelearninglab.com.sg/blog/tll-shares/new-changes-to-moe-primary-maths-syllabus"
+    ],
+    "evidenceStatus": "candidate"
+  },
+  "authors": [
+    "Codex"
+  ],
+  "provenance": {
+    "kind": "generated",
+    "generatorVersion": "p4-examples-v1",
+    "seed": 564115296
+  },
+  "lesson": {
+    "id": "p4-fold-a-solid-ex3",
+    "version": 1,
+    "topic": "nets",
+    "title": "Fold a solid",
+    "subtitle": "P4 nets revision",
+    "level": "P4 candidate",
+    "minutes": 8,
+    "objective": "Fold the net of a solid on screen and name the solid it makes.",
+    "story": "The net of a solid can be folded on screen, one crease at a time.",
+    "reviewStatus": "draft",
+    "specification": {
+      "task": "fold-solid",
+      "nets": [],
+      "asked": 0,
+      "face": "",
+      "solid": "cube",
+      "demoSolid": "cuboid",
+      "rotation": 0
+    },
+    "steps": [
+      {
+        "id": "fold-name",
+        "goal": "fold-name",
+        "title": "Fold it and name it",
+        "prompt": "Fold every crease of the net. Which solid does it make?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "k37",
+            "label": "A square pyramid",
+            "meaning": "square-pyramid"
+          },
+          {
+            "id": "k23",
+            "label": "A cube",
+            "meaning": "cube"
+          },
+          {
+            "id": "k30",
+            "label": "A cuboid",
+            "meaning": "cuboid"
+          }
+        ],
+        "answer": "k23",
+        "hints": [
+          "Fold the creases one at a time. Watch the faces meet at their edges.",
+          "Turn the view to see the folded shape from the side and from above.",
+          "Look at the faces of the folded shape: this net has 6 rectangles.",
+          "It makes a cube. Choose the cube."
+        ]
+      },
+      {
+        "id": "reflection",
+        "goal": "reflection",
+        "title": "Explain your thinking",
+        "prompt": "How did folding the net help you name the solid?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "k47",
+            "label": "Every net with five faces folds into a cube in the end."
+          },
+          {
+            "id": "k33",
+            "label": "I saw which faces met and the shape they closed up into."
+          },
+          {
+            "id": "k40",
+            "label": "The colours of the faces tell you which solid it is."
+          }
+        ],
+        "answer": "k33",
+        "hints": [
+          "Think about what changed as you folded.",
+          "The faces met along their edges.",
+          "Colours only help you tell the faces apart.",
+          "Choose the explanation about the faces meeting and closing up."
+        ]
+      }
+    ]
+  },
+  "fixtures": [
+    {
+      "stepId": "fold-name",
+      "accepted": [
+        "k23"
+      ],
+      "rejected": [
+        "k37",
+        "k30"
+      ]
+    },
+    {
+      "stepId": "reflection",
+      "accepted": [
+        "k33"
+      ],
+      "rejected": [
+        "k47",
+        "k40"
+      ]
+    }
+  ]
+}

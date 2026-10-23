@@ -1,0 +1,175 @@
+{
+  "schemaVersion": 3,
+  "locale": "en-SG",
+  "adapterVersion": 1,
+  "library": {
+    "level": "P4",
+    "skillId": "p4-pie-chart-count",
+    "tags": [
+      "P4",
+      "pie-charts",
+      "general revision",
+      "level-unconfirmed"
+    ]
+  },
+  "curriculum": {
+    "objectiveId": "candidate.p4.pie-charts.count",
+    "sources": [
+      "https://practicle.sg/primary-4-math/",
+      "https://www.thelearninglab.com.sg/blog/tll-shares/new-changes-to-moe-primary-maths-syllabus"
+    ],
+    "evidenceStatus": "candidate"
+  },
+  "authors": [
+    "claude-p4-pie-charts"
+  ],
+  "provenance": {
+    "kind": "authored"
+  },
+  "lesson": {
+    "id": "p4-pie-chart-count",
+    "version": 1,
+    "topic": "pie-charts",
+    "title": "How many in each slice?",
+    "subtitle": "P4 pie-chart revision",
+    "level": "P4 candidate",
+    "minutes": 7,
+    "objective": "Share the total of a pie chart between its equal slices, then find the number in a group.",
+    "story": "The pie chart shows 60 pupils in all, sorted into Apples, Pears, Grapes and Plums. Every slice stands for the same number of pupils.",
+    "reviewStatus": "draft",
+    "specification": {
+      "task": "count",
+      "slices": 10,
+      "categories": [
+        "Apples",
+        "Pears",
+        "Grapes",
+        "Plums"
+      ],
+      "parts": [
+        4,
+        3,
+        2,
+        1
+      ],
+      "unit": 6,
+      "quantity": "pupils",
+      "a": 0,
+      "b": 2
+    },
+    "steps": [
+      {
+        "id": "one-slice",
+        "goal": "one-slice",
+        "title": "Find one slice",
+        "prompt": "The pie has 10 equal slices and shows 60 pupils in all. How many pupils does one slice stand for?",
+        "kind": "exact",
+        "answer": "6",
+        "hints": [
+          "Every slice stands for the same number.",
+          "Share the whole amount equally between all the slices.",
+          "Work out 60 ÷ 10.",
+          "60 ÷ 10 = 6. Enter 6."
+        ]
+      },
+      {
+        "id": "category",
+        "goal": "category",
+        "title": "Count a group",
+        "prompt": "How many pupils are in the Apples group?",
+        "kind": "exact",
+        "answer": "24",
+        "hints": [
+          "Count the slices that Apples covers.",
+          "Each slice stands for the same number of pupils, so multiply.",
+          "Apples covers 4 slices and each slice stands for 6: work out 4 × 6.",
+          "4 × 6 = 24. Enter 24."
+        ]
+      },
+      {
+        "id": "more",
+        "goal": "more",
+        "title": "Find how many more",
+        "prompt": "How many more pupils are in the Apples group than in the Grapes group?",
+        "kind": "exact",
+        "answer": "12",
+        "hints": [
+          "Find how many more slices Apples covers than Grapes.",
+          "Count the slices of each group and take the smaller number from the larger.",
+          "Apples covers 4 slices and Grapes covers 2, which is 2 more. Each slice stands for 6.",
+          "2 × 6 = 12. Enter 12."
+        ]
+      },
+      {
+        "id": "reflection",
+        "goal": "reflection",
+        "title": "Explain your thinking",
+        "prompt": "Why do we find what one slice stands for first?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "k37",
+            "label": "One slice always stands for 1, so the number of slices is the amount in a group."
+          },
+          {
+            "id": "k23",
+            "label": "Each slice stands for the same number, so count slices to find any group."
+          },
+          {
+            "id": "k30",
+            "label": "Every group stands for the same number, so the number of slices does not matter."
+          }
+        ],
+        "answer": "k23",
+        "hints": [
+          "Think about the slices of the pie.",
+          "All the slices are the same size.",
+          "Knowing one slice lets you work out any group.",
+          "Choose the explanation about counting slices."
+        ]
+      }
+    ]
+  },
+  "fixtures": [
+    {
+      "stepId": "one-slice",
+      "accepted": [
+        "6"
+      ],
+      "rejected": [
+        "7",
+        "16"
+      ]
+    },
+    {
+      "stepId": "category",
+      "accepted": [
+        "24"
+      ],
+      "rejected": [
+        "25",
+        "34"
+      ]
+    },
+    {
+      "stepId": "more",
+      "accepted": [
+        "12"
+      ],
+      "rejected": [
+        "13",
+        "22"
+      ]
+    },
+    {
+      "stepId": "reflection",
+      "accepted": [
+        "k23"
+      ],
+      "rejected": [
+        "k37",
+        "k30"
+      ]
+    }
+  ]
+}

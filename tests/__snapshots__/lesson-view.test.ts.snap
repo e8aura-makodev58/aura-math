@@ -1,0 +1,461 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`shared rich lesson canvas compatibility > angle-opening preserves rich presentation and completion in guided mode 1`] = `
+{
+  "choices": [
+    "Smaller than a right angle",
+    "Exactly a right angle",
+    "Larger than a right angle",
+  ],
+  "guided": true,
+  "prompt": "How does angle A compare with a right angle?",
+  "story": "Imagine fitting the reference square corner inside angle A. Compare the openings.",
+  "title": "Compare the opening",
+}
+`;
+
+exports[`shared rich lesson canvas compatibility > angle-opening preserves rich presentation and completion in independent mode 1`] = `
+{
+  "choices": [
+    "Smaller than a right angle",
+    "Exactly a right angle",
+    "Larger than a right angle",
+  ],
+  "guided": false,
+  "prompt": "How does angle A compare with a right angle?",
+  "story": "Imagine fitting the reference square corner inside angle A. Compare the openings.",
+  "title": "Compare the opening",
+}
+`;
+
+exports[`shared rich lesson canvas compatibility > compare-categories preserves rich presentation and completion in guided mode 1`] = `
+{
+  "choices": [],
+  "guided": true,
+  "prompt": "How many items does one full symbol represent?",
+  "story": "This picture graph shows items in pretend collections. Each full symbol represents 5 items. These are example data, not a class survey.",
+  "title": "Compare two picture-graph rows",
+}
+`;
+
+exports[`shared rich lesson canvas compatibility > compare-categories preserves rich presentation and completion in independent mode 1`] = `
+{
+  "choices": [],
+  "guided": false,
+  "prompt": "How many items does one full symbol represent?",
+  "story": "This picture graph shows items in pretend collections. Each full symbol represents 5 items. These are example data, not a class survey.",
+  "title": "Compare two picture-graph rows",
+}
+`;
+
+exports[`shared rich lesson canvas compatibility > compare-same-whole preserves rich presentation and completion in guided mode 1`] = `
+{
+  "choices": [],
+  "guided": true,
+  "prompt": "How many parts of Rectangle A are shaded?",
+  "story": "Both rectangles are equal-sized wholes. Compare the shaded area in the pictures.",
+  "title": "Compare fractions of the same whole",
+}
+`;
+
+exports[`shared rich lesson canvas compatibility > compare-same-whole preserves rich presentation and completion in independent mode 1`] = `
+{
+  "choices": [],
+  "guided": false,
+  "prompt": "How many parts of Rectangle A are shaded?",
+  "story": "Both rectangles are equal-sized wholes. Compare the shaded area in the pictures.",
+  "title": "Compare fractions of the same whole",
+}
+`;
+
+exports[`shared rich lesson canvas compatibility > corner-detective preserves rich presentation and completion in guided mode 1`] = `
+{
+  "choices": [
+    "Card A",
+    "Card B",
+    "Card C",
+  ],
+  "guided": true,
+  "prompt": "Which card shows a right angle?",
+  "story": "A right angle has the same opening as a square corner. Compare each card with the reference corner.",
+  "title": "Be a corner detective",
+}
+`;
+
+exports[`shared rich lesson canvas compatibility > corner-detective preserves rich presentation and completion in independent mode 1`] = `
+{
+  "choices": [
+    "Card A",
+    "Card B",
+    "Card C",
+  ],
+  "guided": false,
+  "prompt": "Which card shows a right angle?",
+  "story": "A right angle has the same opening as a square corner. Compare each card with the reference corner.",
+  "title": "Be a corner detective",
+}
+`;
+
+exports[`shared rich lesson canvas compatibility > digit-value preserves rich presentation and completion in guided mode 1`] = `
+{
+  "choices": [
+    "Ones",
+    "Hundreds",
+    "Tens",
+  ],
+  "guided": true,
+  "prompt": "Which column represents groups of 10?",
+  "story": "Each column groups blocks by value. A hundreds block represents 100, a tens rod represents 10 and a ones counter represents 1. An empty column represents zero in that place.",
+  "title": "A digit and its place value",
+}
+`;
+
+exports[`shared rich lesson canvas compatibility > digit-value preserves rich presentation and completion in independent mode 1`] = `
+{
+  "choices": [
+    "Ones",
+    "Hundreds",
+    "Tens",
+  ],
+  "guided": false,
+  "prompt": "Which column represents groups of 10?",
+  "story": "Each column groups blocks by value. A hundreds block represents 100, a tens rod represents 10 and a ones counter represents 1. An empty column represents zero in that place.",
+  "title": "A digit and its place value",
+}
+`;
+
+exports[`shared rich lesson canvas compatibility > equal-groups-total preserves rich presentation and completion in guided mode 1`] = `
+{
+  "choices": [
+    "How many counters are in each group",
+    "How many counters there are in all",
+    "How many equal groups there are",
+  ],
+  "guided": true,
+  "prompt": "What does the question ask you to find?",
+  "story": "There are 4 baskets with 3 counters in each. How many counters are there altogether?",
+  "title": "Picnic baskets",
+}
+`;
+
+exports[`shared rich lesson canvas compatibility > equal-groups-total preserves rich presentation and completion in independent mode 1`] = `
+{
+  "choices": [
+    "How many counters are in each group",
+    "How many counters there are in all",
+    "How many equal groups there are",
+  ],
+  "guided": false,
+  "prompt": "What does the question ask you to find?",
+  "story": "There are 4 baskets with 3 counters in each. How many counters are there altogether?",
+  "title": "Picnic baskets",
+}
+`;
+
+exports[`shared rich lesson canvas compatibility > equal-parts preserves rich presentation and completion in guided mode 1`] = `
+{
+  "choices": [
+    "Rectangle A",
+    "Rectangle B",
+    "Rectangle C",
+  ],
+  "guided": true,
+  "prompt": "Which rectangle is divided into equal parts?",
+  "story": "Three same-sized rectangles are divided in different ways. Study the size of each part.",
+  "title": "Which parts are equal?",
+}
+`;
+
+exports[`shared rich lesson canvas compatibility > equal-parts preserves rich presentation and completion in independent mode 1`] = `
+{
+  "choices": [
+    "Rectangle A",
+    "Rectangle B",
+    "Rectangle C",
+  ],
+  "guided": false,
+  "prompt": "Which rectangle is divided into equal parts?",
+  "story": "Three same-sized rectangles are divided in different ways. Study the size of each part.",
+  "title": "Which parts are equal?",
+}
+`;
+
+exports[`shared rich lesson canvas compatibility > garden-pots preserves rich presentation and completion in guided mode 1`] = `
+{
+  "choices": [
+    "Asha’s amount = Ben’s amount + the difference",
+    "Ben’s amount = Asha’s amount + the difference",
+  ],
+  "guided": true,
+  "prompt": "Which relationship fits the story?",
+  "story": "Asha has 24 pots. Asha has 8 more pots than Ben. How many pots does Ben have?",
+  "title": "Find the smaller group",
+}
+`;
+
+exports[`shared rich lesson canvas compatibility > garden-pots preserves rich presentation and completion in independent mode 1`] = `
+{
+  "choices": [
+    "Asha’s amount = Ben’s amount + the difference",
+    "Ben’s amount = Asha’s amount + the difference",
+  ],
+  "guided": false,
+  "prompt": "Which relationship fits the story?",
+  "story": "Asha has 24 pots. Asha has 8 more pots than Ben. How many pots does Ben have?",
+  "title": "Find the smaller group",
+}
+`;
+
+exports[`shared rich lesson canvas compatibility > graph-total preserves rich presentation and completion in guided mode 1`] = `
+{
+  "choices": [],
+  "guided": true,
+  "prompt": "How many items does one full symbol represent?",
+  "story": "This picture graph shows items in pretend collections. Each full symbol represents 5 items. These are example data, not a class survey.",
+  "title": "Find the picture-graph total",
+}
+`;
+
+exports[`shared rich lesson canvas compatibility > graph-total preserves rich presentation and completion in independent mode 1`] = `
+{
+  "choices": [],
+  "guided": false,
+  "prompt": "How many items does one full symbol represent?",
+  "story": "This picture graph shows items in pretend collections. Each full symbol represents 5 items. These are example data, not a class survey.",
+  "title": "Find the picture-graph total",
+}
+`;
+
+exports[`shared rich lesson canvas compatibility > how-many-groups preserves rich presentation and completion in guided mode 1`] = `
+{
+  "choices": [
+    "How many counters there are in all",
+    "How many counters are in each group",
+    "How many equal groups there are",
+  ],
+  "guided": true,
+  "prompt": "What does the question ask you to find?",
+  "story": "15 counters are packed with 5 counters in each bag. How many bags are needed?",
+  "title": "Pack equal bags",
+}
+`;
+
+exports[`shared rich lesson canvas compatibility > how-many-groups preserves rich presentation and completion in independent mode 1`] = `
+{
+  "choices": [
+    "How many counters there are in all",
+    "How many counters are in each group",
+    "How many equal groups there are",
+  ],
+  "guided": false,
+  "prompt": "What does the question ask you to find?",
+  "story": "15 counters are packed with 5 counters in each bag. How many bags are needed?",
+  "title": "Pack equal bags",
+}
+`;
+
+exports[`shared rich lesson canvas compatibility > hundreds-tens-ones preserves rich presentation and completion in guided mode 1`] = `
+{
+  "choices": [
+    "Tens",
+    "Ones",
+    "Hundreds",
+  ],
+  "guided": true,
+  "prompt": "Which column represents groups of 100?",
+  "story": "Each column groups blocks by value. A hundreds block represents 100, a tens rod represents 10 and a ones counter represents 1. An empty column represents zero in that place.",
+  "title": "Build a number from blocks",
+}
+`;
+
+exports[`shared rich lesson canvas compatibility > hundreds-tens-ones preserves rich presentation and completion in independent mode 1`] = `
+{
+  "choices": [
+    "Tens",
+    "Ones",
+    "Hundreds",
+  ],
+  "guided": false,
+  "prompt": "Which column represents groups of 100?",
+  "story": "Each column groups blocks by value. A hundreds block represents 100, a tens rod represents 10 and a ones counter represents 1. An empty column represents zero in that place.",
+  "title": "Build a number from blocks",
+}
+`;
+
+exports[`shared rich lesson canvas compatibility > name-the-fraction preserves rich presentation and completion in guided mode 1`] = `
+{
+  "choices": [],
+  "guided": true,
+  "prompt": "How many equal parts make the whole?",
+  "story": "A rectangle is one whole. Some of its equal parts are shaded.",
+  "title": "Name the shaded fraction",
+}
+`;
+
+exports[`shared rich lesson canvas compatibility > name-the-fraction preserves rich presentation and completion in independent mode 1`] = `
+{
+  "choices": [],
+  "guided": false,
+  "prompt": "How many equal parts make the whole?",
+  "story": "A rectangle is one whole. Some of its equal parts are shaded.",
+  "title": "Name the shaded fraction",
+}
+`;
+
+exports[`shared rich lesson canvas compatibility > read-the-key preserves rich presentation and completion in guided mode 1`] = `
+{
+  "choices": [],
+  "guided": true,
+  "prompt": "How many items does one full symbol represent?",
+  "story": "This picture graph shows items in pretend collections. Each full symbol represents 2 items. These are example data, not a class survey.",
+  "title": "Read the picture-graph key",
+}
+`;
+
+exports[`shared rich lesson canvas compatibility > read-the-key preserves rich presentation and completion in independent mode 1`] = `
+{
+  "choices": [],
+  "guided": false,
+  "prompt": "How many items does one full symbol represent?",
+  "story": "This picture graph shows items in pretend collections. Each full symbol represents 2 items. These are example data, not a class survey.",
+  "title": "Read the picture-graph key",
+}
+`;
+
+exports[`shared rich lesson canvas compatibility > ribbon-collection preserves rich presentation and completion in guided mode 1`] = `
+{
+  "choices": [
+    "Maya’s amount = Zac’s amount + the difference",
+    "Zac’s amount = Maya’s amount + the difference",
+  ],
+  "guided": true,
+  "prompt": "Which relationship fits the story?",
+  "story": "Zac has 11 ribbons. Maya has 7 more ribbons than Zac. How many ribbons does Maya have?",
+  "title": "A little more ribbon",
+}
+`;
+
+exports[`shared rich lesson canvas compatibility > ribbon-collection preserves rich presentation and completion in independent mode 1`] = `
+{
+  "choices": [
+    "Maya’s amount = Zac’s amount + the difference",
+    "Zac’s amount = Maya’s amount + the difference",
+  ],
+  "guided": false,
+  "prompt": "Which relationship fits the story?",
+  "story": "Zac has 11 ribbons. Maya has 7 more ribbons than Zac. How many ribbons does Maya have?",
+  "title": "A little more ribbon",
+}
+`;
+
+exports[`shared rich lesson canvas compatibility > right-angle-hunt preserves rich presentation and completion in guided mode 1`] = `
+{
+  "choices": [
+    "Card A",
+    "Card B",
+    "Card C",
+    "Card D",
+  ],
+  "guided": true,
+  "prompt": "Which cards show right angles? Choose every match.",
+  "story": "Right angles can point in different directions. Select every card with the same opening as the reference corner.",
+  "title": "The right-angle hunt",
+}
+`;
+
+exports[`shared rich lesson canvas compatibility > right-angle-hunt preserves rich presentation and completion in independent mode 1`] = `
+{
+  "choices": [
+    "Card A",
+    "Card B",
+    "Card C",
+    "Card D",
+  ],
+  "guided": false,
+  "prompt": "Which cards show right angles? Choose every match.",
+  "story": "Right angles can point in different directions. Select every card with the same opening as the reference corner.",
+  "title": "The right-angle hunt",
+}
+`;
+
+exports[`shared rich lesson canvas compatibility > sharing-equally preserves rich presentation and completion in guided mode 1`] = `
+{
+  "choices": [
+    "How many counters are in each group",
+    "How many equal groups there are",
+    "How many counters there are in all",
+  ],
+  "guided": true,
+  "prompt": "What does the question ask you to find?",
+  "story": "12 counters are shared equally among 3 trays. How many counters are in each group?",
+  "title": "Share the counters fairly",
+}
+`;
+
+exports[`shared rich lesson canvas compatibility > sharing-equally preserves rich presentation and completion in independent mode 1`] = `
+{
+  "choices": [
+    "How many counters are in each group",
+    "How many equal groups there are",
+    "How many counters there are in all",
+  ],
+  "guided": false,
+  "prompt": "What does the question ask you to find?",
+  "story": "12 counters are shared equally among 3 trays. How many counters are in each group?",
+  "title": "Share the counters fairly",
+}
+`;
+
+exports[`shared rich lesson canvas compatibility > shell-discovery preserves rich presentation and completion in guided mode 1`] = `
+{
+  "choices": [
+    "Lin’s amount = Sam’s amount + the difference",
+    "Sam’s amount = Lin’s amount + the difference",
+  ],
+  "guided": true,
+  "prompt": "Which relationship fits the story?",
+  "story": "Lin has 21 shells. Sam has 13 shells. How many more shells does Lin have than Sam?",
+  "title": "How many more?",
+}
+`;
+
+exports[`shared rich lesson canvas compatibility > shell-discovery preserves rich presentation and completion in independent mode 1`] = `
+{
+  "choices": [
+    "Lin’s amount = Sam’s amount + the difference",
+    "Sam’s amount = Lin’s amount + the difference",
+  ],
+  "guided": false,
+  "prompt": "Which relationship fits the story?",
+  "story": "Lin has 21 shells. Sam has 13 shells. How many more shells does Lin have than Sam?",
+  "title": "How many more?",
+}
+`;
+
+exports[`shared rich lesson canvas compatibility > zero-in-a-place preserves rich presentation and completion in guided mode 1`] = `
+{
+  "choices": [
+    "Hundreds",
+    "Tens",
+    "Ones",
+  ],
+  "guided": true,
+  "prompt": "Which column represents groups of 10?",
+  "story": "Each column groups blocks by value. A hundreds block represents 100, a tens rod represents 10 and a ones counter represents 1. An empty column represents zero in that place.",
+  "title": "A place with no blocks",
+}
+`;
+
+exports[`shared rich lesson canvas compatibility > zero-in-a-place preserves rich presentation and completion in independent mode 1`] = `
+{
+  "choices": [
+    "Hundreds",
+    "Tens",
+    "Ones",
+  ],
+  "guided": false,
+  "prompt": "Which column represents groups of 10?",
+  "story": "Each column groups blocks by value. A hundreds block represents 100, a tens rod represents 10 and a ones counter represents 1. An empty column represents zero in that place.",
+  "title": "A place with no blocks",
+}
+`;

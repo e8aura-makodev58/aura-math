@@ -1,0 +1,173 @@
+{
+  "schemaVersion": 1,
+  "locale": "en-SG",
+  "adapterVersion": 1,
+  "curriculum": {
+    "objectiveId": "P2.additive-comparison",
+    "sources": [
+      "https://sg.ixl.com/standards/maths/primary-2"
+    ],
+    "evidenceStatus": "candidate"
+  },
+  "authors": [
+    "Codex"
+  ],
+  "provenance": {
+    "kind": "generated",
+    "generatorVersion": "bounded-v1",
+    "seed": 1
+  },
+  "lesson": {
+    "id": "generated-1-3",
+    "version": 1,
+    "topic": "comparison",
+    "title": "How many more?",
+    "subtitle": "Build a comparison",
+    "level": "P2 candidate",
+    "minutes": 5,
+    "story": "Lin has 91 shells. Sam has 86 shells. How many more shells does Lin have than Sam?",
+    "objective": "Connect two quantities and the difference between them.",
+    "reviewStatus": "draft",
+    "specification": {
+      "largerName": "Lin",
+      "smallerName": "Sam",
+      "larger": 91,
+      "smaller": 86,
+      "unknown": "difference",
+      "unit": "shells"
+    },
+    "steps": [
+      {
+        "id": "relation",
+        "title": "Connect the quantities",
+        "prompt": "Which relationship fits the story?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "option-11r011x",
+            "label": "Sam’s amount = Lin’s amount + the difference",
+            "meaning": "smaller-is-larger-plus-difference"
+          },
+          {
+            "id": "option-1chhpou",
+            "label": "Lin’s amount = Sam’s amount + the difference",
+            "meaning": "larger-is-smaller-plus-difference"
+          }
+        ],
+        "answer": "option-1chhpou",
+        "hints": [
+          "Who has more shells?",
+          "Lin has the larger amount.",
+          "The larger amount contains the smaller amount and an extra part.",
+          "Choose: Lin’s amount = Sam’s amount + the difference."
+        ],
+        "goal": "relation"
+      },
+      {
+        "id": "calculation",
+        "title": "Find the missing amount",
+        "prompt": "How many more shells does Lin have?",
+        "kind": "number",
+        "answer": 5,
+        "hints": [
+          "Look for the missing part in the comparison.",
+          "Take the known part away from the larger amount.",
+          "Work out 91 − 86.",
+          "91 − 86 = 5. Enter 5."
+        ],
+        "goal": "calculation"
+      },
+      {
+        "id": "reflection",
+        "title": "Explain your thinking",
+        "prompt": "Why does your answer fit?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "option-50e3qa",
+            "label": "The two amounts must both be 91."
+          },
+          {
+            "id": "option-7fb0b3",
+            "label": "The difference is 5: 86 + 5 = 91."
+          }
+        ],
+        "answer": "option-7fb0b3",
+        "hints": [
+          "Think about what stayed the same.",
+          "Use the relationship you just checked.",
+          "Read this explanation carefully: The difference is 5: 86 + 5 = 91.",
+          "Choose: The difference is 5: 86 + 5 = 91."
+        ],
+        "goal": "reflection"
+      }
+    ]
+  },
+  "interpretation": {
+    "entities": [
+      "Lin",
+      "Sam"
+    ],
+    "quantities": [
+      {
+        "entity": "Lin",
+        "value": 91,
+        "unit": "shells",
+        "state": "initial"
+      },
+      {
+        "entity": "Sam",
+        "value": 86,
+        "unit": "shells",
+        "state": "initial"
+      }
+    ],
+    "relationships": [
+      {
+        "kind": "additive-comparison",
+        "larger": "Lin",
+        "smaller": "Sam",
+        "difference": 5
+      }
+    ],
+    "unknown": "difference",
+    "sourceSpans": [
+      {
+        "start": 0,
+        "end": 82,
+        "text": "Lin has 91 shells. Sam has 86 shells. How many more shells does Lin have than Sam?"
+      }
+    ],
+    "assumptions": [],
+    "ambiguities": []
+  },
+  "fixtures": [
+    {
+      "stepId": "relation",
+      "accepted": [
+        "option-1chhpou"
+      ],
+      "rejected": [
+        "option-11r011x"
+      ]
+    },
+    {
+      "stepId": "calculation",
+      "accepted": [
+        5
+      ],
+      "rejected": [
+        6
+      ]
+    },
+    {
+      "stepId": "reflection",
+      "accepted": [
+        "option-7fb0b3"
+      ],
+      "rejected": [
+        "option-50e3qa"
+      ]
+    }
+  ]
+}

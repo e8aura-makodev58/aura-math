@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WP0a fold spike (throwaway)</title>
+<style>
+  body{font:16px/1.4 system-ui,sans-serif;margin:0;padding:12px;max-width:760px}
+  .banner{background:#fff3cd;border:2px solid #b58900;padding:8px;font-weight:700}
+  #stage{width:min(100%,760px);margin:12px auto;border:1px solid #888;touch-action:pan-y}
+  button.btn{min-width:44px;min-height:44px;margin:2px;font:inherit}
+  button.btn[aria-pressed="true"]{background:#0b57d0;color:#fff}
+  .row{display:flex;flex-wrap:wrap;gap:4px;align-items:center;margin:6px 0}
+  #spacer{height:900px;background:repeating-linear-gradient(#f4f4f4,#f4f4f4 40px,#e8e8e8 40px,#e8e8e8 80px)}
+  .grip:focus-visible{outline:3px solid #f90;outline-offset:2px}
+</style>
+</head>
+<body>
+<div class="banner">WP0a SPIKE - THROWAWAY. Not part of the app. Do not ship.</div>
+<div class="row">
+  <label>Shape <select id="shape"></select></label>
+  <label>Floor <select id="root"></select></label>
+  <label><input type="checkbox" id="tween"> tween (off = snap 0/90)</label>
+</div>
+<div id="stage"></div>
+<div class="row" id="creases" aria-label="Creases"></div>
+<div class="row">
+  <button class="btn" id="foldall">Fold all</button>
+  <button class="btn" id="unfoldall">Unfold all</button>
+  <span>View</span>
+  <button class="btn" data-cam="0,-15" aria-label="pitch down">&darr;</button>
+  <button class="btn" data-cam="0,15" aria-label="pitch up">&uarr;</button>
+  <button class="btn" data-cam="-15,0" aria-label="yaw left">&larr;</button>
+  <button class="btn" data-cam="15,0" aria-label="yaw right">&rarr;</button>
+  <button class="btn" id="corner">Corner</button>
+  <button class="btn" id="front">Front</button>
+</div>
+<pre id="out"></pre>
+<div id="spacer">scroll area (a swipe starting here must scroll the page)</div>
+<script type="module" src="./demo.ts"></script>
+</body>
+</html>

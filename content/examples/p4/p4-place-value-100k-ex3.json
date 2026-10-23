@@ -1,0 +1,199 @@
+{
+  "schemaVersion": 3,
+  "locale": "en-SG",
+  "adapterVersion": 1,
+  "library": {
+    "level": "P4",
+    "skillId": "p4-place-value-100k",
+    "tags": [
+      "P4",
+      "whole-numbers",
+      "general revision",
+      "example"
+    ]
+  },
+  "curriculum": {
+    "objectiveId": "candidate.p4.whole-numbers.place-value",
+    "sources": [
+      "https://practicle.sg/primary-4-math/",
+      "https://sg.ixl.com/standards/maths/primary-4"
+    ],
+    "evidenceStatus": "candidate"
+  },
+  "authors": [
+    "Codex"
+  ],
+  "provenance": {
+    "kind": "generated",
+    "generatorVersion": "p4-examples-v1",
+    "seed": 1005468425
+  },
+  "lesson": {
+    "id": "p4-place-value-100k-ex3",
+    "version": 1,
+    "topic": "whole-numbers",
+    "title": "Read numbers to 100 000",
+    "subtitle": "P4 whole-number revision",
+    "level": "P4 candidate",
+    "minutes": 7,
+    "objective": "Read the place and value of digits in a five-digit number.",
+    "story": "Read 73 629 and 73 692 in the place chart.",
+    "reviewStatus": "draft",
+    "specification": {
+      "task": "place-value",
+      "n": 73629,
+      "m": 73692,
+      "place": "thousands",
+      "roundTo": 100,
+      "unit": "stickers"
+    },
+    "steps": [
+      {
+        "id": "place",
+        "goal": "place",
+        "title": "Name the place",
+        "prompt": "In 73 629, which place does the digit 3 hold?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "k77",
+            "label": "The ones place",
+            "meaning": "ones"
+          },
+          {
+            "id": "k63",
+            "label": "The thousands place",
+            "meaning": "thousands"
+          },
+          {
+            "id": "k70",
+            "label": "The hundreds place",
+            "meaning": "hundreds"
+          }
+        ],
+        "answer": "k63",
+        "hints": [
+          "Read the place chart from the right: ones, tens, hundreds, thousands, ten thousands.",
+          "Find the column that holds the digit 3.",
+          "The digit 3 sits in the thousands column.",
+          "Choose the thousands place."
+        ]
+      },
+      {
+        "id": "digit-value",
+        "goal": "digit-value",
+        "title": "Find the value",
+        "prompt": "What is the value of the digit 3 in 73 629?",
+        "kind": "exact",
+        "answer": "3000",
+        "hints": [
+          "A digit's value depends on the place it holds.",
+          "Count how many thousands the digit stands for.",
+          "3 thousands is 3 × 1 000.",
+          "3 × 1 000 = 3 000. Enter 3000."
+        ]
+      },
+      {
+        "id": "compare",
+        "goal": "compare",
+        "title": "Compare two numbers",
+        "prompt": "Which number is greater: 73 629 or 73 692?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "k60",
+            "label": "73 692",
+            "meaning": "right"
+          },
+          {
+            "id": "k67",
+            "label": "Both are equal",
+            "meaning": "same"
+          },
+          {
+            "id": "k53",
+            "label": "73 629",
+            "meaning": "left"
+          }
+        ],
+        "answer": "k60",
+        "hints": [
+          "Compare the digits starting from the greatest place.",
+          "Look at the ten thousands first, then the thousands, then the hundreds.",
+          "Stop at the first place where the digits differ. The larger digit wins.",
+          "Choose 73 692."
+        ]
+      },
+      {
+        "id": "reflection",
+        "goal": "reflection",
+        "title": "Explain your thinking",
+        "prompt": "Why does the same digit stand for different values?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "k30",
+            "label": "The digit changes its shape when it moves to a different place in the number."
+          },
+          {
+            "id": "k37",
+            "label": "The value of a digit is always just the digit itself, wherever it is."
+          },
+          {
+            "id": "k23",
+            "label": "A digit's value depends on its place; each place is ten times the next."
+          }
+        ],
+        "answer": "k23",
+        "hints": [
+          "Think about the place chart.",
+          "Compare the value of 4 in the tens place with 4 in the hundreds place.",
+          "Each place is worth ten times the place to its right.",
+          "Choose the explanation about places being ten times each other."
+        ]
+      }
+    ]
+  },
+  "fixtures": [
+    {
+      "stepId": "place",
+      "accepted": [
+        "k63"
+      ],
+      "rejected": [
+        "k77",
+        "k70"
+      ]
+    },
+    {
+      "stepId": "digit-value",
+      "accepted": [
+        "3000"
+      ],
+      "rejected": [
+        "3001",
+        "3010"
+      ]
+    },
+    {
+      "stepId": "compare",
+      "accepted": [
+        "k60"
+      ],
+      "rejected": [
+        "k67",
+        "k53"
+      ]
+    },
+    {
+      "stepId": "reflection",
+      "accepted": [
+        "k23"
+      ],
+      "rejected": [
+        "k30",
+        "k37"
+      ]
+    }
+  ]
+}

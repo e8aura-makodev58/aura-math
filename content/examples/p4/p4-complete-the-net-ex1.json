@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 3,
+  "locale": "en-SG",
+  "adapterVersion": 1,
+  "library": {
+    "level": "P4",
+    "skillId": "p4-complete-the-net",
+    "tags": [
+      "P4",
+      "nets",
+      "general revision",
+      "level-unconfirmed",
+      "example"
+    ]
+  },
+  "curriculum": {
+    "objectiveId": "candidate.p4.nets.complete",
+    "sources": [
+      "https://practicle.sg/primary-4-math/",
+      "https://www.thelearninglab.com.sg/blog/tll-shares/new-changes-to-moe-primary-maths-syllabus"
+    ],
+    "evidenceStatus": "candidate"
+  },
+  "authors": [
+    "Codex"
+  ],
+  "provenance": {
+    "kind": "generated",
+    "generatorVersion": "p4-examples-v1",
+    "seed": 3456085290
+  },
+  "lesson": {
+    "id": "p4-complete-the-net-ex1",
+    "version": 1,
+    "topic": "nets",
+    "title": "Add the last square",
+    "subtitle": "P4 nets revision",
+    "level": "P4 candidate",
+    "minutes": 7,
+    "objective": "Find every place where a sixth square makes a net of a cube.",
+    "story": "Five squares are joined, with four dashed spots for a sixth.",
+    "reviewStatus": "draft",
+    "specification": {
+      "task": "complete",
+      "nets": [
+        ".d./a#./.#c/##./.#b"
+      ],
+      "asked": 0,
+      "face": "",
+      "solid": ""
+    },
+    "steps": [
+      {
+        "id": "spots",
+        "goal": "spots",
+        "title": "Add the sixth square",
+        "prompt": "Five squares are joined. At which dashed spots would a sixth square make a net that folds into a cube? Choose every spot that works.",
+        "kind": "multi",
+        "choices": [
+          {
+            "id": "k23",
+            "label": "Spot A",
+            "meaning": "spot:a"
+          },
+          {
+            "id": "k30",
+            "label": "Spot B",
+            "meaning": "spot:b"
+          },
+          {
+            "id": "k37",
+            "label": "Spot C",
+            "meaning": "spot:c"
+          },
+          {
+            "id": "k44",
+            "label": "Spot D",
+            "meaning": "spot:d"
+          }
+        ],
+        "answer": [
+          "k30",
+          "k37"
+        ],
+        "hints": [
+          "Try one spot at a time. Imagine adding a square there.",
+          "Fold the six squares in your head. Does each one land on a different face?",
+          "A spot can look fine and still make two squares land on the same face. Test every spot.",
+          "Choose Spot B and Spot C."
+        ]
+      },
+      {
+        "id": "reflection",
+        "goal": "reflection",
+        "title": "Explain your thinking",
+        "prompt": "How can you test whether a spot works?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "k35",
+            "label": "A spot works if the new square touches any of the squares."
+          },
+          {
+            "id": "k42",
+            "label": "A spot works if it makes the whole pattern look balanced."
+          },
+          {
+            "id": "k28",
+            "label": "Fold up all six squares: each must land on a different face."
+          }
+        ],
+        "answer": "k28",
+        "hints": [
+          "Think about folding the pattern up.",
+          "Touching a square is not enough.",
+          "Looking balanced is not a test either.",
+          "Choose the explanation about folding and different faces."
+        ]
+      }
+    ]
+  },
+  "fixtures": [
+    {
+      "stepId": "spots",
+      "accepted": [
+        [
+          "k30",
+          "k37"
+        ]
+      ],
+      "rejected": [
+        [
+          "k30"
+        ],
+        [
+          "k30",
+          "k37",
+          "k23"
+        ]
+      ]
+    },
+    {
+      "stepId": "reflection",
+      "accepted": [
+        "k28"
+      ],
+      "rejected": [
+        "k35",
+        "k42"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,173 @@
+{
+  "schemaVersion": 1,
+  "locale": "en-SG",
+  "adapterVersion": 1,
+  "curriculum": {
+    "objectiveId": "P2.additive-comparison",
+    "sources": [
+      "https://sg.ixl.com/standards/maths/primary-2"
+    ],
+    "evidenceStatus": "candidate"
+  },
+  "authors": [
+    "Codex"
+  ],
+  "provenance": {
+    "kind": "generated",
+    "generatorVersion": "bounded-v1",
+    "seed": 1
+  },
+  "lesson": {
+    "id": "generated-1-2",
+    "version": 1,
+    "topic": "comparison",
+    "title": "Find the smaller group",
+    "subtitle": "Build a comparison",
+    "level": "P2 candidate",
+    "minutes": 5,
+    "story": "Asha has 65 pots. Asha has 63 more pots than Ben. How many pots does Ben have?",
+    "objective": "Connect two quantities and the difference between them.",
+    "reviewStatus": "draft",
+    "specification": {
+      "largerName": "Asha",
+      "smallerName": "Ben",
+      "larger": 65,
+      "smaller": 2,
+      "unknown": "smaller",
+      "unit": "pots"
+    },
+    "steps": [
+      {
+        "id": "relation",
+        "title": "Connect the quantities",
+        "prompt": "Which relationship fits the story?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "option-hsfjl2",
+            "label": "Asha’s amount = Ben’s amount + the difference",
+            "meaning": "larger-is-smaller-plus-difference"
+          },
+          {
+            "id": "option-u02fil",
+            "label": "Ben’s amount = Asha’s amount + the difference",
+            "meaning": "smaller-is-larger-plus-difference"
+          }
+        ],
+        "answer": "option-hsfjl2",
+        "hints": [
+          "Who has more pots?",
+          "Asha has the larger amount.",
+          "The larger amount contains the smaller amount and an extra part.",
+          "Choose: Asha’s amount = Ben’s amount + the difference."
+        ],
+        "goal": "relation"
+      },
+      {
+        "id": "calculation",
+        "title": "Find the missing amount",
+        "prompt": "How many pots does Ben have?",
+        "kind": "number",
+        "answer": 2,
+        "hints": [
+          "Look for the missing part in the comparison.",
+          "Take the known part away from the larger amount.",
+          "Work out 65 − 63.",
+          "65 − 63 = 2. Enter 2."
+        ],
+        "goal": "calculation"
+      },
+      {
+        "id": "reflection",
+        "title": "Explain your thinking",
+        "prompt": "Why does your answer fit?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "option-1ng4t6v",
+            "label": "The difference is 63: 2 + 63 = 65."
+          },
+          {
+            "id": "option-gp45tm",
+            "label": "The two amounts must both be 65."
+          }
+        ],
+        "answer": "option-1ng4t6v",
+        "hints": [
+          "Think about what stayed the same.",
+          "Use the relationship you just checked.",
+          "Read this explanation carefully: The difference is 63: 2 + 63 = 65.",
+          "Choose: The difference is 63: 2 + 63 = 65."
+        ],
+        "goal": "reflection"
+      }
+    ]
+  },
+  "interpretation": {
+    "entities": [
+      "Asha",
+      "Ben"
+    ],
+    "quantities": [
+      {
+        "entity": "Asha",
+        "value": 65,
+        "unit": "pots",
+        "state": "initial"
+      },
+      {
+        "entity": "Ben",
+        "value": 2,
+        "unit": "pots",
+        "state": "initial"
+      }
+    ],
+    "relationships": [
+      {
+        "kind": "additive-comparison",
+        "larger": "Asha",
+        "smaller": "Ben",
+        "difference": 63
+      }
+    ],
+    "unknown": "smaller",
+    "sourceSpans": [
+      {
+        "start": 0,
+        "end": 78,
+        "text": "Asha has 65 pots. Asha has 63 more pots than Ben. How many pots does Ben have?"
+      }
+    ],
+    "assumptions": [],
+    "ambiguities": []
+  },
+  "fixtures": [
+    {
+      "stepId": "relation",
+      "accepted": [
+        "option-hsfjl2"
+      ],
+      "rejected": [
+        "option-u02fil"
+      ]
+    },
+    {
+      "stepId": "calculation",
+      "accepted": [
+        2
+      ],
+      "rejected": [
+        3
+      ]
+    },
+    {
+      "stepId": "reflection",
+      "accepted": [
+        "option-1ng4t6v"
+      ],
+      "rejected": [
+        "option-gp45tm"
+      ]
+    }
+  ]
+}

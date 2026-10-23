@@ -1,0 +1,176 @@
+{
+  "schemaVersion": 3,
+  "locale": "en-SG",
+  "adapterVersion": 1,
+  "library": {
+    "level": "P4",
+    "skillId": "p4-pie-chart-total",
+    "tags": [
+      "P4",
+      "pie-charts",
+      "general revision",
+      "level-unconfirmed",
+      "example"
+    ]
+  },
+  "curriculum": {
+    "objectiveId": "candidate.p4.pie-charts.total",
+    "sources": [
+      "https://practicle.sg/primary-4-math/",
+      "https://www.thelearninglab.com.sg/blog/tll-shares/new-changes-to-moe-primary-maths-syllabus"
+    ],
+    "evidenceStatus": "candidate"
+  },
+  "authors": [
+    "Codex"
+  ],
+  "provenance": {
+    "kind": "generated",
+    "generatorVersion": "p4-examples-v1",
+    "seed": 3422396278
+  },
+  "lesson": {
+    "id": "p4-pie-chart-total-ex4",
+    "version": 1,
+    "topic": "pie-charts",
+    "title": "Find the whole",
+    "subtitle": "P4 pie-chart revision",
+    "level": "P4 candidate",
+    "minutes": 7,
+    "objective": "Start from one known group of a pie chart, find what one slice stands for and then the whole.",
+    "story": "The pie chart sorts pupils into Rice, Noodles and Bread. Every slice stands for the same number of pupils. Only the Rice group has its number shown.",
+    "reviewStatus": "draft",
+    "specification": {
+      "task": "total",
+      "slices": 6,
+      "categories": [
+        "Rice",
+        "Noodles",
+        "Bread"
+      ],
+      "parts": [
+        2,
+        3,
+        1
+      ],
+      "unit": 2,
+      "quantity": "pupils",
+      "a": 0,
+      "b": 2
+    },
+    "steps": [
+      {
+        "id": "one-slice",
+        "goal": "one-slice",
+        "title": "Find one slice",
+        "prompt": "The Rice group has 4 pupils. How many pupils does one slice stand for?",
+        "kind": "exact",
+        "answer": "2",
+        "hints": [
+          "Count the slices that Rice covers.",
+          "Share the number in the group equally between its slices.",
+          "Rice covers 2 slices and has 4: work out 4 ÷ 2.",
+          "4 ÷ 2 = 2. Enter 2."
+        ]
+      },
+      {
+        "id": "total",
+        "goal": "total",
+        "title": "Find the whole",
+        "prompt": "How many pupils are in the whole pie?",
+        "kind": "exact",
+        "answer": "12",
+        "hints": [
+          "Count every slice in the pie.",
+          "Each slice stands for the same number, so multiply the number of slices by it.",
+          "The pie has 6 slices and each stands for 2: work out 6 × 2.",
+          "6 × 2 = 12. Enter 12."
+        ]
+      },
+      {
+        "id": "other",
+        "goal": "other",
+        "title": "Find another group",
+        "prompt": "How many pupils are in the Bread group?",
+        "kind": "exact",
+        "answer": "2",
+        "hints": [
+          "Count the slices that Bread covers.",
+          "Multiply by the number each slice stands for.",
+          "Bread covers 1 slices of 2 each: work out 1 × 2.",
+          "1 × 2 = 2. Enter 2."
+        ]
+      },
+      {
+        "id": "reflection",
+        "goal": "reflection",
+        "title": "Explain your thinking",
+        "prompt": "How can one known group help you find the whole pie?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "k23",
+            "label": "Share its number between its slices, then multiply by all the slices."
+          },
+          {
+            "id": "k30",
+            "label": "Add 1 more to its number for every other group shown in the pie chart."
+          },
+          {
+            "id": "k37",
+            "label": "The whole is always twice the known group, whatever its size."
+          }
+        ],
+        "answer": "k23",
+        "hints": [
+          "Think about what one slice stands for.",
+          "All the slices stand for the same number.",
+          "Once you know one slice, you can find any amount.",
+          "Choose the explanation about sharing and then multiplying."
+        ]
+      }
+    ]
+  },
+  "fixtures": [
+    {
+      "stepId": "one-slice",
+      "accepted": [
+        "2"
+      ],
+      "rejected": [
+        "3",
+        "12"
+      ]
+    },
+    {
+      "stepId": "total",
+      "accepted": [
+        "12"
+      ],
+      "rejected": [
+        "13",
+        "22"
+      ]
+    },
+    {
+      "stepId": "other",
+      "accepted": [
+        "2"
+      ],
+      "rejected": [
+        "3",
+        "12"
+      ]
+    },
+    {
+      "stepId": "reflection",
+      "accepted": [
+        "k23"
+      ],
+      "rejected": [
+        "k30",
+        "k37"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 3,
+  "locale": "en-SG",
+  "adapterVersion": 1,
+  "library": {
+    "level": "P4",
+    "skillId": "p4-estimate-then-measure",
+    "tags": [
+      "P4",
+      "angle-measure",
+      "general revision",
+      "example"
+    ]
+  },
+  "curriculum": {
+    "objectiveId": "candidate.p4.angle-measure.estimate",
+    "sources": [
+      "https://practicle.sg/primary-4-math/",
+      "https://sg.ixl.com/standards/maths/primary-4"
+    ],
+    "evidenceStatus": "candidate"
+  },
+  "authors": [
+    "Codex"
+  ],
+  "provenance": {
+    "kind": "generated",
+    "generatorVersion": "p4-examples-v1",
+    "seed": 3082392819
+  },
+  "lesson": {
+    "id": "p4-estimate-then-measure-ex2",
+    "version": 1,
+    "topic": "angle-measure",
+    "title": "Estimate, then measure",
+    "subtitle": "P4 angle revision",
+    "level": "P4 candidate",
+    "minutes": 7,
+    "objective": "Estimate an angle by comparing it with 90 degrees, then measure it.",
+    "story": "An angle is drawn on a protractor.",
+    "reviewStatus": "draft",
+    "specification": {
+      "task": "estimate",
+      "degrees": 160,
+      "flip": true,
+      "from": "N",
+      "direction": "clockwise",
+      "quarters": 3
+    },
+    "steps": [
+      {
+        "id": "estimate",
+        "goal": "estimate",
+        "title": "Estimate first",
+        "prompt": "Before you measure, which is the best estimate for this angle?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "k57",
+            "label": "About 110°",
+            "meaning": "high"
+          },
+          {
+            "id": "k43",
+            "label": "About 155°",
+            "meaning": "close"
+          },
+          {
+            "id": "k50",
+            "label": "About 115°",
+            "meaning": "low"
+          }
+        ],
+        "answer": "k43",
+        "hints": [
+          "Compare the angle with a right angle, 90 degrees, and with half a right angle, 45 degrees.",
+          "Is the angle smaller or larger than a right angle?",
+          "The angle is larger than a right angle, so some estimates are far too small.",
+          "Choose about 155°."
+        ]
+      },
+      {
+        "id": "read",
+        "goal": "read",
+        "title": "Now measure it",
+        "prompt": "Now measure the angle with the protractor. What is its size in degrees?",
+        "kind": "exact",
+        "answer": "160",
+        "hints": [
+          "Read where the second arm crosses the scale that starts at 0 on the base arm.",
+          "Long marks are every 10 degrees and short marks are every 5 degrees. Count along from 0.",
+          "The arm crosses just after 160, exactly on that long mark.",
+          "The angle is 160 degrees. Enter 160."
+        ]
+      },
+      {
+        "id": "reflection",
+        "goal": "reflection",
+        "title": "Explain your thinking",
+        "prompt": "Why is it helpful to estimate before you measure?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "k32",
+            "label": "It tells you the exact size, so the protractor reading must match it exactly."
+          },
+          {
+            "id": "k18",
+            "label": "It helps you spot a reading that is far off, like one from the wrong scale."
+          },
+          {
+            "id": "k25",
+            "label": "A good estimate is close enough, so you can skip measuring the angle at all."
+          }
+        ],
+        "answer": "k18",
+        "hints": [
+          "Think about checking your answer.",
+          "An estimate tells you roughly what to expect.",
+          "If your reading is very different, something went wrong.",
+          "Choose the explanation about noticing a reading that is far off."
+        ]
+      }
+    ]
+  },
+  "fixtures": [
+    {
+      "stepId": "estimate",
+      "accepted": [
+        "k43"
+      ],
+      "rejected": [
+        "k57",
+        "k50"
+      ]
+    },
+    {
+      "stepId": "read",
+      "accepted": [
+        "160"
+      ],
+      "rejected": [
+        "161",
+        "170"
+      ]
+    },
+    {
+      "stepId": "reflection",
+      "accepted": [
+        "k18"
+      ],
+      "rejected": [
+        "k32",
+        "k25"
+      ]
+    }
+  ]
+}

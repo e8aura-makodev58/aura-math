@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 3,
+  "locale": "en-SG",
+  "adapterVersion": 1,
+  "library": {
+    "level": "P4",
+    "skillId": "p4-angle-practice",
+    "tags": [
+      "P4",
+      "angle-measure",
+      "general revision"
+    ]
+  },
+  "curriculum": {
+    "objectiveId": "candidate.p4.angle-measure.practice",
+    "sources": [
+      "https://practicle.sg/primary-4-math/",
+      "https://sg.ixl.com/standards/maths/primary-4"
+    ],
+    "evidenceStatus": "candidate"
+  },
+  "authors": [
+    "claude-p4-angle-measure"
+  ],
+  "provenance": {
+    "kind": "authored"
+  },
+  "lesson": {
+    "id": "p4-angle-practice",
+    "version": 1,
+    "topic": "angle-measure",
+    "title": "A fresh angle question",
+    "subtitle": "P4 angle revision",
+    "level": "P4 candidate",
+    "minutes": 3,
+    "objective": "Measure an angle with a protractor.",
+    "story": "Measure the angle with the protractor. What is its size in degrees?",
+    "reviewStatus": "draft",
+    "specification": {
+      "task": "practice",
+      "degrees": 125,
+      "flip": true,
+      "from": "N",
+      "direction": "clockwise",
+      "quarters": 3
+    },
+    "steps": [
+      {
+        "id": "read",
+        "goal": "read",
+        "title": "Measure the angle",
+        "prompt": "Measure the angle with the protractor. What is its size in degrees?",
+        "kind": "exact",
+        "answer": "125",
+        "hints": [
+          "Read where the second arm crosses the scale that starts at 0 on the base arm.",
+          "Long marks are every 10 degrees and short marks are every 5 degrees. Count along from 0.",
+          "The arm crosses just after 120, at the short mark halfway to the next long mark.",
+          "The angle is 125 degrees. Enter 125."
+        ]
+      },
+      {
+        "id": "reflection",
+        "goal": "reflection",
+        "title": "Explain your thinking",
+        "prompt": "How did you decide which scale to read?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "k80",
+            "label": "I always read the outer scale, since it is the easier one to see."
+          },
+          {
+            "id": "k87",
+            "label": "I read the bigger of the two numbers where the arm crosses."
+          },
+          {
+            "id": "k73",
+            "label": "I read the scale that starts at 0 on the base arm of the angle."
+          }
+        ],
+        "answer": "k73",
+        "hints": [
+          "Think about where the angle starts.",
+          "The base arm lines up with one 0.",
+          "Always using the same scale gives the wrong answer for some angles.",
+          "Choose the explanation about the 0 on the base arm."
+        ]
+      }
+    ]
+  },
+  "fixtures": [
+    {
+      "stepId": "read",
+      "accepted": [
+        "125"
+      ],
+      "rejected": [
+        "126",
+        "135"
+      ]
+    },
+    {
+      "stepId": "reflection",
+      "accepted": [
+        "k73"
+      ],
+      "rejected": [
+        "k80",
+        "k87"
+      ]
+    }
+  ]
+}

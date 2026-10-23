@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 3,
+  "locale": "en-SG",
+  "adapterVersion": 1,
+  "library": {
+    "level": "P4",
+    "skillId": "p4-pie-chart-practice",
+    "tags": [
+      "P4",
+      "pie-charts",
+      "general revision",
+      "level-unconfirmed",
+      "example"
+    ]
+  },
+  "curriculum": {
+    "objectiveId": "candidate.p4.pie-charts.practice",
+    "sources": [
+      "https://practicle.sg/primary-4-math/",
+      "https://www.thelearninglab.com.sg/blog/tll-shares/new-changes-to-moe-primary-maths-syllabus"
+    ],
+    "evidenceStatus": "candidate"
+  },
+  "authors": [
+    "Codex"
+  ],
+  "provenance": {
+    "kind": "generated",
+    "generatorVersion": "p4-examples-v1",
+    "seed": 3988925848
+  },
+  "lesson": {
+    "id": "p4-pie-chart-practice-ex3",
+    "version": 1,
+    "topic": "pie-charts",
+    "title": "A fresh pie question",
+    "subtitle": "P4 pie-chart revision",
+    "level": "P4 candidate",
+    "minutes": 4,
+    "objective": "Find how many are not in one group of a pie chart.",
+    "story": "The pie chart shows 192 pupils in all, sorted into Tea, Milk, Juice and Water.",
+    "reviewStatus": "draft",
+    "specification": {
+      "task": "practice",
+      "slices": 12,
+      "categories": [
+        "Tea",
+        "Milk",
+        "Juice",
+        "Water"
+      ],
+      "parts": [
+        2,
+        5,
+        3,
+        2
+      ],
+      "unit": 16,
+      "quantity": "pupils",
+      "a": 1,
+      "b": 1
+    },
+    "steps": [
+      {
+        "id": "rest",
+        "goal": "rest",
+        "title": "Find what is left",
+        "prompt": "The pie shows 192 pupils in all. How many pupils are not in the Milk group?",
+        "kind": "exact",
+        "answer": "112",
+        "hints": [
+          "The whole pie is made of every group together.",
+          "Work out how many slices are not Milk, then use what one slice stands for. Or find the number in Milk and take it away.",
+          "The pie has 12 slices and Milk covers 5, so 7 slices are left. Each slice stands for 16.",
+          "7 × 16 = 112. Enter 112."
+        ]
+      },
+      {
+        "id": "reflection",
+        "goal": "reflection",
+        "title": "Explain your thinking",
+        "prompt": "Why can you take away to find the rest of the pie?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "k27",
+            "label": "The rest is always the biggest group, so find the largest sector."
+          },
+          {
+            "id": "k13",
+            "label": "The whole is made of every group, so taking one away leaves the rest."
+          },
+          {
+            "id": "k20",
+            "label": "Taking away only works when the known group is half of the pie."
+          }
+        ],
+        "answer": "k13",
+        "hints": [
+          "Think about what the whole pie is made of.",
+          "Every group is a part of the whole.",
+          "Take one part away and the other parts are left.",
+          "Choose the explanation about the whole being made of every group."
+        ]
+      }
+    ]
+  },
+  "fixtures": [
+    {
+      "stepId": "rest",
+      "accepted": [
+        "112"
+      ],
+      "rejected": [
+        "113",
+        "122"
+      ]
+    },
+    {
+      "stepId": "reflection",
+      "accepted": [
+        "k13"
+      ],
+      "rejected": [
+        "k27",
+        "k20"
+      ]
+    }
+  ]
+}

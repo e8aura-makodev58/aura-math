@@ -1,0 +1,182 @@
+{
+  "schemaVersion": 3,
+  "locale": "en-SG",
+  "adapterVersion": 1,
+  "library": {
+    "level": "P4",
+    "skillId": "p4-line-graph-practice",
+    "tags": [
+      "P4",
+      "line-graphs",
+      "general revision",
+      "example"
+    ]
+  },
+  "curriculum": {
+    "objectiveId": "candidate.p4.line-graphs.practice",
+    "sources": [
+      "https://practicle.sg/primary-4-math/",
+      "https://sg.ixl.com/standards/maths/primary-4"
+    ],
+    "evidenceStatus": "candidate"
+  },
+  "authors": [
+    "Codex"
+  ],
+  "provenance": {
+    "kind": "generated",
+    "generatorVersion": "p4-examples-v1",
+    "seed": 3881942041
+  },
+  "lesson": {
+    "id": "p4-line-graph-practice-ex4",
+    "version": 1,
+    "topic": "line-graphs",
+    "title": "A fresh graph question",
+    "subtitle": "P4 line-graph revision",
+    "level": "P4 candidate",
+    "minutes": 4,
+    "objective": "Find the difference between the highest and lowest values.",
+    "story": "The graph shows plants sold on each day. How many more plants sold does the highest point show than the lowest point?",
+    "reviewStatus": "draft",
+    "specification": {
+      "task": "practice",
+      "labels": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri"
+      ],
+      "values": [
+        35,
+        25,
+        50,
+        45,
+        70
+      ],
+      "step": 10,
+      "quantity": "plants sold",
+      "a": 0,
+      "b": 1,
+      "target": 0
+    },
+    "steps": [
+      {
+        "id": "spread",
+        "goal": "spread",
+        "title": "Find the difference",
+        "prompt": "The graph shows plants sold on each day. How many more plants sold does the highest point show than the lowest point?",
+        "kind": "exact",
+        "answer": "45",
+        "hints": [
+          "Find the highest point and the lowest point first.",
+          "Read each one from the scale.",
+          "The highest is 70 and the lowest is 25.",
+          "70 − 25 = 45. Enter 45."
+        ]
+      },
+      {
+        "id": "reflection",
+        "goal": "reflection",
+        "title": "Explain your thinking",
+        "prompt": "Why do we subtract to find how many more?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "k48",
+            "label": "Taking the smaller from the larger shows how much bigger it is."
+          },
+          {
+            "id": "k55",
+            "label": "Adding the two numbers tells us how many more one has than the other."
+          },
+          {
+            "id": "k62",
+            "label": "Subtracting only works when the two numbers are very close together."
+          }
+        ],
+        "answer": "k48",
+        "hints": [
+          "Think about comparing two amounts.",
+          "How many more means how much bigger.",
+          "Take away the smaller from the larger.",
+          "Choose the explanation about taking the smaller from the larger."
+        ]
+      }
+    ]
+  },
+  "fixtures": [
+    {
+      "stepId": "spread",
+      "accepted": [
+        "45"
+      ],
+      "rejected": [
+        "46",
+        "55"
+      ]
+    },
+    {
+      "stepId": "reflection",
+      "accepted": [
+        "k48"
+      ],
+      "rejected": [
+        "k55",
+        "k62"
+      ]
+    }
+  ],
+  "interpretation": {
+    "entities": [
+      "highest",
+      "lowest",
+      "difference"
+    ],
+    "quantities": [
+      {
+        "entity": "highest",
+        "value": 70,
+        "unit": "plants sold",
+        "state": "given"
+      },
+      {
+        "entity": "lowest",
+        "value": 25,
+        "unit": "plants sold",
+        "state": "given"
+      },
+      {
+        "entity": "difference",
+        "value": 45,
+        "unit": "plants sold",
+        "state": "derived"
+      }
+    ],
+    "relationships": [
+      {
+        "kind": "operation",
+        "id": "difference",
+        "operation": "subtract",
+        "inputs": [
+          "highest",
+          "lowest"
+        ],
+        "output": "difference"
+      }
+    ],
+    "unknown": "difference",
+    "sourceSpans": [
+      {
+        "start": 0,
+        "end": 117,
+        "text": "The graph shows plants sold on each day. How many more plants sold does the highest point show than the lowest point?"
+      }
+    ],
+    "assumptions": [
+      "Each value is read from the graph to the nearest half step."
+    ],
+    "ambiguities": []
+  }
+}

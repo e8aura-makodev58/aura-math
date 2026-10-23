@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Aura Math · playful home design study</title>
+    <link rel="stylesheet" href="../../src/styles.css" />
+    <style>
+      .design-note { color: #53665a; font: 13px/1.5 Arial,sans-serif; padding: 12px 36px; background: #fff8e8; }
+      .design-nav { display: flex; gap: 8px; flex-wrap: wrap; padding: 12px 36px; background: #f5f5ed; }
+      .design-nav a { color: #315c46; padding: 8px 12px; border: 1px solid #b6c8b5; border-radius: 99px; font: 600 13px Arial,sans-serif; text-decoration: none; }
+      .design-view { display: none; }
+      body:not(:has(.design-view:target)) #home, .design-view:target { display: block; }
+      .design-section-title { font: 400 32px Georgia,serif; margin-bottom: 12px; }
+      .design-tiles-caption { display:flex;align-items:end;justify-content:space-between;margin: 4px 0 15px;gap:10px; }
+      .design-tiles-caption p { color:#53665a;font-size:13px; }
+      .design-rows { display:grid; gap:12px; }
+      .design-row { display:grid;grid-template-columns:54px minmax(0,1fr) auto;align-items:center;gap:18px;padding:18px 20px;border-radius:15px;border:1px solid #e0e7dc;background:#fffdf8;border-left:5px solid #eacb7a; }
+      .design-row b { font:400 27px Georgia,serif;color:#855c16; }
+      .design-row strong { font:400 23px Georgia,serif;display:block; }
+      .design-row p { color:#53665a;font-size:13px;margin-top:5px; }
+      .design-row button { background:#315c46;color:white;padding:10px 14px;border-radius:99px; }
+      .design-icon svg { width:40px;height:40px; }
+      .topic-tile__text span:last-child { margin-top:auto; }
+      @media(max-width:639px) { .design-note,.design-nav { padding-left:18px;padding-right:18px; }.design-row { grid-template-columns:35px minmax(0,1fr); }.design-row button { grid-column:2;justify-self:start; }.design-tiles-caption { align-items:start;flex-direction:column; } }
+    </style>
+  </head>
+  <body>
+    <div class="app-layout">
+      <header class="app-header"><a class="app-brand" href="#home">Aura Math<span>Small steps. Clear thinking.</span></a><a class="author-entry" href="#home">Author workspace →</a></header>
+      <p class="design-note">Design study · illustrative catalogue states; the real app builds these from permitted lessons.</p>
+      <nav class="design-nav" aria-label="Design states"><a href="#home">Home</a><a href="#topic">Focused topic</a><a href="#empty">Empty release</a></nav>
+      <main>
+        <section class="design-view library-home" id="home">
+          <div class="library-hero">
+            <div class="library-hero__copy"><p class="eyebrow">See it · Try it · Understand it</p><h1>Math makes more sense when you can see it.</h1><p>Build, compare and notice what changes. Choose a small step to begin.</p><button class="primary-button">Start with hundreds, tens and ones →</button></div>
+            <div class="library-hero__art"><svg class="hero-art" viewBox="0 0 420 260" aria-hidden="true"><path d="M46 216c80-40 211-46 347-42" fill="none" stroke="#b8cdb5" stroke-width="3" stroke-dasharray="3 9"/><rect x="61" y="88" width="113" height="104" rx="19" fill="#fff8e9" transform="rotate(-8 118 140)"/><rect x="80" y="111" width="18" height="62" rx="5" fill="#d8876b"/><rect x="103" y="134" width="18" height="39" rx="5" fill="#f1ba60"/><rect x="126" y="100" width="18" height="73" rx="5" fill="#648e7d"/><rect x="186" y="42" width="116" height="120" rx="22" fill="#f1bc65" transform="rotate(8 244 102)"/><rect x="209" y="74" width="70" height="20" rx="10" fill="#fff8e9"/><rect x="209" y="99" width="70" height="20" rx="10" fill="#e5a95a" stroke="#fff8e9" stroke-width="3"/><path d="M244 74v45" stroke="#fff8e9" stroke-width="3"/><rect x="290" y="122" width="80" height="80" rx="19" fill="#c8dcce" transform="rotate(-9 330 162)"/><path d="M310 181v-43h43" fill="none" stroke="#315c46" stroke-width="5" stroke-linecap="round"/><path d="M310 164a17 17 0 0 1 17 17" fill="none" stroke="#315c46" stroke-width="3"/><g fill="#315c46"><circle cx="44" cy="59" r="5"/><circle cx="60" cy="59" r="5"/><circle cx="76" cy="59" r="5"/><circle cx="52" cy="75" r="5"/><circle cx="68" cy="75" r="5"/><circle cx="84" cy="75" r="5"/></g><path d="M347 51v11m-5-5h10M135 37v11m-5-5h10" stroke="#c47b52" stroke-width="3" stroke-linecap="round"/></svg></div>
+          </div>
+          <div class="design-tiles-caption"><div><p class="eyebrow">Pick a path</p><h2 class="design-section-title">Explore a topic</h2></div><p>Six paths · 18 small lessons</p></div>
+          <section class="topic-grid" aria-label="Topics">
+            <button class="topic-tile" data-topic="place-value"><span class="topic-tile__icon"><svg viewBox="0 0 40 40" aria-hidden="true"><rect x="4" y="7" width="20" height="20" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M11 7v20M17 7v20M4 14h20M4 20h20M29 7v20" stroke="currentColor" stroke-width="2"/><circle cx="34" cy="33" r="3" fill="currentColor"/></svg></span><span class="topic-tile__text"><strong>Place value</strong><span>See how hundreds, tens and ones build a number.</span><span>P2 · 3 lessons</span></span></button>
+            <button class="topic-tile" data-topic="equal-groups"><span class="topic-tile__icon"><svg viewBox="0 0 40 40" aria-hidden="true"><rect x="4" y="8" width="13" height="24" rx="6" fill="none" stroke="currentColor" stroke-width="2"/><rect x="23" y="8" width="13" height="24" rx="6" fill="none" stroke="currentColor" stroke-width="2"/><g fill="currentColor"><circle cx="10" cy="15" r="2.5"/><circle cx="10" cy="25" r="2.5"/><circle cx="29" cy="15" r="2.5"/><circle cx="29" cy="25" r="2.5"/></g></svg></span><span class="topic-tile__text"><strong>Equal groups</strong><span>Make matching sets and see the total grow.</span><span>P2 · 3 lessons</span></span></button>
+            <button class="topic-tile" data-topic="fractions"><span class="topic-tile__icon"><svg viewBox="0 0 40 40" aria-hidden="true"><rect x="5" y="10" width="30" height="20" rx="10" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M20 10v20" stroke="currentColor" stroke-width="2.5"/><path d="M10 14a8 8 0 0 0 0 12h10V14Z" fill="currentColor" opacity=".7"/></svg></span><span class="topic-tile__text"><strong>Fractions</strong><span>Split one whole into fair, equal parts.</span><span>P2 · 3 lessons</span></span></button>
+            <button class="topic-tile" data-topic="comparison"><span class="topic-tile__icon"><svg viewBox="0 0 40 40" aria-hidden="true"><rect x="5" y="8" width="31" height="9" rx="3" fill="currentColor"/><rect x="5" y="23" width="20" height="9" rx="3" fill="currentColor" opacity=".65"/></svg></span><span class="topic-tile__text"><strong>Comparing</strong><span>Draw two amounts and spot the difference.</span><span>P2 · 3 lessons</span></span></button>
+            <button class="topic-tile" data-topic="angles"><span class="topic-tile__icon"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M7 6v27h27M7 22h11v11" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/></svg></span><span class="topic-tile__text"><strong>Angles</strong><span>Use a square corner to compare turns.</span><span>P3 · 3 lessons</span></span></button>
+            <button class="topic-tile" data-topic="picture-graphs"><span class="topic-tile__icon"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M6 33h29" stroke="currentColor" stroke-width="2.5"/><g fill="currentColor"><circle cx="12" cy="26" r="3"/><circle cx="12" cy="18" r="3"/><circle cx="23" cy="26" r="3"/><circle cx="23" cy="18" r="3"/><circle cx="23" cy="10" r="3"/><circle cx="34" cy="26" r="3"/></g></svg></span><span class="topic-tile__text"><strong>Picture graphs</strong><span>Count the symbols and tell their story.</span><span>P2 · 3 lessons</span></span></button>
+          </section>
+        </section>
+        <section class="design-view" id="topic"><div class="topic-detail" data-topic="place-value"><p class="eyebrow">‹ All topics · Whole numbers</p><span class="topic-detail__icon"><svg viewBox="0 0 40 40" aria-hidden="true"><rect x="4" y="7" width="20" height="20" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M11 7v20M17 7v20M4 14h20M4 20h20M29 7v20" stroke="currentColor" stroke-width="2"/><circle cx="34" cy="33" r="3" fill="currentColor"/></svg></span><h1>Place value</h1><p>See how hundreds, tens and ones build a number. Three lessons, one idea at a time.</p><div class="library-groups design-rows"><article class="design-row"><b>01</b><div><strong>Hundreds, tens and ones</strong><p>Build a number with blocks · P2 · 7 min</p></div><button>Start lesson →</button></article><article class="design-row"><b>02</b><div><strong>Zero in a place</strong><p>See what zero means between digits · P2 · 7 min</p></div><button>Start lesson →</button></article><article class="design-row"><b>03</b><div><strong>The value of a digit</strong><p>Find a digit’s value from its place · P2 · 7 min</p></div><button>Start lesson →</button></article></div></div></section>
+        <section class="design-view" id="empty"><div class="library-empty"><h2>Your lessons are on their way</h2><p>Approved materials will appear here after publication review.</p></div></section>
+      </main>
+    </div>
+  </body>
+</html>

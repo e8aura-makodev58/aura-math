@@ -1,0 +1,133 @@
+{
+  "schemaVersion": 3,
+  "locale": "en-SG",
+  "adapterVersion": 1,
+  "library": {
+    "level": "P4",
+    "skillId": "p4-bar-chart-practice",
+    "tags": [
+      "P4",
+      "bar-charts",
+      "general revision",
+      "p3-bridge",
+      "example"
+    ]
+  },
+  "curriculum": {
+    "objectiveId": "candidate.p4.bar-charts.practice",
+    "sources": [
+      "https://practicle.sg/primary-3-math/",
+      "https://practicle.sg/primary-4-math/"
+    ],
+    "evidenceStatus": "candidate"
+  },
+  "authors": [
+    "Codex"
+  ],
+  "provenance": {
+    "kind": "generated",
+    "generatorVersion": "p4-examples-v1",
+    "seed": 3120927372
+  },
+  "lesson": {
+    "id": "p4-bar-chart-practice-ex4",
+    "version": 1,
+    "topic": "bar-charts",
+    "title": "A fresh bar question",
+    "subtitle": "P3 bridge and P4 bar-chart revision",
+    "level": "P4 candidate",
+    "minutes": 4,
+    "objective": "Add the two tallest bars of a bar chart.",
+    "story": "The bar chart shows club members for Art, Chess, Swim, Music and Drama.",
+    "reviewStatus": "draft",
+    "specification": {
+      "task": "practice",
+      "labels": [
+        "Art",
+        "Chess",
+        "Swim",
+        "Music",
+        "Drama"
+      ],
+      "values": [
+        30,
+        45,
+        70,
+        20,
+        55
+      ],
+      "values2": [],
+      "series": [],
+      "step": 10,
+      "quantity": "Club members",
+      "a": 0,
+      "b": 0
+    },
+    "steps": [
+      {
+        "id": "top-two-total",
+        "goal": "top-two-total",
+        "title": "Add the two tallest bars",
+        "prompt": "Find the two tallest bars and add their values. What is the total?",
+        "kind": "exact",
+        "answer": "125",
+        "hints": [
+          "First find the tallest bar, then the next tallest.",
+          "Read every bar with the scale of 10, then put the values in order.",
+          "The two tallest bars are Swim (70) and Drama (55).",
+          "70 + 55 = 125. Enter 125."
+        ]
+      },
+      {
+        "id": "reflection",
+        "goal": "reflection",
+        "title": "Explain your thinking",
+        "prompt": "How do you pick the two bars to add?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "k62",
+            "label": "Add the first two bars on the left, because those are the ones read first."
+          },
+          {
+            "id": "k48",
+            "label": "Compare all the heights, then take the two highest, wherever they are."
+          },
+          {
+            "id": "k55",
+            "label": "The two tallest bars always stand next to each other somewhere on the chart."
+          }
+        ],
+        "answer": "k48",
+        "hints": [
+          "Think about which bars the question asked for.",
+          "The tallest bars could be anywhere along the chart.",
+          "Look at every bar before you choose.",
+          "Choose the explanation about comparing all the heights."
+        ]
+      }
+    ]
+  },
+  "fixtures": [
+    {
+      "stepId": "top-two-total",
+      "accepted": [
+        "125"
+      ],
+      "rejected": [
+        "126",
+        "135"
+      ]
+    },
+    {
+      "stepId": "reflection",
+      "accepted": [
+        "k48"
+      ],
+      "rejected": [
+        "k62",
+        "k55"
+      ]
+    }
+  ]
+}

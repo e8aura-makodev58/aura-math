@@ -1,0 +1,212 @@
+{
+  "schemaVersion": 3,
+  "locale": "en-SG",
+  "adapterVersion": 1,
+  "library": {
+    "level": "P4",
+    "skillId": "p4-read-pie-sectors",
+    "tags": [
+      "P4",
+      "pie-charts",
+      "general revision",
+      "level-unconfirmed",
+      "example"
+    ]
+  },
+  "curriculum": {
+    "objectiveId": "candidate.p4.pie-charts.sectors",
+    "sources": [
+      "https://practicle.sg/primary-4-math/",
+      "https://www.thelearninglab.com.sg/blog/tll-shares/new-changes-to-moe-primary-maths-syllabus"
+    ],
+    "evidenceStatus": "candidate"
+  },
+  "authors": [
+    "Codex"
+  ],
+  "provenance": {
+    "kind": "generated",
+    "generatorVersion": "p4-examples-v1",
+    "seed": 1845849867
+  },
+  "lesson": {
+    "id": "p4-read-pie-sectors-ex4",
+    "version": 1,
+    "topic": "pie-charts",
+    "title": "Sectors of the whole",
+    "subtitle": "P4 pie-chart revision",
+    "level": "P4 candidate",
+    "minutes": 7,
+    "objective": "Recognise sectors of a pie chart as a half, a quarter or an eighth of the whole, with no cuts drawn.",
+    "story": "The pie chart sorts the pupils into groups: Rice, Noodles, Bread and Soup. The whole circle is 8 equal parts, but the cuts between them are not drawn.",
+    "reviewStatus": "draft",
+    "specification": {
+      "task": "sectors",
+      "slices": 8,
+      "categories": [
+        "Rice",
+        "Noodles",
+        "Bread",
+        "Soup"
+      ],
+      "parts": [
+        1,
+        4,
+        2,
+        1
+      ],
+      "unit": 0,
+      "quantity": "pupils",
+      "a": 1,
+      "b": 3
+    },
+    "steps": [
+      {
+        "id": "sector-fraction",
+        "goal": "sector-fraction",
+        "title": "Name the sector",
+        "prompt": "What fraction of the whole pie is the Noodles sector?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "k23",
+            "label": "A half (1/2)",
+            "meaning": "half"
+          },
+          {
+            "id": "k30",
+            "label": "A quarter (1/4)",
+            "meaning": "quarter"
+          },
+          {
+            "id": "k37",
+            "label": "An eighth (1/8)",
+            "meaning": "eighth"
+          }
+        ],
+        "answer": "k23",
+        "hints": [
+          "Compare the sector with the whole circle.",
+          "Imagine the circle cut into 8 equal parts, like a pizza. How many of those parts would the sector cover?",
+          "Noodles covers 4 of the 8 equal parts, and 4/8 is a half.",
+          "Choose A half (1/2)."
+        ]
+      },
+      {
+        "id": "parts",
+        "goal": "parts",
+        "title": "Count the parts",
+        "prompt": "The whole circle is 8 equal parts, but the cuts are not drawn. How many of the 8 parts does the Soup sector cover?",
+        "kind": "exact",
+        "answer": "1",
+        "hints": [
+          "Think about how much of the whole circle the sector fills.",
+          "Work out how many of the 8 parts make a half, a quarter or an eighth of the circle.",
+          "The Soup sector is an eighth, and an eighth of 8 parts is 1 part.",
+          "The Soup sector covers 1 of the 8 parts. Enter 1."
+        ]
+      },
+      {
+        "id": "share",
+        "goal": "share",
+        "title": "What a sector shows",
+        "prompt": "What does a sector of a pie chart show?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "k57",
+            "label": "How wide the corner of the sector is at the centre.",
+            "meaning": "angle"
+          },
+          {
+            "id": "k43",
+            "label": "How much of the whole pie the group takes up.",
+            "meaning": "share"
+          },
+          {
+            "id": "k50",
+            "label": "How many items are in the group, counted as a number.",
+            "meaning": "amount"
+          }
+        ],
+        "answer": "k43",
+        "hints": [
+          "Think about what the whole circle stands for.",
+          "Every sector is one part of that whole.",
+          "A sector tells you the fraction of the whole that one group makes up.",
+          "Choose the share of the whole."
+        ]
+      },
+      {
+        "id": "reflection",
+        "goal": "reflection",
+        "title": "Explain your thinking",
+        "prompt": "Why can you name a sector as a half or a quarter when no cuts are drawn?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "k82",
+            "label": "The colour of the sector tells you which fraction of the pie it shows."
+          },
+          {
+            "id": "k68",
+            "label": "Compare it with the whole circle: a half fills half, a quarter a quarter."
+          },
+          {
+            "id": "k75",
+            "label": "The biggest sector in any pie chart is always exactly one half of it."
+          }
+        ],
+        "answer": "k68",
+        "hints": [
+          "Think about how much of the circle the sector fills.",
+          "A half is as much as the other half left over.",
+          "Compare the sector with the whole circle, not with its colour.",
+          "Choose the explanation about comparing with the whole circle."
+        ]
+      }
+    ]
+  },
+  "fixtures": [
+    {
+      "stepId": "sector-fraction",
+      "accepted": [
+        "k23"
+      ],
+      "rejected": [
+        "k30",
+        "k37"
+      ]
+    },
+    {
+      "stepId": "parts",
+      "accepted": [
+        "1"
+      ],
+      "rejected": [
+        "2",
+        "11"
+      ]
+    },
+    {
+      "stepId": "share",
+      "accepted": [
+        "k43"
+      ],
+      "rejected": [
+        "k57",
+        "k50"
+      ]
+    },
+    {
+      "stepId": "reflection",
+      "accepted": [
+        "k68"
+      ],
+      "rejected": [
+        "k82",
+        "k75"
+      ]
+    }
+  ]
+}

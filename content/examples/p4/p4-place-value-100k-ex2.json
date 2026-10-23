@@ -1,0 +1,199 @@
+{
+  "schemaVersion": 3,
+  "locale": "en-SG",
+  "adapterVersion": 1,
+  "library": {
+    "level": "P4",
+    "skillId": "p4-place-value-100k",
+    "tags": [
+      "P4",
+      "whole-numbers",
+      "general revision",
+      "example"
+    ]
+  },
+  "curriculum": {
+    "objectiveId": "candidate.p4.whole-numbers.place-value",
+    "sources": [
+      "https://practicle.sg/primary-4-math/",
+      "https://sg.ixl.com/standards/maths/primary-4"
+    ],
+    "evidenceStatus": "candidate"
+  },
+  "authors": [
+    "Codex"
+  ],
+  "provenance": {
+    "kind": "generated",
+    "generatorVersion": "p4-examples-v1",
+    "seed": 988690806
+  },
+  "lesson": {
+    "id": "p4-place-value-100k-ex2",
+    "version": 1,
+    "topic": "whole-numbers",
+    "title": "Read numbers to 100 000",
+    "subtitle": "P4 whole-number revision",
+    "level": "P4 candidate",
+    "minutes": 7,
+    "objective": "Read the place and value of digits in a five-digit number.",
+    "story": "Read 10 037 and 10 307 in the place chart.",
+    "reviewStatus": "draft",
+    "specification": {
+      "task": "place-value",
+      "n": 10037,
+      "m": 10307,
+      "place": "ones",
+      "roundTo": 100,
+      "unit": "stickers"
+    },
+    "steps": [
+      {
+        "id": "place",
+        "goal": "place",
+        "title": "Name the place",
+        "prompt": "In 10 037, which place does the digit 7 hold?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "k32",
+            "label": "The tens place",
+            "meaning": "tens"
+          },
+          {
+            "id": "k18",
+            "label": "The ones place",
+            "meaning": "ones"
+          },
+          {
+            "id": "k25",
+            "label": "The thousands place",
+            "meaning": "thousands"
+          }
+        ],
+        "answer": "k18",
+        "hints": [
+          "Read the place chart from the right: ones, tens, hundreds, thousands, ten thousands.",
+          "Find the column that holds the digit 7.",
+          "The digit 7 sits in the ones column.",
+          "Choose the ones place."
+        ]
+      },
+      {
+        "id": "digit-value",
+        "goal": "digit-value",
+        "title": "Find the value",
+        "prompt": "What is the value of the digit 7 in 10 037?",
+        "kind": "exact",
+        "answer": "7",
+        "hints": [
+          "A digit's value depends on the place it holds.",
+          "Count how many ones the digit stands for.",
+          "7 ones is 7 × 1.",
+          "7 × 1 = 7. Enter 7."
+        ]
+      },
+      {
+        "id": "compare",
+        "goal": "compare",
+        "title": "Compare two numbers",
+        "prompt": "Which number is greater: 10 037 or 10 307?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "k75",
+            "label": "10 307",
+            "meaning": "right"
+          },
+          {
+            "id": "k82",
+            "label": "Both are equal",
+            "meaning": "same"
+          },
+          {
+            "id": "k68",
+            "label": "10 037",
+            "meaning": "left"
+          }
+        ],
+        "answer": "k75",
+        "hints": [
+          "Compare the digits starting from the greatest place.",
+          "Look at the ten thousands first, then the thousands, then the hundreds.",
+          "Stop at the first place where the digits differ. The larger digit wins.",
+          "Choose 10 307."
+        ]
+      },
+      {
+        "id": "reflection",
+        "goal": "reflection",
+        "title": "Explain your thinking",
+        "prompt": "Why does the same digit stand for different values?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "k37",
+            "label": "The value of a digit is always just the digit itself, wherever it is."
+          },
+          {
+            "id": "k23",
+            "label": "A digit's value depends on its place; each place is ten times the next."
+          },
+          {
+            "id": "k30",
+            "label": "The digit changes its shape when it moves to a different place in the number."
+          }
+        ],
+        "answer": "k23",
+        "hints": [
+          "Think about the place chart.",
+          "Compare the value of 4 in the tens place with 4 in the hundreds place.",
+          "Each place is worth ten times the place to its right.",
+          "Choose the explanation about places being ten times each other."
+        ]
+      }
+    ]
+  },
+  "fixtures": [
+    {
+      "stepId": "place",
+      "accepted": [
+        "k18"
+      ],
+      "rejected": [
+        "k32",
+        "k25"
+      ]
+    },
+    {
+      "stepId": "digit-value",
+      "accepted": [
+        "7"
+      ],
+      "rejected": [
+        "8",
+        "17"
+      ]
+    },
+    {
+      "stepId": "compare",
+      "accepted": [
+        "k75"
+      ],
+      "rejected": [
+        "k82",
+        "k68"
+      ]
+    },
+    {
+      "stepId": "reflection",
+      "accepted": [
+        "k23"
+      ],
+      "rejected": [
+        "k37",
+        "k30"
+      ]
+    }
+  ]
+}

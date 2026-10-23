@@ -1,0 +1,181 @@
+{
+  "schemaVersion": 3,
+  "locale": "en-SG",
+  "adapterVersion": 1,
+  "library": {
+    "level": "P4",
+    "skillId": "p4-lines-of-symmetry",
+    "tags": [
+      "P4",
+      "symmetry",
+      "general revision",
+      "example"
+    ]
+  },
+  "curriculum": {
+    "objectiveId": "candidate.p4.symmetry.lines",
+    "sources": [
+      "https://practicle.sg/primary-4-math/",
+      "https://sg.ixl.com/standards/maths/primary-4"
+    ],
+    "evidenceStatus": "candidate"
+  },
+  "authors": [
+    "Codex"
+  ],
+  "provenance": {
+    "kind": "generated",
+    "generatorVersion": "p4-examples-v1",
+    "seed": 4139604953
+  },
+  "lesson": {
+    "id": "p4-lines-of-symmetry-ex5",
+    "version": 1,
+    "topic": "symmetry",
+    "title": "Which folds match?",
+    "subtitle": "P4 symmetry revision",
+    "level": "P4 candidate",
+    "minutes": 7,
+    "objective": "Find the lines of symmetry of a shape.",
+    "story": "Test four dashed lines on a kite.",
+    "reviewStatus": "draft",
+    "specification": {
+      "task": "lines",
+      "shape": "kite",
+      "cols": 8,
+      "rows": 4,
+      "mirror": "vertical",
+      "cells": [
+        "0,2",
+        "1,1",
+        "1,2",
+        "2,0",
+        "2,3",
+        "3,1"
+      ],
+      "probe": "1,2",
+      "rotation": 2
+    },
+    "steps": [
+      {
+        "id": "axes",
+        "goal": "axes",
+        "title": "Test the dashed lines",
+        "prompt": "Which of the dashed lines are lines of symmetry? Choose every line that works.",
+        "kind": "multi",
+        "choices": [
+          {
+            "id": "k33",
+            "label": "Line A",
+            "meaning": "line:A"
+          },
+          {
+            "id": "k40",
+            "label": "Line B",
+            "meaning": "line:B"
+          },
+          {
+            "id": "k47",
+            "label": "Line C",
+            "meaning": "line:C"
+          },
+          {
+            "id": "k54",
+            "label": "Line D",
+            "meaning": "line:D"
+          }
+        ],
+        "answer": [
+          "k33"
+        ],
+        "hints": [
+          "A line of symmetry splits the shape into two halves that match exactly when folded.",
+          "Imagine folding the shape along each line. Do the two sides land exactly on each other?",
+          "Test one line at a time. A line that only looks balanced may not work.",
+          "Choose line A."
+        ]
+      },
+      {
+        "id": "count",
+        "goal": "count",
+        "title": "Count all the lines",
+        "prompt": "How many lines of symmetry does a kite have in all?",
+        "kind": "exact",
+        "answer": "1",
+        "hints": [
+          "Look for every different way to fold the shape so the halves match.",
+          "The dashed lines show only some of the ways. Think about other folds.",
+          "There is only one way to fold it so the two halves match.",
+          "A kite has 1 line of symmetry. Enter 1."
+        ]
+      },
+      {
+        "id": "reflection",
+        "goal": "reflection",
+        "title": "Explain your thinking",
+        "prompt": "How can you tell if a line is a line of symmetry?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "k32",
+            "label": "The line joins two of the opposite corners of the shape."
+          },
+          {
+            "id": "k18",
+            "label": "Fold along it: the two halves must match exactly."
+          },
+          {
+            "id": "k25",
+            "label": "The line goes through the very middle of the whole shape."
+          }
+        ],
+        "answer": "k18",
+        "hints": [
+          "Think about folding the shape.",
+          "A line through the middle does not always work.",
+          "A line joining corners does not always work either.",
+          "Choose the explanation about the halves matching when folded."
+        ]
+      }
+    ]
+  },
+  "fixtures": [
+    {
+      "stepId": "axes",
+      "accepted": [
+        [
+          "k33"
+        ]
+      ],
+      "rejected": [
+        [
+          "k40"
+        ],
+        [
+          "k33",
+          "k40"
+        ]
+      ]
+    },
+    {
+      "stepId": "count",
+      "accepted": [
+        "1"
+      ],
+      "rejected": [
+        "2",
+        "11"
+      ]
+    },
+    {
+      "stepId": "reflection",
+      "accepted": [
+        "k18"
+      ],
+      "rejected": [
+        "k32",
+        "k25"
+      ]
+    }
+  ]
+}

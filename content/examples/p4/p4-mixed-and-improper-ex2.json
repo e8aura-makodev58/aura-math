@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 3,
+  "locale": "en-SG",
+  "adapterVersion": 1,
+  "library": {
+    "level": "P4",
+    "skillId": "p4-mixed-and-improper",
+    "tags": [
+      "P4",
+      "fractions",
+      "general revision",
+      "example"
+    ]
+  },
+  "curriculum": {
+    "objectiveId": "candidate.p4.fractions.mixed",
+    "sources": [
+      "https://practicle.sg/primary-4-math/",
+      "https://sg.ixl.com/standards/maths/primary-4"
+    ],
+    "evidenceStatus": "candidate"
+  },
+  "authors": [
+    "Codex"
+  ],
+  "provenance": {
+    "kind": "generated",
+    "generatorVersion": "p4-examples-v1",
+    "seed": 2006482322
+  },
+  "lesson": {
+    "id": "p4-mixed-and-improper-ex2",
+    "version": 1,
+    "topic": "fraction-calculations",
+    "title": "Turn a mixed number into a fraction",
+    "subtitle": "P4 fraction revision",
+    "level": "P4 candidate",
+    "minutes": 7,
+    "objective": "Connect mixed and improper fractions.",
+    "story": "Use equal strips to show 2 1/6.",
+    "reviewStatus": "draft",
+    "specification": {
+      "task": "mixed",
+      "whole": 2,
+      "numerator": 1,
+      "denominator": 6,
+      "otherNumerator": 1,
+      "otherDenominator": 3,
+      "operation": "subtract",
+      "quantity": 28,
+      "unit": "counters"
+    },
+    "steps": [
+      {
+        "id": "whole-parts",
+        "goal": "whole-parts",
+        "title": "Count full-strip parts",
+        "prompt": "How many 6-sized parts are in 2 whole strips?",
+        "kind": "exact",
+        "answer": "12",
+        "hints": [
+          "Count one whole strip first.",
+          "Each whole has 6 equal parts.",
+          "Multiply 2 by 6.",
+          "2 × 6 = 12 full-strip parts."
+        ]
+      },
+      {
+        "id": "improper",
+        "goal": "improper",
+        "title": "Write an improper fraction",
+        "prompt": "Write 2 1/6 as one improper fraction.",
+        "kind": "exact",
+        "answer": "13/6",
+        "hints": [
+          "Keep the same equal-size parts.",
+          "Count full strips and the extra part.",
+          "12 + 1 = 13 parts.",
+          "The equivalent fraction is 13/6."
+        ]
+      },
+      {
+        "id": "reflection",
+        "goal": "reflection",
+        "title": "Explain the equal parts",
+        "prompt": "What makes the fraction calculation fair?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "r3",
+            "label": "The wholes match and each part has the same size."
+          },
+          {
+            "id": "r6",
+            "label": "The denominator tells how many objects are left."
+          },
+          {
+            "id": "r8",
+            "label": "Parts can be counted together if wholes differ."
+          }
+        ],
+        "answer": "r3",
+        "hints": [
+          "Look at the whole first.",
+          "Equal fractions need equal-size wholes.",
+          "Count parts that have the same size.",
+          "Choose: The wholes match and each part has the same size."
+        ]
+      }
+    ]
+  },
+  "fixtures": [
+    {
+      "stepId": "whole-parts",
+      "accepted": [
+        "12"
+      ],
+      "rejected": [
+        "13/1"
+      ]
+    },
+    {
+      "stepId": "improper",
+      "accepted": [
+        "13/6"
+      ],
+      "rejected": [
+        "19/6"
+      ]
+    },
+    {
+      "stepId": "reflection",
+      "accepted": [
+        "r3"
+      ],
+      "rejected": [
+        "r6",
+        "r8"
+      ]
+    }
+  ]
+}

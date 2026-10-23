@@ -1,0 +1,187 @@
+/* Admin model settings (author tool). Single column from 320 px; 44 px targets; 14 px text floor. */
+.admin-page {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 24px 16px 48px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.admin-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.admin-header h1 {
+  font-size: clamp(26px, 6vw, 34px);
+  margin: 4px 0 6px;
+}
+.admin-kicker {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #486445;
+}
+.admin-note {
+  font-size: 15px;
+  color: #4f5d53;
+  overflow-wrap: anywhere;
+}
+.admin-status {
+  min-height: 24px;
+  margin: 16px 0;
+  font-size: 16px;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+.admin-banner {
+  margin: 0 0 16px;
+  padding: 12px 14px;
+  border: 2px dashed #8a6d1f;
+  border-radius: 8px;
+  background: #fff8e1;
+  font-size: 15px;
+}
+.admin-card {
+  display: grid;
+  gap: 14px;
+  margin: 0 0 18px;
+  padding: 18px;
+  border: 1px solid #d8ddcf;
+  border-radius: 12px;
+  background: #fffef8;
+  min-width: 0;
+}
+.admin-card h2,
+.admin-card legend {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 600;
+  padding: 0 4px;
+}
+.admin-field {
+  display: grid;
+  gap: 6px;
+  min-width: 0;
+}
+.admin-field label,
+.admin-check label {
+  font-size: 16px;
+  font-weight: 600;
+}
+.admin-page input[type="text"],
+.admin-page input[type="password"],
+.admin-page input[type="number"],
+.admin-page select {
+  width: 100%;
+  min-height: 44px;
+  padding: 8px 12px;
+  border: 1px solid #8e9c8a;
+  border-radius: 8px;
+  background: white;
+  color: inherit;
+  font: inherit;
+  font-size: 16px;
+}
+.admin-page select:focus-visible {
+  outline: 3px solid #bd6b24;
+  outline-offset: 2px;
+}
+.admin-check {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 44px;
+}
+.admin-check input {
+  width: 24px;
+  height: 24px;
+  flex: none;
+  margin: 10px;
+}
+.admin-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.admin-page button {
+  min-height: 44px;
+  min-width: 44px;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 16px;
+  border: 1px solid #b0bda5;
+  background: #fffef8;
+  justify-self: start;
+}
+.admin-page .admin-primary {
+  background: #315c46;
+  border-color: #315c46;
+  color: white;
+  font-weight: 600;
+}
+.admin-page .admin-danger {
+  border-color: #9b2c2c;
+  color: #8a1f1f;
+}
+.admin-key-status,
+.admin-spend,
+.admin-test-result {
+  font-size: 16px;
+  overflow-wrap: anywhere;
+}
+.admin-test-result:empty {
+  display: none;
+}
+/* Outcome of the last action, shown next to its button. */
+.admin-inline {
+  margin: 8px 0 0;
+  font-size: 16px;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+.admin-inline:empty {
+  display: none;
+}
+/* Stories for Try another: pending and approved lists. */
+.admin-subhead {
+  margin: 8px 0 0;
+  font-size: 18px;
+  font-weight: 700;
+}
+.admin-story-list {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.admin-story {
+  display: grid;
+  gap: 6px;
+  padding: 12px;
+  border: 1px solid #d8ddcf;
+  border-radius: 10px;
+  background: white;
+  min-width: 0;
+}
+.admin-story p {
+  margin: 0;
+}
+.admin-story-example {
+  font-size: 17px;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+[hidden] {
+  display: none !important;
+}
+@media (max-width: 480px) {
+  .admin-card {
+    padding: 14px;
+  }
+  .admin-page button {
+    width: 100%;
+  }
+}

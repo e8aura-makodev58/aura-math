@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 2,
+  "locale": "en-SG",
+  "adapterVersion": 1,
+  "library": {
+    "level": "P2",
+    "skillId": "digit-value",
+    "tags": ["base-ten", "place value"]
+  },
+  "curriculum": {
+    "objectiveId": "P2.place-value",
+    "sources": [
+      "https://practicle.sg/primary-2-math/",
+      "https://sg.ixl.com/standards/maths/primary-2"
+    ],
+    "evidenceStatus": "candidate"
+  },
+  "authors": ["codex-topics-numbers"],
+  "provenance": {
+    "kind": "authored"
+  },
+  "lesson": {
+    "id": "digit-value",
+    "version": 1,
+    "topic": "place-value",
+    "title": "A digit and its place value",
+    "subtitle": "Distinguish a digit from its value",
+    "level": "P2 candidate",
+    "minutes": 5,
+    "story": "Each column groups blocks by value. A hundreds block represents 100, a tens rod represents 10 and a ones counter represents 1. An empty column represents zero in that place.",
+    "objective": "Read base-ten models and reason about the tens place.",
+    "reviewStatus": "draft",
+    "specification": {
+      "value": 462,
+      "task": "digit-value",
+      "targetPlace": "tens"
+    },
+    "steps": [
+      {
+        "id": "recognise",
+        "goal": "recognise",
+        "title": "Find the place",
+        "prompt": "Which column represents groups of 10?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "p20",
+            "label": "Ones",
+            "meaning": "ones"
+          },
+          {
+            "id": "p21",
+            "label": "Hundreds",
+            "meaning": "hundreds"
+          },
+          {
+            "id": "p22",
+            "label": "Tens",
+            "meaning": "tens"
+          }
+        ],
+        "answer": "p22",
+        "hints": [
+          "Look at the column headings.",
+          "Each block in the tens column represents 10.",
+          "Find the column named tens.",
+          "Choose tens."
+        ]
+      },
+      {
+        "id": "calculate",
+        "goal": "calculate",
+        "title": "Find the place value",
+        "prompt": "What is the value of the digit in the tens place?",
+        "kind": "number",
+        "answer": 60,
+        "hints": [
+          "Count the blocks in the tens column.",
+          "The tens place uses groups of 10.",
+          "There are 6 blocks in the tens column; each represents 10.",
+          "The digit in the tens place has value 6 \u00d7 10 = 60."
+        ]
+      },
+      {
+        "id": "reflection",
+        "goal": "reflection",
+        "title": "Explain the place",
+        "prompt": "Why does a digit need a named place?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "r2c",
+            "label": "Zero means the other columns must also be empty."
+          },
+          {
+            "id": "r2b",
+            "label": "Every digit stands for single ones, wherever it sits."
+          },
+          {
+            "id": "r2a",
+            "label": "The place tells us how much each digit represents."
+          }
+        ],
+        "answer": "r2a",
+        "hints": [
+          "Look at the different column units.",
+          "A hundreds block and a ones counter have different values.",
+          "The place tells us whether to count hundreds, tens or ones.",
+          "Choose: The place tells us how much each digit represents."
+        ]
+      }
+    ]
+  },
+  "fixtures": [
+    {
+      "stepId": "recognise",
+      "accepted": ["p22"],
+      "rejected": ["p20", "p21"]
+    },
+    {
+      "stepId": "calculate",
+      "accepted": [60],
+      "rejected": [61, 70]
+    },
+    {
+      "stepId": "reflection",
+      "accepted": ["r2a"],
+      "rejected": ["r2c", "r2b"]
+    }
+  ]
+}

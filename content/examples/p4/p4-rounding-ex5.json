@@ -1,0 +1,199 @@
+{
+  "schemaVersion": 3,
+  "locale": "en-SG",
+  "adapterVersion": 1,
+  "library": {
+    "level": "P4",
+    "skillId": "p4-rounding",
+    "tags": [
+      "P4",
+      "whole-numbers",
+      "general revision",
+      "example"
+    ]
+  },
+  "curriculum": {
+    "objectiveId": "candidate.p4.whole-numbers.rounding",
+    "sources": [
+      "https://practicle.sg/primary-4-math/",
+      "https://sg.ixl.com/standards/maths/primary-4"
+    ],
+    "evidenceStatus": "candidate"
+  },
+  "authors": [
+    "Codex"
+  ],
+  "provenance": {
+    "kind": "generated",
+    "generatorVersion": "p4-examples-v1",
+    "seed": 3995404221
+  },
+  "lesson": {
+    "id": "p4-rounding-ex5",
+    "version": 1,
+    "topic": "whole-numbers",
+    "title": "Round on the number line",
+    "subtitle": "P4 whole-number revision",
+    "level": "P4 candidate",
+    "minutes": 7,
+    "objective": "Round a whole number to the nearest 10, 100 or 1 000.",
+    "story": "Find where 1 014 sits on the number line.",
+    "reviewStatus": "draft",
+    "specification": {
+      "task": "rounding",
+      "n": 1014,
+      "m": 0,
+      "place": "ten-thousands",
+      "roundTo": 10,
+      "unit": "stickers"
+    },
+    "steps": [
+      {
+        "id": "between",
+        "goal": "between",
+        "title": "Find the neighbours",
+        "prompt": "Between which two multiples of 10 does 1 014 lie?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "k13",
+            "label": "1 010 and 1 020",
+            "meaning": "between"
+          },
+          {
+            "id": "k20",
+            "label": "1 000 and 1 010",
+            "meaning": "below"
+          },
+          {
+            "id": "k27",
+            "label": "1 020 and 1 030",
+            "meaning": "above"
+          }
+        ],
+        "answer": "k13",
+        "hints": [
+          "Look at the marks on the number line.",
+          "Find the multiple of 10 just below 1 014 and the one just above.",
+          "1 010 is below 1 014 and 1 020 is above it.",
+          "Choose 1 010 and 1 020."
+        ]
+      },
+      {
+        "id": "nearer",
+        "goal": "nearer",
+        "title": "Closer to which?",
+        "prompt": "Is 1 014 closer to 1 010, closer to 1 020, or exactly halfway?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "k32",
+            "label": "Exactly halfway",
+            "meaning": "halfway"
+          },
+          {
+            "id": "k18",
+            "label": "Closer to 1 010",
+            "meaning": "lower"
+          },
+          {
+            "id": "k25",
+            "label": "Closer to 1 020",
+            "meaning": "upper"
+          }
+        ],
+        "answer": "k18",
+        "hints": [
+          "Find the halfway notch between the two marks.",
+          "Is the dot before the halfway notch, after it, or on it?",
+          "Halfway is 1 015. Compare 1 014 with that.",
+          "1 014 is closer to 1 010."
+        ]
+      },
+      {
+        "id": "rounded",
+        "goal": "rounded",
+        "title": "Round the number",
+        "prompt": "Round 1 014 to the nearest 10.",
+        "kind": "exact",
+        "answer": "1010",
+        "hints": [
+          "Use what you found about the neighbours and the halfway point.",
+          "Round to the closer multiple. When exactly halfway, round up.",
+          "The closer multiple is 1 010.",
+          "1 014 rounded to the nearest 10 is 1 010. Enter 1010."
+        ]
+      },
+      {
+        "id": "reflection",
+        "goal": "reflection",
+        "title": "Explain your thinking",
+        "prompt": "How do you decide which way to round?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "k75",
+            "label": "Always round up to the next multiple, even when it is further away."
+          },
+          {
+            "id": "k82",
+            "label": "Always drop the last digits, so you keep the lower of the two multiples."
+          },
+          {
+            "id": "k68",
+            "label": "Find the halfway point between the two multiples; from halfway, round up."
+          }
+        ],
+        "answer": "k68",
+        "hints": [
+          "Think about the number line.",
+          "A number can be nearer to either neighbour.",
+          "The halfway point is where the choice changes.",
+          "Choose the explanation that compares with the halfway point."
+        ]
+      }
+    ]
+  },
+  "fixtures": [
+    {
+      "stepId": "between",
+      "accepted": [
+        "k13"
+      ],
+      "rejected": [
+        "k20",
+        "k27"
+      ]
+    },
+    {
+      "stepId": "nearer",
+      "accepted": [
+        "k18"
+      ],
+      "rejected": [
+        "k32",
+        "k25"
+      ]
+    },
+    {
+      "stepId": "rounded",
+      "accepted": [
+        "1010"
+      ],
+      "rejected": [
+        "1011",
+        "1020"
+      ]
+    },
+    {
+      "stepId": "reflection",
+      "accepted": [
+        "k68"
+      ],
+      "rejected": [
+        "k75",
+        "k82"
+      ]
+    }
+  ]
+}

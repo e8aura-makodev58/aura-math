@@ -1,0 +1,194 @@
+{
+  "schemaVersion": 2,
+  "locale": "en-SG",
+  "adapterVersion": 1,
+  "library": {
+    "level": "P2",
+    "skillId": "sharing-equally",
+    "tags": [
+      "equal groups",
+      "division"
+    ]
+  },
+  "curriculum": {
+    "objectiveId": "P2.equal-groups",
+    "sources": [
+      "https://practicle.sg/primary-2-math/",
+      "https://sg.ixl.com/standards/maths/primary-2"
+    ],
+    "evidenceStatus": "candidate"
+  },
+  "authors": [
+    "codex-topics-numbers"
+  ],
+  "provenance": {
+    "kind": "authored"
+  },
+  "lesson": {
+    "id": "sharing-equally",
+    "version": 1,
+    "topic": "equal-groups",
+    "title": "Share the counters fairly",
+    "subtitle": "Share a total equally",
+    "level": "P2 candidate",
+    "minutes": 6,
+    "story": "12 counters are shared equally among 3 trays. How many counters are in each group?",
+    "objective": "Find the quantity in each equal group.",
+    "reviewStatus": "draft",
+    "specification": {
+      "groupCount": 3,
+      "perGroup": 4,
+      "task": "each",
+      "unit": "counters",
+      "groupLabel": "trays"
+    },
+    "steps": [
+      {
+        "id": "recognise",
+        "goal": "recognise",
+        "title": "Identify the unknown",
+        "prompt": "What does the question ask you to find?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "g10",
+            "label": "How many counters are in each group",
+            "meaning": "each"
+          },
+          {
+            "id": "g11",
+            "label": "How many equal groups there are",
+            "meaning": "groups"
+          },
+          {
+            "id": "g12",
+            "label": "How many counters there are in all",
+            "meaning": "total"
+          }
+        ],
+        "answer": "g10",
+        "hints": [
+          "Read the question at the end of the story.",
+          "Separate the number of groups from the number in each group.",
+          "Decide whether the question asks for altogether, in each group, or how many groups.",
+          "Choose: The number of counters in each group"
+        ]
+      },
+      {
+        "id": "calculate",
+        "goal": "calculate",
+        "title": "Use equal groups",
+        "prompt": "How many counters are in each group?",
+        "kind": "number",
+        "answer": 4,
+        "hints": [
+          "Count the same number of counters in every group.",
+          "Each group must contain the same number.",
+          "3 equal groups with 4 in each make 12 altogether.",
+          "12 ÷ 3 = 4. Each group has 4 counters."
+        ]
+      },
+      {
+        "id": "reflection",
+        "goal": "reflection",
+        "title": "Explain equal groups",
+        "prompt": "Which explanation fits the model?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "e1b",
+            "label": "Each group can have a different number of counters."
+          },
+          {
+            "id": "e1c",
+            "label": "The number of groups is always the total number of counters."
+          },
+          {
+            "id": "e1a",
+            "label": "Every group contains the same number of counters."
+          }
+        ],
+        "answer": "e1a",
+        "hints": [
+          "Compare the separate groups.",
+          "Count the counters in two groups.",
+          "Equal groups have the same number in each group.",
+          "Choose: Every group contains the same number of counters."
+        ]
+      }
+    ]
+  },
+  "interpretation": {
+    "entities": [
+      "groups",
+      "counters"
+    ],
+    "quantities": [
+      {
+        "entity": "groups",
+        "value": 3,
+        "unit": "groups",
+        "state": "given"
+      },
+      {
+        "entity": "counters",
+        "value": 12,
+        "unit": "counters",
+        "state": "given"
+      }
+    ],
+    "relationships": [
+      {
+        "kind": "equal-groups",
+        "groups": 3,
+        "perGroup": 4,
+        "total": 12,
+        "unit": "counters"
+      }
+    ],
+    "unknown": "each",
+    "sourceSpans": [
+      {
+        "start": 0,
+        "end": 82,
+        "text": "12 counters are shared equally among 3 trays. How many counters are in each group?"
+      }
+    ],
+    "assumptions": [
+      "Every group has the same number of objects."
+    ],
+    "ambiguities": []
+  },
+  "fixtures": [
+    {
+      "stepId": "recognise",
+      "accepted": [
+        "g10"
+      ],
+      "rejected": [
+        "g11",
+        "g12"
+      ]
+    },
+    {
+      "stepId": "calculate",
+      "accepted": [
+        4
+      ],
+      "rejected": [
+        5,
+        12
+      ]
+    },
+    {
+      "stepId": "reflection",
+      "accepted": [
+        "e1a"
+      ],
+      "rejected": [
+        "e1b",
+        "e1c"
+      ]
+    }
+  ]
+}

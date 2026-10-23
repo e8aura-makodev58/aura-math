@@ -1,0 +1,207 @@
+{
+  "schemaVersion": 3,
+  "locale": "en-SG",
+  "adapterVersion": 1,
+  "library": {
+    "level": "P4",
+    "skillId": "p4-solid-from-net",
+    "tags": [
+      "P4",
+      "nets",
+      "general revision",
+      "level-unconfirmed",
+      "example"
+    ]
+  },
+  "curriculum": {
+    "objectiveId": "candidate.p4.nets.solid",
+    "sources": [
+      "https://practicle.sg/primary-4-math/",
+      "https://www.thelearninglab.com.sg/blog/tll-shares/new-changes-to-moe-primary-maths-syllabus"
+    ],
+    "evidenceStatus": "candidate"
+  },
+  "authors": [
+    "Codex"
+  ],
+  "provenance": {
+    "kind": "generated",
+    "generatorVersion": "p4-examples-v1",
+    "seed": 1320746705
+  },
+  "lesson": {
+    "id": "p4-solid-from-net-ex1",
+    "version": 1,
+    "topic": "nets",
+    "title": "What solid does this make?",
+    "subtitle": "P4 nets revision",
+    "level": "P4 candidate",
+    "minutes": 7,
+    "objective": "Name a solid from its net and count its faces, edges and vertices.",
+    "story": "A flat net will be folded up into a solid.",
+    "reviewStatus": "draft",
+    "specification": {
+      "task": "solid",
+      "nets": [],
+      "asked": 0,
+      "face": "",
+      "solid": "cuboid",
+      "rotation": 2
+    },
+    "steps": [
+      {
+        "id": "faces",
+        "goal": "faces",
+        "title": "Count the faces",
+        "prompt": "How many flat faces does the solid made by this net have?",
+        "kind": "exact",
+        "answer": "6",
+        "hints": [
+          "Each flat shape in the net becomes one face of the solid.",
+          "Count the shapes drawn, one by one.",
+          "Count every shape, triangles and rectangles alike.",
+          "The net has 6 shapes, so the solid has 6 faces. Enter 6."
+        ]
+      },
+      {
+        "id": "solid",
+        "goal": "solid",
+        "title": "Name the solid",
+        "prompt": "Which solid does this net make when it is folded up?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "k37",
+            "label": "A triangular prism",
+            "meaning": "triangular-prism"
+          },
+          {
+            "id": "k23",
+            "label": "A cuboid",
+            "meaning": "cuboid"
+          },
+          {
+            "id": "k30",
+            "label": "A cube",
+            "meaning": "cube"
+          }
+        ],
+        "answer": "k23",
+        "hints": [
+          "Look at the kinds of shapes in the net.",
+          "Count how many of each kind there are.",
+          "This net has 6 rectangles. Think about which solid has faces like that.",
+          "Choose the cuboid."
+        ]
+      },
+      {
+        "id": "edges",
+        "goal": "edges",
+        "title": "Count the edges",
+        "prompt": "How many edges does the solid have? An edge is where two faces meet.",
+        "kind": "exact",
+        "answer": "12",
+        "hints": [
+          "Each shape in the net has sides. Every edge of the solid is made from two sides that fold together.",
+          "Count the sides of every shape and add them up.",
+          "The shapes have 24 sides in all. Two sides make one edge, so work out 24 ÷ 2.",
+          "24 ÷ 2 = 12. Enter 12."
+        ]
+      },
+      {
+        "id": "vertices",
+        "goal": "vertices",
+        "title": "Count the vertices",
+        "prompt": "How many vertices does the solid have? A vertex is a corner where edges meet.",
+        "kind": "exact",
+        "answer": "8",
+        "hints": [
+          "Picture the folded solid and the corners you could point to.",
+          "Count the corners one at a time, so you do not count any twice.",
+          "A check: the number of faces plus the number of vertices is 2 more than the number of edges. You found 6 faces and 12 edges.",
+          "The solid has 8 vertices. Enter 8."
+        ]
+      },
+      {
+        "id": "reflection",
+        "goal": "reflection",
+        "title": "Explain your thinking",
+        "prompt": "How does a net become a solid?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "k37",
+            "label": "Every net folds into a cube, whatever flat shapes it is made from."
+          },
+          {
+            "id": "k23",
+            "label": "The flat shapes become the faces and fold along the joined edges."
+          },
+          {
+            "id": "k30",
+            "label": "The flat shapes become the edges of the solid when the net is folded."
+          }
+        ],
+        "answer": "k23",
+        "hints": [
+          "Think about opening up a box and pressing it flat.",
+          "Each flat piece of the box was one side of it.",
+          "A net can make many different solids, not only a cube.",
+          "Choose the explanation about shapes becoming faces."
+        ]
+      }
+    ]
+  },
+  "fixtures": [
+    {
+      "stepId": "faces",
+      "accepted": [
+        "6"
+      ],
+      "rejected": [
+        "7",
+        "16"
+      ]
+    },
+    {
+      "stepId": "solid",
+      "accepted": [
+        "k23"
+      ],
+      "rejected": [
+        "k37",
+        "k30"
+      ]
+    },
+    {
+      "stepId": "edges",
+      "accepted": [
+        "12"
+      ],
+      "rejected": [
+        "13",
+        "22"
+      ]
+    },
+    {
+      "stepId": "vertices",
+      "accepted": [
+        "8"
+      ],
+      "rejected": [
+        "9",
+        "18"
+      ]
+    },
+    {
+      "stepId": "reflection",
+      "accepted": [
+        "k23"
+      ],
+      "rejected": [
+        "k37",
+        "k30"
+      ]
+    }
+  ]
+}

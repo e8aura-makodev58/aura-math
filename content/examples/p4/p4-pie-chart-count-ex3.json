@@ -1,0 +1,178 @@
+{
+  "schemaVersion": 3,
+  "locale": "en-SG",
+  "adapterVersion": 1,
+  "library": {
+    "level": "P4",
+    "skillId": "p4-pie-chart-count",
+    "tags": [
+      "P4",
+      "pie-charts",
+      "general revision",
+      "level-unconfirmed",
+      "example"
+    ]
+  },
+  "curriculum": {
+    "objectiveId": "candidate.p4.pie-charts.count",
+    "sources": [
+      "https://practicle.sg/primary-4-math/",
+      "https://www.thelearninglab.com.sg/blog/tll-shares/new-changes-to-moe-primary-maths-syllabus"
+    ],
+    "evidenceStatus": "candidate"
+  },
+  "authors": [
+    "Codex"
+  ],
+  "provenance": {
+    "kind": "generated",
+    "generatorVersion": "p4-examples-v1",
+    "seed": 882535194
+  },
+  "lesson": {
+    "id": "p4-pie-chart-count-ex3",
+    "version": 1,
+    "topic": "pie-charts",
+    "title": "How many in each slice?",
+    "subtitle": "P4 pie-chart revision",
+    "level": "P4 candidate",
+    "minutes": 7,
+    "objective": "Share the total of a pie chart between its equal slices, then find the number in a group.",
+    "story": "The pie chart shows 30 pupils in all, sorted into Apples, Pears, Grapes and Plums. Every slice stands for the same number of pupils.",
+    "reviewStatus": "draft",
+    "specification": {
+      "task": "count",
+      "slices": 10,
+      "categories": [
+        "Apples",
+        "Pears",
+        "Grapes",
+        "Plums"
+      ],
+      "parts": [
+        3,
+        1,
+        4,
+        2
+      ],
+      "unit": 3,
+      "quantity": "pupils",
+      "a": 2,
+      "b": 3
+    },
+    "steps": [
+      {
+        "id": "one-slice",
+        "goal": "one-slice",
+        "title": "Find one slice",
+        "prompt": "The pie has 10 equal slices and shows 30 pupils in all. How many pupils does one slice stand for?",
+        "kind": "exact",
+        "answer": "3",
+        "hints": [
+          "Every slice stands for the same number.",
+          "Share the whole amount equally between all the slices.",
+          "Work out 30 ÷ 10.",
+          "30 ÷ 10 = 3. Enter 3."
+        ]
+      },
+      {
+        "id": "category",
+        "goal": "category",
+        "title": "Count a group",
+        "prompt": "How many pupils are in the Grapes group?",
+        "kind": "exact",
+        "answer": "12",
+        "hints": [
+          "Count the slices that Grapes covers.",
+          "Each slice stands for the same number of pupils, so multiply.",
+          "Grapes covers 4 slices and each slice stands for 3: work out 4 × 3.",
+          "4 × 3 = 12. Enter 12."
+        ]
+      },
+      {
+        "id": "more",
+        "goal": "more",
+        "title": "Find how many more",
+        "prompt": "How many more pupils are in the Grapes group than in the Plums group?",
+        "kind": "exact",
+        "answer": "6",
+        "hints": [
+          "Find how many more slices Grapes covers than Plums.",
+          "Count the slices of each group and take the smaller number from the larger.",
+          "Grapes covers 4 slices and Plums covers 2, which is 2 more. Each slice stands for 3.",
+          "2 × 3 = 6. Enter 6."
+        ]
+      },
+      {
+        "id": "reflection",
+        "goal": "reflection",
+        "title": "Explain your thinking",
+        "prompt": "Why do we find what one slice stands for first?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "k37",
+            "label": "One slice always stands for 1, so the number of slices is the amount in a group."
+          },
+          {
+            "id": "k23",
+            "label": "Each slice stands for the same number, so count slices to find any group."
+          },
+          {
+            "id": "k30",
+            "label": "Every group stands for the same number, so the number of slices does not matter."
+          }
+        ],
+        "answer": "k23",
+        "hints": [
+          "Think about the slices of the pie.",
+          "All the slices are the same size.",
+          "Knowing one slice lets you work out any group.",
+          "Choose the explanation about counting slices."
+        ]
+      }
+    ]
+  },
+  "fixtures": [
+    {
+      "stepId": "one-slice",
+      "accepted": [
+        "3"
+      ],
+      "rejected": [
+        "4",
+        "13"
+      ]
+    },
+    {
+      "stepId": "category",
+      "accepted": [
+        "12"
+      ],
+      "rejected": [
+        "13",
+        "22"
+      ]
+    },
+    {
+      "stepId": "more",
+      "accepted": [
+        "6"
+      ],
+      "rejected": [
+        "7",
+        "16"
+      ]
+    },
+    {
+      "stepId": "reflection",
+      "accepted": [
+        "k23"
+      ],
+      "rejected": [
+        "k37",
+        "k30"
+      ]
+    }
+  ]
+}

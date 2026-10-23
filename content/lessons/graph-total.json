@@ -1,0 +1,180 @@
+{
+  "schemaVersion": 2,
+  "locale": "en-SG",
+  "adapterVersion": 1,
+  "library": {
+    "level": "P2",
+    "skillId": "graph-total",
+    "tags": [
+      "picture-graphs",
+      "data"
+    ]
+  },
+  "curriculum": {
+    "objectiveId": "candidate.p2.picture-graphs.graph-total",
+    "sources": [
+      "https://practicle.sg/primary-2-math/",
+      "https://sg.ixl.com/standards/maths/primary-2"
+    ],
+    "evidenceStatus": "candidate"
+  },
+  "authors": [
+    "codex-topics-visual"
+  ],
+  "provenance": {
+    "kind": "authored"
+  },
+  "lesson": {
+    "id": "graph-total",
+    "version": 1,
+    "topic": "picture-graphs",
+    "title": "Find the picture-graph total",
+    "subtitle": "Full symbols and a shared key",
+    "level": "P2 candidate",
+    "minutes": 7,
+    "story": "This picture graph shows items in pretend collections. Each full symbol represents 5 items. These are example data, not a class survey.",
+    "objective": "Add quantities represented by a scaled picture graph.",
+    "specification": {
+      "task": "total",
+      "key": 5,
+      "categories": [
+        {
+          "id": "apples",
+          "label": "Apples",
+          "count": 4
+        },
+        {
+          "id": "pears",
+          "label": "Pears",
+          "count": 2
+        },
+        {
+          "id": "plums",
+          "label": "Plums",
+          "count": 0
+        },
+        {
+          "id": "oranges",
+          "label": "Oranges",
+          "count": 3
+        }
+      ],
+      "target": "oranges"
+    },
+    "steps": [
+      {
+        "id": "key",
+        "goal": "key",
+        "title": "Read the key",
+        "prompt": "How many items does one full symbol represent?",
+        "kind": "number",
+        "answer": 5,
+        "hints": [
+          "Find the key above the rows.",
+          "Look beside the single symbol in the key.",
+          "The key applies to every full symbol.",
+          "The key says one full symbol represents 5 items."
+        ]
+      },
+      {
+        "id": "quantity",
+        "goal": "quantity",
+        "title": "Read a category",
+        "prompt": "How many items does Oranges represent?",
+        "kind": "number",
+        "answer": 15,
+        "hints": [
+          "Look at the Oranges row.",
+          "Count its 3 full symbols.",
+          "Each full symbol represents 5 items.",
+          "Using the full symbols and the key gives 15 items."
+        ]
+      },
+      {
+        "id": "total",
+        "goal": "total",
+        "title": "Find the graph total",
+        "prompt": "How many items are represented in the whole graph?",
+        "kind": "number",
+        "answer": 45,
+        "hints": [
+          "Include every category.",
+          "Add the full-symbol counts in all rows.",
+          "Use the key for every full symbol.",
+          "Using the full symbols and the key gives 45 items."
+        ]
+      },
+      {
+        "id": "reflection",
+        "goal": "reflection",
+        "title": "Explain your thinking",
+        "prompt": "Why must we use the key?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "q6",
+            "label": "The key tells us how many items each symbol stands for."
+          },
+          {
+            "id": "q3",
+            "label": "Each symbol stands for just one item, whatever the key says."
+          },
+          {
+            "id": "q9",
+            "label": "A half symbol can always be counted as one whole item too."
+          }
+        ],
+        "answer": "q6",
+        "hints": [
+          "Think about one full symbol.",
+          "One symbol can represent more than one item.",
+          "Every row uses the same key.",
+          "The key tells us how many items each symbol stands for."
+        ]
+      }
+    ],
+    "reviewStatus": "draft"
+  },
+  "fixtures": [
+    {
+      "stepId": "key",
+      "accepted": [
+        5
+      ],
+      "rejected": [
+        6,
+        7
+      ]
+    },
+    {
+      "stepId": "quantity",
+      "accepted": [
+        15
+      ],
+      "rejected": [
+        16,
+        17
+      ]
+    },
+    {
+      "stepId": "total",
+      "accepted": [
+        45
+      ],
+      "rejected": [
+        46,
+        47
+      ]
+    },
+    {
+      "stepId": "reflection",
+      "accepted": [
+        "q6"
+      ],
+      "rejected": [
+        "q3",
+        "q9"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,203 @@
+{
+  "schemaVersion": 2,
+  "locale": "en-SG",
+  "adapterVersion": 1,
+  "library": {
+    "level": "P2",
+    "skillId": "compare-same-whole",
+    "tags": [
+      "fractions",
+      "equal-parts"
+    ]
+  },
+  "curriculum": {
+    "objectiveId": "candidate.p2.fractions.compare-same-whole",
+    "sources": [
+      "https://practicle.sg/primary-2-math/",
+      "https://sg.ixl.com/standards/maths/primary-2"
+    ],
+    "evidenceStatus": "candidate"
+  },
+  "authors": [
+    "codex-topics-visual"
+  ],
+  "provenance": {
+    "kind": "authored"
+  },
+  "lesson": {
+    "id": "compare-same-whole",
+    "version": 1,
+    "topic": "fractions",
+    "title": "Compare fractions of the same whole",
+    "subtitle": "Use equal-whole pictures",
+    "level": "P2 candidate",
+    "minutes": 7,
+    "story": "Both rectangles are equal-sized wholes. Compare the shaded area in the pictures.",
+    "objective": "Compare unit or like fractions of equal-sized wholes.",
+    "specification": {
+      "task": "compare",
+      "wholes": [
+        {
+          "id": "a",
+          "label": "Rectangle A",
+          "width": 120,
+          "height": 60,
+          "widths": [
+            60,
+            60
+          ],
+          "shaded": [
+            0
+          ]
+        },
+        {
+          "id": "b",
+          "label": "Rectangle B",
+          "width": 120,
+          "height": 60,
+          "widths": [
+            30,
+            30,
+            30,
+            30
+          ],
+          "shaded": [
+            0
+          ]
+        }
+      ]
+    },
+    "steps": [
+      {
+        "id": "shaded",
+        "goal": "shaded",
+        "title": "Look at the first whole",
+        "prompt": "How many parts of Rectangle A are shaded?",
+        "kind": "number",
+        "answer": 1,
+        "hints": [
+          "Look carefully at the whole picture.",
+          "Count the parts in the picture.",
+          "Separate the number of shaded parts from the number of all parts.",
+          "Count in the picture: there are 1 shaded parts."
+        ]
+      },
+      {
+        "id": "other-shaded",
+        "goal": "other-shaded",
+        "title": "Look at the second whole",
+        "prompt": "How many parts of Rectangle B are shaded?",
+        "kind": "number",
+        "answer": 1,
+        "hints": [
+          "Look carefully at the whole picture.",
+          "Count the parts in the picture.",
+          "Separate the number of shaded parts from the number of all parts.",
+          "Count in the picture: there are 1 shaded parts."
+        ]
+      },
+      {
+        "id": "compare",
+        "goal": "compare",
+        "title": "Compare the shaded amounts",
+        "prompt": "Which equal-sized whole has more shaded area?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "c5",
+            "label": "Same shaded area",
+            "meaning": "relation:same"
+          },
+          {
+            "id": "c8",
+            "label": "Rectangle B",
+            "meaning": "relation:right"
+          },
+          {
+            "id": "c2",
+            "label": "Rectangle A",
+            "meaning": "relation:left"
+          }
+        ],
+        "answer": "c2",
+        "hints": [
+          "The two whole rectangles are the same size.",
+          "Look at the shaded area in each whole.",
+          "For equal-sized parts, count them. For unit fractions, compare the size of one part.",
+          "Using the whole picture, choose Rectangle A."
+        ]
+      },
+      {
+        "id": "reflection",
+        "goal": "reflection",
+        "title": "Explain your thinking",
+        "prompt": "What must we check before naming or comparing these fractions?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "r8",
+            "label": "Count the shaded parts, even if the parts are different sizes."
+          },
+          {
+            "id": "r3",
+            "label": "Check that the parts are equal and the wholes are the same size."
+          },
+          {
+            "id": "r6",
+            "label": "A fraction with a bigger denominator is always the bigger one."
+          }
+        ],
+        "answer": "r3",
+        "hints": [
+          "Think about what a fraction describes.",
+          "Each part must have the same area.",
+          "Comparison also needs the same-sized whole.",
+          "Check that the parts are equal and the wholes are the same size."
+        ]
+      }
+    ],
+    "reviewStatus": "draft"
+  },
+  "fixtures": [
+    {
+      "stepId": "shaded",
+      "accepted": [
+        1
+      ],
+      "rejected": [
+        2,
+        3
+      ]
+    },
+    {
+      "stepId": "other-shaded",
+      "accepted": [
+        1
+      ],
+      "rejected": [
+        2,
+        3
+      ]
+    },
+    {
+      "stepId": "compare",
+      "accepted": [
+        "c2"
+      ],
+      "rejected": [
+        "c5",
+        "c8"
+      ]
+    },
+    {
+      "stepId": "reflection",
+      "accepted": [
+        "r3"
+      ],
+      "rejected": [
+        "r8",
+        "r6"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,205 @@
+{
+  "schemaVersion": 3,
+  "locale": "en-SG",
+  "adapterVersion": 1,
+  "library": {
+    "level": "P4",
+    "skillId": "p4-decimal-places",
+    "tags": [
+      "P4",
+      "decimals",
+      "general revision",
+      "example"
+    ]
+  },
+  "curriculum": {
+    "objectiveId": "candidate.p4.decimals.places",
+    "sources": [
+      "https://practicle.sg/primary-4-math/",
+      "https://sg.ixl.com/standards/maths/primary-4"
+    ],
+    "evidenceStatus": "candidate"
+  },
+  "authors": [
+    "Codex"
+  ],
+  "provenance": {
+    "kind": "generated",
+    "generatorVersion": "p4-examples-v1",
+    "seed": 4153449723
+  },
+  "lesson": {
+    "id": "p4-decimal-places-ex1",
+    "version": 1,
+    "topic": "decimals",
+    "title": "Look closely at decimal places",
+    "subtitle": "P4 decimal revision",
+    "level": "P4 candidate",
+    "minutes": 7,
+    "objective": "Read and compare decimal place values.",
+    "story": "Read 9.999 in the place chart, then compare it with 9.99.",
+    "reviewStatus": "draft",
+    "specification": {
+      "task": "places",
+      "a": {
+        "coefficient": 9999,
+        "scale": 3
+      },
+      "b": {
+        "coefficient": 999,
+        "scale": 2
+      },
+      "operation": "subtract",
+      "factor": 3,
+      "targetPlace": "thousandths",
+      "unit": "m"
+    },
+    "steps": [
+      {
+        "id": "place",
+        "goal": "place",
+        "title": "Name a place",
+        "prompt": "Which place does the third digit to the right of the decimal point occupy?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "p7",
+            "label": "Hundredths",
+            "meaning": "hundredths"
+          },
+          {
+            "id": "p2",
+            "label": "Thousandths",
+            "meaning": "thousandths"
+          },
+          {
+            "id": "p9",
+            "label": "Tenths",
+            "meaning": "tenths"
+          }
+        ],
+        "answer": "p2",
+        "hints": [
+          "Read the decimal column headings.",
+          "Move right from ones to tenths, then hundredths, then thousandths.",
+          "Find the thousandths column.",
+          "Choose thousandths."
+        ]
+      },
+      {
+        "id": "digit-value",
+        "goal": "digit-value",
+        "title": "Find a digit’s value",
+        "prompt": "What is the value of the digit in the thousandths place of 9.999?",
+        "kind": "exact",
+        "answer": "0.009",
+        "hints": [
+          "Find the thousandths column.",
+          "One unit in the thousandths place has the value shown by its column.",
+          "Count the equal thousandths units.",
+          "The thousandths digit represents 0.009."
+        ]
+      },
+      {
+        "id": "compare",
+        "goal": "compare",
+        "title": "Compare two decimals",
+        "prompt": "Which value is greater: 9.999 or 9.99?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "c2",
+            "label": "9.999",
+            "meaning": "left"
+          },
+          {
+            "id": "c4",
+            "label": "9.99",
+            "meaning": "right"
+          },
+          {
+            "id": "c9",
+            "label": "Both are equal",
+            "meaning": "same"
+          }
+        ],
+        "answer": "c2",
+        "hints": [
+          "Compare the ones first.",
+          "If the ones match, compare tenths, then hundredths, then thousandths.",
+          "An empty final decimal place can be written as zero.",
+          "Choose 9.999."
+        ]
+      },
+      {
+        "id": "reflection",
+        "goal": "reflection",
+        "title": "Explain the equal units",
+        "prompt": "What helps us calculate with decimals?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "r8",
+            "label": "The number of written digits tells us the value."
+          },
+          {
+            "id": "r3",
+            "label": "Use equal place units and check the relationship."
+          },
+          {
+            "id": "r6",
+            "label": "A decimal point means we can ignore zero places."
+          }
+        ],
+        "answer": "r3",
+        "hints": [
+          "Look at the place chart.",
+          "Tenths and hundredths are different-sized units.",
+          "A relationship only works when we use the matching units.",
+          "Choose: Use equal place units and check the relationship."
+        ]
+      }
+    ]
+  },
+  "fixtures": [
+    {
+      "stepId": "place",
+      "accepted": [
+        "p2"
+      ],
+      "rejected": [
+        "p7",
+        "p9"
+      ]
+    },
+    {
+      "stepId": "digit-value",
+      "accepted": [
+        "0.009"
+      ],
+      "rejected": [
+        "1.009"
+      ]
+    },
+    {
+      "stepId": "compare",
+      "accepted": [
+        "c2"
+      ],
+      "rejected": [
+        "c4",
+        "c9"
+      ]
+    },
+    {
+      "stepId": "reflection",
+      "accepted": [
+        "r3"
+      ],
+      "rejected": [
+        "r8",
+        "r6"
+      ]
+    }
+  ]
+}

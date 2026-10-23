@@ -1,0 +1,212 @@
+{
+  "schemaVersion": 3,
+  "locale": "en-SG",
+  "adapterVersion": 1,
+  "library": {
+    "level": "P4",
+    "skillId": "p4-read-pie-chart",
+    "tags": [
+      "P4",
+      "pie-charts",
+      "general revision",
+      "level-unconfirmed",
+      "example"
+    ]
+  },
+  "curriculum": {
+    "objectiveId": "candidate.p4.pie-charts.read",
+    "sources": [
+      "https://practicle.sg/primary-4-math/",
+      "https://www.thelearninglab.com.sg/blog/tll-shares/new-changes-to-moe-primary-maths-syllabus"
+    ],
+    "evidenceStatus": "candidate"
+  },
+  "authors": [
+    "Codex"
+  ],
+  "provenance": {
+    "kind": "generated",
+    "generatorVersion": "p4-examples-v1",
+    "seed": 802075765
+  },
+  "lesson": {
+    "id": "p4-read-pie-chart-ex3",
+    "version": 1,
+    "topic": "pie-charts",
+    "title": "Slices of the whole",
+    "subtitle": "P4 pie-chart revision",
+    "level": "P4 candidate",
+    "minutes": 7,
+    "objective": "Count the equal slices of a pie chart, name a group as a fraction of the whole and compare groups.",
+    "story": "The pie chart sorts the pupils into 4 groups: Soccer, Swim, Chess and Art.",
+    "reviewStatus": "draft",
+    "specification": {
+      "task": "read",
+      "slices": 10,
+      "categories": [
+        "Soccer",
+        "Swim",
+        "Chess",
+        "Art"
+      ],
+      "parts": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "unit": 0,
+      "quantity": "pupils",
+      "a": 1,
+      "b": 3
+    },
+    "steps": [
+      {
+        "id": "slices",
+        "goal": "slices",
+        "title": "Count the slices",
+        "prompt": "How many equal slices is the whole pie cut into?",
+        "kind": "exact",
+        "answer": "10",
+        "hints": [
+          "Look at the faint lines inside the circle. The part between two lines is one slice.",
+          "Count the slices one at a time, starting at the top and going round clockwise.",
+          "Slices by label: Soccer 1, Swim 2, Chess 3, Art 4. Add them up.",
+          "1 + 2 + 3 + 4 = 10. Enter 10."
+        ]
+      },
+      {
+        "id": "fraction",
+        "goal": "fraction",
+        "title": "Name the fraction",
+        "prompt": "What fraction of the whole pie is Swim?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "k25",
+            "label": "8/10",
+            "meaning": "rest"
+          },
+          {
+            "id": "k32",
+            "label": "2/8",
+            "meaning": "ratio"
+          },
+          {
+            "id": "k18",
+            "label": "2/10",
+            "meaning": "share"
+          }
+        ],
+        "answer": "k18",
+        "hints": [
+          "A fraction of the whole compares the slices in one label with all the slices.",
+          "Count the slices that Swim covers. Then think about all the slices in the pie.",
+          "Swim covers 2 slices out of 10. Put the slices it covers on top and all the slices underneath.",
+          "Choose 2/10."
+        ]
+      },
+      {
+        "id": "larger",
+        "goal": "larger",
+        "title": "Compare two groups",
+        "prompt": "Which group is bigger: Swim or Art?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "k38",
+            "label": "Swim",
+            "meaning": "left"
+          },
+          {
+            "id": "k45",
+            "label": "Art",
+            "meaning": "right"
+          },
+          {
+            "id": "k52",
+            "label": "Both the same size",
+            "meaning": "same"
+          }
+        ],
+        "answer": "k45",
+        "hints": [
+          "A bigger group covers more of the equal slices.",
+          "Count the slices for each group and compare the two numbers.",
+          "Swim covers 2 slices and Art covers 4 slices.",
+          "Choose Art."
+        ]
+      },
+      {
+        "id": "reflection",
+        "goal": "reflection",
+        "title": "Explain your thinking",
+        "prompt": "How does a pie chart show that one group is bigger than another?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "k70",
+            "label": "Each group gets one sector, so all of the sectors are the same size."
+          },
+          {
+            "id": "k77",
+            "label": "The bigger group is always drawn first, starting at the top of the pie."
+          },
+          {
+            "id": "k63",
+            "label": "The bigger group takes more of the equal slices, so its sector is bigger."
+          }
+        ],
+        "answer": "k63",
+        "hints": [
+          "Think about what the slices of a pie chart stand for.",
+          "Every slice is the same size.",
+          "A group with more slices takes up more of the pie.",
+          "Choose the explanation about taking up more of the equal slices."
+        ]
+      }
+    ]
+  },
+  "fixtures": [
+    {
+      "stepId": "slices",
+      "accepted": [
+        "10"
+      ],
+      "rejected": [
+        "11",
+        "20"
+      ]
+    },
+    {
+      "stepId": "fraction",
+      "accepted": [
+        "k18"
+      ],
+      "rejected": [
+        "k25",
+        "k32"
+      ]
+    },
+    {
+      "stepId": "larger",
+      "accepted": [
+        "k45"
+      ],
+      "rejected": [
+        "k38",
+        "k52"
+      ]
+    },
+    {
+      "stepId": "reflection",
+      "accepted": [
+        "k63"
+      ],
+      "rejected": [
+        "k70",
+        "k77"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,173 @@
+{
+  "schemaVersion": 1,
+  "locale": "en-SG",
+  "adapterVersion": 1,
+  "curriculum": {
+    "objectiveId": "P2.additive-comparison",
+    "sources": [
+      "https://sg.ixl.com/standards/maths/primary-2"
+    ],
+    "evidenceStatus": "candidate"
+  },
+  "authors": [
+    "Codex"
+  ],
+  "provenance": {
+    "kind": "generated",
+    "generatorVersion": "bounded-v1",
+    "seed": 1
+  },
+  "lesson": {
+    "id": "generated-1-1",
+    "version": 1,
+    "topic": "comparison",
+    "title": "A little more ribbon",
+    "subtitle": "Build a comparison",
+    "level": "P2 candidate",
+    "minutes": 5,
+    "story": "Zac has 24 ribbons. Maya has 29 more ribbons than Zac. How many ribbons does Maya have?",
+    "objective": "Connect two quantities and the difference between them.",
+    "reviewStatus": "draft",
+    "specification": {
+      "largerName": "Maya",
+      "smallerName": "Zac",
+      "larger": 53,
+      "smaller": 24,
+      "unknown": "larger",
+      "unit": "ribbons"
+    },
+    "steps": [
+      {
+        "id": "relation",
+        "title": "Connect the quantities",
+        "prompt": "Which relationship fits the story?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "option-1e2grt1",
+            "label": "Zac’s amount = Maya’s amount + the difference",
+            "meaning": "smaller-is-larger-plus-difference"
+          },
+          {
+            "id": "option-ztej5q",
+            "label": "Maya’s amount = Zac’s amount + the difference",
+            "meaning": "larger-is-smaller-plus-difference"
+          }
+        ],
+        "answer": "option-ztej5q",
+        "hints": [
+          "Who has more ribbons?",
+          "Maya has the larger amount.",
+          "The larger amount contains the smaller amount and an extra part.",
+          "Choose: Maya’s amount = Zac’s amount + the difference."
+        ],
+        "goal": "relation"
+      },
+      {
+        "id": "calculation",
+        "title": "Find the missing amount",
+        "prompt": "How many ribbons does Maya have?",
+        "kind": "number",
+        "answer": 53,
+        "hints": [
+          "Look for the missing part in the comparison.",
+          "Join the smaller amount and the extra part.",
+          "Work out 24 + 29.",
+          "24 + 29 = 53. Enter 53."
+        ],
+        "goal": "calculation"
+      },
+      {
+        "id": "reflection",
+        "title": "Explain your thinking",
+        "prompt": "Why does your answer fit?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "option-q8wegv",
+            "label": "The difference is 29: 24 + 29 = 53."
+          },
+          {
+            "id": "option-1j15mdu",
+            "label": "The two amounts must both be 53."
+          }
+        ],
+        "answer": "option-q8wegv",
+        "hints": [
+          "Think about what stayed the same.",
+          "Use the relationship you just checked.",
+          "Read this explanation carefully: The difference is 29: 24 + 29 = 53.",
+          "Choose: The difference is 29: 24 + 29 = 53."
+        ],
+        "goal": "reflection"
+      }
+    ]
+  },
+  "interpretation": {
+    "entities": [
+      "Maya",
+      "Zac"
+    ],
+    "quantities": [
+      {
+        "entity": "Maya",
+        "value": 53,
+        "unit": "ribbons",
+        "state": "initial"
+      },
+      {
+        "entity": "Zac",
+        "value": 24,
+        "unit": "ribbons",
+        "state": "initial"
+      }
+    ],
+    "relationships": [
+      {
+        "kind": "additive-comparison",
+        "larger": "Maya",
+        "smaller": "Zac",
+        "difference": 29
+      }
+    ],
+    "unknown": "larger",
+    "sourceSpans": [
+      {
+        "start": 0,
+        "end": 87,
+        "text": "Zac has 24 ribbons. Maya has 29 more ribbons than Zac. How many ribbons does Maya have?"
+      }
+    ],
+    "assumptions": [],
+    "ambiguities": []
+  },
+  "fixtures": [
+    {
+      "stepId": "relation",
+      "accepted": [
+        "option-ztej5q"
+      ],
+      "rejected": [
+        "option-1e2grt1"
+      ]
+    },
+    {
+      "stepId": "calculation",
+      "accepted": [
+        53
+      ],
+      "rejected": [
+        54
+      ]
+    },
+    {
+      "stepId": "reflection",
+      "accepted": [
+        "option-q8wegv"
+      ],
+      "rejected": [
+        "option-1j15mdu"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,250 @@
+{
+  "schemaVersion": 3,
+  "locale": "en-SG",
+  "adapterVersion": 1,
+  "library": {
+    "level": "P4",
+    "skillId": "p4-shade-to-complete-bench",
+    "tags": [
+      "P4",
+      "symmetry",
+      "general revision",
+      "level-unconfirmed",
+      "workbench"
+    ]
+  },
+  "curriculum": {
+    "objectiveId": "candidate.p4.symmetry.shade",
+    "sources": [
+      "https://practicle.sg/primary-4-math/",
+      "https://sg.ixl.com/standards/maths/primary-4"
+    ],
+    "evidenceStatus": "candidate"
+  },
+  "authors": [
+    "codex-p4-symmetry-bench"
+  ],
+  "provenance": {
+    "kind": "authored"
+  },
+  "lesson": {
+    "id": "p4-shade-to-complete-bench",
+    "version": 1,
+    "topic": "symmetry",
+    "title": "Shade the other half",
+    "subtitle": "P4 symmetry revision",
+    "level": "P4 candidate",
+    "minutes": 7,
+    "objective": "Complete the reflected half and transfer to a new square.",
+    "story": "Tap every square needed on the other side of the mirror. Tap again to clear. The preview is available through hints; it does not mark mistakes.",
+    "reviewStatus": "draft",
+    "specification": {
+      "task": "shade",
+      "shape": "rectangle",
+      "cols": 6,
+      "rows": 4,
+      "mirror": "vertical",
+      "cells": [
+        "0,2",
+        "1,1",
+        "1,2",
+        "2,0",
+        "3,1"
+      ],
+      "probe": "1,2"
+    },
+    "steps": [
+      {
+        "id": "shade",
+        "goal": "shade",
+        "title": "Shade the far half",
+        "prompt": "Tap every square needed on the other side of the mirror. Tap again to clear. The preview is available through hints; it does not mark mistakes.",
+        "kind": "multi",
+        "choices": [
+          {
+            "id": "k28",
+            "label": "Row 1, column 4",
+            "meaning": "cell:0,3"
+          },
+          {
+            "id": "k35",
+            "label": "Row 1, column 5",
+            "meaning": "cell:0,4"
+          },
+          {
+            "id": "k42",
+            "label": "Row 1, column 6",
+            "meaning": "cell:0,5"
+          },
+          {
+            "id": "k49",
+            "label": "Row 2, column 4",
+            "meaning": "cell:1,3"
+          },
+          {
+            "id": "k56",
+            "label": "Row 2, column 5",
+            "meaning": "cell:1,4"
+          },
+          {
+            "id": "k63",
+            "label": "Row 2, column 6",
+            "meaning": "cell:1,5"
+          },
+          {
+            "id": "k70",
+            "label": "Row 3, column 4",
+            "meaning": "cell:2,3"
+          },
+          {
+            "id": "k77",
+            "label": "Row 3, column 5",
+            "meaning": "cell:2,4"
+          },
+          {
+            "id": "k84",
+            "label": "Row 3, column 6",
+            "meaning": "cell:2,5"
+          },
+          {
+            "id": "k11",
+            "label": "Row 4, column 4",
+            "meaning": "cell:3,3"
+          },
+          {
+            "id": "k18",
+            "label": "Row 4, column 5",
+            "meaning": "cell:3,4"
+          },
+          {
+            "id": "k25",
+            "label": "Row 4, column 6",
+            "meaning": "cell:3,5"
+          }
+        ],
+        "answer": [
+          "k28",
+          "k49",
+          "k56",
+          "k84",
+          "k18"
+        ],
+        "hints": [
+          "Match the distance of each square from the mirror.",
+          "The hint preview reflects your selections back onto the given side.",
+          "A reflected square stays in the same row for a vertical mirror, or the same column for a horizontal mirror.",
+          "The worked step shades every required reflected square."
+        ]
+      },
+      {
+        "id": "transfer",
+        "goal": "transfer",
+        "title": "Match a new square",
+        "prompt": "The movable preview is off. Which labelled square matches X across the mirror?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "k52",
+            "label": "Square C",
+            "meaning": "mirror"
+          },
+          {
+            "id": "k38",
+            "label": "Square A",
+            "meaning": "shifted"
+          },
+          {
+            "id": "k45",
+            "label": "Square B",
+            "meaning": "flipped"
+          }
+        ],
+        "answer": "k52",
+        "hints": [
+          "Find the marked square X.",
+          "Keep the same distance from the mirror.",
+          "Check its row or column as well as its distance.",
+          "Choose square C."
+        ]
+      },
+      {
+        "id": "reflection",
+        "goal": "reflection",
+        "title": "Explain your thinking",
+        "prompt": "What must a reflection preserve?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "k52",
+            "label": "Any line through the middle of a shape makes a mirror image of it."
+          },
+          {
+            "id": "k38",
+            "label": "Matching points are the same distance from the mirror, on opposite sides."
+          },
+          {
+            "id": "k45",
+            "label": "Every point moves one square to the right, so the shape keeps its look."
+          }
+        ],
+        "answer": "k38",
+        "hints": [
+          "Look at matching points.",
+          "The mirror lies between each matching pair.",
+          "Both points are the same distance from it.",
+          "Choose the explanation about equal distances on opposite sides."
+        ]
+      }
+    ]
+  },
+  "fixtures": [
+    {
+      "stepId": "shade",
+      "accepted": [
+        [
+          "k28",
+          "k49",
+          "k56",
+          "k84",
+          "k18"
+        ]
+      ],
+      "rejected": [
+        [
+          "k28",
+          "k49",
+          "k56",
+          "k84"
+        ],
+        [
+          "k28",
+          "k49",
+          "k56",
+          "k84",
+          "k18",
+          "k35"
+        ]
+      ]
+    },
+    {
+      "stepId": "transfer",
+      "accepted": [
+        "k52"
+      ],
+      "rejected": [
+        "k38",
+        "k45"
+      ]
+    },
+    {
+      "stepId": "reflection",
+      "accepted": [
+        "k38"
+      ],
+      "rejected": [
+        "k52",
+        "k45"
+      ]
+    }
+  ]
+}

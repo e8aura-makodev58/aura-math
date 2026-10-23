@@ -1,0 +1,194 @@
+{
+  "schemaVersion": 2,
+  "locale": "en-SG",
+  "adapterVersion": 1,
+  "library": {
+    "level": "P2",
+    "skillId": "equal-groups-total",
+    "tags": [
+      "equal groups",
+      "multiplication"
+    ]
+  },
+  "curriculum": {
+    "objectiveId": "P2.equal-groups",
+    "sources": [
+      "https://practicle.sg/primary-2-math/",
+      "https://sg.ixl.com/standards/maths/primary-2"
+    ],
+    "evidenceStatus": "candidate"
+  },
+  "authors": [
+    "codex-topics-numbers"
+  ],
+  "provenance": {
+    "kind": "authored"
+  },
+  "lesson": {
+    "id": "equal-groups-total",
+    "version": 1,
+    "topic": "equal-groups",
+    "title": "Picnic baskets",
+    "subtitle": "Find a total from equal groups",
+    "level": "P2 candidate",
+    "minutes": 6,
+    "story": "There are 4 baskets with 3 counters in each. How many counters are there altogether?",
+    "objective": "Find the total in equal groups.",
+    "reviewStatus": "draft",
+    "specification": {
+      "groupCount": 4,
+      "perGroup": 3,
+      "task": "total",
+      "unit": "counters",
+      "groupLabel": "baskets"
+    },
+    "steps": [
+      {
+        "id": "recognise",
+        "goal": "recognise",
+        "title": "Identify the unknown",
+        "prompt": "What does the question ask you to find?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "g00",
+            "label": "How many counters are in each group",
+            "meaning": "each"
+          },
+          {
+            "id": "g01",
+            "label": "How many counters there are in all",
+            "meaning": "total"
+          },
+          {
+            "id": "g02",
+            "label": "How many equal groups there are",
+            "meaning": "groups"
+          }
+        ],
+        "answer": "g01",
+        "hints": [
+          "Read the question at the end of the story.",
+          "Separate the number of groups from the number in each group.",
+          "Decide whether the question asks for altogether, in each group, or how many groups.",
+          "Choose: The total number of counters"
+        ]
+      },
+      {
+        "id": "calculate",
+        "goal": "calculate",
+        "title": "Use equal groups",
+        "prompt": "How many counters are there altogether?",
+        "kind": "number",
+        "answer": 12,
+        "hints": [
+          "Count the same number of counters in every group.",
+          "Each group must contain the same number.",
+          "4 equal groups with 3 in each make 12 altogether.",
+          "4 × 3 = 12. There are 12 counters altogether."
+        ]
+      },
+      {
+        "id": "reflection",
+        "goal": "reflection",
+        "title": "Explain equal groups",
+        "prompt": "Which explanation fits the model?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "e0a",
+            "label": "Every group contains the same number of counters."
+          },
+          {
+            "id": "e0b",
+            "label": "Each group can have a different number of counters."
+          },
+          {
+            "id": "e0c",
+            "label": "The number of groups is always the total number of counters."
+          }
+        ],
+        "answer": "e0a",
+        "hints": [
+          "Compare the separate groups.",
+          "Count the counters in two groups.",
+          "Equal groups have the same number in each group.",
+          "Choose: Every group contains the same number of counters."
+        ]
+      }
+    ]
+  },
+  "interpretation": {
+    "entities": [
+      "groups",
+      "counters"
+    ],
+    "quantities": [
+      {
+        "entity": "groups",
+        "value": 4,
+        "unit": "groups",
+        "state": "given"
+      },
+      {
+        "entity": "counters",
+        "value": 12,
+        "unit": "counters",
+        "state": "derived"
+      }
+    ],
+    "relationships": [
+      {
+        "kind": "equal-groups",
+        "groups": 4,
+        "perGroup": 3,
+        "total": 12,
+        "unit": "counters"
+      }
+    ],
+    "unknown": "total",
+    "sourceSpans": [
+      {
+        "start": 0,
+        "end": 84,
+        "text": "There are 4 baskets with 3 counters in each. How many counters are there altogether?"
+      }
+    ],
+    "assumptions": [
+      "Every group has the same number of objects."
+    ],
+    "ambiguities": []
+  },
+  "fixtures": [
+    {
+      "stepId": "recognise",
+      "accepted": [
+        "g01"
+      ],
+      "rejected": [
+        "g00",
+        "g02"
+      ]
+    },
+    {
+      "stepId": "calculate",
+      "accepted": [
+        12
+      ],
+      "rejected": [
+        13,
+        4
+      ]
+    },
+    {
+      "stepId": "reflection",
+      "accepted": [
+        "e0a"
+      ],
+      "rejected": [
+        "e0b",
+        "e0c"
+      ]
+    }
+  ]
+}

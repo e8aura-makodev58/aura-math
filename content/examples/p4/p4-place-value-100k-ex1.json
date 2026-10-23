@@ -1,0 +1,199 @@
+{
+  "schemaVersion": 3,
+  "locale": "en-SG",
+  "adapterVersion": 1,
+  "library": {
+    "level": "P4",
+    "skillId": "p4-place-value-100k",
+    "tags": [
+      "P4",
+      "whole-numbers",
+      "general revision",
+      "example"
+    ]
+  },
+  "curriculum": {
+    "objectiveId": "candidate.p4.whole-numbers.place-value",
+    "sources": [
+      "https://practicle.sg/primary-4-math/",
+      "https://sg.ixl.com/standards/maths/primary-4"
+    ],
+    "evidenceStatus": "candidate"
+  },
+  "authors": [
+    "Codex"
+  ],
+  "provenance": {
+    "kind": "generated",
+    "generatorVersion": "p4-examples-v1",
+    "seed": 971913187
+  },
+  "lesson": {
+    "id": "p4-place-value-100k-ex1",
+    "version": 1,
+    "topic": "whole-numbers",
+    "title": "Read numbers to 100 000",
+    "subtitle": "P4 whole-number revision",
+    "level": "P4 candidate",
+    "minutes": 7,
+    "objective": "Read the place and value of digits in a five-digit number.",
+    "story": "Read 99 914 and 99 941 in the place chart.",
+    "reviewStatus": "draft",
+    "specification": {
+      "task": "place-value",
+      "n": 99914,
+      "m": 99941,
+      "place": "tens",
+      "roundTo": 100,
+      "unit": "stickers"
+    },
+    "steps": [
+      {
+        "id": "place",
+        "goal": "place",
+        "title": "Name the place",
+        "prompt": "In 99 914, which place does the digit 1 hold?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "k58",
+            "label": "The tens place",
+            "meaning": "tens"
+          },
+          {
+            "id": "k65",
+            "label": "The hundreds place",
+            "meaning": "hundreds"
+          },
+          {
+            "id": "k72",
+            "label": "The ten thousands place",
+            "meaning": "ten-thousands"
+          }
+        ],
+        "answer": "k58",
+        "hints": [
+          "Read the place chart from the right: ones, tens, hundreds, thousands, ten thousands.",
+          "Find the column that holds the digit 1.",
+          "The digit 1 sits in the tens column.",
+          "Choose the tens place."
+        ]
+      },
+      {
+        "id": "digit-value",
+        "goal": "digit-value",
+        "title": "Find the value",
+        "prompt": "What is the value of the digit 1 in 99 914?",
+        "kind": "exact",
+        "answer": "10",
+        "hints": [
+          "A digit's value depends on the place it holds.",
+          "Count how many tens the digit stands for.",
+          "1 tens is 1 × 10.",
+          "1 × 10 = 10. Enter 10."
+        ]
+      },
+      {
+        "id": "compare",
+        "goal": "compare",
+        "title": "Compare two numbers",
+        "prompt": "Which number is greater: 99 914 or 99 941?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "k77",
+            "label": "Both are equal",
+            "meaning": "same"
+          },
+          {
+            "id": "k63",
+            "label": "99 914",
+            "meaning": "left"
+          },
+          {
+            "id": "k70",
+            "label": "99 941",
+            "meaning": "right"
+          }
+        ],
+        "answer": "k70",
+        "hints": [
+          "Compare the digits starting from the greatest place.",
+          "Look at the ten thousands first, then the thousands, then the hundreds.",
+          "Stop at the first place where the digits differ. The larger digit wins.",
+          "Choose 99 941."
+        ]
+      },
+      {
+        "id": "reflection",
+        "goal": "reflection",
+        "title": "Explain your thinking",
+        "prompt": "Why does the same digit stand for different values?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "k23",
+            "label": "A digit's value depends on its place; each place is ten times the next."
+          },
+          {
+            "id": "k30",
+            "label": "The digit changes its shape when it moves to a different place in the number."
+          },
+          {
+            "id": "k37",
+            "label": "The value of a digit is always just the digit itself, wherever it is."
+          }
+        ],
+        "answer": "k23",
+        "hints": [
+          "Think about the place chart.",
+          "Compare the value of 4 in the tens place with 4 in the hundreds place.",
+          "Each place is worth ten times the place to its right.",
+          "Choose the explanation about places being ten times each other."
+        ]
+      }
+    ]
+  },
+  "fixtures": [
+    {
+      "stepId": "place",
+      "accepted": [
+        "k58"
+      ],
+      "rejected": [
+        "k65",
+        "k72"
+      ]
+    },
+    {
+      "stepId": "digit-value",
+      "accepted": [
+        "10"
+      ],
+      "rejected": [
+        "11",
+        "20"
+      ]
+    },
+    {
+      "stepId": "compare",
+      "accepted": [
+        "k70"
+      ],
+      "rejected": [
+        "k77",
+        "k63"
+      ]
+    },
+    {
+      "stepId": "reflection",
+      "accepted": [
+        "k23"
+      ],
+      "rejected": [
+        "k30",
+        "k37"
+      ]
+    }
+  ]
+}

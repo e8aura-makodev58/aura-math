@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 1,
+  "locale": "en-SG",
+  "adapterVersion": 1,
+  "curriculum": {
+    "objectiveId": "P2.additive-comparison",
+    "sources": ["https://sg.ixl.com/standards/maths/primary-2"],
+    "evidenceStatus": "candidate"
+  },
+  "authors": ["Codex"],
+  "provenance": {
+    "kind": "authored"
+  },
+  "lesson": {
+    "id": "shell-discovery",
+    "version": 1,
+    "topic": "comparison",
+    "title": "How many more?",
+    "subtitle": "Build a comparison",
+    "level": "P2 candidate",
+    "minutes": 5,
+    "story": "Lin has 21 shells. Sam has 13 shells. How many more shells does Lin have than Sam?",
+    "objective": "Connect two quantities and the difference between them.",
+    "reviewStatus": "draft",
+    "specification": {
+      "largerName": "Lin",
+      "smallerName": "Sam",
+      "larger": 21,
+      "smaller": 13,
+      "unknown": "difference",
+      "unit": "shells"
+    },
+    "steps": [
+      {
+        "id": "relation",
+        "title": "Connect the quantities",
+        "prompt": "Which relationship fits the story?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "larger-is-smaller-plus-difference",
+            "label": "Lin’s amount = Sam’s amount + the difference",
+            "meaning": "larger-is-smaller-plus-difference"
+          },
+          {
+            "id": "smaller-is-larger-plus-difference",
+            "label": "Sam’s amount = Lin’s amount + the difference",
+            "meaning": "smaller-is-larger-plus-difference"
+          }
+        ],
+        "answer": "larger-is-smaller-plus-difference",
+        "hints": [
+          "Who has more shells?",
+          "Lin has the larger amount.",
+          "The larger amount contains the smaller amount and an extra part.",
+          "Choose: Lin’s amount = Sam’s amount + the difference."
+        ],
+        "goal": "relation"
+      },
+      {
+        "id": "calculation",
+        "title": "Find the missing amount",
+        "prompt": "How many more shells does Lin have?",
+        "kind": "number",
+        "answer": 8,
+        "hints": [
+          "Look for the missing part in the comparison.",
+          "Take the known part away from the larger amount.",
+          "Work out 21 − 13.",
+          "21 − 13 = 8. Enter 8."
+        ],
+        "goal": "calculation"
+      },
+      {
+        "id": "reflection",
+        "title": "Explain your thinking",
+        "prompt": "Why does your answer fit?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "reason",
+            "label": "The difference is 8: 13 + 8 = 21."
+          },
+          {
+            "id": "distractor",
+            "label": "The two amounts must both be 21."
+          }
+        ],
+        "answer": "reason",
+        "hints": [
+          "Think about what stayed the same.",
+          "Use the relationship you just checked.",
+          "Read this explanation carefully: The difference is 8: 13 + 8 = 21.",
+          "Choose: The difference is 8: 13 + 8 = 21."
+        ],
+        "goal": "reflection"
+      }
+    ]
+  },
+  "interpretation": {
+    "entities": ["Lin", "Sam"],
+    "quantities": [
+      {
+        "entity": "Lin",
+        "value": 21,
+        "unit": "shells",
+        "state": "initial"
+      },
+      {
+        "entity": "Sam",
+        "value": 13,
+        "unit": "shells",
+        "state": "initial"
+      }
+    ],
+    "relationships": [
+      {
+        "kind": "additive-comparison",
+        "larger": "Lin",
+        "smaller": "Sam",
+        "difference": 8
+      }
+    ],
+    "unknown": "difference",
+    "sourceSpans": [
+      {
+        "start": 0,
+        "end": 82,
+        "text": "Lin has 21 shells. Sam has 13 shells. How many more shells does Lin have than Sam?"
+      }
+    ],
+    "assumptions": [],
+    "ambiguities": []
+  }
+}

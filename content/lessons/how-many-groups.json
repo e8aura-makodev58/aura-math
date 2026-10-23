@@ -1,0 +1,194 @@
+{
+  "schemaVersion": 2,
+  "locale": "en-SG",
+  "adapterVersion": 1,
+  "library": {
+    "level": "P2",
+    "skillId": "how-many-groups",
+    "tags": [
+      "equal groups",
+      "division"
+    ]
+  },
+  "curriculum": {
+    "objectiveId": "P2.equal-groups",
+    "sources": [
+      "https://practicle.sg/primary-2-math/",
+      "https://sg.ixl.com/standards/maths/primary-2"
+    ],
+    "evidenceStatus": "candidate"
+  },
+  "authors": [
+    "codex-topics-numbers"
+  ],
+  "provenance": {
+    "kind": "authored"
+  },
+  "lesson": {
+    "id": "how-many-groups",
+    "version": 1,
+    "topic": "equal-groups",
+    "title": "Pack equal bags",
+    "subtitle": "Find how many equal groups",
+    "level": "P2 candidate",
+    "minutes": 6,
+    "story": "15 counters are packed with 5 counters in each bag. How many bags are needed?",
+    "objective": "Find the number of equal groups.",
+    "reviewStatus": "draft",
+    "specification": {
+      "groupCount": 3,
+      "perGroup": 5,
+      "task": "groups",
+      "unit": "counters",
+      "groupLabel": "bags"
+    },
+    "steps": [
+      {
+        "id": "recognise",
+        "goal": "recognise",
+        "title": "Identify the unknown",
+        "prompt": "What does the question ask you to find?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "g20",
+            "label": "How many counters there are in all",
+            "meaning": "total"
+          },
+          {
+            "id": "g21",
+            "label": "How many counters are in each group",
+            "meaning": "each"
+          },
+          {
+            "id": "g22",
+            "label": "How many equal groups there are",
+            "meaning": "groups"
+          }
+        ],
+        "answer": "g22",
+        "hints": [
+          "Read the question at the end of the story.",
+          "Separate the number of groups from the number in each group.",
+          "Decide whether the question asks for altogether, in each group, or how many groups.",
+          "Choose: The number of groups"
+        ]
+      },
+      {
+        "id": "calculate",
+        "goal": "calculate",
+        "title": "Use equal groups",
+        "prompt": "How many bags are needed?",
+        "kind": "number",
+        "answer": 3,
+        "hints": [
+          "Count the same number of counters in every group.",
+          "Each group must contain the same number.",
+          "3 equal groups with 5 in each make 15 altogether.",
+          "15 ÷ 5 = 3. There are 3 bags."
+        ]
+      },
+      {
+        "id": "reflection",
+        "goal": "reflection",
+        "title": "Explain equal groups",
+        "prompt": "Which explanation fits the model?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "e2c",
+            "label": "The number of groups is always the total number of counters."
+          },
+          {
+            "id": "e2a",
+            "label": "Every group contains the same number of counters."
+          },
+          {
+            "id": "e2b",
+            "label": "Each group can have a different number of counters."
+          }
+        ],
+        "answer": "e2a",
+        "hints": [
+          "Compare the separate groups.",
+          "Count the counters in two groups.",
+          "Equal groups have the same number in each group.",
+          "Choose: Every group contains the same number of counters."
+        ]
+      }
+    ]
+  },
+  "interpretation": {
+    "entities": [
+      "groups",
+      "counters"
+    ],
+    "quantities": [
+      {
+        "entity": "groups",
+        "value": 3,
+        "unit": "groups",
+        "state": "derived"
+      },
+      {
+        "entity": "counters",
+        "value": 15,
+        "unit": "counters",
+        "state": "given"
+      }
+    ],
+    "relationships": [
+      {
+        "kind": "equal-groups",
+        "groups": 3,
+        "perGroup": 5,
+        "total": 15,
+        "unit": "counters"
+      }
+    ],
+    "unknown": "groups",
+    "sourceSpans": [
+      {
+        "start": 0,
+        "end": 77,
+        "text": "15 counters are packed with 5 counters in each bag. How many bags are needed?"
+      }
+    ],
+    "assumptions": [
+      "Every group has the same number of objects."
+    ],
+    "ambiguities": []
+  },
+  "fixtures": [
+    {
+      "stepId": "recognise",
+      "accepted": [
+        "g22"
+      ],
+      "rejected": [
+        "g20",
+        "g21"
+      ]
+    },
+    {
+      "stepId": "calculate",
+      "accepted": [
+        3
+      ],
+      "rejected": [
+        4,
+        15
+      ]
+    },
+    {
+      "stepId": "reflection",
+      "accepted": [
+        "e2a"
+      ],
+      "rejected": [
+        "e2c",
+        "e2b"
+      ]
+    }
+  ]
+}

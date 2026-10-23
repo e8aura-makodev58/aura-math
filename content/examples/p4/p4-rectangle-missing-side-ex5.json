@@ -1,0 +1,204 @@
+{
+  "schemaVersion": 3,
+  "locale": "en-SG",
+  "adapterVersion": 1,
+  "library": {
+    "level": "P4",
+    "skillId": "p4-rectangle-missing-side",
+    "tags": [
+      "P4",
+      "area",
+      "perimeter",
+      "general revision",
+      "example"
+    ]
+  },
+  "curriculum": {
+    "objectiveId": "candidate.p4.measurement.missing-side",
+    "sources": [
+      "https://practicle.sg/primary-4-math/",
+      "https://sg.ixl.com/standards/maths/primary-4"
+    ],
+    "evidenceStatus": "candidate"
+  },
+  "authors": [
+    "Codex"
+  ],
+  "provenance": {
+    "kind": "generated",
+    "generatorVersion": "p4-examples-v1",
+    "seed": 1420812497
+  },
+  "lesson": {
+    "id": "p4-rectangle-missing-side-ex5",
+    "version": 1,
+    "topic": "area-perimeter",
+    "title": "Find a missing rectangle side",
+    "subtitle": "P4 measurement revision",
+    "level": "P4 candidate",
+    "minutes": 7,
+    "objective": "Find a missing length from area or perimeter.",
+    "story": "Use the given perimeter and one known side to find the missing width.",
+    "reviewStatus": "draft",
+    "specification": {
+      "task": "missing-side",
+      "width": 15,
+      "height": 2,
+      "cutWidth": 0,
+      "cutHeight": 0,
+      "corner": "top-right",
+      "unknownSide": "width",
+      "knownMeasure": "perimeter",
+      "requestedMeasure": "area",
+      "unit": "cm"
+    },
+    "steps": [
+      {
+        "id": "units",
+        "goal": "units",
+        "title": "Choose the measure's unit",
+        "prompt": "The rectangle has perimeter 34 cm. Which unit names this given measure?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "u9",
+            "label": "Cubic centimetres",
+            "meaning": "volume-unit"
+          },
+          {
+            "id": "u7",
+            "label": "Square centimetres",
+            "meaning": "square-unit"
+          },
+          {
+            "id": "u2",
+            "label": "Centimetres",
+            "meaning": "length-unit"
+          }
+        ],
+        "answer": "u2",
+        "hints": [
+          "Think about what the measure describes.",
+          "Area covers squares; perimeter follows a line.",
+          "Length uses cm, area uses cm².",
+          "Choose centimetres."
+        ]
+      },
+      {
+        "id": "relation",
+        "goal": "relation",
+        "title": "Choose a relationship",
+        "prompt": "A rectangle has height 2 cm and perimeter 34 cm. How can you find the missing width?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "m4",
+            "label": "Divide the area by the length of the side you know.",
+            "meaning": "area-divide"
+          },
+          {
+            "id": "m8",
+            "label": "Subtract the known side from half the perimeter.",
+            "meaning": "perimeter-subtract"
+          },
+          {
+            "id": "m1",
+            "label": "Add the area and the known side together.",
+            "meaning": "unrelated"
+          }
+        ],
+        "answer": "m8",
+        "hints": [
+          "Use the given measure.",
+          "Area is width × height; perimeter is twice width plus twice height.",
+          "Is the measure area or perimeter?",
+          "Use half the perimeter − known side."
+        ]
+      },
+      {
+        "id": "missing-side",
+        "goal": "missing-side",
+        "title": "Find the missing side",
+        "prompt": "Find the missing width when a rectangle has height 2 cm and perimeter 34 cm. Give your answer in centimetres.",
+        "kind": "exact",
+        "answer": "15",
+        "hints": [
+          "Write the relationship for the given measure.",
+          "Keep lengths in centimetres.",
+          "Use the known side in the relationship.",
+          "The missing width is 15 cm."
+        ]
+      },
+      {
+        "id": "reflection",
+        "goal": "reflection",
+        "title": "Explain the measure",
+        "prompt": "Which explanation matches the shape?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "r8",
+            "label": "Area and perimeter are both measured in the same units."
+          },
+          {
+            "id": "r7",
+            "label": "An inside split line also counts as part of the perimeter."
+          },
+          {
+            "id": "r3",
+            "label": "Area counts square units; perimeter is only the outside edge."
+          }
+        ],
+        "answer": "r3",
+        "hints": [
+          "Look at what is being measured.",
+          "Area covers a surface; perimeter goes around its boundary.",
+          "An inside teaching split is not an outside edge.",
+          "Choose the explanation that separates square units from boundary length."
+        ]
+      }
+    ]
+  },
+  "fixtures": [
+    {
+      "stepId": "units",
+      "accepted": [
+        "u2"
+      ],
+      "rejected": [
+        "u9",
+        "u7"
+      ]
+    },
+    {
+      "stepId": "relation",
+      "accepted": [
+        "m8"
+      ],
+      "rejected": [
+        "m4",
+        "m1"
+      ]
+    },
+    {
+      "stepId": "missing-side",
+      "accepted": [
+        "15"
+      ],
+      "rejected": [
+        "16",
+        "25"
+      ]
+    },
+    {
+      "stepId": "reflection",
+      "accepted": [
+        "r3"
+      ],
+      "rejected": [
+        "r8",
+        "r7"
+      ]
+    }
+  ]
+}

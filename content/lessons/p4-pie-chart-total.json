@@ -1,0 +1,173 @@
+{
+  "schemaVersion": 3,
+  "locale": "en-SG",
+  "adapterVersion": 1,
+  "library": {
+    "level": "P4",
+    "skillId": "p4-pie-chart-total",
+    "tags": [
+      "P4",
+      "pie-charts",
+      "general revision",
+      "level-unconfirmed"
+    ]
+  },
+  "curriculum": {
+    "objectiveId": "candidate.p4.pie-charts.total",
+    "sources": [
+      "https://practicle.sg/primary-4-math/",
+      "https://www.thelearninglab.com.sg/blog/tll-shares/new-changes-to-moe-primary-maths-syllabus"
+    ],
+    "evidenceStatus": "candidate"
+  },
+  "authors": [
+    "claude-p4-pie-charts"
+  ],
+  "provenance": {
+    "kind": "authored"
+  },
+  "lesson": {
+    "id": "p4-pie-chart-total",
+    "version": 1,
+    "topic": "pie-charts",
+    "title": "Find the whole",
+    "subtitle": "P4 pie-chart revision",
+    "level": "P4 candidate",
+    "minutes": 7,
+    "objective": "Start from one known group of a pie chart, find what one slice stands for and then the whole.",
+    "story": "The pie chart sorts pupils into Rice, Noodles and Bread. Every slice stands for the same number of pupils. Only the Noodles group has its number shown.",
+    "reviewStatus": "draft",
+    "specification": {
+      "task": "total",
+      "slices": 6,
+      "categories": [
+        "Rice",
+        "Noodles",
+        "Bread"
+      ],
+      "parts": [
+        3,
+        2,
+        1
+      ],
+      "unit": 7,
+      "quantity": "pupils",
+      "a": 1,
+      "b": 0
+    },
+    "steps": [
+      {
+        "id": "one-slice",
+        "goal": "one-slice",
+        "title": "Find one slice",
+        "prompt": "The Noodles group has 14 pupils. How many pupils does one slice stand for?",
+        "kind": "exact",
+        "answer": "7",
+        "hints": [
+          "Count the slices that Noodles covers.",
+          "Share the number in the group equally between its slices.",
+          "Noodles covers 2 slices and has 14: work out 14 ÷ 2.",
+          "14 ÷ 2 = 7. Enter 7."
+        ]
+      },
+      {
+        "id": "total",
+        "goal": "total",
+        "title": "Find the whole",
+        "prompt": "How many pupils are in the whole pie?",
+        "kind": "exact",
+        "answer": "42",
+        "hints": [
+          "Count every slice in the pie.",
+          "Each slice stands for the same number, so multiply the number of slices by it.",
+          "The pie has 6 slices and each stands for 7: work out 6 × 7.",
+          "6 × 7 = 42. Enter 42."
+        ]
+      },
+      {
+        "id": "other",
+        "goal": "other",
+        "title": "Find another group",
+        "prompt": "How many pupils are in the Rice group?",
+        "kind": "exact",
+        "answer": "21",
+        "hints": [
+          "Count the slices that Rice covers.",
+          "Multiply by the number each slice stands for.",
+          "Rice covers 3 slices of 7 each: work out 3 × 7.",
+          "3 × 7 = 21. Enter 21."
+        ]
+      },
+      {
+        "id": "reflection",
+        "goal": "reflection",
+        "title": "Explain your thinking",
+        "prompt": "How can one known group help you find the whole pie?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "k37",
+            "label": "The whole is always twice the known group, whatever its size."
+          },
+          {
+            "id": "k23",
+            "label": "Share its number between its slices, then multiply by all the slices."
+          },
+          {
+            "id": "k30",
+            "label": "Add 1 more to its number for every other group shown in the pie chart."
+          }
+        ],
+        "answer": "k23",
+        "hints": [
+          "Think about what one slice stands for.",
+          "All the slices stand for the same number.",
+          "Once you know one slice, you can find any amount.",
+          "Choose the explanation about sharing and then multiplying."
+        ]
+      }
+    ]
+  },
+  "fixtures": [
+    {
+      "stepId": "one-slice",
+      "accepted": [
+        "7"
+      ],
+      "rejected": [
+        "8",
+        "17"
+      ]
+    },
+    {
+      "stepId": "total",
+      "accepted": [
+        "42"
+      ],
+      "rejected": [
+        "43",
+        "52"
+      ]
+    },
+    {
+      "stepId": "other",
+      "accepted": [
+        "21"
+      ],
+      "rejected": [
+        "22",
+        "31"
+      ]
+    },
+    {
+      "stepId": "reflection",
+      "accepted": [
+        "k23"
+      ],
+      "rejected": [
+        "k37",
+        "k30"
+      ]
+    }
+  ]
+}

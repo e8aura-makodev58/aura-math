@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 3,
+  "locale": "en-SG",
+  "adapterVersion": 1,
+  "library": {
+    "level": "P4",
+    "skillId": "p4-fraction-of-quantity",
+    "tags": [
+      "P4",
+      "fractions",
+      "general revision",
+      "example"
+    ]
+  },
+  "curriculum": {
+    "objectiveId": "candidate.p4.fractions.of-quantity",
+    "sources": [
+      "https://practicle.sg/primary-4-math/",
+      "https://sg.ixl.com/standards/maths/primary-4"
+    ],
+    "evidenceStatus": "candidate"
+  },
+  "authors": [
+    "Codex"
+  ],
+  "provenance": {
+    "kind": "generated",
+    "generatorVersion": "p4-examples-v1",
+    "seed": 4017736004
+  },
+  "lesson": {
+    "id": "p4-fraction-of-quantity-ex4",
+    "version": 1,
+    "topic": "fraction-calculations",
+    "title": "Find a fraction of a set",
+    "subtitle": "P4 fraction revision",
+    "level": "P4 candidate",
+    "minutes": 7,
+    "objective": "Find a fraction of an integer set.",
+    "story": "Share 90 counters into 10 equal parts.",
+    "reviewStatus": "draft",
+    "specification": {
+      "task": "of-quantity",
+      "whole": 2,
+      "numerator": 3,
+      "denominator": 10,
+      "otherNumerator": 1,
+      "otherDenominator": 3,
+      "operation": "subtract",
+      "quantity": 90,
+      "unit": "counters"
+    },
+    "steps": [
+      {
+        "id": "one-part",
+        "goal": "one-part",
+        "title": "Find one equal part",
+        "prompt": "What is 1/10 of 90 counters?",
+        "kind": "exact",
+        "answer": "9",
+        "hints": [
+          "Split the full set into equal groups.",
+          "There are 10 equal parts.",
+          "Divide 90 by 10.",
+          "One part has 9 counters."
+        ]
+      },
+      {
+        "id": "taken",
+        "goal": "taken",
+        "title": "Find the named fraction",
+        "prompt": "What is 3/10 of 90 counters?",
+        "kind": "exact",
+        "answer": "27",
+        "hints": [
+          "Use the one-part amount.",
+          "Take the number of parts in the numerator.",
+          "9 × 3.",
+          "3/10 of 90 is 27 counters."
+        ]
+      },
+      {
+        "id": "reflection",
+        "goal": "reflection",
+        "title": "Explain the equal parts",
+        "prompt": "What makes the fraction calculation fair?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "r3",
+            "label": "The wholes match and each part has the same size."
+          },
+          {
+            "id": "r6",
+            "label": "The denominator tells us how many objects are left."
+          },
+          {
+            "id": "r8",
+            "label": "Parts can be counted together even if the wholes differ."
+          }
+        ],
+        "answer": "r3",
+        "hints": [
+          "Look at the whole first.",
+          "Equal fractions need equal-size wholes.",
+          "Count parts that have the same size.",
+          "Choose: The wholes match and each part has the same size."
+        ]
+      }
+    ]
+  },
+  "fixtures": [
+    {
+      "stepId": "one-part",
+      "accepted": [
+        "9"
+      ],
+      "rejected": [
+        "10/1"
+      ]
+    },
+    {
+      "stepId": "taken",
+      "accepted": [
+        "27"
+      ],
+      "rejected": [
+        "28/1"
+      ]
+    },
+    {
+      "stepId": "reflection",
+      "accepted": [
+        "r3"
+      ],
+      "rejected": [
+        "r6",
+        "r8"
+      ]
+    }
+  ]
+}

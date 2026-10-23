@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 3,
+  "locale": "en-SG",
+  "adapterVersion": 1,
+  "library": {
+    "level": "P4",
+    "skillId": "p4-decimal-multiply-divide",
+    "tags": [
+      "P4",
+      "decimals",
+      "general revision",
+      "example"
+    ]
+  },
+  "curriculum": {
+    "objectiveId": "candidate.p4.decimals.multiply-divide",
+    "sources": [
+      "https://practicle.sg/primary-4-math/",
+      "https://sg.ixl.com/standards/maths/primary-4"
+    ],
+    "evidenceStatus": "candidate"
+  },
+  "authors": [
+    "Codex"
+  ],
+  "provenance": {
+    "kind": "generated",
+    "generatorVersion": "p4-examples-v1",
+    "seed": 3571268263
+  },
+  "lesson": {
+    "id": "p4-decimal-multiply-divide-ex3",
+    "version": 1,
+    "topic": "decimals",
+    "title": "Share a decimal equally",
+    "subtitle": "P4 decimal revision",
+    "level": "P4 candidate",
+    "minutes": 7,
+    "objective": "Multiply or divide a decimal by a one-digit whole number.",
+    "story": "Calculate with equal place units and check the result.",
+    "reviewStatus": "draft",
+    "specification": {
+      "task": "multiply-divide",
+      "a": {
+        "coefficient": 54,
+        "scale": 1
+      },
+      "b": {
+        "coefficient": 125,
+        "scale": 2
+      },
+      "operation": "divide",
+      "factor": 6,
+      "targetPlace": "thousandths",
+      "unit": "m"
+    },
+    "steps": [
+      {
+        "id": "relation",
+        "goal": "relation",
+        "title": "Choose equal units",
+        "prompt": "What does the calculation represent?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "u2",
+            "label": "Line up the last written digits even when their places differ.",
+            "meaning": "unaligned"
+          },
+          {
+            "id": "u9",
+            "label": "Let the groups have different sizes as long as they add up.",
+            "meaning": "unequal-groups"
+          },
+          {
+            "id": "u5",
+            "label": "Use the whole number as the number of equal groups.",
+            "meaning": "equal-units"
+          }
+        ],
+        "answer": "u5",
+        "hints": [
+          "Start with the number of groups.",
+          "Each group contains the same amount.",
+          "Multiplying or dividing by a whole number uses equal groups.",
+          "Choose the explanation that uses the stated number of equal groups."
+        ]
+      },
+      {
+        "id": "calculate",
+        "goal": "calculate",
+        "title": "Calculate with decimals",
+        "prompt": "Work out 5.4 ÷ 6.",
+        "kind": "exact",
+        "answer": "0.9",
+        "hints": [
+          "Look at the units before calculating.",
+          "Use the stated number of equal groups.",
+          "Use matching place units to work out 5.4 ÷ 6.",
+          "5.4 ÷ 6 = 0.9."
+        ]
+      },
+      {
+        "id": "inverse",
+        "goal": "inverse",
+        "title": "Check by reversing",
+        "prompt": "Check your result: work out 0.9 × 6.",
+        "kind": "exact",
+        "answer": "5.4",
+        "hints": [
+          "Reverse the operation to check the original value.",
+          "Multiplication and division undo each other.",
+          "Use the same whole-number factor or divisor.",
+          "The check gives 5.4, the original value."
+        ]
+      },
+      {
+        "id": "reflection",
+        "goal": "reflection",
+        "title": "Explain the equal units",
+        "prompt": "What helps us calculate with decimals?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "r3",
+            "label": "Use equal place units and check the relationship."
+          },
+          {
+            "id": "r6",
+            "label": "A decimal point means we can ignore zero places."
+          },
+          {
+            "id": "r8",
+            "label": "The number of written digits always tells us the value."
+          }
+        ],
+        "answer": "r3",
+        "hints": [
+          "Look at the place chart.",
+          "Tenths and hundredths are different-sized units.",
+          "A relationship only works when we use the matching units.",
+          "Choose: Use equal place units and check the relationship."
+        ]
+      }
+    ]
+  },
+  "fixtures": [
+    {
+      "stepId": "relation",
+      "accepted": [
+        "u5"
+      ],
+      "rejected": [
+        "u2",
+        "u9"
+      ]
+    },
+    {
+      "stepId": "calculate",
+      "accepted": [
+        "0.9"
+      ],
+      "rejected": [
+        "1.9"
+      ]
+    },
+    {
+      "stepId": "inverse",
+      "accepted": [
+        "5.4"
+      ],
+      "rejected": [
+        "6.4"
+      ]
+    },
+    {
+      "stepId": "reflection",
+      "accepted": [
+        "r3"
+      ],
+      "rejected": [
+        "r6",
+        "r8"
+      ]
+    }
+  ]
+}

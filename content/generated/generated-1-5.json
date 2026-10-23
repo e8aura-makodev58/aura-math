@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 1,
+  "locale": "en-SG",
+  "adapterVersion": 1,
+  "curriculum": {
+    "objectiveId": "P3.right-angles",
+    "sources": [
+      "https://practicle.sg/primary-3-math/"
+    ],
+    "evidenceStatus": "candidate"
+  },
+  "authors": [
+    "Codex"
+  ],
+  "provenance": {
+    "kind": "generated",
+    "generatorVersion": "bounded-v1",
+    "seed": 1
+  },
+  "lesson": {
+    "id": "generated-1-5",
+    "version": 1,
+    "topic": "angles",
+    "title": "Compare the opening",
+    "subtitle": "Smaller, equal, or larger?",
+    "level": "P3 candidate",
+    "minutes": 4,
+    "story": "Imagine fitting the reference square corner inside angle A. Compare the openings.",
+    "objective": "Compare an angle with a right angle.",
+    "reviewStatus": "draft",
+    "specification": {
+      "task": "classify",
+      "angles": [
+        {
+          "id": "A",
+          "degrees": 120,
+          "rotation": 135,
+          "label": "A"
+        }
+      ]
+    },
+    "steps": [
+      {
+        "id": "classify",
+        "title": "Compare with a right angle",
+        "prompt": "How does angle A compare with a right angle?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "smaller",
+            "label": "Smaller than a right angle"
+          },
+          {
+            "id": "right",
+            "label": "Exactly a right angle"
+          },
+          {
+            "id": "larger",
+            "label": "Larger than a right angle"
+          }
+        ],
+        "answer": "larger",
+        "hints": [
+          "Look at the space between the two arms.",
+          "The reference corner shows a right angle.",
+          "A square corner fits inside angle A with space left over.",
+          "Choose: Larger than a right angle."
+        ],
+        "goal": "classify"
+      },
+      {
+        "id": "reflection",
+        "title": "Explain your thinking",
+        "prompt": "What matters when you compare angles?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "option-1x95xqb",
+            "label": "Turning the whole card around makes the angle on it larger or smaller."
+          },
+          {
+            "id": "option-1w10uus",
+            "label": "The opening between the arms matters, even when the angle is turned."
+          }
+        ],
+        "answer": "option-1w10uus",
+        "hints": [
+          "Think about what stayed the same.",
+          "Use the relationship you just checked.",
+          "Read this explanation carefully: The opening between the arms matters, even when the angle is turned.",
+          "Choose: The opening between the arms matters, even when the angle is turned."
+        ],
+        "goal": "reflection"
+      }
+    ]
+  },
+  "fixtures": [
+    {
+      "stepId": "classify",
+      "accepted": [
+        "larger"
+      ],
+      "rejected": [
+        "smaller"
+      ]
+    },
+    {
+      "stepId": "reflection",
+      "accepted": [
+        "option-1w10uus"
+      ],
+      "rejected": [
+        "option-1x95xqb"
+      ]
+    }
+  ]
+}

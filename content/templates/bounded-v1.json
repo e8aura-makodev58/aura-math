@@ -1,0 +1,17 @@
+{
+  "generatorVersion": "bounded-v1",
+  "comparison": {
+    "unknowns": ["larger", "smaller", "difference"],
+    "minimumQuantity": 1,
+    "maximumQuantity": 100,
+    "positiveDifference": true
+  },
+  "angles": {
+    "tasks": ["identify", "classify", "select"],
+    "rightAngle": 90,
+    "distractors": [45, 60, 120, 135],
+    "rotationMinimum": -180,
+    "rotationMaximum": 180
+  },
+  "approval": "Each exact generated package requires independent human review."
+}

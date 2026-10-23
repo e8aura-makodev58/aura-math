@@ -1,0 +1,1665 @@
+{
+  "schemaVersion": 1,
+  "decision": "Handover decision 25 (2026-10-11), \"Unreviewed home release\": the user chose that \"for home use, P4 draft lessons and their saved examples may be published without the two-reviewer approval.\" No review or approval record is created or implied; any content change needs a fresh publish.",
+  "decidedBy": "user (parent), home use",
+  "decidedOn": "2026-10-11",
+  "label": "Not reviewed by a teacher. Published by a parent for home use.",
+  "entries": [
+    {
+      "id": "p4-angle-practice",
+      "version": 1,
+      "digest": "e58ea022a3b5c9d0f505bb853eca5f61f8f4a4a93c4d1a5fc564abd3617dbd3f",
+      "path": "content/lessons/p4-angle-practice.json"
+    },
+    {
+      "id": "p4-angle-practice-ex1",
+      "version": 1,
+      "digest": "9d432e7ff3abbe694ff18637940695fad741e1bf6f34d10b9799ba3195a1bc3a",
+      "path": "content/examples/p4/p4-angle-practice-ex1.json"
+    },
+    {
+      "id": "p4-angle-practice-ex2",
+      "version": 1,
+      "digest": "9c8d9553c8cacd26814fb5d78b1a7733c1f1099e879f698f82a116ba0b10b894",
+      "path": "content/examples/p4/p4-angle-practice-ex2.json"
+    },
+    {
+      "id": "p4-angle-practice-ex3",
+      "version": 1,
+      "digest": "68f0f70bdb31feae687766b1b2bdec23b4d50a98c15fdbdeedb2ab4fb7f5b54b",
+      "path": "content/examples/p4/p4-angle-practice-ex3.json"
+    },
+    {
+      "id": "p4-angle-practice-ex4",
+      "version": 1,
+      "digest": "1aaa2e1e8600e7324f2999ef21d7a949a415897d645f00c682c2a13a34f8ac8b",
+      "path": "content/examples/p4/p4-angle-practice-ex4.json"
+    },
+    {
+      "id": "p4-angle-practice-ex5",
+      "version": 1,
+      "digest": "cd03a59007be26d1dc6047b3d14c6822ca92945d636b838d78eb1741fc55b065",
+      "path": "content/examples/p4/p4-angle-practice-ex5.json"
+    },
+    {
+      "id": "p4-bar-chart-practice",
+      "version": 1,
+      "digest": "21272f965a6bdaed3545fdeab55ea8f15390386c8a792af9f28c064fcbaf5690",
+      "path": "content/lessons/p4-bar-chart-practice.json"
+    },
+    {
+      "id": "p4-bar-chart-practice-ex1",
+      "version": 1,
+      "digest": "3c71df6c8bcccfa73f1b7be791494b0453ff3e403c43aaad44916a7cd1d6bb7e",
+      "path": "content/examples/p4/p4-bar-chart-practice-ex1.json"
+    },
+    {
+      "id": "p4-bar-chart-practice-ex2",
+      "version": 1,
+      "digest": "9fb1171e9a7af55f34c2f3896d83e8ab2114a691291af1bffe9b7319fc0de815",
+      "path": "content/examples/p4/p4-bar-chart-practice-ex2.json"
+    },
+    {
+      "id": "p4-bar-chart-practice-ex3",
+      "version": 1,
+      "digest": "d09e02e169185f2845324e878069f73e725d21216486b11a5c6e830273c2b2e0",
+      "path": "content/examples/p4/p4-bar-chart-practice-ex3.json"
+    },
+    {
+      "id": "p4-bar-chart-practice-ex4",
+      "version": 1,
+      "digest": "0ab546c5478b262f0d54d4e3a90e58a99870ce082d53980a63d0af3b6315db4c",
+      "path": "content/examples/p4/p4-bar-chart-practice-ex4.json"
+    },
+    {
+      "id": "p4-bar-chart-practice-ex5",
+      "version": 1,
+      "digest": "52ca9ddd5ceae7841d81fbbd0a546e618b8afb4dd5ff8dfbc7b1340d6b385c45",
+      "path": "content/examples/p4/p4-bar-chart-practice-ex5.json"
+    },
+    {
+      "id": "p4-complete-the-net",
+      "version": 1,
+      "digest": "2d3fbf11117f2ab09561436c1da59e1d7759c8f50643354ceb7e80cc0566124b",
+      "path": "content/lessons/p4-complete-the-net.json"
+    },
+    {
+      "id": "p4-complete-the-net-ex1",
+      "version": 1,
+      "digest": "38be77d22e996fdf8085b4dad672bf135e1375b4797d22e2359b519504d9ec1d",
+      "path": "content/examples/p4/p4-complete-the-net-ex1.json"
+    },
+    {
+      "id": "p4-complete-the-net-ex2",
+      "version": 1,
+      "digest": "c12b5f8e3dcb3de12ca776a40a18b87609952aafac8425e4a9eebfcc4eb7d501",
+      "path": "content/examples/p4/p4-complete-the-net-ex2.json"
+    },
+    {
+      "id": "p4-complete-the-net-ex3",
+      "version": 1,
+      "digest": "9ff3f4d9c84b27d0decc0f5b3dc04b7edcd6b73486700d1e62fde64bf03221ac",
+      "path": "content/examples/p4/p4-complete-the-net-ex3.json"
+    },
+    {
+      "id": "p4-complete-the-net-ex4",
+      "version": 1,
+      "digest": "cf2fad62cec71aea0d2418be829791d27c2f11fb072035cfe814908e64af54f8",
+      "path": "content/examples/p4/p4-complete-the-net-ex4.json"
+    },
+    {
+      "id": "p4-complete-the-net-ex5",
+      "version": 1,
+      "digest": "73a2550d47f4d2e7f270a74aeb94bbc6a266aaabc35ed2db49186ab3d5820621",
+      "path": "content/examples/p4/p4-complete-the-net-ex5.json"
+    },
+    {
+      "id": "p4-composite-area",
+      "version": 1,
+      "digest": "fb9ad87d0cb387f6d50372b5cbbefd35275f6243571c8e4b9bbb3b57ce0ccb8f",
+      "path": "content/lessons/p4-composite-area.json"
+    },
+    {
+      "id": "p4-composite-area-ex1",
+      "version": 1,
+      "digest": "7864a68d010c42963dbb08584ceb60205ff3f73ff6c24e8babb24c0f9ec0f448",
+      "path": "content/examples/p4/p4-composite-area-ex1.json"
+    },
+    {
+      "id": "p4-composite-area-ex2",
+      "version": 1,
+      "digest": "e4345c03e445481211d22149e50844997ad8e0afa2730ef436eb0f1d0005e6bf",
+      "path": "content/examples/p4/p4-composite-area-ex2.json"
+    },
+    {
+      "id": "p4-composite-area-ex3",
+      "version": 1,
+      "digest": "0d1daa409b69204056dc6cdb836549a14314e0113ca18fd5ab7a258b1ae851b5",
+      "path": "content/examples/p4/p4-composite-area-ex3.json"
+    },
+    {
+      "id": "p4-composite-area-ex4",
+      "version": 1,
+      "digest": "bd05cf6d173ecef6f1601e85bf6f221c136c1fc218f222841e88987c709d7d36",
+      "path": "content/examples/p4/p4-composite-area-ex4.json"
+    },
+    {
+      "id": "p4-composite-area-ex5",
+      "version": 1,
+      "digest": "382711fa83fdf79f1b84724804427acaa21aa143a74864a368337f834ccf023f",
+      "path": "content/examples/p4/p4-composite-area-ex5.json"
+    },
+    {
+      "id": "p4-composite-perimeter",
+      "version": 1,
+      "digest": "f2979bbdaef5e7e54a8f1dc58f5747f5485450ba00af48af70076310a18cd554",
+      "path": "content/lessons/p4-composite-perimeter.json"
+    },
+    {
+      "id": "p4-composite-perimeter-ex1",
+      "version": 1,
+      "digest": "e93a8122d6820abe1b244db2e2c56929fad3eed93a751e38812571559672187e",
+      "path": "content/examples/p4/p4-composite-perimeter-ex1.json"
+    },
+    {
+      "id": "p4-composite-perimeter-ex2",
+      "version": 1,
+      "digest": "3b0c7a1a29778a04c8d929cb31a62b70620bfce2917340ede97eb5608b2f6981",
+      "path": "content/examples/p4/p4-composite-perimeter-ex2.json"
+    },
+    {
+      "id": "p4-composite-perimeter-ex3",
+      "version": 1,
+      "digest": "0d18cc4e358e33355758d13ae0bc355824205d5160a3fecd625e3861797efc9e",
+      "path": "content/examples/p4/p4-composite-perimeter-ex3.json"
+    },
+    {
+      "id": "p4-composite-perimeter-ex4",
+      "version": 1,
+      "digest": "910e7aeb2e2162459f5bee7b31a20a3187aa60a384318e8899e126ef6b6b85cc",
+      "path": "content/examples/p4/p4-composite-perimeter-ex4.json"
+    },
+    {
+      "id": "p4-composite-perimeter-ex5",
+      "version": 1,
+      "digest": "8cfb79d52c88cfca99547332acae9d8db44d84c74846104d4a45e2b66e9789ef",
+      "path": "content/examples/p4/p4-composite-perimeter-ex5.json"
+    },
+    {
+      "id": "p4-cube-net-check",
+      "version": 1,
+      "digest": "1657199a7e31fcf92a5849603375c26c19f7f1a9d56180e1a83ff58ad3792bd0",
+      "path": "content/lessons/p4-cube-net-check.json"
+    },
+    {
+      "id": "p4-cube-net-check-ex1",
+      "version": 1,
+      "digest": "d351c5ec32fdd8a19173e99a3fa479acbb7a5f9f13cc0f33af9969e6e4fd1e81",
+      "path": "content/examples/p4/p4-cube-net-check-ex1.json"
+    },
+    {
+      "id": "p4-cube-net-check-ex2",
+      "version": 1,
+      "digest": "15f6c531c3e637f7011a24934078388b957a0d20a69f1c1134bf2dd5173f940e",
+      "path": "content/examples/p4/p4-cube-net-check-ex2.json"
+    },
+    {
+      "id": "p4-cube-net-check-ex3",
+      "version": 1,
+      "digest": "6cb496ae84524497f7212d3f03664ada7daed928d04819a590f141d15d43ef0d",
+      "path": "content/examples/p4/p4-cube-net-check-ex3.json"
+    },
+    {
+      "id": "p4-cube-net-check-ex4",
+      "version": 1,
+      "digest": "bc4733f2f8e56b95d295ec4570d74e5ce61d5733c4b78b15993f6044fc2a91fe",
+      "path": "content/examples/p4/p4-cube-net-check-ex4.json"
+    },
+    {
+      "id": "p4-cube-net-check-ex5",
+      "version": 1,
+      "digest": "bb23c50afbb121ed68ae5fc8e7cc90cb0c2020df1c849d300a99fb64132600b3",
+      "path": "content/examples/p4/p4-cube-net-check-ex5.json"
+    },
+    {
+      "id": "p4-cube-opposite-faces",
+      "version": 1,
+      "digest": "da0cdcd14075738923cd596abf6bce395db3de9c55950390ebbd4bbdb613ca3b",
+      "path": "content/lessons/p4-cube-opposite-faces.json"
+    },
+    {
+      "id": "p4-cube-opposite-faces-ex1",
+      "version": 1,
+      "digest": "2363fc2929d2e8e00d2f4bd49700c47336b089146f3f2e3f018e04712b59f5c5",
+      "path": "content/examples/p4/p4-cube-opposite-faces-ex1.json"
+    },
+    {
+      "id": "p4-cube-opposite-faces-ex2",
+      "version": 1,
+      "digest": "44d52299fe77a545a12797d474c604726e5ae930333eaf20f179c03367575ab3",
+      "path": "content/examples/p4/p4-cube-opposite-faces-ex2.json"
+    },
+    {
+      "id": "p4-cube-opposite-faces-ex3",
+      "version": 1,
+      "digest": "7b2c74993828e72ccad741e1f759ad43aa0fbdae05c34183b7ded76b4da44c74",
+      "path": "content/examples/p4/p4-cube-opposite-faces-ex3.json"
+    },
+    {
+      "id": "p4-cube-opposite-faces-ex4",
+      "version": 1,
+      "digest": "001f0942c34c6cb87ab71fb02a8617163e98c1864eec94e4c2063af69df0b5e7",
+      "path": "content/examples/p4/p4-cube-opposite-faces-ex4.json"
+    },
+    {
+      "id": "p4-cube-opposite-faces-ex5",
+      "version": 1,
+      "digest": "83869613d31054790ba193f7f74d207a51915e88d93e64d9b2308a5d6e68235d",
+      "path": "content/examples/p4/p4-cube-opposite-faces-ex5.json"
+    },
+    {
+      "id": "p4-decimal-add-subtract",
+      "version": 1,
+      "digest": "c55ca0a983c81fb24819bba6aae8e9e8f1a43e80557953081cfdf1d5c68f16bb",
+      "path": "content/lessons/p4-decimal-add-subtract.json"
+    },
+    {
+      "id": "p4-decimal-add-subtract-ex1",
+      "version": 1,
+      "digest": "62e07131fd6b5fc817b93d0adf511b4799686f7988d4c70ccf7c7633bb1f83f0",
+      "path": "content/examples/p4/p4-decimal-add-subtract-ex1.json"
+    },
+    {
+      "id": "p4-decimal-add-subtract-ex2",
+      "version": 1,
+      "digest": "c5bed7a8c827731cea3c48bfa489d3bd8da25d0e3e8bf39ccc0bdcb8532dc532",
+      "path": "content/examples/p4/p4-decimal-add-subtract-ex2.json"
+    },
+    {
+      "id": "p4-decimal-add-subtract-ex3",
+      "version": 1,
+      "digest": "0e1bb1821ea51672d64f71f639706c31574c47f3bfd66af82aa3963638d86127",
+      "path": "content/examples/p4/p4-decimal-add-subtract-ex3.json"
+    },
+    {
+      "id": "p4-decimal-add-subtract-ex4",
+      "version": 1,
+      "digest": "7440feba734f14eb8aa111f38b96db05279116a4cc59ef2111f967548b12c97c",
+      "path": "content/examples/p4/p4-decimal-add-subtract-ex4.json"
+    },
+    {
+      "id": "p4-decimal-add-subtract-ex5",
+      "version": 1,
+      "digest": "c669eeb53b78d425f3e617a5e308bb568589342da356d2406335368c15536abb",
+      "path": "content/examples/p4/p4-decimal-add-subtract-ex5.json"
+    },
+    {
+      "id": "p4-decimal-multiply-divide",
+      "version": 1,
+      "digest": "228d976cff7945d726b4aeb7ee2d11099c9d61f9661c8e60afc16627c6e30a57",
+      "path": "content/lessons/p4-decimal-multiply-divide.json"
+    },
+    {
+      "id": "p4-decimal-multiply-divide-ex1",
+      "version": 1,
+      "digest": "ca2a1563d48de0df64f207ce741df99028680e0fb2c52e30898f15fe5df34068",
+      "path": "content/examples/p4/p4-decimal-multiply-divide-ex1.json"
+    },
+    {
+      "id": "p4-decimal-multiply-divide-ex2",
+      "version": 1,
+      "digest": "e8e7e28bbe19edeed90439cefc59eb32133e1a7d5642e694747c585cf59180a4",
+      "path": "content/examples/p4/p4-decimal-multiply-divide-ex2.json"
+    },
+    {
+      "id": "p4-decimal-multiply-divide-ex3",
+      "version": 1,
+      "digest": "975c35e1c7577a8a7146c1b2033c0f7ed4d56d53e91b6549d71da3dd1369957c",
+      "path": "content/examples/p4/p4-decimal-multiply-divide-ex3.json"
+    },
+    {
+      "id": "p4-decimal-multiply-divide-ex4",
+      "version": 1,
+      "digest": "1e885ac838cd21ba48ce7e38acf7b1c927113276d0c6cceb64ca5ac1799d9e98",
+      "path": "content/examples/p4/p4-decimal-multiply-divide-ex4.json"
+    },
+    {
+      "id": "p4-decimal-multiply-divide-ex5",
+      "version": 1,
+      "digest": "42139d058ec84f382581f6b06fbc6de7905e30d04ed3ccbd04bba7eccffe304d",
+      "path": "content/examples/p4/p4-decimal-multiply-divide-ex5.json"
+    },
+    {
+      "id": "p4-decimal-places",
+      "version": 1,
+      "digest": "1debff3a25d157d23a1607ea6ab958e3d8a6828f923f0b3b85ccffa30ad564f4",
+      "path": "content/lessons/p4-decimal-places.json"
+    },
+    {
+      "id": "p4-decimal-places-ex1",
+      "version": 1,
+      "digest": "c84dab581b120c42ddde8194abcee50994998549228f3d85b6920ead9d04f18b",
+      "path": "content/examples/p4/p4-decimal-places-ex1.json"
+    },
+    {
+      "id": "p4-decimal-places-ex2",
+      "version": 1,
+      "digest": "88bae462274e60362526b3648a961aa8b56a92de7d65a85ee5a3e731acf451f8",
+      "path": "content/examples/p4/p4-decimal-places-ex2.json"
+    },
+    {
+      "id": "p4-decimal-places-ex3",
+      "version": 1,
+      "digest": "00097ab60b5207013b5dbe8d11f0d2459c6422685609de1c002f48c4626f2929",
+      "path": "content/examples/p4/p4-decimal-places-ex3.json"
+    },
+    {
+      "id": "p4-decimal-places-ex4",
+      "version": 1,
+      "digest": "d2124e9ecb9cb3ca7e3391553beae4460f1da81018a55c0d8d01e1198faf375a",
+      "path": "content/examples/p4/p4-decimal-places-ex4.json"
+    },
+    {
+      "id": "p4-decimal-places-ex5",
+      "version": 1,
+      "digest": "8a67abc7a0adf87e8734027007f55a90d1960fd17e01f04a9a6bea7b66fef8c0",
+      "path": "content/examples/p4/p4-decimal-places-ex5.json"
+    },
+    {
+      "id": "p4-decimal-practice",
+      "version": 1,
+      "digest": "473b6fb70617589f03bbf47474ee88f223ec0fc23e241ea321b4639402725483",
+      "path": "content/lessons/p4-decimal-practice.json"
+    },
+    {
+      "id": "p4-decimal-practice-ex1",
+      "version": 1,
+      "digest": "a6fd90dcc1c0175e833b4c6805241100196c62e55fe9df7145b3aac1e6953f6f",
+      "path": "content/examples/p4/p4-decimal-practice-ex1.json"
+    },
+    {
+      "id": "p4-decimal-practice-ex2",
+      "version": 1,
+      "digest": "03147568afb34cac9d9e9c869828ba64174f09195199ff77d4d2842d023132fc",
+      "path": "content/examples/p4/p4-decimal-practice-ex2.json"
+    },
+    {
+      "id": "p4-decimal-practice-ex3",
+      "version": 1,
+      "digest": "9811c4779d9f8cd4c00d9dbc6a7bc661e03a7025bfdbdae6c7a6099bd4a24256",
+      "path": "content/examples/p4/p4-decimal-practice-ex3.json"
+    },
+    {
+      "id": "p4-decimal-practice-ex4",
+      "version": 1,
+      "digest": "43c70e9074fd1c3ab619c9915f1a2e0a0cb4b2a11460bf04c064110e05a109b9",
+      "path": "content/examples/p4/p4-decimal-practice-ex4.json"
+    },
+    {
+      "id": "p4-decimal-practice-ex5",
+      "version": 1,
+      "digest": "b147cdc13e0a08627d5246bce3c02e900101a515b3fb2a889c08fb810919be66",
+      "path": "content/examples/p4/p4-decimal-practice-ex5.json"
+    },
+    {
+      "id": "p4-double-bar-chart",
+      "version": 1,
+      "digest": "bcc9c6b959cab9a47fe3a10d2c7c2736f76da294c9d3e840dd090b9d9ff6b128",
+      "path": "content/lessons/p4-double-bar-chart.json"
+    },
+    {
+      "id": "p4-double-bar-chart-ex1",
+      "version": 1,
+      "digest": "3fbdd8478be8758987f1cbff9e56541122bdc4cc95ad65833171cf68367a5c79",
+      "path": "content/examples/p4/p4-double-bar-chart-ex1.json"
+    },
+    {
+      "id": "p4-double-bar-chart-ex2",
+      "version": 1,
+      "digest": "98f2d34ffba8a490aefcd837c4560304717b2ec4b4d5537bd6efae02b14f7d64",
+      "path": "content/examples/p4/p4-double-bar-chart-ex2.json"
+    },
+    {
+      "id": "p4-double-bar-chart-ex3",
+      "version": 1,
+      "digest": "a796b19f714c3da78d2f0fb69c5977bad3b74e96ac996d99455121cdfd6f8b15",
+      "path": "content/examples/p4/p4-double-bar-chart-ex3.json"
+    },
+    {
+      "id": "p4-double-bar-chart-ex4",
+      "version": 1,
+      "digest": "c9215211a7178a89e023d9934be91a0a7b2e3f0774d556a052ab9ed477b7b2cd",
+      "path": "content/examples/p4/p4-double-bar-chart-ex4.json"
+    },
+    {
+      "id": "p4-double-bar-chart-ex5",
+      "version": 1,
+      "digest": "a582150947cfc74f11156eafc51116ff2290d40a03753b05ee8699ea2e80cf8d",
+      "path": "content/examples/p4/p4-double-bar-chart-ex5.json"
+    },
+    {
+      "id": "p4-estimate-by-rounding",
+      "version": 1,
+      "digest": "73a5ff9822eb459e953801a793938ac663f43667a723d66ebf4a68263ab47a59",
+      "path": "content/lessons/p4-estimate-by-rounding.json"
+    },
+    {
+      "id": "p4-estimate-by-rounding-ex1",
+      "version": 1,
+      "digest": "c29adf99fe05ed55a0c8deaf5029a4e8b089f8d409f4722b1b57a60f4eede261",
+      "path": "content/examples/p4/p4-estimate-by-rounding-ex1.json"
+    },
+    {
+      "id": "p4-estimate-by-rounding-ex2",
+      "version": 1,
+      "digest": "ac963d85617333cb83ba284be63c529aae1affe2b129092aefb7ed331851cf3e",
+      "path": "content/examples/p4/p4-estimate-by-rounding-ex2.json"
+    },
+    {
+      "id": "p4-estimate-by-rounding-ex3",
+      "version": 1,
+      "digest": "238fcb874447657791774b0e20a3c1613cd411e1edaa715f99f7a3f179fb5199",
+      "path": "content/examples/p4/p4-estimate-by-rounding-ex3.json"
+    },
+    {
+      "id": "p4-estimate-by-rounding-ex4",
+      "version": 1,
+      "digest": "87b91b17bfe2ead9b2ec6416bbcf556c9b94a23d8120c2728515697c194400d8",
+      "path": "content/examples/p4/p4-estimate-by-rounding-ex4.json"
+    },
+    {
+      "id": "p4-estimate-by-rounding-ex5",
+      "version": 1,
+      "digest": "4d9dc5f29e3bbf346158e91d7a21d24a8475fadba335fee861861d7ff1303675",
+      "path": "content/examples/p4/p4-estimate-by-rounding-ex5.json"
+    },
+    {
+      "id": "p4-estimate-then-measure",
+      "version": 1,
+      "digest": "3f5f5d6dee3446bd0425646fc46676e2b09bb6bf6616e0654006be9a02ecfc8e",
+      "path": "content/lessons/p4-estimate-then-measure.json"
+    },
+    {
+      "id": "p4-estimate-then-measure-ex1",
+      "version": 1,
+      "digest": "722e97d9519ac974f28d6e8650308e6fc46d182b121625addd9ddf64dae9b01a",
+      "path": "content/examples/p4/p4-estimate-then-measure-ex1.json"
+    },
+    {
+      "id": "p4-estimate-then-measure-ex2",
+      "version": 1,
+      "digest": "05e29361e61c9e6a8866fd59df1ad65c5e872fb55ae16ea2b9ee44f7e2f1150f",
+      "path": "content/examples/p4/p4-estimate-then-measure-ex2.json"
+    },
+    {
+      "id": "p4-estimate-then-measure-ex3",
+      "version": 1,
+      "digest": "81b076e8dd6c2823528e4ce1a23ca3f7a9bc3c9a219a13e3418f4b8ecc4318a1",
+      "path": "content/examples/p4/p4-estimate-then-measure-ex3.json"
+    },
+    {
+      "id": "p4-estimate-then-measure-ex4",
+      "version": 1,
+      "digest": "ed258d31595eccfae9a880d7212bea20b094f56adf9ba20757157cb421c707e2",
+      "path": "content/examples/p4/p4-estimate-then-measure-ex4.json"
+    },
+    {
+      "id": "p4-estimate-then-measure-ex5",
+      "version": 1,
+      "digest": "b94b64abd004dfc263da42115b8155d2312cd8131f2d95c5334affd23e6767ec",
+      "path": "content/examples/p4/p4-estimate-then-measure-ex5.json"
+    },
+    {
+      "id": "p4-factors",
+      "version": 1,
+      "digest": "7815e4aa7e6824be241e4823bf42597a14138da8a9c02bfe22bff1bc207b6f7c",
+      "path": "content/lessons/p4-factors.json"
+    },
+    {
+      "id": "p4-factors-ex1",
+      "version": 1,
+      "digest": "7686e6aa3fa6f8bf81e5b3deff0c337b81218b7795c54c3bf2520e0e63febbf8",
+      "path": "content/examples/p4/p4-factors-ex1.json"
+    },
+    {
+      "id": "p4-factors-ex2",
+      "version": 1,
+      "digest": "8ac22718545a3ff504f17e796d031cefc9efd68915fc1aaa5afe5974cf16bcf2",
+      "path": "content/examples/p4/p4-factors-ex2.json"
+    },
+    {
+      "id": "p4-factors-ex3",
+      "version": 1,
+      "digest": "d75205ea064cdaccd7d63b2155ad1f394ee1886ffafe6a46268fd9d07afd3498",
+      "path": "content/examples/p4/p4-factors-ex3.json"
+    },
+    {
+      "id": "p4-factors-ex4",
+      "version": 1,
+      "digest": "c6864dfdc0191f486d50a53d99cc57de96fce0ad9aa40051454a260cadc8a696",
+      "path": "content/examples/p4/p4-factors-ex4.json"
+    },
+    {
+      "id": "p4-factors-ex5",
+      "version": 1,
+      "digest": "32f9b982d35a962fa2cd2345efb973208b3e49ab55f07d67df5b40357f1d5481",
+      "path": "content/examples/p4/p4-factors-ex5.json"
+    },
+    {
+      "id": "p4-fold-a-cube-net",
+      "version": 1,
+      "digest": "9405d9e11dfe421952ca04982975c11d87831f0d8284442dc8ff02a4b7688ac7",
+      "path": "content/lessons/p4-fold-a-cube-net.json"
+    },
+    {
+      "id": "p4-fold-a-cube-net-ex1",
+      "version": 1,
+      "digest": "bf3f9de0ea61c242989940efe935465510e2f1024fe499fc10f3b7ca28b3a343",
+      "path": "content/examples/p4/p4-fold-a-cube-net-ex1.json"
+    },
+    {
+      "id": "p4-fold-a-cube-net-ex2",
+      "version": 1,
+      "digest": "63e5e465e26dbeb550b3a2f0618031cde00d7490981e5f347770fecb65cca8f2",
+      "path": "content/examples/p4/p4-fold-a-cube-net-ex2.json"
+    },
+    {
+      "id": "p4-fold-a-cube-net-ex3",
+      "version": 1,
+      "digest": "4df170c44f3dc3d43ba1516765db63f4b7d81bb05b5f3f4d82e5d937c6b63870",
+      "path": "content/examples/p4/p4-fold-a-cube-net-ex3.json"
+    },
+    {
+      "id": "p4-fold-a-cube-net-ex4",
+      "version": 1,
+      "digest": "09c087c003a071160b449f559ee783783a6050fe6d817d319d843f76bf37d5e3",
+      "path": "content/examples/p4/p4-fold-a-cube-net-ex4.json"
+    },
+    {
+      "id": "p4-fold-a-cube-net-ex5",
+      "version": 1,
+      "digest": "db0ab46dabca8ce051c8781fd5c8dcc8af3a19eb81a701bb52454be439063cdf",
+      "path": "content/examples/p4/p4-fold-a-cube-net-ex5.json"
+    },
+    {
+      "id": "p4-fold-a-net-that-fails",
+      "version": 1,
+      "digest": "310c31777d1658fdade72d2583724ff1d977f9082abad6029e2864f042223da7",
+      "path": "content/lessons/p4-fold-a-net-that-fails.json"
+    },
+    {
+      "id": "p4-fold-a-net-that-fails-ex1",
+      "version": 1,
+      "digest": "4a268fc68462f6f210d6588cea8e49785536bb85efa70f1ed8640d74c3cea228",
+      "path": "content/examples/p4/p4-fold-a-net-that-fails-ex1.json"
+    },
+    {
+      "id": "p4-fold-a-net-that-fails-ex2",
+      "version": 1,
+      "digest": "cc5b2de1a7a9e5c6325aaa98cc8134c6fc08fce7640322b49931c8d86c3df7cb",
+      "path": "content/examples/p4/p4-fold-a-net-that-fails-ex2.json"
+    },
+    {
+      "id": "p4-fold-a-net-that-fails-ex3",
+      "version": 1,
+      "digest": "5c97876254c2c1ef00ee813d1017c22d7801f1d6ee164eac8f04c1876d5d6f7e",
+      "path": "content/examples/p4/p4-fold-a-net-that-fails-ex3.json"
+    },
+    {
+      "id": "p4-fold-a-net-that-fails-ex4",
+      "version": 1,
+      "digest": "662b7b25adff263bb98643fe75ef467911699a6a68d0dd9b8fa17242354bca58",
+      "path": "content/examples/p4/p4-fold-a-net-that-fails-ex4.json"
+    },
+    {
+      "id": "p4-fold-a-net-that-fails-ex5",
+      "version": 1,
+      "digest": "95bc883d9572bdab35691253918232a0749c32b1c9faf677121668ea752004ed",
+      "path": "content/examples/p4/p4-fold-a-net-that-fails-ex5.json"
+    },
+    {
+      "id": "p4-fold-a-solid",
+      "version": 1,
+      "digest": "de93f845bc0a6213c249c0a87150b899813378a3ba60378535a36288417ac6d2",
+      "path": "content/lessons/p4-fold-a-solid.json"
+    },
+    {
+      "id": "p4-fold-a-solid-ex1",
+      "version": 1,
+      "digest": "ebb5ab547d89cfb53cc998e1876e274b5c8afca44968c0a2eb3207be95853104",
+      "path": "content/examples/p4/p4-fold-a-solid-ex1.json"
+    },
+    {
+      "id": "p4-fold-a-solid-ex2",
+      "version": 1,
+      "digest": "9b759c91bc6104cf57e82b28b6001ce2b0f481ed007f007236a6afd27cd6a7fc",
+      "path": "content/examples/p4/p4-fold-a-solid-ex2.json"
+    },
+    {
+      "id": "p4-fold-a-solid-ex3",
+      "version": 1,
+      "digest": "d6c9785c8033213a1220f0a0ffb512019f5983ee72dd02c2e9eeb6a26e3a8eb1",
+      "path": "content/examples/p4/p4-fold-a-solid-ex3.json"
+    },
+    {
+      "id": "p4-fold-a-solid-ex4",
+      "version": 1,
+      "digest": "5bfc49feacbe99da48f68a5a5428abdef8497f87763a0928e9e333b001c48452",
+      "path": "content/examples/p4/p4-fold-a-solid-ex4.json"
+    },
+    {
+      "id": "p4-fold-a-solid-ex5",
+      "version": 1,
+      "digest": "35617db13524de50841c529158c7f606bf93176fe0fd470cd2440c399dcaac9c",
+      "path": "content/examples/p4/p4-fold-a-solid-ex5.json"
+    },
+    {
+      "id": "p4-fraction-add-subtract",
+      "version": 1,
+      "digest": "541f6f854a8e8f9f2884f618727ad469c315afdde6bffae1f882dec3f76d7c12",
+      "path": "content/lessons/p4-fraction-add-subtract.json"
+    },
+    {
+      "id": "p4-fraction-add-subtract-ex1",
+      "version": 1,
+      "digest": "5780c8bd89524b3284ca3e6d31dedecf226bc924735a6271a34fe20ddf1abce8",
+      "path": "content/examples/p4/p4-fraction-add-subtract-ex1.json"
+    },
+    {
+      "id": "p4-fraction-add-subtract-ex2",
+      "version": 1,
+      "digest": "a0894baea76900131508e35dcfe1c697778b16cef6c54482488d7b69cf836311",
+      "path": "content/examples/p4/p4-fraction-add-subtract-ex2.json"
+    },
+    {
+      "id": "p4-fraction-add-subtract-ex3",
+      "version": 1,
+      "digest": "c90016d475dc9a08dcf65a24de5e23406e33de1e96b173c6184b8671066daa21",
+      "path": "content/examples/p4/p4-fraction-add-subtract-ex3.json"
+    },
+    {
+      "id": "p4-fraction-add-subtract-ex4",
+      "version": 1,
+      "digest": "184062f401ce36f2cc3e1f9f4a2038328e509dfc4f374ad4f9180f970e9a9253",
+      "path": "content/examples/p4/p4-fraction-add-subtract-ex4.json"
+    },
+    {
+      "id": "p4-fraction-add-subtract-ex5",
+      "version": 1,
+      "digest": "76cf9b5c80c29adf7f77f02d7482f3100924c0f12a929c4999298405b7d89fec",
+      "path": "content/examples/p4/p4-fraction-add-subtract-ex5.json"
+    },
+    {
+      "id": "p4-fraction-of-quantity",
+      "version": 1,
+      "digest": "d187f98f0c37c25bab47c0d70145c51826db08927e5abf53bb3b49f119f78988",
+      "path": "content/lessons/p4-fraction-of-quantity.json"
+    },
+    {
+      "id": "p4-fraction-of-quantity-ex1",
+      "version": 1,
+      "digest": "dc81d34a0cd3b674bd77f3614694c6fe7e6fd3404a9e3175e8299ce9b5f7c1ee",
+      "path": "content/examples/p4/p4-fraction-of-quantity-ex1.json"
+    },
+    {
+      "id": "p4-fraction-of-quantity-ex2",
+      "version": 1,
+      "digest": "f73ee691a4fc7d2d34e867fa38ebc8614c72bff838e613b736650440d573ec63",
+      "path": "content/examples/p4/p4-fraction-of-quantity-ex2.json"
+    },
+    {
+      "id": "p4-fraction-of-quantity-ex3",
+      "version": 1,
+      "digest": "8cd12d52b0fbf21a275c5323ee6ca507e844dece4f4c5d3a7ba42274451a18f3",
+      "path": "content/examples/p4/p4-fraction-of-quantity-ex3.json"
+    },
+    {
+      "id": "p4-fraction-of-quantity-ex4",
+      "version": 1,
+      "digest": "2d0d3bfc789b2354c41dcbac403a12e7689c2cbf71ecc406fb8b585a71e1375d",
+      "path": "content/examples/p4/p4-fraction-of-quantity-ex4.json"
+    },
+    {
+      "id": "p4-fraction-of-quantity-ex5",
+      "version": 1,
+      "digest": "05e86007c69d8e337b0c908cfe9e5229975a291b27fe42fd26bb4c05bc3f1966",
+      "path": "content/examples/p4/p4-fraction-of-quantity-ex5.json"
+    },
+    {
+      "id": "p4-fraction-practice",
+      "version": 1,
+      "digest": "edffb39cca95893a4e900983c617f44b4194807081e3259c3f7faf0aff0f65fb",
+      "path": "content/lessons/p4-fraction-practice.json"
+    },
+    {
+      "id": "p4-fraction-practice-ex1",
+      "version": 1,
+      "digest": "802ff40a657ebfc71d4680f6d196b08451c3d5189a1ac61b6e8dd8886ce4303e",
+      "path": "content/examples/p4/p4-fraction-practice-ex1.json"
+    },
+    {
+      "id": "p4-fraction-practice-ex2",
+      "version": 1,
+      "digest": "e2f7477f7436bafa57238bc3160dd43848d0960e8511fb9fe20dcdc87d87cd95",
+      "path": "content/examples/p4/p4-fraction-practice-ex2.json"
+    },
+    {
+      "id": "p4-fraction-practice-ex3",
+      "version": 1,
+      "digest": "9f4b662384687d151f59aa984ea9ca354a17da5e41f3063f1c81585bca487487",
+      "path": "content/examples/p4/p4-fraction-practice-ex3.json"
+    },
+    {
+      "id": "p4-fraction-practice-ex4",
+      "version": 1,
+      "digest": "bb9cd5a5e286c71afb09715e1be25215fee2c43e508ef0c7c7325bc224ecab5b",
+      "path": "content/examples/p4/p4-fraction-practice-ex4.json"
+    },
+    {
+      "id": "p4-fraction-practice-ex5",
+      "version": 1,
+      "digest": "67784f8187cf7f5ce98f0d9fdd656542688aed72a1bb95df6202a21489359524",
+      "path": "content/examples/p4/p4-fraction-practice-ex5.json"
+    },
+    {
+      "id": "p4-line-graph-change",
+      "version": 1,
+      "digest": "321447ecbd133ac0a9d0e4e2e7a7bd19f4eec50072f35cf23514e4691f3fd957",
+      "path": "content/lessons/p4-line-graph-change.json"
+    },
+    {
+      "id": "p4-line-graph-change-ex1",
+      "version": 1,
+      "digest": "52725f26514e2a45d0fc62d6e099d48d2df42fc82900a3b4538f45f54e58e905",
+      "path": "content/examples/p4/p4-line-graph-change-ex1.json"
+    },
+    {
+      "id": "p4-line-graph-change-ex2",
+      "version": 1,
+      "digest": "77cee20dd56dc00e8d00094c85f0abd6f0b23fa9d4380ff65405c9c3056b27f3",
+      "path": "content/examples/p4/p4-line-graph-change-ex2.json"
+    },
+    {
+      "id": "p4-line-graph-change-ex3",
+      "version": 1,
+      "digest": "4cedbd176bc15d1129e6a9c717bd186c740e322bd0c6e5e025ebdb9edd382b25",
+      "path": "content/examples/p4/p4-line-graph-change-ex3.json"
+    },
+    {
+      "id": "p4-line-graph-change-ex4",
+      "version": 1,
+      "digest": "51964ee1957c433b108525c9d7f03900bd39746a02190e8c362c3abbad676891",
+      "path": "content/examples/p4/p4-line-graph-change-ex4.json"
+    },
+    {
+      "id": "p4-line-graph-change-ex5",
+      "version": 1,
+      "digest": "b9bbf2b0f04a1402091cba330fffc2c7e89486abecd76619360f6d3f6248bfea",
+      "path": "content/examples/p4/p4-line-graph-change-ex5.json"
+    },
+    {
+      "id": "p4-line-graph-practice",
+      "version": 1,
+      "digest": "b2518e094a28b24c576d7d45027b8e875c8fa4b966d12a26d4cf64c766d7b16a",
+      "path": "content/lessons/p4-line-graph-practice.json"
+    },
+    {
+      "id": "p4-line-graph-practice-ex1",
+      "version": 1,
+      "digest": "9553dee54e54e00758c6294b1daf23b743d379a471eb419922c2db914859c180",
+      "path": "content/examples/p4/p4-line-graph-practice-ex1.json"
+    },
+    {
+      "id": "p4-line-graph-practice-ex2",
+      "version": 1,
+      "digest": "12713f20b751434b79b0dbc4e17ecffa2e7ab1e34e1f11c8c020169545d108f9",
+      "path": "content/examples/p4/p4-line-graph-practice-ex2.json"
+    },
+    {
+      "id": "p4-line-graph-practice-ex3",
+      "version": 1,
+      "digest": "e568e8c27b4ae9e189e7b0adb9bf82b847c91bf9e93da2c52cd031bf701a5b31",
+      "path": "content/examples/p4/p4-line-graph-practice-ex3.json"
+    },
+    {
+      "id": "p4-line-graph-practice-ex4",
+      "version": 1,
+      "digest": "74d53c09f2b983fc465979d598695ec878b899d80987d6cfbc8a856e6bb0cabc",
+      "path": "content/examples/p4/p4-line-graph-practice-ex4.json"
+    },
+    {
+      "id": "p4-line-graph-practice-ex5",
+      "version": 1,
+      "digest": "fc210d812ece3379932b5586eb580099527d49104e00444100d21ad32dc06ec9",
+      "path": "content/examples/p4/p4-line-graph-practice-ex5.json"
+    },
+    {
+      "id": "p4-line-graph-target",
+      "version": 1,
+      "digest": "4be74fbc0dc4afb6e25b814b1b6e1dd5f5a3379f2010bef43364345a0fb3fe51",
+      "path": "content/lessons/p4-line-graph-target.json"
+    },
+    {
+      "id": "p4-line-graph-target-ex1",
+      "version": 1,
+      "digest": "93ec2f86d52a523e1094b5977d4ba0fa3c84c088ceb64575b0cf01347a69a9cd",
+      "path": "content/examples/p4/p4-line-graph-target-ex1.json"
+    },
+    {
+      "id": "p4-line-graph-target-ex2",
+      "version": 1,
+      "digest": "bb07ec557f81d1d5a6c5e3b376a4c547a5c61ec3966441b667fbcd125fafd620",
+      "path": "content/examples/p4/p4-line-graph-target-ex2.json"
+    },
+    {
+      "id": "p4-line-graph-target-ex3",
+      "version": 1,
+      "digest": "5c330ef906ae7d82f32a72de2bb80037c40824b6e721ab5d90768474339a8924",
+      "path": "content/examples/p4/p4-line-graph-target-ex3.json"
+    },
+    {
+      "id": "p4-line-graph-target-ex4",
+      "version": 1,
+      "digest": "8b87cb30cacdde28b2fb1f87681ea0164309bd0f4abee9ccb591bb0306d5fcd2",
+      "path": "content/examples/p4/p4-line-graph-target-ex4.json"
+    },
+    {
+      "id": "p4-line-graph-target-ex5",
+      "version": 1,
+      "digest": "51dffca7be988f11f58d6181268a68346cf2154f90bb0bed101d1362a1a4840b",
+      "path": "content/examples/p4/p4-line-graph-target-ex5.json"
+    },
+    {
+      "id": "p4-lines-of-symmetry",
+      "version": 1,
+      "digest": "6467a17c4c37105df6764e3a92cdaa7a2af13698ff7b6754f8dfd630ea8c7377",
+      "path": "content/lessons/p4-lines-of-symmetry.json"
+    },
+    {
+      "id": "p4-lines-of-symmetry-ex1",
+      "version": 1,
+      "digest": "917687dc52f565ae8220f80288783521979071fc6a17785bfe25b9541f0c285c",
+      "path": "content/examples/p4/p4-lines-of-symmetry-ex1.json"
+    },
+    {
+      "id": "p4-lines-of-symmetry-ex2",
+      "version": 1,
+      "digest": "feadf4fd0c31f0ca67e4e21b1103a84eebecee84ddaf5ab9d9295e758a4a5a97",
+      "path": "content/examples/p4/p4-lines-of-symmetry-ex2.json"
+    },
+    {
+      "id": "p4-lines-of-symmetry-ex3",
+      "version": 1,
+      "digest": "97104c6ee6c78e8445dcd34fa39a1911d6a79b5e9bc6e6888e192e6ab25f0e6e",
+      "path": "content/examples/p4/p4-lines-of-symmetry-ex3.json"
+    },
+    {
+      "id": "p4-lines-of-symmetry-ex4",
+      "version": 1,
+      "digest": "1e811fb093b72e32dde8aa9385fd73c7f444d9b491bdb249af7c2f1faa7517f2",
+      "path": "content/examples/p4/p4-lines-of-symmetry-ex4.json"
+    },
+    {
+      "id": "p4-lines-of-symmetry-ex5",
+      "version": 1,
+      "digest": "664fdb854d2ebb18f8a77c5a604f1b6a941e7f52c7ecea1ff5b5e050b0180edf",
+      "path": "content/examples/p4/p4-lines-of-symmetry-ex5.json"
+    },
+    {
+      "id": "p4-measurement-practice",
+      "version": 1,
+      "digest": "ad803714d8ed8e241735a363170999befad4e8a7f33942a846ce625fa8234892",
+      "path": "content/lessons/p4-measurement-practice.json"
+    },
+    {
+      "id": "p4-measurement-practice-ex1",
+      "version": 1,
+      "digest": "621e01485b68e3cba8a8df5c06e5a206dad6117e4e12c1c96421807c583d7ade",
+      "path": "content/examples/p4/p4-measurement-practice-ex1.json"
+    },
+    {
+      "id": "p4-measurement-practice-ex2",
+      "version": 1,
+      "digest": "8a9dbc72bde3a235c4060a14da4ba5b7a75add0f95abbecad173582a2b91d25e",
+      "path": "content/examples/p4/p4-measurement-practice-ex2.json"
+    },
+    {
+      "id": "p4-measurement-practice-ex3",
+      "version": 1,
+      "digest": "c644684705d6f64e058e9f351c8090d706b8363b88df01cfa956cf12812d1a97",
+      "path": "content/examples/p4/p4-measurement-practice-ex3.json"
+    },
+    {
+      "id": "p4-measurement-practice-ex4",
+      "version": 1,
+      "digest": "4edd74908deb03325b00e72e5512e3061edc9d9def3cba902ad9fe1495d5bbb0",
+      "path": "content/examples/p4/p4-measurement-practice-ex4.json"
+    },
+    {
+      "id": "p4-measurement-practice-ex5",
+      "version": 1,
+      "digest": "96ee4ad4442da3eaba906c3df0623a618d9c182b947178970efd485042d98e68",
+      "path": "content/examples/p4/p4-measurement-practice-ex5.json"
+    },
+    {
+      "id": "p4-mirror-line-bench",
+      "version": 1,
+      "digest": "48c9ab6c7cc84ef3f70886a765a32ebdfe50666dc01333199e101d8f0ce3de0e",
+      "path": "content/lessons/p4-mirror-line-bench.json"
+    },
+    {
+      "id": "p4-mirror-line-bench-ex1",
+      "version": 1,
+      "digest": "03762d97180358f26c9bde73e21eecc7dc53d390e4b85e66338be60b85ccc09a",
+      "path": "content/examples/p4/p4-mirror-line-bench-ex1.json"
+    },
+    {
+      "id": "p4-mirror-line-bench-ex2",
+      "version": 1,
+      "digest": "2d985a1433b882eb6a818932bb7ad9684edf0a1914365a3fb625be8c44d41eef",
+      "path": "content/examples/p4/p4-mirror-line-bench-ex2.json"
+    },
+    {
+      "id": "p4-mirror-line-bench-ex3",
+      "version": 1,
+      "digest": "80cab843067c5d68ebc91e884db929e7095a16a1f25654f76db926609c8be237",
+      "path": "content/examples/p4/p4-mirror-line-bench-ex3.json"
+    },
+    {
+      "id": "p4-mirror-line-bench-ex4",
+      "version": 1,
+      "digest": "012763579b87bbc40d6ec5a80098ea10b45b6c9c8163e7ccb77b4e03bea6f2af",
+      "path": "content/examples/p4/p4-mirror-line-bench-ex4.json"
+    },
+    {
+      "id": "p4-mirror-line-bench-ex5",
+      "version": 1,
+      "digest": "44361558d6fe8f40df2f029a5a242eaab05f9cdc2eea5188e1311ee56c2801a9",
+      "path": "content/examples/p4/p4-mirror-line-bench-ex5.json"
+    },
+    {
+      "id": "p4-mixed-and-improper",
+      "version": 1,
+      "digest": "970c61b7a3c60bc8b59ff98f1b400f6aed3830da0507362a0ccee044e1e7d885",
+      "path": "content/lessons/p4-mixed-and-improper.json"
+    },
+    {
+      "id": "p4-mixed-and-improper-ex1",
+      "version": 1,
+      "digest": "61492c192c55c1cf44e3d4a885498d8bca55b2cfa7b48931186f88053a897bdf",
+      "path": "content/examples/p4/p4-mixed-and-improper-ex1.json"
+    },
+    {
+      "id": "p4-mixed-and-improper-ex2",
+      "version": 1,
+      "digest": "6a3ddd9549cdadec735e3367b19d9846bcbcc93548c1f21bd9574c04085173da",
+      "path": "content/examples/p4/p4-mixed-and-improper-ex2.json"
+    },
+    {
+      "id": "p4-mixed-and-improper-ex3",
+      "version": 1,
+      "digest": "9dce2d80c5d6c425330062f192b675bf3978aa0c5f51b9fe009ba117b62b07cb",
+      "path": "content/examples/p4/p4-mixed-and-improper-ex3.json"
+    },
+    {
+      "id": "p4-mixed-and-improper-ex4",
+      "version": 1,
+      "digest": "ff810825a0126baa1066d006cc02a3a0352a1e2b7408386c7178536f2229ddb2",
+      "path": "content/examples/p4/p4-mixed-and-improper-ex4.json"
+    },
+    {
+      "id": "p4-mixed-and-improper-ex5",
+      "version": 1,
+      "digest": "39abd9277d3befc4584fee093988ed1811e92c665d985a7ae087e3911afc4324",
+      "path": "content/examples/p4/p4-mixed-and-improper-ex5.json"
+    },
+    {
+      "id": "p4-pie-chart-count",
+      "version": 1,
+      "digest": "8c095471c2853ed013ca3f2abee6d5c4c80f165c605db3e57942d1330de15605",
+      "path": "content/lessons/p4-pie-chart-count.json"
+    },
+    {
+      "id": "p4-pie-chart-count-ex1",
+      "version": 1,
+      "digest": "57fde34c124173dfb4fc104edc2d699d68fc8330b723fb1c90678cae49728654",
+      "path": "content/examples/p4/p4-pie-chart-count-ex1.json"
+    },
+    {
+      "id": "p4-pie-chart-count-ex2",
+      "version": 1,
+      "digest": "701aadb5c0ce230fa9af988912326e97c83d8a8e43909571bf49d176deb30a74",
+      "path": "content/examples/p4/p4-pie-chart-count-ex2.json"
+    },
+    {
+      "id": "p4-pie-chart-count-ex3",
+      "version": 1,
+      "digest": "4c3ea593845f1745358f3859b71c4425af6fcc9416cf874bd0b01e51435ddde0",
+      "path": "content/examples/p4/p4-pie-chart-count-ex3.json"
+    },
+    {
+      "id": "p4-pie-chart-count-ex4",
+      "version": 1,
+      "digest": "2619bd35bc6da34c924cfcfbadf7753f0ef6cf909e57823f1b188c167ec89acf",
+      "path": "content/examples/p4/p4-pie-chart-count-ex4.json"
+    },
+    {
+      "id": "p4-pie-chart-count-ex5",
+      "version": 1,
+      "digest": "3dfafd359015ee560245f3f295199302c244efe6e0c091fbe4c14ddcbfabf8a5",
+      "path": "content/examples/p4/p4-pie-chart-count-ex5.json"
+    },
+    {
+      "id": "p4-pie-chart-practice",
+      "version": 1,
+      "digest": "b0a13d8c1c60726dddd4f3f625a9748612e26ea46c9152365f8d02ee80f6674b",
+      "path": "content/lessons/p4-pie-chart-practice.json"
+    },
+    {
+      "id": "p4-pie-chart-practice-ex1",
+      "version": 1,
+      "digest": "7071bc9e054c3df669c0e9ed787cd42119f92b704d300552d3ed56745a109509",
+      "path": "content/examples/p4/p4-pie-chart-practice-ex1.json"
+    },
+    {
+      "id": "p4-pie-chart-practice-ex2",
+      "version": 1,
+      "digest": "9630e051168b5c2090232ded61991c10ba854e6de28606247d5c37b0b73abe11",
+      "path": "content/examples/p4/p4-pie-chart-practice-ex2.json"
+    },
+    {
+      "id": "p4-pie-chart-practice-ex3",
+      "version": 1,
+      "digest": "b217fcd304ed2b433f8192b57e7ca13f66978acf88f69b1c97551a8d2e53033b",
+      "path": "content/examples/p4/p4-pie-chart-practice-ex3.json"
+    },
+    {
+      "id": "p4-pie-chart-practice-ex4",
+      "version": 1,
+      "digest": "488643e9186f148b3b5a1dcc3e7131e358b827274b77df34d8cd471b9992412c",
+      "path": "content/examples/p4/p4-pie-chart-practice-ex4.json"
+    },
+    {
+      "id": "p4-pie-chart-practice-ex5",
+      "version": 1,
+      "digest": "2de661502e5a7234657969bd56a96cc33f8a468fd3ce18972e8409ea662dbf5e",
+      "path": "content/examples/p4/p4-pie-chart-practice-ex5.json"
+    },
+    {
+      "id": "p4-pie-chart-total",
+      "version": 1,
+      "digest": "28f397b36e4b80c6348e50e14b50f45fd7816efdd426e46c1d8d13ea6c8a0ce1",
+      "path": "content/lessons/p4-pie-chart-total.json"
+    },
+    {
+      "id": "p4-pie-chart-total-ex1",
+      "version": 1,
+      "digest": "6c8df58a4bc6f7d1773c287608c76c6e18669ee7e2c1393ab612657fc226f9d7",
+      "path": "content/examples/p4/p4-pie-chart-total-ex1.json"
+    },
+    {
+      "id": "p4-pie-chart-total-ex2",
+      "version": 1,
+      "digest": "49db11a7e64200f449b8cf714dc3e5ca9337d7f6fbc53b7c6b3ed6eeed6d13f4",
+      "path": "content/examples/p4/p4-pie-chart-total-ex2.json"
+    },
+    {
+      "id": "p4-pie-chart-total-ex3",
+      "version": 1,
+      "digest": "6d6bb48b8252ea43970aebea85cd4aea7783cfd7351a4d0eb28a4b676fb6171a",
+      "path": "content/examples/p4/p4-pie-chart-total-ex3.json"
+    },
+    {
+      "id": "p4-pie-chart-total-ex4",
+      "version": 1,
+      "digest": "d9ba104f83c089a3e293ca04ce97ba9ae0de4640d7577305c8c781fc69929f19",
+      "path": "content/examples/p4/p4-pie-chart-total-ex4.json"
+    },
+    {
+      "id": "p4-pie-chart-total-ex5",
+      "version": 1,
+      "digest": "252eda91618b034e1313a393b1c9d51295e155c7199af8141a9e2aea6e2df0be",
+      "path": "content/examples/p4/p4-pie-chart-total-ex5.json"
+    },
+    {
+      "id": "p4-place-value-100k",
+      "version": 1,
+      "digest": "0a8844aa5975dd95263ac956ada502d204d3cdb87b377f94b068acbb55785e0a",
+      "path": "content/lessons/p4-place-value-100k.json"
+    },
+    {
+      "id": "p4-place-value-100k-ex1",
+      "version": 1,
+      "digest": "bc7255972bf4cbf4a72a0fa64f4c3baa6dffbbc927c160fe642bbc91debe059e",
+      "path": "content/examples/p4/p4-place-value-100k-ex1.json"
+    },
+    {
+      "id": "p4-place-value-100k-ex2",
+      "version": 1,
+      "digest": "21ebb36c8d54953906a21034ab77fcc8a1aaaf94fbc419d5652ac8f04b817f16",
+      "path": "content/examples/p4/p4-place-value-100k-ex2.json"
+    },
+    {
+      "id": "p4-place-value-100k-ex3",
+      "version": 1,
+      "digest": "2962abe4a03b935f6e91db77ba1487137d0da048f4b3bb0833baa4a8996cea39",
+      "path": "content/examples/p4/p4-place-value-100k-ex3.json"
+    },
+    {
+      "id": "p4-place-value-100k-ex4",
+      "version": 1,
+      "digest": "2fcd0db1888ef1e2088fd5971367c2df85d1f4734c5092b3cb921be7843a30e2",
+      "path": "content/examples/p4/p4-place-value-100k-ex4.json"
+    },
+    {
+      "id": "p4-place-value-100k-ex5",
+      "version": 1,
+      "digest": "e9511f5e60a321508c44985291c2beb73823e4826f116ea6ec7e384e2c9d12e6",
+      "path": "content/examples/p4/p4-place-value-100k-ex5.json"
+    },
+    {
+      "id": "p4-protractor-bench-draw",
+      "version": 1,
+      "digest": "e06590483c0f319126d70046a48d9b80317387cf5153ad7adbe4d449640101c5",
+      "path": "content/lessons/p4-protractor-bench-draw.json"
+    },
+    {
+      "id": "p4-protractor-bench-draw-ex1",
+      "version": 1,
+      "digest": "2b516234a9a5224e557afe4522a5e0dd9dded334b86dbe52d9d41e2564897203",
+      "path": "content/examples/p4/p4-protractor-bench-draw-ex1.json"
+    },
+    {
+      "id": "p4-protractor-bench-draw-ex2",
+      "version": 1,
+      "digest": "59489879d3c229085eb82e23fcd211027c9ea31c4539a961437fd8af06429721",
+      "path": "content/examples/p4/p4-protractor-bench-draw-ex2.json"
+    },
+    {
+      "id": "p4-protractor-bench-draw-ex3",
+      "version": 1,
+      "digest": "75d14e5ccf0bfc929bda806de6210d554d30cc01b125479c46cc4130d83b226d",
+      "path": "content/examples/p4/p4-protractor-bench-draw-ex3.json"
+    },
+    {
+      "id": "p4-protractor-bench-draw-ex4",
+      "version": 1,
+      "digest": "12830e813aaf9e218f7be5dfad54c23a8f5fa1745d59fa244e35d4487bb037c3",
+      "path": "content/examples/p4/p4-protractor-bench-draw-ex4.json"
+    },
+    {
+      "id": "p4-protractor-bench-draw-ex5",
+      "version": 1,
+      "digest": "209e5548334f5299f27c8142a135a3353d8e35fe96afecee85cfbca18a44ba82",
+      "path": "content/examples/p4/p4-protractor-bench-draw-ex5.json"
+    },
+    {
+      "id": "p4-protractor-bench-read",
+      "version": 1,
+      "digest": "d820569692037c7855868634cdcac400e4612c334f4954ca305978abfcbf112e",
+      "path": "content/lessons/p4-protractor-bench-read.json"
+    },
+    {
+      "id": "p4-protractor-bench-read-ex1",
+      "version": 1,
+      "digest": "39974c324073e9bdd2fd6c20dc42262563c41b3c746caf926317bf9186abc1fa",
+      "path": "content/examples/p4/p4-protractor-bench-read-ex1.json"
+    },
+    {
+      "id": "p4-protractor-bench-read-ex2",
+      "version": 1,
+      "digest": "a3ba10227bfd6f725a60eeb4eb2c7877fcea97140605ecdfae823673f4fc6f85",
+      "path": "content/examples/p4/p4-protractor-bench-read-ex2.json"
+    },
+    {
+      "id": "p4-protractor-bench-read-ex3",
+      "version": 1,
+      "digest": "8d2990dd777fc191692136bcd68bf67eb776c9a63c9c9eb6be5a0ebc98038494",
+      "path": "content/examples/p4/p4-protractor-bench-read-ex3.json"
+    },
+    {
+      "id": "p4-protractor-bench-read-ex4",
+      "version": 1,
+      "digest": "6eff618dc3b6909b414601525d30f166db8dda64c4cf883d227ec9c4f68cf3f0",
+      "path": "content/examples/p4/p4-protractor-bench-read-ex4.json"
+    },
+    {
+      "id": "p4-protractor-bench-read-ex5",
+      "version": 1,
+      "digest": "ff1f1af2ef0ea95f56eef29c52882814452f2694cb74f6b6301519b8c8c840fa",
+      "path": "content/examples/p4/p4-protractor-bench-read-ex5.json"
+    },
+    {
+      "id": "p4-read-bar-chart",
+      "version": 1,
+      "digest": "d010af1c1e86ab7d2d3eb65a20c9ea2869092bd4125aeb735dd3fb08de68692f",
+      "path": "content/lessons/p4-read-bar-chart.json"
+    },
+    {
+      "id": "p4-read-bar-chart-ex1",
+      "version": 1,
+      "digest": "f9e09316d8aca5fac997d26e4f311538eca2ce4b39f143c631b710161c6e2cf2",
+      "path": "content/examples/p4/p4-read-bar-chart-ex1.json"
+    },
+    {
+      "id": "p4-read-bar-chart-ex2",
+      "version": 1,
+      "digest": "9523296ddfe17518d0bd205fc110f197d36cd78e8237f04bdbb32ce0f81474f3",
+      "path": "content/examples/p4/p4-read-bar-chart-ex2.json"
+    },
+    {
+      "id": "p4-read-bar-chart-ex3",
+      "version": 1,
+      "digest": "82ddcf66f05a138f68552532c060cfc7c72fc8fa12dba0b541a63e813889e4c1",
+      "path": "content/examples/p4/p4-read-bar-chart-ex3.json"
+    },
+    {
+      "id": "p4-read-bar-chart-ex4",
+      "version": 1,
+      "digest": "e6f092c98933a422e2100ce851e614b5006eb77e4ad9bdbfbc987abd95274642",
+      "path": "content/examples/p4/p4-read-bar-chart-ex4.json"
+    },
+    {
+      "id": "p4-read-bar-chart-ex5",
+      "version": 1,
+      "digest": "697a6dd972b46fcc3dc127ce3bf592ffa2c645350d73aeba0524ad499cba4f7f",
+      "path": "content/examples/p4/p4-read-bar-chart-ex5.json"
+    },
+    {
+      "id": "p4-read-line-graph",
+      "version": 1,
+      "digest": "bd13420b41432eb90aaa1828038ac0479c34b418f071bfdf633ef1ef6ff303d3",
+      "path": "content/lessons/p4-read-line-graph.json"
+    },
+    {
+      "id": "p4-read-line-graph-ex1",
+      "version": 1,
+      "digest": "a70f804c18cbfb805ac42d45308eea9f5babd74e7e1b7d55fa16d9f247739580",
+      "path": "content/examples/p4/p4-read-line-graph-ex1.json"
+    },
+    {
+      "id": "p4-read-line-graph-ex2",
+      "version": 1,
+      "digest": "3b4655d6cad5b1b77354aba9732807e766122a0a929c09821fa1b90bc4a505e8",
+      "path": "content/examples/p4/p4-read-line-graph-ex2.json"
+    },
+    {
+      "id": "p4-read-line-graph-ex3",
+      "version": 1,
+      "digest": "9b138507ee8548d30c679bb300b2caa8342639d7b500b488ad03218ad4ed879a",
+      "path": "content/examples/p4/p4-read-line-graph-ex3.json"
+    },
+    {
+      "id": "p4-read-line-graph-ex4",
+      "version": 1,
+      "digest": "0e45f033b8dbc8bef3316f7ce3757189a6fd3ec3c8c1322a37f3c59691eba72c",
+      "path": "content/examples/p4/p4-read-line-graph-ex4.json"
+    },
+    {
+      "id": "p4-read-line-graph-ex5",
+      "version": 1,
+      "digest": "87a678b768c2d1b02b1e94167a9bc6b1fa68bcb0c9bd2782383ac461fc98f8d1",
+      "path": "content/examples/p4/p4-read-line-graph-ex5.json"
+    },
+    {
+      "id": "p4-read-pie-chart",
+      "version": 1,
+      "digest": "da17bed56a39a3d358389bd827adb4bb3a36b284dbdde290678503c5eb7cbbfa",
+      "path": "content/lessons/p4-read-pie-chart.json"
+    },
+    {
+      "id": "p4-read-pie-chart-ex1",
+      "version": 1,
+      "digest": "6643ab6791205a83f5a64d217aeb1566c0b619e50b6bad5042c0ebef4cc9a94d",
+      "path": "content/examples/p4/p4-read-pie-chart-ex1.json"
+    },
+    {
+      "id": "p4-read-pie-chart-ex2",
+      "version": 1,
+      "digest": "bb745912e960765589f370e7c0f4274e1cab5c18b19440fa9972368b96307c7d",
+      "path": "content/examples/p4/p4-read-pie-chart-ex2.json"
+    },
+    {
+      "id": "p4-read-pie-chart-ex3",
+      "version": 1,
+      "digest": "181463e508fdb183420efab73b6b95c7fac890a0a57a7cf5e9882b23fbb7b117",
+      "path": "content/examples/p4/p4-read-pie-chart-ex3.json"
+    },
+    {
+      "id": "p4-read-pie-chart-ex4",
+      "version": 1,
+      "digest": "bbc587ba4bf800b368a71264a3506fb7f106e75b4cdc87e9e44c07e828d357e2",
+      "path": "content/examples/p4/p4-read-pie-chart-ex4.json"
+    },
+    {
+      "id": "p4-read-pie-chart-ex5",
+      "version": 1,
+      "digest": "66df015b47d2fbe3a9498c02321da18cd35843fc1f5b9b1c632feb03dece165d",
+      "path": "content/examples/p4/p4-read-pie-chart-ex5.json"
+    },
+    {
+      "id": "p4-read-pie-sectors",
+      "version": 1,
+      "digest": "013a719680f1a254328e7e62f7d11d06d13923d1bf31ddf8fe81cd1d3409447d",
+      "path": "content/lessons/p4-read-pie-sectors.json"
+    },
+    {
+      "id": "p4-read-pie-sectors-ex1",
+      "version": 1,
+      "digest": "e94406f85f16815b24afcc87aeeebcb615f2d9dc969bdc560b9cf77a86fad013",
+      "path": "content/examples/p4/p4-read-pie-sectors-ex1.json"
+    },
+    {
+      "id": "p4-read-pie-sectors-ex2",
+      "version": 1,
+      "digest": "ec7bbb74e02d18491131acba6e974d23b38bf4b927c7a3a3350937383091edeb",
+      "path": "content/examples/p4/p4-read-pie-sectors-ex2.json"
+    },
+    {
+      "id": "p4-read-pie-sectors-ex3",
+      "version": 1,
+      "digest": "7b08e53c342e60a5ef22d0a06238cc79d2f4e1c904568d1b08a3d1e4a7988f48",
+      "path": "content/examples/p4/p4-read-pie-sectors-ex3.json"
+    },
+    {
+      "id": "p4-read-pie-sectors-ex4",
+      "version": 1,
+      "digest": "03ec945a55305a1eb6ea4dfb4e8b738b373cb917b324d5f5e49d237903535595",
+      "path": "content/examples/p4/p4-read-pie-sectors-ex4.json"
+    },
+    {
+      "id": "p4-read-pie-sectors-ex5",
+      "version": 1,
+      "digest": "02d4d16150e3d35fd078e42c6fc3be1b6dc14b9badf775f8393b91f10e10d179",
+      "path": "content/examples/p4/p4-read-pie-sectors-ex5.json"
+    },
+    {
+      "id": "p4-read-protractor",
+      "version": 1,
+      "digest": "4bd1cda17a7962da2d5836ed12dfbc7e0e25c5c2dd1122bb2defa8301e8316ce",
+      "path": "content/lessons/p4-read-protractor.json"
+    },
+    {
+      "id": "p4-read-protractor-ex1",
+      "version": 1,
+      "digest": "c8da083000e0a3c89f828d6136f517f5ba06b311b6abf332cd134b748ebad6f2",
+      "path": "content/examples/p4/p4-read-protractor-ex1.json"
+    },
+    {
+      "id": "p4-read-protractor-ex2",
+      "version": 1,
+      "digest": "054596e1f8fc43add393e80ddbf012c4d37f3c6c0be3d33d331e3f08eae195c0",
+      "path": "content/examples/p4/p4-read-protractor-ex2.json"
+    },
+    {
+      "id": "p4-read-protractor-ex3",
+      "version": 1,
+      "digest": "90fb14a6458ec4b07f1bf5b51a92a01bc79f4ea746426ee2dd5659c451ebcb13",
+      "path": "content/examples/p4/p4-read-protractor-ex3.json"
+    },
+    {
+      "id": "p4-read-protractor-ex4",
+      "version": 1,
+      "digest": "0e79d0e67228c0a25cc0648b6951029ff4dcfb0d64c52f97c91656dd3f376853",
+      "path": "content/examples/p4/p4-read-protractor-ex4.json"
+    },
+    {
+      "id": "p4-read-protractor-ex5",
+      "version": 1,
+      "digest": "8be584e5f738e5ceef9ec35564e05ae4ccbea688b87e52f4776a60b7eab63e57",
+      "path": "content/examples/p4/p4-read-protractor-ex5.json"
+    },
+    {
+      "id": "p4-rectangle-missing-side",
+      "version": 1,
+      "digest": "460e0147cd300e18bf082402b206592c06cc30482f165f24fa210e9a7212980f",
+      "path": "content/lessons/p4-rectangle-missing-side.json"
+    },
+    {
+      "id": "p4-rectangle-missing-side-ex1",
+      "version": 1,
+      "digest": "fcb3c4d5e8e473f7886a741df4734fead69363be12d5a7e2a12adf5f3ecefbe8",
+      "path": "content/examples/p4/p4-rectangle-missing-side-ex1.json"
+    },
+    {
+      "id": "p4-rectangle-missing-side-ex2",
+      "version": 1,
+      "digest": "a5304d0cf1cad33c5534bc911ba56d0aaf7faba96c12213bdcc257f634590d68",
+      "path": "content/examples/p4/p4-rectangle-missing-side-ex2.json"
+    },
+    {
+      "id": "p4-rectangle-missing-side-ex3",
+      "version": 1,
+      "digest": "9d781a03efe9b04b3c7e9d919ce1df2f05dfa0706f6ce70d8a0cfa7b848e4964",
+      "path": "content/examples/p4/p4-rectangle-missing-side-ex3.json"
+    },
+    {
+      "id": "p4-rectangle-missing-side-ex4",
+      "version": 1,
+      "digest": "0564358e20befa876d76f65c7d1f9e0b344ba9379c8bc5daa42f8c7b75eb1b67",
+      "path": "content/examples/p4/p4-rectangle-missing-side-ex4.json"
+    },
+    {
+      "id": "p4-rectangle-missing-side-ex5",
+      "version": 1,
+      "digest": "6c23827b276903df5eb0b8a08d18a4857bd40a1a74d110b40ac498719652d6d8",
+      "path": "content/examples/p4/p4-rectangle-missing-side-ex5.json"
+    },
+    {
+      "id": "p4-rounding",
+      "version": 1,
+      "digest": "c258d1bec68af107454b6c223f504c94f43639e999ccd806f48234e13c5daa7f",
+      "path": "content/lessons/p4-rounding.json"
+    },
+    {
+      "id": "p4-rounding-ex1",
+      "version": 1,
+      "digest": "f237eefbd1f43aa578f85731bd67cf7529a544b3893a2d3d2ada946a2cea3831",
+      "path": "content/examples/p4/p4-rounding-ex1.json"
+    },
+    {
+      "id": "p4-rounding-ex2",
+      "version": 1,
+      "digest": "86587405849e623f7f51eef6094796fff9190cb14ba21f7947861dd624cea317",
+      "path": "content/examples/p4/p4-rounding-ex2.json"
+    },
+    {
+      "id": "p4-rounding-ex3",
+      "version": 1,
+      "digest": "f5fde441c5824a3b1a164b4358a50ab4e1ada7b82ce95d2146eb5f298ab1b2dd",
+      "path": "content/examples/p4/p4-rounding-ex3.json"
+    },
+    {
+      "id": "p4-rounding-ex4",
+      "version": 1,
+      "digest": "f74b16c78a9cc3df94c9f36d5d82697a61f681102715e1b9ddf31636c9b30b19",
+      "path": "content/examples/p4/p4-rounding-ex4.json"
+    },
+    {
+      "id": "p4-rounding-ex5",
+      "version": 1,
+      "digest": "43369a73a8e6171812c6f07a45b2bb3286d3198adc8034370d4e66a5232d6b5e",
+      "path": "content/examples/p4/p4-rounding-ex5.json"
+    },
+    {
+      "id": "p4-shade-to-complete-bench",
+      "version": 1,
+      "digest": "d6b1358fdd6e218c941c0106a8adb5572ef25f764e467cb97baaf9b87f35ec8e",
+      "path": "content/lessons/p4-shade-to-complete-bench.json"
+    },
+    {
+      "id": "p4-shade-to-complete-bench-ex1",
+      "version": 1,
+      "digest": "839a84ac394a2ada905b3f8de7b5a12d7e9f1c14caeae8d2d165e935a63d0b40",
+      "path": "content/examples/p4/p4-shade-to-complete-bench-ex1.json"
+    },
+    {
+      "id": "p4-shade-to-complete-bench-ex2",
+      "version": 1,
+      "digest": "7c645d040bd7d515c33fea47e3f338df79e8bdd73edc5d068c0f3807f94d3697",
+      "path": "content/examples/p4/p4-shade-to-complete-bench-ex2.json"
+    },
+    {
+      "id": "p4-shade-to-complete-bench-ex3",
+      "version": 1,
+      "digest": "1fcbb06842ff245b8f151ded8d32ca480575884a12a9c6c635f77bf38a2b96e5",
+      "path": "content/examples/p4/p4-shade-to-complete-bench-ex3.json"
+    },
+    {
+      "id": "p4-shade-to-complete-bench-ex4",
+      "version": 1,
+      "digest": "f8dc74e938ab0be74f135f266c1a3dbea4420947a4f1a5da3504815c68142c7d",
+      "path": "content/examples/p4/p4-shade-to-complete-bench-ex4.json"
+    },
+    {
+      "id": "p4-shade-to-complete-bench-ex5",
+      "version": 1,
+      "digest": "6e10afeb01415e8fce0bea00c09c117d7a9c765995b4532bb14a604477675111",
+      "path": "content/examples/p4/p4-shade-to-complete-bench-ex5.json"
+    },
+    {
+      "id": "p4-solid-from-net",
+      "version": 1,
+      "digest": "9fbaa75ec9e6b8c2404c99f3452e27f661cd8dcfd98ef495e0e864784e879a53",
+      "path": "content/lessons/p4-solid-from-net.json"
+    },
+    {
+      "id": "p4-solid-from-net-ex1",
+      "version": 1,
+      "digest": "b0884673106dc5aaf1ce4ec8b14127d35a4fec50b7c73fd98c5caf691b191b9f",
+      "path": "content/examples/p4/p4-solid-from-net-ex1.json"
+    },
+    {
+      "id": "p4-solid-from-net-ex2",
+      "version": 1,
+      "digest": "b761abefb668fe2f205a3157610ad3443b8d9eed97697076b6ac70a435e84853",
+      "path": "content/examples/p4/p4-solid-from-net-ex2.json"
+    },
+    {
+      "id": "p4-solid-from-net-ex3",
+      "version": 1,
+      "digest": "d4fd7aa8980ac675b666094495e3c719d6e5fc33ceba655cafcfca85d9c9c97e",
+      "path": "content/examples/p4/p4-solid-from-net-ex3.json"
+    },
+    {
+      "id": "p4-solid-from-net-ex4",
+      "version": 1,
+      "digest": "7ecab09a50f2390b485a02d0396bad190c92239472168fc395141e55b23aecc8",
+      "path": "content/examples/p4/p4-solid-from-net-ex4.json"
+    },
+    {
+      "id": "p4-solid-from-net-ex5",
+      "version": 1,
+      "digest": "b0e38524b421e44de110fee61925177a287df1aa0df76c5f14c2e70394a76add",
+      "path": "content/examples/p4/p4-solid-from-net-ex5.json"
+    },
+    {
+      "id": "p4-symmetric-figure",
+      "version": 1,
+      "digest": "e6be0c308c936ac62fb11944160ab7d782869c7a1f05be485209b6b71b2517b4",
+      "path": "content/lessons/p4-symmetric-figure.json"
+    },
+    {
+      "id": "p4-symmetric-figure-ex1",
+      "version": 1,
+      "digest": "2da254f5c241e586ccf2b92fcdd29a5ba7544e07350412ee38a1648bf950a47c",
+      "path": "content/examples/p4/p4-symmetric-figure-ex1.json"
+    },
+    {
+      "id": "p4-symmetric-figure-ex2",
+      "version": 1,
+      "digest": "c18e02cc92aac69d580791d359270e1fbefe6aa6b47aae2ebead06e5a57d8e6d",
+      "path": "content/examples/p4/p4-symmetric-figure-ex2.json"
+    },
+    {
+      "id": "p4-symmetric-figure-ex3",
+      "version": 1,
+      "digest": "22a9fe2b0a9100b79773302a830be87ff4ee8e07f3d162b34b18f42be85182b3",
+      "path": "content/examples/p4/p4-symmetric-figure-ex3.json"
+    },
+    {
+      "id": "p4-symmetric-figure-ex4",
+      "version": 1,
+      "digest": "2a8e3f01fb154a7fbe3fc3b09c425704195665dfd76ba3fd7dc07e8ce1d8120f",
+      "path": "content/examples/p4/p4-symmetric-figure-ex4.json"
+    },
+    {
+      "id": "p4-symmetric-figure-ex5",
+      "version": 1,
+      "digest": "598d0b2925f371670dafc40f1464d8d10ab0c6ccc8603b128a69158a35d65784",
+      "path": "content/examples/p4/p4-symmetric-figure-ex5.json"
+    },
+    {
+      "id": "p4-symmetry-practice",
+      "version": 1,
+      "digest": "c40081c33c54dfc18874ff618ca8e674fc2e524e4e00ae75ca1c17925a25f15a",
+      "path": "content/lessons/p4-symmetry-practice.json"
+    },
+    {
+      "id": "p4-symmetry-practice-ex1",
+      "version": 1,
+      "digest": "00bb1e6a61cbf1a0eaee02b24c545057f8aafa5c6721fba450a2f4552ece8715",
+      "path": "content/examples/p4/p4-symmetry-practice-ex1.json"
+    },
+    {
+      "id": "p4-symmetry-practice-ex2",
+      "version": 1,
+      "digest": "2a794ef39f11bb5b445b877cfacb06d103545d693d640c023dc799aae2f813db",
+      "path": "content/examples/p4/p4-symmetry-practice-ex2.json"
+    },
+    {
+      "id": "p4-symmetry-practice-ex3",
+      "version": 1,
+      "digest": "a4b866a34ca70693ce2b6520464a47c0d295cbfb1ba3a455f345e8ebacd7b645",
+      "path": "content/examples/p4/p4-symmetry-practice-ex3.json"
+    },
+    {
+      "id": "p4-symmetry-practice-ex4",
+      "version": 1,
+      "digest": "c790e71c426481c78d15e99882608f93c3fcf379cfe6b31be54e7379cd317d8b",
+      "path": "content/examples/p4/p4-symmetry-practice-ex4.json"
+    },
+    {
+      "id": "p4-symmetry-practice-ex5",
+      "version": 1,
+      "digest": "57ca28bf413ed01301bd249343a966af8575f6d3f396f2191638e5fd90bb34f8",
+      "path": "content/examples/p4/p4-symmetry-practice-ex5.json"
+    },
+    {
+      "id": "p4-turns",
+      "version": 1,
+      "digest": "7da2d6b39057a02c561289c68574e20909fcf1215ae86d71cb45ecf27d988b0b",
+      "path": "content/lessons/p4-turns.json"
+    },
+    {
+      "id": "p4-turns-ex1",
+      "version": 1,
+      "digest": "4580c5337741b0f2787cc2b5957f9b4b28e2c0ee86b504aedee09c9508161c68",
+      "path": "content/examples/p4/p4-turns-ex1.json"
+    },
+    {
+      "id": "p4-turns-ex2",
+      "version": 1,
+      "digest": "1b43a65cd453cfb851bbd828e40d71de15f5b8c8ba5014f790ada80b92099432",
+      "path": "content/examples/p4/p4-turns-ex2.json"
+    },
+    {
+      "id": "p4-turns-ex3",
+      "version": 1,
+      "digest": "c8000d5d2cea73b1b07707ce66dacc6a14f70d0cbba571f0786c32d6633316f1",
+      "path": "content/examples/p4/p4-turns-ex3.json"
+    },
+    {
+      "id": "p4-turns-ex4",
+      "version": 1,
+      "digest": "e75997e24d18689f22926eeb508af05c8f9a76e5c3d469dcaa4c0d54c2a87762",
+      "path": "content/examples/p4/p4-turns-ex4.json"
+    },
+    {
+      "id": "p4-turns-ex5",
+      "version": 1,
+      "digest": "3d69951db593de3839b2388845a31279b4da01a4f4778ff79fb6b89e9c6b8ff2",
+      "path": "content/examples/p4/p4-turns-ex5.json"
+    }
+  ]
+}

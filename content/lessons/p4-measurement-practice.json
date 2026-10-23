@@ -1,0 +1,208 @@
+{
+  "schemaVersion": 3,
+  "locale": "en-SG",
+  "adapterVersion": 1,
+  "library": {
+    "level": "P4",
+    "skillId": "p4-measurement-practice",
+    "tags": [
+      "P4",
+      "area",
+      "perimeter",
+      "general revision"
+    ]
+  },
+  "curriculum": {
+    "objectiveId": "candidate.p4.measurement.practice",
+    "sources": [
+      "https://practicle.sg/primary-4-math/",
+      "https://sg.ixl.com/standards/maths/primary-4"
+    ],
+    "evidenceStatus": "candidate"
+  },
+  "authors": [
+    "codex-p4-measurement"
+  ],
+  "provenance": {
+    "kind": "authored"
+  },
+  "lesson": {
+    "id": "p4-measurement-practice",
+    "version": 1,
+    "topic": "area-perimeter",
+    "title": "A fresh shape question",
+    "subtitle": "P4 measurement revision",
+    "level": "P4 candidate",
+    "minutes": 4,
+    "objective": "Choose and calculate area or perimeter of a measured shape.",
+    "story": "A 11 cm by 10 cm rectangle has a 3 cm by 2 cm corner removed. Find its perimeter in cm.",
+    "reviewStatus": "draft",
+    "specification": {
+      "task": "practice",
+      "width": 11,
+      "height": 10,
+      "cutWidth": 3,
+      "cutHeight": 2,
+      "corner": "bottom-right",
+      "unknownSide": "width",
+      "knownMeasure": "area",
+      "requestedMeasure": "perimeter",
+      "unit": "cm"
+    },
+    "steps": [
+      {
+        "id": "final",
+        "goal": "final",
+        "title": "Try a fresh measured shape",
+        "prompt": "A 11 cm by 10 cm rectangle has a 3 cm by 2 cm corner removed. Find its perimeter in cm.",
+        "kind": "exact",
+        "answer": "42",
+        "hints": [
+          "Read the requested measure and unit.",
+          "Area covers squares; perimeter follows the outside edge.",
+          "This corner's new edges replace equal outer edge lengths.",
+          "The perimeter is 42 cm."
+        ]
+      },
+      {
+        "id": "reflection",
+        "goal": "reflection",
+        "title": "Explain the measure",
+        "prompt": "Which explanation matches the shape?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "r7",
+            "label": "An inside split line also counts as part of the perimeter."
+          },
+          {
+            "id": "r3",
+            "label": "Area counts square units; perimeter is only the outside edge."
+          },
+          {
+            "id": "r8",
+            "label": "Area and perimeter are both measured in the same units."
+          }
+        ],
+        "answer": "r3",
+        "hints": [
+          "Look at what is being measured.",
+          "Area covers a surface; perimeter goes around its boundary.",
+          "An inside teaching split is not an outside edge.",
+          "Choose the explanation that separates square units from boundary length."
+        ]
+      }
+    ]
+  },
+  "fixtures": [
+    {
+      "stepId": "final",
+      "accepted": [
+        "42"
+      ],
+      "rejected": [
+        "9999",
+        "9998"
+      ]
+    },
+    {
+      "stepId": "reflection",
+      "accepted": [
+        "r3"
+      ],
+      "rejected": [
+        "r7",
+        "r8"
+      ]
+    }
+  ],
+  "interpretation": {
+    "unknown": "requested",
+    "sourceSpans": [
+      {
+        "start": 0,
+        "end": 87,
+        "text": "A 11 cm by 10 cm rectangle has a 3 cm by 2 cm corner removed. Find its perimeter in cm."
+      }
+    ],
+    "assumptions": [
+      "The cutout is a rectangle at one outer corner."
+    ],
+    "ambiguities": [],
+    "entities": [
+      "outer-width",
+      "outer-height",
+      "cut-width",
+      "cut-height",
+      "factor",
+      "half-boundary",
+      "requested"
+    ],
+    "quantities": [
+      {
+        "entity": "outer-width",
+        "value": 11,
+        "unit": "cm",
+        "state": "given"
+      },
+      {
+        "entity": "outer-height",
+        "value": 10,
+        "unit": "cm",
+        "state": "given"
+      },
+      {
+        "entity": "cut-width",
+        "value": 3,
+        "unit": "cm",
+        "state": "given"
+      },
+      {
+        "entity": "cut-height",
+        "value": 2,
+        "unit": "cm",
+        "state": "given"
+      },
+      {
+        "entity": "factor",
+        "value": 2,
+        "unit": "times",
+        "state": "given"
+      },
+      {
+        "entity": "half-boundary",
+        "value": 21,
+        "unit": "cm",
+        "state": "derived"
+      },
+      {
+        "entity": "requested",
+        "value": 42,
+        "unit": "cm",
+        "state": "derived"
+      }
+    ],
+    "relationships": [
+      {
+        "kind": "operation",
+        "id": "half-boundary",
+        "operation": "add",
+        "inputs": [
+          "outer-width",
+          "outer-height"
+        ],
+        "output": "half-boundary"
+      },
+      {
+        "kind": "operation",
+        "id": "requested",
+        "operation": "multiply",
+        "inputs": [
+          "half-boundary",
+          "factor"
+        ],
+        "output": "requested"
+      }
+    ]
+  }
+}

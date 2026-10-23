@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 3,
+  "locale": "en-SG",
+  "adapterVersion": 1,
+  "library": {
+    "level": "P4",
+    "skillId": "p4-fraction-add-subtract",
+    "tags": [
+      "P4",
+      "fractions",
+      "general revision",
+      "example"
+    ]
+  },
+  "curriculum": {
+    "objectiveId": "candidate.p4.fractions.add-subtract",
+    "sources": [
+      "https://practicle.sg/primary-4-math/",
+      "https://sg.ixl.com/standards/maths/primary-4"
+    ],
+    "evidenceStatus": "candidate"
+  },
+  "authors": [
+    "Codex"
+  ],
+  "provenance": {
+    "kind": "generated",
+    "generatorVersion": "p4-examples-v1",
+    "seed": 50490445
+  },
+  "lesson": {
+    "id": "p4-fraction-add-subtract-ex4",
+    "version": 1,
+    "topic": "fraction-calculations",
+    "title": "Combine equal fraction parts",
+    "subtitle": "P4 fraction revision",
+    "level": "P4 candidate",
+    "minutes": 7,
+    "objective": "Add or subtract fractions with related denominators.",
+    "story": "Use the same whole to subtract 1/6 from 11/12.",
+    "reviewStatus": "draft",
+    "specification": {
+      "task": "add-subtract",
+      "whole": 2,
+      "numerator": 11,
+      "denominator": 12,
+      "otherNumerator": 1,
+      "otherDenominator": 6,
+      "operation": "subtract",
+      "quantity": 28,
+      "unit": "counters"
+    },
+    "steps": [
+      {
+        "id": "equal-units",
+        "goal": "equal-units",
+        "title": "Match equal parts",
+        "prompt": "What must match before adding or subtracting fractions?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "u5",
+            "label": "Use one common partition of the same whole.",
+            "meaning": "common-partition"
+          },
+          {
+            "id": "u9",
+            "label": "Count large pieces as if they were small pieces.",
+            "meaning": "mixed-parts"
+          },
+          {
+            "id": "u2",
+            "label": "Only the numerators need to be the same.",
+            "meaning": "numerators"
+          }
+        ],
+        "answer": "u5",
+        "hints": [
+          "Look at the size of one part.",
+          "Parts of size 1/12 and 1/6 are different sizes.",
+          "Rename one fraction using equal-size parts.",
+          "Choose one common partition of the same whole."
+        ]
+      },
+      {
+        "id": "calculate",
+        "goal": "calculate",
+        "title": "Calculate the fraction",
+        "prompt": "Work out 11/12 − 1/6.",
+        "kind": "exact",
+        "answer": "3/4",
+        "hints": [
+          "Make equal-size parts first.",
+          "Use a common partition of 12 parts.",
+          "Count the parts in the common partition.",
+          "The result is 3/4."
+        ]
+      },
+      {
+        "id": "simplest",
+        "goal": "simplest",
+        "title": "Write the simplest form",
+        "prompt": "Write the result of 11/12 − 1/6 in simplest form.",
+        "kind": "exact",
+        "answer": "3/4",
+        "hints": [
+          "Compare the numerator and denominator.",
+          "Can both be divided by the same whole number?",
+          "Divide both by their greatest common factor.",
+          "The simplest form is 3/4."
+        ]
+      },
+      {
+        "id": "reflection",
+        "goal": "reflection",
+        "title": "Explain the equal parts",
+        "prompt": "What makes the fraction calculation fair?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "r3",
+            "label": "The wholes match and each part has the same size."
+          },
+          {
+            "id": "r6",
+            "label": "The denominator says how many objects are left."
+          },
+          {
+            "id": "r8",
+            "label": "Parts can be counted together even if the wholes differ."
+          }
+        ],
+        "answer": "r3",
+        "hints": [
+          "Look at the whole first.",
+          "Equal fractions need equal-size wholes.",
+          "Count parts that have the same size.",
+          "Choose: The wholes match and each part has the same size."
+        ]
+      }
+    ]
+  },
+  "fixtures": [
+    {
+      "stepId": "equal-units",
+      "accepted": [
+        "u5"
+      ],
+      "rejected": [
+        "u9",
+        "u2"
+      ]
+    },
+    {
+      "stepId": "calculate",
+      "accepted": [
+        "3/4"
+      ],
+      "rejected": [
+        "7/4"
+      ]
+    },
+    {
+      "stepId": "simplest",
+      "accepted": [
+        "3/4"
+      ],
+      "rejected": [
+        "7/4"
+      ]
+    },
+    {
+      "stepId": "reflection",
+      "accepted": [
+        "r3"
+      ],
+      "rejected": [
+        "r6",
+        "r8"
+      ]
+    }
+  ]
+}

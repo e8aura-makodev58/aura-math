@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 1,
+  "locale": "en-SG",
+  "adapterVersion": 1,
+  "curriculum": {
+    "objectiveId": "P2.additive-comparison",
+    "sources": ["https://sg.ixl.com/standards/maths/primary-2"],
+    "evidenceStatus": "candidate"
+  },
+  "authors": ["Codex"],
+  "provenance": {
+    "kind": "authored"
+  },
+  "lesson": {
+    "id": "ribbon-collection",
+    "version": 1,
+    "topic": "comparison",
+    "title": "A little more ribbon",
+    "subtitle": "Build a comparison",
+    "level": "P2 candidate",
+    "minutes": 5,
+    "story": "Zac has 11 ribbons. Maya has 7 more ribbons than Zac. How many ribbons does Maya have?",
+    "objective": "Connect two quantities and the difference between them.",
+    "reviewStatus": "draft",
+    "specification": {
+      "largerName": "Maya",
+      "smallerName": "Zac",
+      "larger": 18,
+      "smaller": 11,
+      "unknown": "larger",
+      "unit": "ribbons"
+    },
+    "steps": [
+      {
+        "id": "relation",
+        "title": "Connect the quantities",
+        "prompt": "Which relationship fits the story?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "larger-is-smaller-plus-difference",
+            "label": "Maya’s amount = Zac’s amount + the difference",
+            "meaning": "larger-is-smaller-plus-difference"
+          },
+          {
+            "id": "smaller-is-larger-plus-difference",
+            "label": "Zac’s amount = Maya’s amount + the difference",
+            "meaning": "smaller-is-larger-plus-difference"
+          }
+        ],
+        "answer": "larger-is-smaller-plus-difference",
+        "hints": [
+          "Who has more ribbons?",
+          "Maya has the larger amount.",
+          "The larger amount contains the smaller amount and an extra part.",
+          "Choose: Maya’s amount = Zac’s amount + the difference."
+        ],
+        "goal": "relation"
+      },
+      {
+        "id": "calculation",
+        "title": "Find the missing amount",
+        "prompt": "How many ribbons does Maya have?",
+        "kind": "number",
+        "answer": 18,
+        "hints": [
+          "Look for the missing part in the comparison.",
+          "Join the smaller amount and the extra part.",
+          "Work out 11 + 7.",
+          "11 + 7 = 18. Enter 18."
+        ],
+        "goal": "calculation"
+      },
+      {
+        "id": "reflection",
+        "title": "Explain your thinking",
+        "prompt": "Why does your answer fit?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "reason",
+            "label": "The difference is 7: 11 + 7 = 18."
+          },
+          {
+            "id": "distractor",
+            "label": "The two amounts must both be 18."
+          }
+        ],
+        "answer": "reason",
+        "hints": [
+          "Think about what stayed the same.",
+          "Use the relationship you just checked.",
+          "Read this explanation carefully: The difference is 7: 11 + 7 = 18.",
+          "Choose: The difference is 7: 11 + 7 = 18."
+        ],
+        "goal": "reflection"
+      }
+    ]
+  },
+  "interpretation": {
+    "entities": ["Maya", "Zac"],
+    "quantities": [
+      {
+        "entity": "Maya",
+        "value": 18,
+        "unit": "ribbons",
+        "state": "initial"
+      },
+      {
+        "entity": "Zac",
+        "value": 11,
+        "unit": "ribbons",
+        "state": "initial"
+      }
+    ],
+    "relationships": [
+      {
+        "kind": "additive-comparison",
+        "larger": "Maya",
+        "smaller": "Zac",
+        "difference": 7
+      }
+    ],
+    "unknown": "larger",
+    "sourceSpans": [
+      {
+        "start": 0,
+        "end": 86,
+        "text": "Zac has 11 ribbons. Maya has 7 more ribbons than Zac. How many ribbons does Maya have?"
+      }
+    ],
+    "assumptions": [],
+    "ambiguities": []
+  }
+}

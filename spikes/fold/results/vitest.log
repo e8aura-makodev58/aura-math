@@ -1,0 +1,30 @@
+
+ RUN  v3.2.7 /home/makodev58/aura-math/spikes/fold
+
+ ✓ tests/model.spike.test.ts (7 tests) 361937ms
+   ✓ picture vs judged answer (item 3) > every cube net, every fixed orientation, every floor face  452ms
+   ✓ collision pool (R-92) > pool size and agreement of three methods  451ms
+   ✓ coincident faces are distinguishable (R-92) > both letters legible and both faces visibly separate wherever the stack can be seen  12315ms
+   ✓ SVG text round-trip > painter picture from parsed SVG equals the picture from the renderer data  1615ms
+   ✓ cuboid, triangular prism and square pyramid > painter vs z-buffer for end states, per-hinge tween and fold-all tween (all roots)  346955ms
+⎯⎯⎯⎯⎯⎯ Unhandled Errors ⎯⎯⎯⎯⎯⎯
+
+Vitest caught 1 unhandled error during the test run.
+This might cause false positive tests. Resolve unhandled errors to make sure your tests are not affected.
+
+⎯⎯⎯⎯⎯⎯ Unhandled Error ⎯⎯⎯⎯⎯⎯⎯
+Error: [vitest-worker]: Timeout calling "onTaskUpdate"
+ ❯ Object.onTimeoutError ../../node_modules/vitest/dist/chunks/rpc.-pEldfrD.js:53:10
+ ❯ Timeout._onTimeout ../../node_modules/vitest/dist/chunks/index.B521nVV-.js:59:62
+ ❯ listOnTimeout ../../node:internal/timers:585:17
+ ❯ processTimers ../../node:internal/timers:521:7
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+
+
+ Test Files  1 passed (1)
+      Tests  7 passed (7)
+     Errors  1 error
+   Start at  02:32:38
+   Duration  362.86s (transform 429ms, setup 0ms, collect 442ms, tests 361.94s, environment 0ms, prepare 153ms)
+

@@ -1,0 +1,198 @@
+{
+  "schemaVersion": 2,
+  "locale": "en-SG",
+  "adapterVersion": 1,
+  "library": {
+    "level": "P2",
+    "skillId": "compare-categories",
+    "tags": [
+      "picture-graphs",
+      "data"
+    ]
+  },
+  "curriculum": {
+    "objectiveId": "candidate.p2.picture-graphs.compare-categories",
+    "sources": [
+      "https://practicle.sg/primary-2-math/",
+      "https://sg.ixl.com/standards/maths/primary-2"
+    ],
+    "evidenceStatus": "candidate"
+  },
+  "authors": [
+    "codex-topics-visual"
+  ],
+  "provenance": {
+    "kind": "authored"
+  },
+  "lesson": {
+    "id": "compare-categories",
+    "version": 1,
+    "topic": "picture-graphs",
+    "title": "Compare two picture-graph rows",
+    "subtitle": "Full symbols and a shared key",
+    "level": "P2 candidate",
+    "minutes": 7,
+    "story": "This picture graph shows items in pretend collections. Each full symbol represents 5 items. These are example data, not a class survey.",
+    "objective": "Compare categories using a shared picture-graph scale, including ties.",
+    "specification": {
+      "task": "compare",
+      "key": 5,
+      "categories": [
+        {
+          "id": "apples",
+          "label": "Apples",
+          "count": 4
+        },
+        {
+          "id": "pears",
+          "label": "Pears",
+          "count": 4
+        },
+        {
+          "id": "plums",
+          "label": "Plums",
+          "count": 0
+        },
+        {
+          "id": "oranges",
+          "label": "Oranges",
+          "count": 3
+        }
+      ],
+      "target": "apples",
+      "other": "pears"
+    },
+    "steps": [
+      {
+        "id": "key",
+        "goal": "key",
+        "title": "Read the key",
+        "prompt": "How many items does one full symbol represent?",
+        "kind": "number",
+        "answer": 5,
+        "hints": [
+          "Find the key above the rows.",
+          "Look beside the single symbol in the key.",
+          "The key applies to every full symbol.",
+          "The key says one full symbol represents 5 items."
+        ]
+      },
+      {
+        "id": "compare",
+        "goal": "compare",
+        "title": "Compare two categories",
+        "prompt": "Which row represents more items: Apples or Pears?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "g7",
+            "label": "Apples",
+            "meaning": "relation:target"
+          },
+          {
+            "id": "g4",
+            "label": "Both the same",
+            "meaning": "relation:same"
+          },
+          {
+            "id": "g9",
+            "label": "Pears",
+            "meaning": "relation:other"
+          }
+        ],
+        "answer": "g4",
+        "hints": [
+          "Compare the named rows only.",
+          "Both rows use the same key.",
+          "More full symbols represent more items; equal counts give a tie.",
+          "Both rows use the same key: choose Both the same."
+        ]
+      },
+      {
+        "id": "difference",
+        "goal": "difference",
+        "title": "Compare quantities",
+        "prompt": "How many more items does the larger of Apples and Pears represent than the smaller?",
+        "kind": "number",
+        "answer": 0,
+        "hints": [
+          "Compare the two named rows.",
+          "Find the difference in full-symbol counts.",
+          "Every extra symbol represents 5 items.",
+          "Using the full symbols and the key gives 0 items."
+        ]
+      },
+      {
+        "id": "reflection",
+        "goal": "reflection",
+        "title": "Explain your thinking",
+        "prompt": "Why must we use the key?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "q6",
+            "label": "The key tells us how many items each symbol stands for."
+          },
+          {
+            "id": "q3",
+            "label": "Each symbol stands for just one item, whatever the key says."
+          },
+          {
+            "id": "q9",
+            "label": "A half symbol can always be counted as one whole item too."
+          }
+        ],
+        "answer": "q6",
+        "hints": [
+          "Think about one full symbol.",
+          "One symbol can represent more than one item.",
+          "Every row uses the same key.",
+          "The key tells us how many items each symbol stands for."
+        ]
+      }
+    ],
+    "reviewStatus": "draft"
+  },
+  "fixtures": [
+    {
+      "stepId": "key",
+      "accepted": [
+        5
+      ],
+      "rejected": [
+        6,
+        7
+      ]
+    },
+    {
+      "stepId": "compare",
+      "accepted": [
+        "g4"
+      ],
+      "rejected": [
+        "g7",
+        "g9"
+      ]
+    },
+    {
+      "stepId": "difference",
+      "accepted": [
+        0
+      ],
+      "rejected": [
+        1,
+        2
+      ]
+    },
+    {
+      "stepId": "reflection",
+      "accepted": [
+        "q6"
+      ],
+      "rejected": [
+        "q3",
+        "q9"
+      ]
+    }
+  ]
+}

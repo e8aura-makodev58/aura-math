@@ -1,0 +1,217 @@
+{
+  "schemaVersion": 2,
+  "locale": "en-SG",
+  "adapterVersion": 1,
+  "library": {
+    "level": "P2",
+    "skillId": "equal-parts",
+    "tags": [
+      "fractions",
+      "equal-parts"
+    ]
+  },
+  "curriculum": {
+    "objectiveId": "candidate.p2.fractions.equal-parts",
+    "sources": [
+      "https://practicle.sg/primary-2-math/",
+      "https://sg.ixl.com/standards/maths/primary-2"
+    ],
+    "evidenceStatus": "candidate"
+  },
+  "authors": [
+    "codex-topics-visual"
+  ],
+  "provenance": {
+    "kind": "authored"
+  },
+  "lesson": {
+    "id": "equal-parts",
+    "version": 1,
+    "topic": "fractions",
+    "title": "Which parts are equal?",
+    "subtitle": "Use equal-whole pictures",
+    "level": "P2 candidate",
+    "minutes": 7,
+    "story": "Three same-sized rectangles are divided in different ways. Study the size of each part.",
+    "objective": "Recognise equal-area parts of one whole.",
+    "specification": {
+      "task": "equal-parts",
+      "wholes": [
+        {
+          "id": "a",
+          "label": "Rectangle A",
+          "width": 120,
+          "height": 60,
+          "widths": [
+            50,
+            70
+          ],
+          "shaded": [
+            0
+          ]
+        },
+        {
+          "id": "b",
+          "label": "Rectangle B",
+          "width": 120,
+          "height": 60,
+          "widths": [
+            30,
+            30,
+            30,
+            30
+          ],
+          "shaded": [
+            0
+          ]
+        },
+        {
+          "id": "c",
+          "label": "Rectangle C",
+          "width": 120,
+          "height": 60,
+          "widths": [
+            30,
+            50,
+            40
+          ],
+          "shaded": [
+            0
+          ]
+        }
+      ]
+    },
+    "steps": [
+      {
+        "id": "partition",
+        "goal": "partition",
+        "title": "Find equal parts",
+        "prompt": "Which rectangle is divided into equal parts?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "p7",
+            "label": "Rectangle A",
+            "meaning": "partition:a"
+          },
+          {
+            "id": "p2",
+            "label": "Rectangle B",
+            "meaning": "partition:b"
+          },
+          {
+            "id": "p9",
+            "label": "Rectangle C",
+            "meaning": "partition:c"
+          }
+        ],
+        "answer": "p2",
+        "hints": [
+          "Look at how much of the whole each part covers.",
+          "Compare the widths of the parts in each rectangle.",
+          "With the same height, equal widths make equal areas.",
+          "Using the whole picture, choose Rectangle B."
+        ]
+      },
+      {
+        "id": "parts",
+        "goal": "parts",
+        "title": "Count equal parts",
+        "prompt": "How many equal parts are in that rectangle?",
+        "kind": "number",
+        "answer": 4,
+        "hints": [
+          "Look carefully at the whole picture.",
+          "Count the parts in the picture.",
+          "Separate the number of shaded parts from the number of all parts.",
+          "Count in the picture: there are 4 equal parts in the whole."
+        ]
+      },
+      {
+        "id": "shaded",
+        "goal": "shaded",
+        "title": "Count shaded parts",
+        "prompt": "How many of its equal parts are shaded?",
+        "kind": "number",
+        "answer": 1,
+        "hints": [
+          "Look carefully at the whole picture.",
+          "Count the parts in the picture.",
+          "Separate the number of shaded parts from the number of all parts.",
+          "Count in the picture: there are 1 shaded parts."
+        ]
+      },
+      {
+        "id": "reflection",
+        "goal": "reflection",
+        "title": "Explain your thinking",
+        "prompt": "What must we check before naming or comparing these fractions?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "r8",
+            "label": "Count the shaded parts, even if the parts are different sizes."
+          },
+          {
+            "id": "r3",
+            "label": "Check that the parts are equal and the wholes are the same size."
+          },
+          {
+            "id": "r6",
+            "label": "A fraction with a bigger denominator is always the bigger one."
+          }
+        ],
+        "answer": "r3",
+        "hints": [
+          "Think about what a fraction describes.",
+          "Each part must have the same area.",
+          "Comparison also needs the same-sized whole.",
+          "Check that the parts are equal and the wholes are the same size."
+        ]
+      }
+    ],
+    "reviewStatus": "draft"
+  },
+  "fixtures": [
+    {
+      "stepId": "partition",
+      "accepted": [
+        "p2"
+      ],
+      "rejected": [
+        "p7",
+        "p9"
+      ]
+    },
+    {
+      "stepId": "parts",
+      "accepted": [
+        4
+      ],
+      "rejected": [
+        5,
+        6
+      ]
+    },
+    {
+      "stepId": "shaded",
+      "accepted": [
+        1
+      ],
+      "rejected": [
+        2,
+        3
+      ]
+    },
+    {
+      "stepId": "reflection",
+      "accepted": [
+        "r3"
+      ],
+      "rejected": [
+        "r8",
+        "r6"
+      ]
+    }
+  ]
+}

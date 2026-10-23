@@ -1,0 +1,204 @@
+{
+  "schemaVersion": 3,
+  "locale": "en-SG",
+  "adapterVersion": 1,
+  "library": {
+    "level": "P4",
+    "skillId": "p4-turns",
+    "tags": [
+      "P4",
+      "angle-measure",
+      "general revision",
+      "example"
+    ]
+  },
+  "curriculum": {
+    "objectiveId": "candidate.p4.angle-measure.turns",
+    "sources": [
+      "https://practicle.sg/primary-4-math/",
+      "https://sg.ixl.com/standards/maths/primary-4"
+    ],
+    "evidenceStatus": "candidate"
+  },
+  "authors": [
+    "Codex"
+  ],
+  "provenance": {
+    "kind": "generated",
+    "generatorVersion": "p4-examples-v1",
+    "seed": 3656550197
+  },
+  "lesson": {
+    "id": "p4-turns-ex1",
+    "version": 1,
+    "topic": "angle-measure",
+    "title": "Quarter, half and three-quarter turns",
+    "subtitle": "P4 angle revision",
+    "level": "P4 candidate",
+    "minutes": 7,
+    "objective": "Connect quarter, half and three-quarter turns to degrees and directions.",
+    "story": "A robot faces south and turns anticlockwise.",
+    "reviewStatus": "draft",
+    "specification": {
+      "task": "turns",
+      "degrees": 90,
+      "flip": false,
+      "from": "S",
+      "direction": "anticlockwise",
+      "quarters": 1
+    },
+    "steps": [
+      {
+        "id": "fraction",
+        "goal": "fraction",
+        "title": "What fraction of a turn?",
+        "prompt": "The robot turns anticlockwise, as the curved arrow shows. What fraction of a full turn is this?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "k42",
+            "label": "3/4 of a turn",
+            "meaning": "three-quarter"
+          },
+          {
+            "id": "k28",
+            "label": "1/4 of a turn",
+            "meaning": "quarter"
+          },
+          {
+            "id": "k35",
+            "label": "1/2 of a turn",
+            "meaning": "half"
+          }
+        ],
+        "answer": "k28",
+        "hints": [
+          "A full turn goes all the way round the circle and back to the start.",
+          "Look at how much of the circle the curved arrow covers.",
+          "A quarter of the circle is one compass step, like north to east.",
+          "Choose 1/4 of a turn."
+        ]
+      },
+      {
+        "id": "degrees",
+        "goal": "degrees",
+        "title": "How many degrees?",
+        "prompt": "A full turn is 360°. How many degrees is this turn? Enter the number.",
+        "kind": "exact",
+        "answer": "90",
+        "hints": [
+          "A full turn is 360 degrees, and a quarter turn is one quarter of that.",
+          "Work out 360 ÷ 4 for one quarter turn.",
+          "One quarter turn is 90°. This turn is 1 quarter turn.",
+          "1 × 90 = 90. Enter 90."
+        ]
+      },
+      {
+        "id": "facing",
+        "goal": "facing",
+        "title": "Where is it facing now?",
+        "prompt": "Which direction is the robot facing after the turn?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "k42",
+            "label": "South",
+            "meaning": "heading:S"
+          },
+          {
+            "id": "k49",
+            "label": "West",
+            "meaning": "heading:W"
+          },
+          {
+            "id": "k28",
+            "label": "North",
+            "meaning": "heading:N"
+          },
+          {
+            "id": "k35",
+            "label": "East",
+            "meaning": "heading:E"
+          }
+        ],
+        "answer": "k35",
+        "hints": [
+          "Start from the direction the robot faces now and follow the arrow.",
+          "Turn anticlockwise one quarter turn at a time: north, east, south, west go clockwise.",
+          "1 quarter turn anticlockwise from south.",
+          "The robot faces east."
+        ]
+      },
+      {
+        "id": "reflection",
+        "goal": "reflection",
+        "title": "Explain your thinking",
+        "prompt": "How can you find the degrees in a part of a turn?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "k42",
+            "label": "Count every compass point that you pass as 45°, so a half turn is only 90°."
+          },
+          {
+            "id": "k28",
+            "label": "Take that fraction of 360°: a quarter turn is 90° and a half turn is 180°."
+          },
+          {
+            "id": "k35",
+            "label": "Every part-turn is 90°, whether it is a quarter, a half or a three-quarter turn."
+          }
+        ],
+        "answer": "k28",
+        "hints": [
+          "Start from the whole turn.",
+          "A full turn is 360 degrees.",
+          "Take a fraction of 360 for each part-turn.",
+          "Choose the explanation that starts from 360 degrees."
+        ]
+      }
+    ]
+  },
+  "fixtures": [
+    {
+      "stepId": "fraction",
+      "accepted": [
+        "k28"
+      ],
+      "rejected": [
+        "k42",
+        "k35"
+      ]
+    },
+    {
+      "stepId": "degrees",
+      "accepted": [
+        "90"
+      ],
+      "rejected": [
+        "91",
+        "100"
+      ]
+    },
+    {
+      "stepId": "facing",
+      "accepted": [
+        "k35"
+      ],
+      "rejected": [
+        "k42",
+        "k49"
+      ]
+    },
+    {
+      "stepId": "reflection",
+      "accepted": [
+        "k28"
+      ],
+      "rejected": [
+        "k42",
+        "k35"
+      ]
+    }
+  ]
+}

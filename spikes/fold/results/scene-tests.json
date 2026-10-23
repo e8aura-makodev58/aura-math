@@ -1,0 +1,22 @@
+{
+ "cubeAndCollision": {
+  "configs": 65928,
+  "per": {
+   "cube": 25728,
+   "collide1": 40200
+  },
+  "worstCornerErr": 2.6645352591003757e-15
+ },
+ "eighths": {
+  "worst": 8.881784197001252e-16
+ },
+ "coincidence": {
+  "n": 100,
+  "ok": 100
+ },
+ "solids": {
+  "cuboid": 1.7763568394002505e-15,
+  "triangular-prism": 3.552713678800501e-15,
+  "square-pyramid": 1.7763568394002505e-15
+ }
+}

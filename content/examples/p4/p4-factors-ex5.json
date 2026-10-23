@@ -1,0 +1,204 @@
+{
+  "schemaVersion": 3,
+  "locale": "en-SG",
+  "adapterVersion": 1,
+  "library": {
+    "level": "P4",
+    "skillId": "p4-factors",
+    "tags": [
+      "P4",
+      "whole-numbers",
+      "general revision",
+      "example"
+    ]
+  },
+  "curriculum": {
+    "objectiveId": "candidate.p4.whole-numbers.factors",
+    "sources": [
+      "https://practicle.sg/primary-4-math/",
+      "https://sg.ixl.com/standards/maths/primary-4"
+    ],
+    "evidenceStatus": "candidate"
+  },
+  "authors": [
+    "Codex"
+  ],
+  "provenance": {
+    "kind": "generated",
+    "generatorVersion": "p4-examples-v1",
+    "seed": 1683296237
+  },
+  "lesson": {
+    "id": "p4-factors-ex5",
+    "version": 1,
+    "topic": "whole-numbers",
+    "title": "Find all the factors",
+    "subtitle": "P4 whole-number revision",
+    "level": "P4 candidate",
+    "minutes": 7,
+    "objective": "Find factor pairs and count all the factors of a number.",
+    "story": "Look at 16 counters in equal rows and find its factors.",
+    "reviewStatus": "draft",
+    "specification": {
+      "task": "factors",
+      "n": 16,
+      "m": 0,
+      "place": "ten-thousands",
+      "roundTo": 100,
+      "unit": "stickers"
+    },
+    "steps": [
+      {
+        "id": "pair",
+        "goal": "pair",
+        "title": "Find a factor pair",
+        "prompt": "Which pair of numbers multiplies to make 16?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "k28",
+            "label": "2 and 8",
+            "meaning": "product-matches"
+          },
+          {
+            "id": "k35",
+            "label": "2 and 9",
+            "meaning": "wrong-product"
+          },
+          {
+            "id": "k42",
+            "label": "2 and 14",
+            "meaning": "sum-matches"
+          }
+        ],
+        "answer": "k28",
+        "hints": [
+          "A factor pair multiplies to make the number.",
+          "Check each pair: does the product equal 16?",
+          "2 × 8 = 16.",
+          "Choose 2 and 8."
+        ]
+      },
+      {
+        "id": "count",
+        "goal": "count",
+        "title": "Count the factors",
+        "prompt": "How many factors does 16 have, counting 1 and 16?",
+        "kind": "exact",
+        "answer": "5",
+        "hints": [
+          "List the factor pairs in order, starting with 1.",
+          "Try 1, 2, 3, 4 and so on, and keep the numbers that divide 16 exactly.",
+          "The factors are 1, 2, 4, 8 and 16.",
+          "There are 5 factors. Enter 5."
+        ]
+      },
+      {
+        "id": "not-factor",
+        "goal": "not-factor",
+        "title": "Spot the odd one out",
+        "prompt": "Three of these numbers are factors of 16. Which one is not?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "k13",
+            "label": "2",
+            "meaning": "factor"
+          },
+          {
+            "id": "k20",
+            "label": "4",
+            "meaning": "factor"
+          },
+          {
+            "id": "k27",
+            "label": "8",
+            "meaning": "factor"
+          },
+          {
+            "id": "k34",
+            "label": "9",
+            "meaning": "not-factor"
+          }
+        ],
+        "answer": "k34",
+        "hints": [
+          "A factor divides the number exactly, with nothing left over.",
+          "Divide 16 by each number and look for a remainder.",
+          "16 ÷ 9 leaves a remainder.",
+          "Choose 9."
+        ]
+      },
+      {
+        "id": "reflection",
+        "goal": "reflection",
+        "title": "Explain your thinking",
+        "prompt": "What makes a number a factor of another number?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "k68",
+            "label": "It divides the number exactly, with nothing left over."
+          },
+          {
+            "id": "k75",
+            "label": "It is smaller than the number, so it has to fit into it."
+          },
+          {
+            "id": "k82",
+            "label": "It always ends in the same digit as the number it divides."
+          }
+        ],
+        "answer": "k68",
+        "hints": [
+          "Think about sharing equally with no leftovers.",
+          "A factor pair multiplies to make the number.",
+          "Dividing by a factor leaves nothing over.",
+          "Choose the explanation about dividing exactly."
+        ]
+      }
+    ]
+  },
+  "fixtures": [
+    {
+      "stepId": "pair",
+      "accepted": [
+        "k28"
+      ],
+      "rejected": [
+        "k35",
+        "k42"
+      ]
+    },
+    {
+      "stepId": "count",
+      "accepted": [
+        "5"
+      ],
+      "rejected": [
+        "6",
+        "15"
+      ]
+    },
+    {
+      "stepId": "not-factor",
+      "accepted": [
+        "k34"
+      ],
+      "rejected": [
+        "k13",
+        "k20"
+      ]
+    },
+    {
+      "stepId": "reflection",
+      "accepted": [
+        "k68"
+      ],
+      "rejected": [
+        "k75",
+        "k82"
+      ]
+    }
+  ]
+}

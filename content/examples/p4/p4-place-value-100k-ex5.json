@@ -1,0 +1,199 @@
+{
+  "schemaVersion": 3,
+  "locale": "en-SG",
+  "adapterVersion": 1,
+  "library": {
+    "level": "P4",
+    "skillId": "p4-place-value-100k",
+    "tags": [
+      "P4",
+      "whole-numbers",
+      "general revision",
+      "example"
+    ]
+  },
+  "curriculum": {
+    "objectiveId": "candidate.p4.whole-numbers.place-value",
+    "sources": [
+      "https://practicle.sg/primary-4-math/",
+      "https://sg.ixl.com/standards/maths/primary-4"
+    ],
+    "evidenceStatus": "candidate"
+  },
+  "authors": [
+    "Codex"
+  ],
+  "provenance": {
+    "kind": "generated",
+    "generatorVersion": "p4-examples-v1",
+    "seed": 1039023663
+  },
+  "lesson": {
+    "id": "p4-place-value-100k-ex5",
+    "version": 1,
+    "topic": "whole-numbers",
+    "title": "Read numbers to 100 000",
+    "subtitle": "P4 whole-number revision",
+    "level": "P4 candidate",
+    "minutes": 7,
+    "objective": "Read the place and value of digits in a five-digit number.",
+    "story": "Read 86 872 and 86 827 in the place chart.",
+    "reviewStatus": "draft",
+    "specification": {
+      "task": "place-value",
+      "n": 86872,
+      "m": 86827,
+      "place": "ones",
+      "roundTo": 100,
+      "unit": "stickers"
+    },
+    "steps": [
+      {
+        "id": "place",
+        "goal": "place",
+        "title": "Name the place",
+        "prompt": "In 86 872, which place does the digit 2 hold?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "k50",
+            "label": "The ten thousands place",
+            "meaning": "ten-thousands"
+          },
+          {
+            "id": "k57",
+            "label": "The hundreds place",
+            "meaning": "hundreds"
+          },
+          {
+            "id": "k43",
+            "label": "The ones place",
+            "meaning": "ones"
+          }
+        ],
+        "answer": "k43",
+        "hints": [
+          "Read the place chart from the right: ones, tens, hundreds, thousands, ten thousands.",
+          "Find the column that holds the digit 2.",
+          "The digit 2 sits in the ones column.",
+          "Choose the ones place."
+        ]
+      },
+      {
+        "id": "digit-value",
+        "goal": "digit-value",
+        "title": "Find the value",
+        "prompt": "What is the value of the digit 2 in 86 872?",
+        "kind": "exact",
+        "answer": "2",
+        "hints": [
+          "A digit's value depends on the place it holds.",
+          "Count how many ones the digit stands for.",
+          "2 ones is 2 × 1.",
+          "2 × 1 = 2. Enter 2."
+        ]
+      },
+      {
+        "id": "compare",
+        "goal": "compare",
+        "title": "Compare two numbers",
+        "prompt": "Which number is greater: 86 872 or 86 827?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "k13",
+            "label": "86 872",
+            "meaning": "left"
+          },
+          {
+            "id": "k20",
+            "label": "86 827",
+            "meaning": "right"
+          },
+          {
+            "id": "k27",
+            "label": "Both are equal",
+            "meaning": "same"
+          }
+        ],
+        "answer": "k13",
+        "hints": [
+          "Compare the digits starting from the greatest place.",
+          "Look at the ten thousands first, then the thousands, then the hundreds.",
+          "Stop at the first place where the digits differ. The larger digit wins.",
+          "Choose 86 872."
+        ]
+      },
+      {
+        "id": "reflection",
+        "goal": "reflection",
+        "title": "Explain your thinking",
+        "prompt": "Why does the same digit stand for different values?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "k37",
+            "label": "The value of a digit is always just the digit itself, wherever it is."
+          },
+          {
+            "id": "k23",
+            "label": "A digit's value depends on its place; each place is ten times the next."
+          },
+          {
+            "id": "k30",
+            "label": "The digit changes its shape when it moves to a different place in the number."
+          }
+        ],
+        "answer": "k23",
+        "hints": [
+          "Think about the place chart.",
+          "Compare the value of 4 in the tens place with 4 in the hundreds place.",
+          "Each place is worth ten times the place to its right.",
+          "Choose the explanation about places being ten times each other."
+        ]
+      }
+    ]
+  },
+  "fixtures": [
+    {
+      "stepId": "place",
+      "accepted": [
+        "k43"
+      ],
+      "rejected": [
+        "k50",
+        "k57"
+      ]
+    },
+    {
+      "stepId": "digit-value",
+      "accepted": [
+        "2"
+      ],
+      "rejected": [
+        "3",
+        "12"
+      ]
+    },
+    {
+      "stepId": "compare",
+      "accepted": [
+        "k13"
+      ],
+      "rejected": [
+        "k20",
+        "k27"
+      ]
+    },
+    {
+      "stepId": "reflection",
+      "accepted": [
+        "k23"
+      ],
+      "rejected": [
+        "k37",
+        "k30"
+      ]
+    }
+  ]
+}

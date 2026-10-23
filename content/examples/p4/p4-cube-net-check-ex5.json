@@ -1,0 +1,209 @@
+{
+  "schemaVersion": 3,
+  "locale": "en-SG",
+  "adapterVersion": 1,
+  "library": {
+    "level": "P4",
+    "skillId": "p4-cube-net-check",
+    "tags": [
+      "P4",
+      "nets",
+      "general revision",
+      "level-unconfirmed",
+      "example"
+    ]
+  },
+  "curriculum": {
+    "objectiveId": "candidate.p4.nets.check",
+    "sources": [
+      "https://practicle.sg/primary-4-math/",
+      "https://www.thelearninglab.com.sg/blog/tll-shares/new-changes-to-moe-primary-maths-syllabus"
+    ],
+    "evidenceStatus": "candidate"
+  },
+  "authors": [
+    "Codex"
+  ],
+  "provenance": {
+    "kind": "generated",
+    "generatorVersion": "p4-examples-v1",
+    "seed": 666305627
+  },
+  "lesson": {
+    "id": "p4-cube-net-check-ex5",
+    "version": 1,
+    "topic": "nets",
+    "title": "Will it fold into a cube?",
+    "subtitle": "P4 nets revision",
+    "level": "P4 candidate",
+    "minutes": 7,
+    "objective": "Tell which flat patterns of squares fold into a cube, and say why another does not.",
+    "story": "Four flat patterns of squares are labelled A to D.",
+    "reviewStatus": "draft",
+    "specification": {
+      "task": "check",
+      "nets": [
+        "#####/#....",
+        "##../.##./..##",
+        "##./##./.##",
+        "#..#/####"
+      ],
+      "asked": 0,
+      "face": "",
+      "solid": ""
+    },
+    "steps": [
+      {
+        "id": "count",
+        "goal": "count",
+        "title": "Count the faces",
+        "prompt": "How many squares are needed to make a net of a cube?",
+        "kind": "exact",
+        "answer": "6",
+        "hints": [
+          "Picture a dice or a box shaped like a cube. Think about its flat sides.",
+          "Count the top, the bottom and the sides.",
+          "There are 4 sides, a top and a bottom.",
+          "A cube has 6 faces, so its net needs 6 squares. Enter 6."
+        ]
+      },
+      {
+        "id": "valid",
+        "goal": "valid",
+        "title": "Pick the net that folds",
+        "prompt": "Which of the four patterns folds up into a cube, with no gaps and no overlaps?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "k23",
+            "label": "Net A",
+            "meaning": "net:0"
+          },
+          {
+            "id": "k30",
+            "label": "Net B",
+            "meaning": "net:1"
+          },
+          {
+            "id": "k37",
+            "label": "Net C",
+            "meaning": "net:2"
+          },
+          {
+            "id": "k44",
+            "label": "Net D",
+            "meaning": "net:3"
+          }
+        ],
+        "answer": "k30",
+        "hints": [
+          "Imagine folding each pattern in turn. Keep one square still as the floor.",
+          "Fold the squares next to the floor up to make walls. Watch where each square lands.",
+          "Look for the pattern where every square lands on a different face. Rule out the others one at a time.",
+          "Net B folds into a cube. Choose Net B."
+        ]
+      },
+      {
+        "id": "why",
+        "goal": "why",
+        "title": "Say why another does not",
+        "prompt": "Net A does not fold into a cube. Why not?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "k32",
+            "label": "The squares need to be turned round before the net can fold.",
+            "meaning": "turn"
+          },
+          {
+            "id": "k18",
+            "label": "Two squares would land on one face, leaving another face empty.",
+            "meaning": "overlap"
+          },
+          {
+            "id": "k25",
+            "label": "There are not enough squares, so the cube would have a hole.",
+            "meaning": "missing"
+          }
+        ],
+        "answer": "k18",
+        "hints": [
+          "Count the squares in Net A.",
+          "Imagine folding Net A. Follow where the squares go.",
+          "Look for two squares that would end up on the same face of the cube.",
+          "Choose: Two squares would land on one face, leaving another face empty."
+        ]
+      },
+      {
+        "id": "reflection",
+        "goal": "reflection",
+        "title": "Explain your thinking",
+        "prompt": "What must be true for six joined squares to fold into a cube?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "k42",
+            "label": "Any six squares joined edge to edge will fold up into a cube."
+          },
+          {
+            "id": "k28",
+            "label": "Each square must land on a different face of the cube, with no overlaps."
+          },
+          {
+            "id": "k35",
+            "label": "The six squares must include a straight row of four squares somewhere."
+          }
+        ],
+        "answer": "k28",
+        "hints": [
+          "Think about the cube you would make.",
+          "Some six-square patterns fold and some do not.",
+          "A row of four is common, but not every cube net has one.",
+          "Choose the explanation about each square landing on a different face."
+        ]
+      }
+    ]
+  },
+  "fixtures": [
+    {
+      "stepId": "count",
+      "accepted": [
+        "6"
+      ],
+      "rejected": [
+        "7",
+        "16"
+      ]
+    },
+    {
+      "stepId": "valid",
+      "accepted": [
+        "k30"
+      ],
+      "rejected": [
+        "k23",
+        "k37"
+      ]
+    },
+    {
+      "stepId": "why",
+      "accepted": [
+        "k18"
+      ],
+      "rejected": [
+        "k32",
+        "k25"
+      ]
+    },
+    {
+      "stepId": "reflection",
+      "accepted": [
+        "k28"
+      ],
+      "rejected": [
+        "k42",
+        "k35"
+      ]
+    }
+  ]
+}

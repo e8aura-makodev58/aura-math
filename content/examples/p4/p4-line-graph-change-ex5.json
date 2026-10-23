@@ -1,0 +1,196 @@
+{
+  "schemaVersion": 3,
+  "locale": "en-SG",
+  "adapterVersion": 1,
+  "library": {
+    "level": "P4",
+    "skillId": "p4-line-graph-change",
+    "tags": [
+      "P4",
+      "line-graphs",
+      "general revision",
+      "example"
+    ]
+  },
+  "curriculum": {
+    "objectiveId": "candidate.p4.line-graphs.change",
+    "sources": [
+      "https://practicle.sg/primary-4-math/",
+      "https://sg.ixl.com/standards/maths/primary-4"
+    ],
+    "evidenceStatus": "candidate"
+  },
+  "authors": [
+    "Codex"
+  ],
+  "provenance": {
+    "kind": "generated",
+    "generatorVersion": "p4-examples-v1",
+    "seed": 3669030811
+  },
+  "lesson": {
+    "id": "p4-line-graph-change-ex5",
+    "version": 1,
+    "topic": "line-graphs",
+    "title": "Ups and downs",
+    "subtitle": "P4 line-graph revision",
+    "level": "P4 candidate",
+    "minutes": 7,
+    "objective": "Find differences and the biggest change between points.",
+    "story": "A line graph shows visitors for Mon, Tue, Wed, Thu, Fri.",
+    "reviewStatus": "draft",
+    "specification": {
+      "task": "change",
+      "labels": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri"
+      ],
+      "values": [
+        10,
+        20,
+        45,
+        35,
+        40
+      ],
+      "step": 10,
+      "quantity": "visitors",
+      "a": 2,
+      "b": 0,
+      "target": 0
+    },
+    "steps": [
+      {
+        "id": "read",
+        "goal": "read",
+        "title": "Read a point",
+        "prompt": "How many visitors does the graph show for Wed?",
+        "kind": "exact",
+        "answer": "45",
+        "hints": [
+          "Find Wed along the bottom and go up to its point.",
+          "Read across to the scale and use the size of each step.",
+          "The point is 4 whole steps and a half step up.",
+          "The point is at 45. Enter 45."
+        ]
+      },
+      {
+        "id": "difference",
+        "goal": "difference",
+        "title": "Find the difference",
+        "prompt": "How many more visitors are shown for Wed than for Mon?",
+        "kind": "exact",
+        "answer": "35",
+        "hints": [
+          "Read both points from the scale first.",
+          "To find how many more, take the smaller number from the larger.",
+          "Wed shows 45 and Mon shows 10.",
+          "45 − 10 = 35. Enter 35."
+        ]
+      },
+      {
+        "id": "biggest-rise",
+        "goal": "biggest-rise",
+        "title": "Find the biggest climb",
+        "prompt": "Between which two neighbouring points did the line climb the most?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "k25",
+            "label": "Mon to Tue",
+            "meaning": "other-a"
+          },
+          {
+            "id": "k32",
+            "label": "Thu to Fri",
+            "meaning": "other-b"
+          },
+          {
+            "id": "k18",
+            "label": "Tue to Wed",
+            "meaning": "biggest"
+          }
+        ],
+        "answer": "k18",
+        "hints": [
+          "A climb is where the line goes up from one point to the next.",
+          "Work out how far the line goes up between each pair of neighbours.",
+          "Between Tue to Wed the line climbs 25.",
+          "Choose Tue to Wed."
+        ]
+      },
+      {
+        "id": "reflection",
+        "goal": "reflection",
+        "title": "Explain your thinking",
+        "prompt": "How can you tell where a line graph climbs the most?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "k23",
+            "label": "Find the part of the line that climbs the most between two neighbours."
+          },
+          {
+            "id": "k30",
+            "label": "Find the highest point on the whole graph, because the biggest climb ends there."
+          },
+          {
+            "id": "k37",
+            "label": "Compare the first and last points, since the climb is between them."
+          }
+        ],
+        "answer": "k23",
+        "hints": [
+          "Think about how the line moves between points.",
+          "A big climb means a big change from one point to the next.",
+          "The highest point can come after a small climb.",
+          "Choose the explanation about the furthest climb between neighbours."
+        ]
+      }
+    ]
+  },
+  "fixtures": [
+    {
+      "stepId": "read",
+      "accepted": [
+        "45"
+      ],
+      "rejected": [
+        "46",
+        "55"
+      ]
+    },
+    {
+      "stepId": "difference",
+      "accepted": [
+        "35"
+      ],
+      "rejected": [
+        "36",
+        "45"
+      ]
+    },
+    {
+      "stepId": "biggest-rise",
+      "accepted": [
+        "k18"
+      ],
+      "rejected": [
+        "k25",
+        "k32"
+      ]
+    },
+    {
+      "stepId": "reflection",
+      "accepted": [
+        "k23"
+      ],
+      "rejected": [
+        "k30",
+        "k37"
+      ]
+    }
+  ]
+}

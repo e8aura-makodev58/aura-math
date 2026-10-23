@@ -1,0 +1,201 @@
+{
+  "schemaVersion": 3,
+  "locale": "en-SG",
+  "adapterVersion": 1,
+  "library": {
+    "level": "P4",
+    "skillId": "p4-fold-a-cube-net",
+    "tags": [
+      "P4",
+      "nets",
+      "general revision",
+      "level-unconfirmed",
+      "workbench",
+      "example"
+    ]
+  },
+  "curriculum": {
+    "objectiveId": "candidate.p4.nets.fold",
+    "sources": [
+      "https://practicle.sg/primary-4-math/",
+      "https://www.thelearninglab.com.sg/blog/tll-shares/new-changes-to-moe-primary-maths-syllabus"
+    ],
+    "evidenceStatus": "candidate"
+  },
+  "authors": [
+    "Codex"
+  ],
+  "provenance": {
+    "kind": "generated",
+    "generatorVersion": "p4-examples-v1",
+    "seed": 1303865471
+  },
+  "lesson": {
+    "id": "p4-fold-a-cube-net-ex2",
+    "version": 1,
+    "topic": "nets",
+    "title": "Fold it and see",
+    "subtitle": "P4 nets revision",
+    "level": "P4 candidate",
+    "minutes": 8,
+    "objective": "Fold a cube net on screen and name the face on top and the face opposite another face.",
+    "story": "A net of six labelled squares can be folded on screen, one crease at a time.",
+    "reviewStatus": "draft",
+    "specification": {
+      "task": "fold",
+      "nets": [
+        "DE../.FA./..BC",
+        ".A../BCDE/.F.."
+      ],
+      "asked": 0,
+      "face": "F",
+      "solid": "",
+      "demoFace": "B",
+      "second": "B"
+    },
+    "steps": [
+      {
+        "id": "fold-top",
+        "goal": "fold-top",
+        "title": "Fold it and look at the top",
+        "prompt": "Keep face F on the table as the floor and fold every crease. Which face is on top?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "k50",
+            "label": "Face B",
+            "meaning": "face:B"
+          },
+          {
+            "id": "k57",
+            "label": "Face C",
+            "meaning": "face:C"
+          },
+          {
+            "id": "k64",
+            "label": "Face D",
+            "meaning": "face:D"
+          },
+          {
+            "id": "k71",
+            "label": "Face E",
+            "meaning": "face:E"
+          },
+          {
+            "id": "k43",
+            "label": "Face A",
+            "meaning": "face:A"
+          }
+        ],
+        "answer": "k57",
+        "hints": [
+          "Use the crease buttons to fold the net, one crease at a time. Face F stays flat on the table.",
+          "The squares joined to the floor stand up as walls. Turn the view to look down from above.",
+          "Four faces become walls round face F: A, B, D and E. The face left over closes the top.",
+          "Face C is on top, opposite face F. Choose Face C."
+        ]
+      },
+      {
+        "id": "fold-opposite",
+        "goal": "fold-opposite",
+        "title": "Find the opposite face",
+        "prompt": "Fold the net into a cube again. Which face is opposite face B?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "k42",
+            "label": "Face D",
+            "meaning": "face:D"
+          },
+          {
+            "id": "k49",
+            "label": "Face E",
+            "meaning": "face:E"
+          },
+          {
+            "id": "k56",
+            "label": "Face F",
+            "meaning": "face:F"
+          },
+          {
+            "id": "k28",
+            "label": "Face A",
+            "meaning": "face:A"
+          },
+          {
+            "id": "k35",
+            "label": "Face C",
+            "meaning": "face:C"
+          }
+        ],
+        "answer": "k49",
+        "hints": [
+          "Fold every crease, then find face B on the cube.",
+          "Opposite faces do not share an edge. Turn the view to see the face across the cube from face B.",
+          "Face B shares an edge with A, C, D and F. The face it does not touch is opposite.",
+          "Face E is opposite face B. Choose Face E."
+        ]
+      },
+      {
+        "id": "reflection",
+        "goal": "reflection",
+        "title": "Explain your thinking",
+        "prompt": "How can you find the face opposite another face of a cube?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "k23",
+            "label": "Fold the net: the opposite face never shares an edge with it."
+          },
+          {
+            "id": "k30",
+            "label": "It is always the square right next to it when the net is flat."
+          },
+          {
+            "id": "k37",
+            "label": "It is always the square at the far end of the longest row."
+          }
+        ],
+        "answer": "k23",
+        "hints": [
+          "Think about what you saw when the cube was folded.",
+          "Opposite faces are across the cube from each other.",
+          "Squares next to each other in the net share an edge on the cube, so they cannot be opposite.",
+          "Choose the explanation about never sharing an edge."
+        ]
+      }
+    ]
+  },
+  "fixtures": [
+    {
+      "stepId": "fold-top",
+      "accepted": [
+        "k57"
+      ],
+      "rejected": [
+        "k50",
+        "k64"
+      ]
+    },
+    {
+      "stepId": "fold-opposite",
+      "accepted": [
+        "k49"
+      ],
+      "rejected": [
+        "k42",
+        "k56"
+      ]
+    },
+    {
+      "stepId": "reflection",
+      "accepted": [
+        "k23"
+      ],
+      "rejected": [
+        "k30",
+        "k37"
+      ]
+    }
+  ]
+}

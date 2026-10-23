@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 3,
+  "locale": "en-SG",
+  "adapterVersion": 1,
+  "library": {
+    "level": "P4",
+    "skillId": "p4-composite-perimeter",
+    "tags": [
+      "P4",
+      "area",
+      "perimeter",
+      "general revision",
+      "example"
+    ]
+  },
+  "curriculum": {
+    "objectiveId": "candidate.p4.measurement.composite-perimeter",
+    "sources": [
+      "https://practicle.sg/primary-4-math/",
+      "https://sg.ixl.com/standards/maths/primary-4"
+    ],
+    "evidenceStatus": "candidate"
+  },
+  "authors": [
+    "Codex"
+  ],
+  "provenance": {
+    "kind": "generated",
+    "generatorVersion": "p4-examples-v1",
+    "seed": 1967657275
+  },
+  "lesson": {
+    "id": "p4-composite-perimeter-ex4",
+    "version": 1,
+    "topic": "area-perimeter",
+    "title": "Follow the outside edge",
+    "subtitle": "P4 measurement revision",
+    "level": "P4 candidate",
+    "minutes": 7,
+    "objective": "Find the outside boundary of a corner-cutout shape.",
+    "story": "An outer 16 cm by 6 cm rectangle has a 8 cm by 2 cm corner removed.",
+    "reviewStatus": "draft",
+    "specification": {
+      "task": "composite-perimeter",
+      "width": 16,
+      "height": 6,
+      "cutWidth": 8,
+      "cutHeight": 2,
+      "corner": "top-left",
+      "unknownSide": "width",
+      "knownMeasure": "area",
+      "requestedMeasure": "area",
+      "unit": "cm"
+    },
+    "steps": [
+      {
+        "id": "missing-edge",
+        "goal": "missing-edge",
+        "title": "Find an outside segment",
+        "prompt": "The 8 cm corner length is removed from 16 cm across. Find the remaining horizontal outside segment in centimetres.",
+        "kind": "exact",
+        "answer": "8",
+        "hints": [
+          "Look along the full width.",
+          "Subtract the removed corner width from the outer width.",
+          "16 − 8.",
+          "The remaining segment is 8 cm."
+        ]
+      },
+      {
+        "id": "boundary-method",
+        "goal": "boundary-method",
+        "title": "Choose an outside-edge path",
+        "prompt": "Which paths count this corner-cutout's outside boundary?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "b1",
+            "label": "Add every drawn line, including the inside split line, all the way round.",
+            "meaning": "internal-edge"
+          },
+          {
+            "id": "b3",
+            "label": "Add each outside edge in turn, leaving out any inside split lines.",
+            "meaning": "edge-sum"
+          },
+          {
+            "id": "b7",
+            "label": "Use 2 × (outer width + outer height); new edges replace equal lengths.",
+            "meaning": "outer-equivalent"
+          }
+        ],
+        "answer": "b7",
+        "hints": [
+          "Only the outline is perimeter.",
+          "An inside split is not on the outline.",
+          "For this corner cutout only, new edge lengths replace the removed outer lengths.",
+          "Outside-edge sum and 2 × (outer width + outer height) agree for this shape."
+        ]
+      },
+      {
+        "id": "perimeter",
+        "goal": "perimeter",
+        "title": "Find the outside boundary",
+        "prompt": "Find the perimeter of this 16 cm by 6 cm outer rectangle with one 8 cm by 2 cm corner removed. Answer in centimetres.",
+        "kind": "exact",
+        "answer": "44",
+        "hints": [
+          "Follow the outside edge only.",
+          "One remaining horizontal segment is 8 cm.",
+          "The two new corner edges replace equal removed outer lengths.",
+          "For this corner cutout, 2 × (16 + 6) = 44 cm."
+        ]
+      },
+      {
+        "id": "reflection",
+        "goal": "reflection",
+        "title": "Explain the measure",
+        "prompt": "Which explanation matches the shape?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "r3",
+            "label": "Area counts square units; perimeter is only the outside edge."
+          },
+          {
+            "id": "r8",
+            "label": "Area and perimeter are both measured in the same units."
+          },
+          {
+            "id": "r7",
+            "label": "An inside split line also counts as part of the perimeter."
+          }
+        ],
+        "answer": "r3",
+        "hints": [
+          "Look at what is being measured.",
+          "Area covers a surface; perimeter goes around its boundary.",
+          "An inside teaching split is not an outside edge.",
+          "Choose the explanation that separates square units from boundary length."
+        ]
+      }
+    ]
+  },
+  "fixtures": [
+    {
+      "stepId": "missing-edge",
+      "accepted": [
+        "8"
+      ],
+      "rejected": [
+        "9",
+        "18"
+      ]
+    },
+    {
+      "stepId": "boundary-method",
+      "accepted": [
+        "b3",
+        "b7"
+      ],
+      "rejected": [
+        "b1"
+      ]
+    },
+    {
+      "stepId": "perimeter",
+      "accepted": [
+        "44"
+      ],
+      "rejected": [
+        "45",
+        "54"
+      ]
+    },
+    {
+      "stepId": "reflection",
+      "accepted": [
+        "r3"
+      ],
+      "rejected": [
+        "r8",
+        "r7"
+      ]
+    }
+  ]
+}

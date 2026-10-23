@@ -1,0 +1,196 @@
+{
+  "schemaVersion": 3,
+  "locale": "en-SG",
+  "adapterVersion": 1,
+  "library": {
+    "level": "P4",
+    "skillId": "p4-read-line-graph",
+    "tags": [
+      "P4",
+      "line-graphs",
+      "general revision",
+      "example"
+    ]
+  },
+  "curriculum": {
+    "objectiveId": "candidate.p4.line-graphs.read",
+    "sources": [
+      "https://practicle.sg/primary-4-math/",
+      "https://sg.ixl.com/standards/maths/primary-4"
+    ],
+    "evidenceStatus": "candidate"
+  },
+  "authors": [
+    "Codex"
+  ],
+  "provenance": {
+    "kind": "generated",
+    "generatorVersion": "p4-examples-v1",
+    "seed": 619951825
+  },
+  "lesson": {
+    "id": "p4-read-line-graph-ex1",
+    "version": 1,
+    "topic": "line-graphs",
+    "title": "Read the scale and the line",
+    "subtitle": "P4 line-graph revision",
+    "level": "P4 candidate",
+    "minutes": 7,
+    "objective": "Read the scale of a line graph and read values from it.",
+    "story": "A line graph shows books borrowed for Mon, Tue, Wed, Thu, Fri.",
+    "reviewStatus": "draft",
+    "specification": {
+      "task": "read",
+      "labels": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri"
+      ],
+      "values": [
+        45,
+        30,
+        40,
+        25,
+        10
+      ],
+      "step": 10,
+      "quantity": "books borrowed",
+      "a": 4,
+      "b": 0,
+      "target": 0
+    },
+    "steps": [
+      {
+        "id": "scale",
+        "goal": "scale",
+        "title": "Read the scale",
+        "prompt": "Look at the scale up the side. How many books borrowed does each gridline step stand for?",
+        "kind": "exact",
+        "answer": "10",
+        "hints": [
+          "Look at the numbers at the bottom and the top of the scale.",
+          "Count how many equal steps there are from the bottom to the top.",
+          "The scale reaches 50 in 5 equal steps, so work out 50 ÷ 5.",
+          "Each step is 10. Enter 10."
+        ]
+      },
+      {
+        "id": "read",
+        "goal": "read",
+        "title": "Read a point",
+        "prompt": "How many books borrowed does the graph show for Fri?",
+        "kind": "exact",
+        "answer": "10",
+        "hints": [
+          "Find Fri along the bottom and follow it up to the point.",
+          "From the point, read across to the scale. Use the step size you found.",
+          "The point is 1 whole steps up the scale.",
+          "The point is at 10. Enter 10."
+        ]
+      },
+      {
+        "id": "compare",
+        "goal": "compare",
+        "title": "Compare two points",
+        "prompt": "Which shows more books borrowed: Fri or Mon?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "k40",
+            "label": "Mon",
+            "meaning": "right"
+          },
+          {
+            "id": "k47",
+            "label": "Both the same",
+            "meaning": "same"
+          },
+          {
+            "id": "k33",
+            "label": "Fri",
+            "meaning": "left"
+          }
+        ],
+        "answer": "k40",
+        "hints": [
+          "A higher point means a bigger number.",
+          "Find both points and see which is higher on the graph.",
+          "Mon has the higher point.",
+          "Choose Mon."
+        ]
+      },
+      {
+        "id": "reflection",
+        "goal": "reflection",
+        "title": "Explain your thinking",
+        "prompt": "Why should you check the scale before reading a line graph?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "k77",
+            "label": "Every line graph scale goes up in ones, so you just count the steps."
+          },
+          {
+            "id": "k63",
+            "label": "A step on the scale can stand for more than 1, so check its size."
+          },
+          {
+            "id": "k70",
+            "label": "The scale is only there to decorate, so it does not change readings."
+          }
+        ],
+        "answer": "k63",
+        "hints": [
+          "Think about the numbers up the side.",
+          "Steps can stand for 5, 10 or 20, not always 1.",
+          "The size of a step changes every reading.",
+          "Choose the explanation about what each step stands for."
+        ]
+      }
+    ]
+  },
+  "fixtures": [
+    {
+      "stepId": "scale",
+      "accepted": [
+        "10"
+      ],
+      "rejected": [
+        "11",
+        "20"
+      ]
+    },
+    {
+      "stepId": "read",
+      "accepted": [
+        "10"
+      ],
+      "rejected": [
+        "11",
+        "20"
+      ]
+    },
+    {
+      "stepId": "compare",
+      "accepted": [
+        "k40"
+      ],
+      "rejected": [
+        "k47",
+        "k33"
+      ]
+    },
+    {
+      "stepId": "reflection",
+      "accepted": [
+        "k63"
+      ],
+      "rejected": [
+        "k77",
+        "k70"
+      ]
+    }
+  ]
+}

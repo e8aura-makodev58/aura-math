@@ -1,0 +1,197 @@
+{
+  "schemaVersion": 3,
+  "locale": "en-SG",
+  "adapterVersion": 1,
+  "library": {
+    "level": "P4",
+    "skillId": "p4-estimate-by-rounding",
+    "tags": [
+      "P4",
+      "whole-numbers",
+      "general revision"
+    ]
+  },
+  "curriculum": {
+    "objectiveId": "candidate.p4.whole-numbers.practice",
+    "sources": [
+      "https://practicle.sg/primary-4-math/",
+      "https://sg.ixl.com/standards/maths/primary-4"
+    ],
+    "evidenceStatus": "candidate"
+  },
+  "authors": [
+    "claude-p4-whole-numbers"
+  ],
+  "provenance": {
+    "kind": "authored"
+  },
+  "lesson": {
+    "id": "p4-estimate-by-rounding",
+    "version": 1,
+    "topic": "whole-numbers",
+    "title": "Estimate by rounding",
+    "subtitle": "P4 whole-number revision",
+    "level": "P4 candidate",
+    "minutes": 4,
+    "objective": "Estimate a total by rounding each number first.",
+    "story": "A school has 2 486 stickers in one hall and 1 329 stickers in another. Round each number to the nearest 100, then add to estimate how many stickers there are.",
+    "reviewStatus": "draft",
+    "specification": {
+      "task": "practice",
+      "n": 2486,
+      "m": 1329,
+      "place": "ten-thousands",
+      "roundTo": 100,
+      "unit": "stickers"
+    },
+    "steps": [
+      {
+        "id": "estimate",
+        "goal": "estimate",
+        "title": "Estimate the total",
+        "prompt": "A school has 2 486 stickers in one hall and 1 329 stickers in another. Round each number to the nearest 100, then add to estimate how many stickers there are.",
+        "kind": "exact",
+        "answer": "3800",
+        "hints": [
+          "Round each number first, then add the rounded numbers.",
+          "Round 2 486 and 1 329 to the nearest 100.",
+          "2 486 rounds to 2 500 and 1 329 rounds to 1 300.",
+          "2 500 + 1 300 = 3 800. Enter 3800."
+        ]
+      },
+      {
+        "id": "reflection",
+        "goal": "reflection",
+        "title": "Explain your thinking",
+        "prompt": "Why is it useful to round before adding?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "k42",
+            "label": "Rounding means the exact numbers in the question no longer matter."
+          },
+          {
+            "id": "k28",
+            "label": "Rounded numbers are easy to add, and the total is close to the real one."
+          },
+          {
+            "id": "k35",
+            "label": "Rounding first makes the total come out exactly right, with no change."
+          }
+        ],
+        "answer": "k28",
+        "hints": [
+          "Think about why we estimate.",
+          "Round numbers are quicker to add in your head.",
+          "An estimate is close to the real total, not exactly equal.",
+          "Choose the explanation about a quick, rough total."
+        ]
+      }
+    ]
+  },
+  "fixtures": [
+    {
+      "stepId": "estimate",
+      "accepted": [
+        "3800"
+      ],
+      "rejected": [
+        "3801",
+        "3810"
+      ]
+    },
+    {
+      "stepId": "reflection",
+      "accepted": [
+        "k28"
+      ],
+      "rejected": [
+        "k42",
+        "k35"
+      ]
+    }
+  ],
+  "interpretation": {
+    "entities": [
+      "first",
+      "second",
+      "first-rounded",
+      "second-rounded",
+      "estimate"
+    ],
+    "quantities": [
+      {
+        "entity": "first",
+        "value": 2486,
+        "unit": "stickers",
+        "state": "given"
+      },
+      {
+        "entity": "second",
+        "value": 1329,
+        "unit": "stickers",
+        "state": "given"
+      },
+      {
+        "entity": "first-rounded",
+        "value": 2500,
+        "unit": "stickers",
+        "state": "derived"
+      },
+      {
+        "entity": "second-rounded",
+        "value": 1300,
+        "unit": "stickers",
+        "state": "derived"
+      },
+      {
+        "entity": "estimate",
+        "value": 3800,
+        "unit": "stickers",
+        "state": "derived"
+      }
+    ],
+    "relationships": [
+      {
+        "kind": "operation",
+        "id": "first-rounded",
+        "operation": "round",
+        "inputs": [
+          "first"
+        ],
+        "output": "first-rounded"
+      },
+      {
+        "kind": "operation",
+        "id": "second-rounded",
+        "operation": "round",
+        "inputs": [
+          "second"
+        ],
+        "output": "second-rounded"
+      },
+      {
+        "kind": "operation",
+        "id": "estimate",
+        "operation": "add",
+        "inputs": [
+          "first-rounded",
+          "second-rounded"
+        ],
+        "output": "estimate"
+      }
+    ],
+    "unknown": "estimate",
+    "sourceSpans": [
+      {
+        "start": 0,
+        "end": 158,
+        "text": "A school has 2 486 stickers in one hall and 1 329 stickers in another. Round each number to the nearest 100, then add to estimate how many stickers there are."
+      }
+    ],
+    "assumptions": [
+      "Each number is rounded to the same place before adding."
+    ],
+    "ambiguities": []
+  }
+}

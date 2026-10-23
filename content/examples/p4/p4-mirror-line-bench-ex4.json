@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 3,
+  "locale": "en-SG",
+  "adapterVersion": 1,
+  "library": {
+    "level": "P4",
+    "skillId": "p4-mirror-line-bench",
+    "tags": [
+      "P4",
+      "symmetry",
+      "general revision",
+      "level-unconfirmed",
+      "workbench",
+      "example"
+    ]
+  },
+  "curriculum": {
+    "objectiveId": "candidate.p4.symmetry.place",
+    "sources": [
+      "https://practicle.sg/primary-4-math/",
+      "https://sg.ixl.com/standards/maths/primary-4"
+    ],
+    "evidenceStatus": "candidate"
+  },
+  "authors": [
+    "Codex"
+  ],
+  "provenance": {
+    "kind": "generated",
+    "generatorVersion": "p4-examples-v1",
+    "seed": 660897889
+  },
+  "lesson": {
+    "id": "p4-mirror-line-bench-ex4",
+    "version": 1,
+    "topic": "symmetry",
+    "title": "Place the mirror",
+    "subtitle": "P4 symmetry revision",
+    "level": "P4 candidate",
+    "minutes": 7,
+    "objective": "Choose a mirror line that reflects a shape onto itself.",
+    "story": "Choose a line to move the mirror. Which line reflects the shape onto itself? Undo and the optional hint preview are practice aids.",
+    "reviewStatus": "draft",
+    "specification": {
+      "task": "place",
+      "shape": "kite",
+      "cols": 6,
+      "rows": 4,
+      "mirror": "vertical",
+      "cells": [
+        "0,2",
+        "1,1",
+        "1,2",
+        "2,0",
+        "2,3",
+        "3,1"
+      ],
+      "probe": "1,2",
+      "rotation": 1
+    },
+    "steps": [
+      {
+        "id": "place",
+        "goal": "place",
+        "title": "Place the mirror",
+        "prompt": "Choose a line to move the mirror. Which line reflects the shape onto itself? Undo and the optional hint preview are practice aids.",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "k30",
+            "label": "Line B: straight across through the middle",
+            "meaning": "line:B"
+          },
+          {
+            "id": "k37",
+            "label": "Line C: from bottom-left to top-right corner",
+            "meaning": "line:C"
+          },
+          {
+            "id": "k44",
+            "label": "Line D: from top-left to bottom-right corner",
+            "meaning": "line:D"
+          },
+          {
+            "id": "k23",
+            "label": "Line A: straight down through the middle",
+            "meaning": "line:A"
+          }
+        ],
+        "answer": "k23",
+        "hints": [
+          "Imagine folding the shape along the line.",
+          "The hint preview shows a reflected outline; compare it by eye.",
+          "Try the line through the matching left and right halves.",
+          "Choose line A."
+        ]
+      },
+      {
+        "id": "count",
+        "goal": "count",
+        "title": "Another way to check",
+        "prompt": "Without the preview, how many lines of symmetry does this shape have altogether?",
+        "kind": "exact",
+        "answer": "1",
+        "hints": [
+          "Imagine each possible fold.",
+          "Only exact matches count.",
+          "Do not count a line twice.",
+          "Enter 1."
+        ]
+      },
+      {
+        "id": "reflection",
+        "goal": "reflection",
+        "title": "Explain your thinking",
+        "prompt": "What must a reflection preserve?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "k43",
+            "label": "Matching points are the same distance from the mirror, on opposite sides."
+          },
+          {
+            "id": "k50",
+            "label": "Every point moves one square to the right, so the shape keeps its look."
+          },
+          {
+            "id": "k57",
+            "label": "Any line through the middle of a shape makes a mirror image of it."
+          }
+        ],
+        "answer": "k43",
+        "hints": [
+          "Look at matching points.",
+          "The mirror lies between each matching pair.",
+          "Both points are the same distance from it.",
+          "Choose the explanation about equal distances on opposite sides."
+        ]
+      }
+    ]
+  },
+  "fixtures": [
+    {
+      "stepId": "place",
+      "accepted": [
+        "k23"
+      ],
+      "rejected": [
+        "k30",
+        "k37"
+      ]
+    },
+    {
+      "stepId": "count",
+      "accepted": [
+        "1"
+      ],
+      "rejected": [
+        "2",
+        "11"
+      ]
+    },
+    {
+      "stepId": "reflection",
+      "accepted": [
+        "k43"
+      ],
+      "rejected": [
+        "k50",
+        "k57"
+      ]
+    }
+  ]
+}

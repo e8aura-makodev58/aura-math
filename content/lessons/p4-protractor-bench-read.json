@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 3,
+  "locale": "en-SG",
+  "adapterVersion": 1,
+  "library": {
+    "level": "P4",
+    "skillId": "p4-protractor-bench-read",
+    "tags": [
+      "P4",
+      "angle-measure",
+      "general revision",
+      "level-unconfirmed",
+      "workbench"
+    ]
+  },
+  "curriculum": {
+    "objectiveId": "candidate.p4.angle-measure.bench-read",
+    "sources": [
+      "https://practicle.sg/primary-4-math/",
+      "https://sg.ixl.com/standards/maths/primary-4"
+    ],
+    "evidenceStatus": "candidate"
+  },
+  "authors": [
+    "codex-p4-protractor-bench"
+  ],
+  "provenance": {
+    "kind": "authored"
+  },
+  "lesson": {
+    "id": "p4-protractor-bench-read",
+    "version": 1,
+    "topic": "angle-measure",
+    "title": "Line it up, then read",
+    "subtitle": "P4 angle revision",
+    "level": "P4 candidate",
+    "minutes": 7,
+    "objective": "Practise aligning a protractor and assess the angle reading.",
+    "story": "An angle is drawn on a protractor.",
+    "reviewStatus": "draft",
+    "specification": {
+      "task": "bench-read",
+      "degrees": 65,
+      "flip": false,
+      "from": "N",
+      "direction": "clockwise",
+      "quarters": 3
+    },
+    "steps": [
+      {
+        "id": "read",
+        "goal": "read",
+        "title": "Line up and read",
+        "prompt": "Move the centre to the corner and turn the baseline onto either arm. Read the angle in degrees. Alignment is practice; your reading is checked. Open the list version to enter your number.",
+        "kind": "exact",
+        "answer": "65",
+        "hints": [
+          "Find the corner and a side of the angle.",
+          "Read the scale that begins at zero on the arm you use.",
+          "Use the alignment help to centre and turn the dial.",
+          "The angle is 65°. Enter 65."
+        ]
+      },
+      {
+        "id": "classify",
+        "goal": "classify",
+        "title": "Compare with a right angle",
+        "prompt": "Is the original angle acute, right or obtuse? This question has no movable preview.",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "k20",
+            "label": "Right angle: exactly 90°",
+            "meaning": "right"
+          },
+          {
+            "id": "k27",
+            "label": "Obtuse: between 90° and 180°",
+            "meaning": "obtuse"
+          },
+          {
+            "id": "k13",
+            "label": "Acute: smaller than 90°",
+            "meaning": "acute"
+          }
+        ],
+        "answer": "k13",
+        "hints": [
+          "Use a right angle as a reference.",
+          "A right angle is 90°.",
+          "The original angle is 65°. Compare it with 90°.",
+          "Choose acute."
+        ]
+      },
+      {
+        "id": "reflection",
+        "goal": "reflection",
+        "title": "Explain your thinking",
+        "prompt": "Why does the choice of zero matter?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "k23",
+            "label": "Start at zero on the arm you line up with, then measure to the other arm."
+          },
+          {
+            "id": "k30",
+            "label": "Always choose the larger of the two printed numbers on the dial for the angle."
+          },
+          {
+            "id": "k37",
+            "label": "Use the same named scale for every pose, wherever the two arms happen to point."
+          }
+        ],
+        "answer": "k23",
+        "hints": [
+          "Think about where the measured turn begins.",
+          "The two scales run in opposite directions.",
+          "Turning the dial may change which scale you use.",
+          "Choose the explanation about starting at zero on the aligned arm."
+        ]
+      }
+    ]
+  },
+  "fixtures": [
+    {
+      "stepId": "read",
+      "accepted": [
+        "65"
+      ],
+      "rejected": [
+        "66",
+        "75"
+      ]
+    },
+    {
+      "stepId": "classify",
+      "accepted": [
+        "k13"
+      ],
+      "rejected": [
+        "k20",
+        "k27"
+      ]
+    },
+    {
+      "stepId": "reflection",
+      "accepted": [
+        "k23"
+      ],
+      "rejected": [
+        "k30",
+        "k37"
+      ]
+    }
+  ]
+}

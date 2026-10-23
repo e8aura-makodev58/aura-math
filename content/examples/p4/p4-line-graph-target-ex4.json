@@ -1,0 +1,250 @@
+{
+  "schemaVersion": 3,
+  "locale": "en-SG",
+  "adapterVersion": 1,
+  "library": {
+    "level": "P4",
+    "skillId": "p4-line-graph-target",
+    "tags": [
+      "P4",
+      "line-graphs",
+      "general revision",
+      "example"
+    ]
+  },
+  "curriculum": {
+    "objectiveId": "candidate.p4.line-graphs.threshold",
+    "sources": [
+      "https://practicle.sg/primary-4-math/",
+      "https://sg.ixl.com/standards/maths/primary-4"
+    ],
+    "evidenceStatus": "candidate"
+  },
+  "authors": [
+    "Codex"
+  ],
+  "provenance": {
+    "kind": "generated",
+    "generatorVersion": "p4-examples-v1",
+    "seed": 2721056405
+  },
+  "lesson": {
+    "id": "p4-line-graph-target-ex4",
+    "version": 1,
+    "topic": "line-graphs",
+    "title": "Above the dashed line",
+    "subtitle": "P4 line-graph revision",
+    "level": "P4 candidate",
+    "minutes": 7,
+    "objective": "Pick out the values above a target and add them.",
+    "story": "A line graph shows cups sold for Mon, Tue, Wed, Thu, Fri, Sat.",
+    "reviewStatus": "draft",
+    "specification": {
+      "task": "threshold",
+      "labels": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat"
+      ],
+      "values": [
+        45,
+        35,
+        15,
+        30,
+        50,
+        20
+      ],
+      "step": 10,
+      "quantity": "cups sold",
+      "a": 0,
+      "b": 1,
+      "target": 25
+    },
+    "steps": [
+      {
+        "id": "above",
+        "goal": "above",
+        "title": "Find the points above the line",
+        "prompt": "Which days show more than 25 cups sold? Choose every day.",
+        "kind": "multi",
+        "choices": [
+          {
+            "id": "k38",
+            "label": "Mon",
+            "meaning": "label:0"
+          },
+          {
+            "id": "k45",
+            "label": "Tue",
+            "meaning": "label:1"
+          },
+          {
+            "id": "k52",
+            "label": "Wed",
+            "meaning": "label:2"
+          },
+          {
+            "id": "k59",
+            "label": "Thu",
+            "meaning": "label:3"
+          },
+          {
+            "id": "k66",
+            "label": "Fri",
+            "meaning": "label:4"
+          },
+          {
+            "id": "k73",
+            "label": "Sat",
+            "meaning": "label:5"
+          }
+        ],
+        "answer": [
+          "k38",
+          "k45",
+          "k59",
+          "k66"
+        ],
+        "hints": [
+          "Find the dashed line at 25.",
+          "A point above the line is more than the target.",
+          "Check each point: is it above 25?",
+          "Choose Mon, Tue, Thu, Fri."
+        ]
+      },
+      {
+        "id": "total",
+        "goal": "total",
+        "title": "Add them up",
+        "prompt": "Add the cups sold for the days that were more than 25. What is the total?",
+        "kind": "exact",
+        "answer": "160",
+        "hints": [
+          "Read the value for each day that was above the line.",
+          "Add those values together.",
+          "The values are 45 and 35 and 30 and 50.",
+          "45 + 35 + 30 + 50 = 160. Enter 160."
+        ]
+      },
+      {
+        "id": "highest",
+        "goal": "highest",
+        "title": "Find the highest",
+        "prompt": "Which day shows the most cups sold?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "k47",
+            "label": "Tue",
+            "meaning": "other-b"
+          },
+          {
+            "id": "k33",
+            "label": "Fri",
+            "meaning": "highest"
+          },
+          {
+            "id": "k40",
+            "label": "Mon",
+            "meaning": "other-a"
+          }
+        ],
+        "answer": "k33",
+        "hints": [
+          "The highest point is the furthest up the graph.",
+          "Compare the tallest points.",
+          "Fri reaches the highest point.",
+          "Choose Fri."
+        ]
+      },
+      {
+        "id": "reflection",
+        "goal": "reflection",
+        "title": "Explain your thinking",
+        "prompt": "What does the dashed line help you do?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "k18",
+            "label": "It marks the target, so points above it are more than the target."
+          },
+          {
+            "id": "k25",
+            "label": "It joins all of the points together so that you can follow the line."
+          },
+          {
+            "id": "k32",
+            "label": "It shows the total of all the days added up together on the graph."
+          }
+        ],
+        "answer": "k18",
+        "hints": [
+          "Think about what the dashed line marks.",
+          "It sits at the target number.",
+          "Points above it are greater than the target.",
+          "Choose the explanation about comparing with the target."
+        ]
+      }
+    ]
+  },
+  "fixtures": [
+    {
+      "stepId": "above",
+      "accepted": [
+        [
+          "k38",
+          "k45",
+          "k59",
+          "k66"
+        ]
+      ],
+      "rejected": [
+        [
+          "k38",
+          "k45",
+          "k59"
+        ],
+        [
+          "k38",
+          "k45",
+          "k59",
+          "k66",
+          "k52"
+        ]
+      ]
+    },
+    {
+      "stepId": "total",
+      "accepted": [
+        "160"
+      ],
+      "rejected": [
+        "161",
+        "170"
+      ]
+    },
+    {
+      "stepId": "highest",
+      "accepted": [
+        "k33"
+      ],
+      "rejected": [
+        "k47",
+        "k40"
+      ]
+    },
+    {
+      "stepId": "reflection",
+      "accepted": [
+        "k18"
+      ],
+      "rejected": [
+        "k25",
+        "k32"
+      ]
+    }
+  ]
+}

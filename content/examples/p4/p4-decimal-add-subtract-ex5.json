@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 3,
+  "locale": "en-SG",
+  "adapterVersion": 1,
+  "library": {
+    "level": "P4",
+    "skillId": "p4-decimal-add-subtract",
+    "tags": [
+      "P4",
+      "decimals",
+      "general revision",
+      "example"
+    ]
+  },
+  "curriculum": {
+    "objectiveId": "candidate.p4.decimals.add-subtract",
+    "sources": [
+      "https://practicle.sg/primary-4-math/",
+      "https://sg.ixl.com/standards/maths/primary-4"
+    ],
+    "evidenceStatus": "candidate"
+  },
+  "authors": [
+    "Codex"
+  ],
+  "provenance": {
+    "kind": "generated",
+    "generatorVersion": "p4-examples-v1",
+    "seed": 3644699593
+  },
+  "lesson": {
+    "id": "p4-decimal-add-subtract-ex5",
+    "version": 1,
+    "topic": "decimals",
+    "title": "Line up decimal units",
+    "subtitle": "P4 decimal revision",
+    "level": "P4 candidate",
+    "minutes": 7,
+    "objective": "Add or subtract decimals using equal place units.",
+    "story": "Calculate with equal place units and check the result.",
+    "reviewStatus": "draft",
+    "specification": {
+      "task": "add-subtract",
+      "a": {
+        "coefficient": 449,
+        "scale": 2
+      },
+      "b": {
+        "coefficient": 19,
+        "scale": 1
+      },
+      "operation": "subtract",
+      "factor": 3,
+      "targetPlace": "thousandths",
+      "unit": "m"
+    },
+    "steps": [
+      {
+        "id": "relation",
+        "goal": "relation",
+        "title": "Choose equal units",
+        "prompt": "How should the decimal places line up?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "u2",
+            "label": "Line up the last written digits even when their places differ.",
+            "meaning": "unaligned"
+          },
+          {
+            "id": "u9",
+            "label": "Subtract digits without checking their place values.",
+            "meaning": "unequal-groups"
+          },
+          {
+            "id": "u5",
+            "label": "Line up decimal points so each place matches the same place.",
+            "meaning": "equal-units"
+          }
+        ],
+        "answer": "u5",
+        "hints": [
+          "Start with the meaning of the decimal places.",
+          "Ones match ones, tenths match tenths and hundredths match hundredths.",
+          "A missing decimal digit can be written as zero to match places.",
+          "Choose the explanation that lines up matching decimal places."
+        ]
+      },
+      {
+        "id": "calculate",
+        "goal": "calculate",
+        "title": "Calculate with decimals",
+        "prompt": "Work out 4.49 − 1.9.",
+        "kind": "exact",
+        "answer": "2.59",
+        "hints": [
+          "Look at the units before calculating.",
+          "Line up the decimal points to match equal units.",
+          "Exchange one whole for ten tenths so there are enough tenths to subtract. Then subtract matching places.",
+          "4.49 − 1.9 = 2.59."
+        ]
+      },
+      {
+        "id": "reflection",
+        "goal": "reflection",
+        "title": "Explain the equal units",
+        "prompt": "What helps us calculate with decimals?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "r8",
+            "label": "The number of written digits always tells us the value."
+          },
+          {
+            "id": "r3",
+            "label": "Use equal place units and check the relationship."
+          },
+          {
+            "id": "r6",
+            "label": "A decimal point means we can ignore any zero places."
+          }
+        ],
+        "answer": "r3",
+        "hints": [
+          "Look at the place chart.",
+          "Tenths and hundredths are different-sized units.",
+          "A relationship only works when we use the matching units.",
+          "Choose: Use equal place units and check the relationship."
+        ]
+      }
+    ]
+  },
+  "fixtures": [
+    {
+      "stepId": "relation",
+      "accepted": [
+        "u5"
+      ],
+      "rejected": [
+        "u2",
+        "u9"
+      ]
+    },
+    {
+      "stepId": "calculate",
+      "accepted": [
+        "2.59"
+      ],
+      "rejected": [
+        "3.59"
+      ]
+    },
+    {
+      "stepId": "reflection",
+      "accepted": [
+        "r3"
+      ],
+      "rejected": [
+        "r8",
+        "r6"
+      ]
+    }
+  ]
+}

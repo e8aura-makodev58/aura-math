@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "locale": "en-SG",
+  "adapterVersion": 1,
+  "curriculum": {
+    "objectiveId": "P3.right-angles",
+    "sources": ["https://practicle.sg/primary-3-math/"],
+    "evidenceStatus": "candidate"
+  },
+  "authors": ["Codex"],
+  "provenance": {
+    "kind": "authored"
+  },
+  "lesson": {
+    "id": "right-angle-hunt",
+    "version": 1,
+    "topic": "angles",
+    "title": "The right-angle hunt",
+    "subtitle": "Find every match",
+    "level": "P3 candidate",
+    "minutes": 5,
+    "story": "Right angles can point in different directions. Select every card with the same opening as the reference corner.",
+    "objective": "Select all right angles, regardless of orientation.",
+    "reviewStatus": "draft",
+    "specification": {
+      "task": "select",
+      "angles": [
+        {
+          "id": "A",
+          "degrees": 90,
+          "rotation": 0,
+          "label": "A"
+        },
+        {
+          "id": "B",
+          "degrees": 60,
+          "rotation": 20,
+          "label": "B"
+        },
+        {
+          "id": "C",
+          "degrees": 90,
+          "rotation": 135,
+          "label": "C"
+        },
+        {
+          "id": "D",
+          "degrees": 120,
+          "rotation": -20,
+          "label": "D"
+        }
+      ]
+    },
+    "steps": [
+      {
+        "id": "select",
+        "title": "Select all right angles",
+        "prompt": "Which cards show right angles? Choose every match.",
+        "kind": "multi",
+        "choices": [
+          {
+            "id": "A",
+            "label": "Card A"
+          },
+          {
+            "id": "B",
+            "label": "Card B"
+          },
+          {
+            "id": "C",
+            "label": "Card C"
+          },
+          {
+            "id": "D",
+            "label": "Card D"
+          }
+        ],
+        "answer": ["A", "C"],
+        "hints": [
+          "There may be more than one match.",
+          "Test each opening against the reference corner.",
+          "A and one turned card both fit the square corner.",
+          "Select A and C, then check your answer."
+        ],
+        "goal": "select"
+      },
+      {
+        "id": "reflection",
+        "title": "Explain your thinking",
+        "prompt": "What matters when you compare angles?",
+        "kind": "choice",
+        "choices": [
+          {
+            "id": "reason",
+            "label": "The opening between the arms matters, even when the angle is turned."
+          },
+          {
+            "id": "distractor",
+            "label": "Turning the whole card around makes the angle on it larger or smaller."
+          }
+        ],
+        "answer": "reason",
+        "hints": [
+          "Think about what stayed the same.",
+          "Use the relationship you just checked.",
+          "Read this explanation carefully: The opening between the arms matters, even when the angle is turned.",
+          "Choose: The opening between the arms matters, even when the angle is turned."
+        ],
+        "goal": "reflection"
+      }
+    ]
+  }
+}
