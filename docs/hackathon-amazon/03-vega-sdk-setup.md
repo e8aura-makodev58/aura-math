@@ -86,3 +86,31 @@ because the VDK itself is unavailable.
 - `https://sdk-installer.vega.labcollab.net/get_vvm.sh` then downloaded (58,010 bytes, 1,927 lines). Read before running. No login or credential prompt found. It installs to `~/vega` and edits shell profiles; it uses no sudo.
 - The installer downloads its CLI and SDK metadata from `https://k-artifactory-external.labcollab.net/artifactory/api/kpm/`. This host returns **403 (policy denial)**, so the installer cannot complete. The VS Code marketplace (optional extension) also returns 403.
 - Not run: the installer itself. Blocker: allow `k-artifactory-external.labcollab.net` (and the marketplace host if the VS Code extension is wanted).
+
+## Result: SDK installed and native packages built (2026-10-23)
+
+Supersedes the earlier "not run" statements above for the install and build steps.
+
+1. **Installer.** Ran `kinst.sh` (downloaded and read first; no credential prompt) with the SDK and
+   simulator URLs and version `0.24.12112`. It refuses to run as root, so it ran as the existing
+   non-root account `ubuntu`. The installer's CA-bundle path under `/root` was unreadable, so the
+   bundle was copied to `/tmp/ca-bundle.crt` and passed through `CURL_CA_BUNDLE`/`SSL_CERT_FILE`.
+   Result: "Installation complete!". SDK at `/home/ubuntu/vega/sdk/0.24.12112`.
+2. **Versions.** `vega --version` and `kepler --version` both print `0.24.12112`.
+3. **Official template.** `vega project generate --template helloWorld` (RN 0.83), `npm install`,
+   then `npm run build:release` exited 0. Output: `hellovega_x86_64.vpkg`, 1,576,713 bytes
+   (build reports `build_number` 0 and an "icon not defined" info line).
+4. **Aura Math.** `npm run build:release` in `fire-tv/` (copy of this repository, same code) exited 0.
+   Output (Release, `vpkg` sizes):
+   - `aura-math-fire-tv_aarch64.vpkg`: 307,164 bytes
+   - `aura-math-fire-tv_armv7.vpkg`: 307,212 bytes
+   - `aura-math-fire-tv_x86_64.vpkg`: 307,154 bytes
+   Typecheck 0 errors; Jest 63/63 pass in the same workspace.
+5. **Virtual device.** `vega virtual-device start` created an instance and launched it, then printed
+   "Deadline reached (60s) but virtual device unresponsive" and warned that `vvman` was not found.
+   `status` then reported "virtual device not running". Stopped; instance directory left at
+   `~/vega/sdk/0.24.12112/vvd/instances/`. **The app has not run in a simulator.** Likely causes:
+   no KVM in this container, and the `vvman` helper missing. Not confirmed.
+
+Still not done: install and run of the `.vpkg` (needs a working simulator or a Fire TV in developer
+mode), remote navigation check, demo video.

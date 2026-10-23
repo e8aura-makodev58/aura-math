@@ -8,12 +8,11 @@ import type {HardwareKeyEvent} from '../../src/engine/remote';
  */
 let handler: ((event: HardwareKeyEvent) => void) | null = null;
 
-jest.mock(
-  '../../node_modules/@amazon-devices/react-native-kepler/Libraries/TV/useTVEventHandler',
-  () => (callback: (event: HardwareKeyEvent) => void) => {
+jest.mock('@amazon-devices/react-native-kepler', () => ({
+  useTVEventHandler: (callback: (event: HardwareKeyEvent) => void) => {
     handler = callback;
   },
-);
+}));
 
 import App from '../../src/App';
 

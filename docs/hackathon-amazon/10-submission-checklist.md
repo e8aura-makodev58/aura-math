@@ -7,8 +7,8 @@ Status is as of 2026-10-23. Items marked **blocked** need the Vega SDK or a devi
 | Item | Status | Notes |
 |---|---|---|
 | Fire TV application source (`fire-tv/`) | Done | Committed to `claude/affectionate-edison-5fduyr` (see Repository below) |
-| Vega native package (`.vpkg`) | **Blocked** | VDK download host returns 403 (see 03, F-01) |
-| Run on Vega simulator or Fire TV device | **Blocked** | No KVM, no device (see 03) |
+| Vega native package (`.vpkg`) | Done | Built with `npm run build:release`: aarch64, armv7 and x86_64 Release packages (see 03) |
+| Run on Vega simulator or Fire TV device | **Blocked** | Virtual device did not boot here (no KVM; see 03, F-15). No device |
 | Remote navigation verified on hardware | **Blocked** | Simulated key events only (see 04) |
 | Installation and build instructions | Done | `fire-tv/README.md`, `docs/hackathon-amazon/03`, `04` |
 | Runtime instructions | Partly done | Only the JS build and tests can be run here |

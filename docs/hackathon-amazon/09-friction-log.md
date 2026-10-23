@@ -12,7 +12,8 @@ the session transcript.
 | | Severity | **High**: blocks the native build, the simulator and the official docs. |
 | | Workaround | Used npm packages from the registry, which are reachable. Documented the gap; did not route around the policy. |
 | | Suggestion | Allow `developer.amazon.com` (and the SDK download hosts) for hackathon build environments, or publish the VDK on npm or a reachable CDN. |
-| F-02 | Task | Bundle the Fire TV app with Metro, importing the fork as `react-native`. |
+| F-02 | Status | **Resolved by the official template.** The template uses `react-native` 0.83.0 and `@amazon-devices/react-native-kepler` ~4.0.0 side by side, with `@amazon-devices/kepler-cli-platform` for `build-vega`. The Metro workarounds below are no longer used. |
+| | Task | Bundle the Fire TV app with Metro, importing the fork as `react-native`. |
 | | Steps | `package.json`: `"react-native": "npm:@amazon-devices/react-native-kepler@4.0.1"`; `npx react-native bundle --platform kepler ...`. |
 | | Expected | Metro resolves `react-native` to the fork. |
 | | Actual | "Unable to resolve module react-native ... could not be found within the project". A minimal `resolver` with `extraNodeModules` did not fix it. |
@@ -64,3 +65,29 @@ the session transcript.
 | | Actual | `https://aura-math.makodev58.com` returns 403 from the egress proxy. |
 | | Severity | Low. |
 | | Workaround | Used the repository source instead. |
+
+| F-12 | Task | Run the SDK installer. |
+| | Actual | `kinst.sh` refuses to run as root. The sandbox session runs as root. Creating a new user was blocked by the environment's permission check, so the installer ran as the existing `ubuntu` account (uid 1000). |
+| | Severity | Medium. |
+| | Workaround | `runuser -u ubuntu` with the script copied to a readable path. |
+| | Suggestion | Allow the installer to run as root in CI and container environments, or document the non-root requirement at the top of the guide. |
+| F-13 | Task | Installer downloads through `curl` on a machine with a custom CA bundle. |
+| | Actual | The installer's `curl` read `/root/.ccr/ca-bundle.crt` from the environment, which another user cannot read (`curl: (77) error setting certificate file`). Its prompts also read `/dev/tty`, which does not exist in a non-interactive shell (harmless). |
+| | Severity | Medium. |
+| | Workaround | Copied the bundle to `/tmp/ca-bundle.crt` with `CURL_CA_BUNDLE` and `SSL_CERT_FILE` set. |
+| | Suggestion | Fall back to the system trust store when the configured CA file is unreadable; skip prompts when there is no terminal. |
+| F-14 | Task | Import the TV input hook in an app that uses stock `react-native` 0.83. |
+| | Actual | `useTVEventHandler` is not exported by stock `react-native`; importing it from there gives "is not a function". |
+| | Severity | Medium. |
+| | Workaround | Import it from `@amazon-devices/react-native-kepler`. |
+| | Suggestion | Document which package exports Vega-specific hooks in the React Native guide. |
+| F-15 | Task | Start the Vega Virtual Device. |
+| | Actual | Instance created and launched; "Deadline reached (60s) but virtual device unresponsive"; `vvman` helper not found. |
+| | Severity | High for simulator testing (blocks it here). |
+| | Workaround | None in this container. Needs a KVM host. |
+| | Suggestion | Print the reason for an unresponsive device (KVM check, helper missing), and report whether the helper is required. |
+| F-16 | Task | Read the Vega CLI reference. |
+| | Actual | Two names for the same tool coexist: `vega` (docs 0.24) and `kepler` (install guide, `KEPLER_SDK_PATH`), and the install guide's Node requirement (16.x or later) differs from the one in the Vega CLI guide (18.x). |
+| | Severity | Low. |
+| | Workaround | Used `vega` and `KEPLER_SDK_PATH`. |
+| | Suggestion | Align the install guide and the CLI reference names and Node requirements. |

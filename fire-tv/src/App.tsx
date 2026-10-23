@@ -1,5 +1,7 @@
 import {useCallback, useEffect, useReducer} from 'react';
-import {BackHandler, StyleSheet, View, useTVEventHandler} from 'react-native';
+import {BackHandler, StyleSheet, View} from 'react-native';
+// Vega's remote input hook is exported by the Kepler fork, not by stock react-native.
+import {useTVEventHandler} from '@amazon-devices/react-native-kepler';
 import {HomeScreen} from './screens/HomeScreen';
 import {TopicsScreen} from './screens/TopicsScreen';
 import {LessonsScreen} from './screens/LessonsScreen';

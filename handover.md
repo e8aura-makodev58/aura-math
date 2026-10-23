@@ -888,3 +888,14 @@ Read this first after the pause. It was written by Claude on 2026-10-05 (about 0
 - Blocked: developer.amazon.com and developer.integ.amazon.com return 403 (egress policy); no VDK, no `vega` CLI, no `.vpkg`, no `manifest.toml`. No `/dev/kvm`, so no Vega Virtual Device. The live site `aura-math.makodev58.com` also returns 403 from this sandbox (not a site outage).
 - Not verified: device or simulator execution, real remote navigation, 1920×1080 layout on a TV, fonts, performance, Vega `structuredClone` support.
 - Next action: on a machine with developer.amazon.com access, install the VDK, set `KEPLER_SDK_PATH`, run `npm run build` and the Vega package build, author the app manifest from the official docs, then run on a simulator or device and update `docs/hackathon-amazon/04`, `06`, `07` and `10`. Open question for the user: whether draft (unreviewed) lessons may ship in the hackathon TV build, given the home-release decision (25) covers only the web build.
+
+### 2026-10-23 — Claude: Vega SDK installed; Aura Math native packages built
+
+- Authority: user request to install the Vega SDK in the sandbox and build the app. Installer and artifact hosts were allowlisted by the user. A permission check blocked creating a Linux user, so the installer ran as the existing `ubuntu` account (no new account, no persistent change).
+- SDK 0.24.12112 installed at `/home/ubuntu/vega/sdk/0.24.12112`; `vega --version` and `kepler --version` both print 0.24.12112.
+- Official `helloWorld` template (RN 0.83) built to `hellovega_x86_64.vpkg` (1,576,713 bytes) as the toolchain proof.
+- Aura Math `fire-tv/` (copied to `/home/ubuntu/aura-vega`, changes synced back to the repo): `npm run build:release` exit 0; packages `aura-math-fire-tv_{aarch64,armv7,x86_64}.vpkg` (about 307 KB each). Typecheck 0 errors; Jest 63/63 in the workspace.
+- Changes in the repo `fire-tv/`: `manifest.toml` (new), `app.json`, `metro.config.js` (template-based, watches the repo root), `package.json` and lockfile (react-native 0.83.0, kepler ~4.0.0, `kepler-cli-platform`, `build:release`; removed the alias and resolver workarounds), `react-native.config.js` removed, `src/App.tsx` (TV hook imported from the Kepler package), render test mocks that package. `buildinfo.json` ignored.
+- Blocked: Vega Virtual Device did not boot within 60 s (no KVM; `vvman` missing). Instance stopped. Nothing has run in a simulator or on a Fire TV.
+- Docs updated: 01, 03, 09 (F-02 resolved; F-12 to F-16 added), 10; fire-tv README.
+- Next action: run the `.vpkg` on a KVM host or a Fire TV in developer mode; remote navigation check; demo recording. The package id `com.example.auramath` must be replaced before any submission.

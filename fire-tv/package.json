@@ -16,22 +16,21 @@
     "bundle": "node scripts/build-bundle.js",
     "hermes": "node scripts/compile-hermes.js",
     "sync-lessons": "node scripts/build-lesson-index.js",
-    "build": "npm run bundle && npm run hermes"
+    "build": "npm run bundle && npm run hermes",
+    "build:release": "react-native build-vega --build-type Release",
+    "build:debug": "react-native build-vega --build-type Debug"
   },
   "dependencies": {
-    "@amazon-devices/react-native-kepler": "^4.0.1",
-    "react": "19.2.0"
+    "@amazon-devices/react-native-kepler": "~4.0.0",
+    "react": "19.2.0",
+    "react-native": "0.83.0"
   },
   "devDependencies": {
-    "@amazon-devices/kepler-compatibility-metro-config": "0.0.7",
-    "@amazon-devices/kepler-module-manifest-builder": "^0.1.16",
     "@babel/core": "7.25.2",
     "@babel/preset-env": "^7.25.3",
     "@babel/runtime": "^7.25.0",
     "@eslint/js": "^9.39.5",
-    "@react-native-community/cli": "^20.2.0",
     "@react-native/babel-preset": "0.83.0",
-    "@react-native/js-polyfills": "^0.83.0",
     "@react-native/metro-config": "0.83.0",
     "@react-native/typescript-config": "0.83.0",
     "@types/jest": "29.5.14",
@@ -44,10 +43,12 @@
     "react-test-renderer": "19.2.0",
     "three": "^0.162.0",
     "typescript": "5.8.3",
-    "typescript-eslint": "^8.67.0"
+    "typescript-eslint": "^8.67.0",
+    "@amazon-devices/kepler-cli-platform": "^0",
+    "@react-native-community/cli": "20.0.0"
   },
   "jest": {
-    "preset": "./node_modules/@amazon-devices/react-native-kepler/jest-preset.js",
+    "preset": "react-native",
     "roots": [
       "<rootDir>/__tests__"
     ],
@@ -59,11 +60,14 @@
       "<rootDir>/node_modules"
     ],
     "transformIgnorePatterns": [
-      "node_modules/(?!((jest-)?react-native|@amzn|@react-native(-community)?|@amazon-devices)/)"
-    ],
-    "moduleNameMapper": {
-      "^react-native$": "<rootDir>/node_modules/@amazon-devices/react-native-kepler/index.js",
-      "^react-native/(.*)$": "<rootDir>/node_modules/@amazon-devices/react-native-kepler/$1"
-    }
+      "node_modules/(?!((jest-)?react-native|@react-native(-community)?|@amazon-devices)/)"
+    ]
+  },
+  "kepler": {
+    "projectType": "application",
+    "appName": "AuraMath",
+    "targets": [
+      "tv"
+    ]
   }
 }

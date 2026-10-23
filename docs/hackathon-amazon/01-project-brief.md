@@ -15,8 +15,8 @@ Fire TV with the remote. The Fire TV app lives in `fire-tv/`.
 | Fire TV app: home, topics, lessons, question, feedback, hints, summary | Built as JavaScript | Type-checked, linted, unit/render tested, bundled, compiled to Hermes bytecode |
 | Remote navigation (Up/Down/Left/Right, OK, BACK, MENU hint) | Implemented and unit tested | Simulated key events only; **not physically verified** |
 | Shared engine reuse (`src/core`, pure topic adapters, lesson JSON) | Done | Integration test completes all 17 TV lessons through the shared runtime |
-| Vega native package (`vega build`, `.vpkg`) | **Not done** | VDK download host blocked (403) |
-| Run in Vega Virtual Device or on a Fire TV | **Not done** | No `/dev/kvm`; no device |
+| Vega native package (`vega build`, `.vpkg`) | Done | `npm run build:release` exit 0; aarch64, armv7, x86_64 Release packages (see 03) |
+| Run in Vega Virtual Device or on a Fire TV | **Not done** | Virtual device did not boot here (no `/dev/kvm`); no device |
 | Demo video | **Not done** | Requires a running device or simulator |
 
 ## What the app does
@@ -37,8 +37,7 @@ Fire TV with the remote. The Fire TV app lives in `fire-tv/`.
 
 ## Open items
 
-1. **Vega SDK access.** developer.amazon.com returns a policy 403 from this environment. The VDK
-   (the `vega` CLI under `KEPLER_SDK_PATH`) is needed for `build-vega` and `vega run-app`.
+1. **Vega SDK access.** Resolved: SDK 0.24.12112 installed from the Developer Portal installer; `build:release` works.
 2. **Device or simulator run.** Requires either a Fire TV device or a Vega Virtual Device on a host
    with KVM. Neither is available in this environment.
 3. **Aura Math web source in the repository.** The repository was empty (only LICENSE) when this
